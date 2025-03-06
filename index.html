@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Alerts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 20px;
+        }
+        .alert {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .alert-title {
+            font-weight: bold;
+            color: #d9534f;
+        }
+    </style>
+</head>
+<body>
+    <h1>Live Weather Alerts</h1>
+    <div id="alerts"></div>
+    <script>
+        async function fetchAlerts() {
+            try {
+                const response = await fetch('https://raw.githubusercontent.com/YOUR_USERNAME/weather-alerts/main/alerts.txt');
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const text = await response.text();
+                const alerts = text.split('\n').filter(alert => alert.trim() !== '');
+                const alertsContainer = document.getElementById('alerts');
+                alertsContainer.innerHTML = alerts.map(alert => `<div class="alert"><div class="alert-title">${alert.split(':')[0]}</div><div>${alert.split(':')[1]}</div></div>`).join('');
+            } catch (error) {
+                console.error('Error fetching alerts:', error);
+            }
+        }
+        fetchAlerts();
+        setInterval(fetchAlerts, 300000); // Refresh every 5 minutes
+    </script>
+</body>
+</html>
