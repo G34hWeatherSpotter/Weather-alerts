@@ -2,7 +2,7 @@ import requests
 import xml.etree.ElementTree as ET
 import time
 
-NWS_ALERTS_URL = "https://alerts.weather.gov/cap/us.php?x=1"
+NWS_ALERTS_URL = "https://api.weather.gov/alerts/active.atom?region_type=land"
 
 def fetch_alerts():
     response = requests.get(NWS_ALERTS_URL)
