@@ -1,1 +1,5 @@
-
+## Known issues with the App Include:
+App not pulling the active alerts from the nws webpage
+OBS  studio  Wont Use The Web Page as a broswer soruce
+Issues in the code
+The Github page Sometimes Shows a 404 error page.
