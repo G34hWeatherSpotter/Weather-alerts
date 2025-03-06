@@ -1,5 +1,6 @@
 import requests
 import xml.etree.ElementTree as ET
+import time
 
 NWS_ALERTS_URL = "https://alerts.weather.gov/cap/us.php?x=1"
 
@@ -28,4 +29,6 @@ def update_alerts_file():
         file.write(alerts_text)
 
 if __name__ == "__main__":
-    update_alerts_file()
+    while True:
+        update_alerts_file()
+        time.sleep(60)  # Wait for 1 minute before updating again
