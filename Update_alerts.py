@@ -29,6 +29,4 @@ def update_alerts_file():
         file.write(alerts_text)
 
 if __name__ == "__main__":
-    while True:
-        update_alerts_file()
-        time.sleep(60)  # Wait for 1 minute before updating again
+    update_alerts_file()
