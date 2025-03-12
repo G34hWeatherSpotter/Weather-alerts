@@ -14,15 +14,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set up Python (optional, only if using a static site generator like Jekyll or other build tools)
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.x'  # Adjust this based on your environment, if needed
-
-      - name: Install dependencies (if you need them, like Jekyll or other Python-based build tools)
-        run: |
-          pip install -r requirements.txt  # This step is optional, only necessary if you have dependencies
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
