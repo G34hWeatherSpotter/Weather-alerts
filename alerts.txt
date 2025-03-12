@@ -1,12 +1,12 @@
 [
     {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-56233",
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-6144",
         "type": "Feature",
         "geometry": null,
         "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-56233",
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-6144",
             "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0-KEEPALIVE-56233",
+            "id": "urn:oid:2.49.0.1.840.0-KEEPALIVE-6144",
             "areaDesc": "Montgomery",
             "geocode": {
                 "SAME": [
@@ -20,10 +20,10 @@
                 "https://api.weather.gov/zones/county/MDC031"
             ],
             "references": [],
-            "sent": "2025-03-12T21:49:09+00:00",
-            "effective": "2025-03-12T21:49:09+00:00",
+            "sent": "2025-03-12T21:59:09+00:00",
+            "effective": "2025-03-12T21:59:09+00:00",
             "onset": null,
-            "expires": "2025-03-12T21:59:09+00:00",
+            "expires": "2025-03-12T22:09:09+00:00",
             "ends": null,
             "status": "Test",
             "messageType": "Alert",
@@ -43,12 +43,1937 @@
                     "KEPWBC"
                 ],
                 "WMOidentifier": [
-                    "NZUS91 KWBC 122149"
+                    "NZUS91 KWBC 122159"
                 ],
                 "BLOCKCHANNEL": [
                     "CMAS",
                     "EAS",
                     "NWEM"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8dac4df3c462b00a8e1b83535ff4e94e51a674b3.001.1",
+        "type": "Feature",
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -122.27,
+                        37.09
+                    ],
+                    [
+                        -122.22,
+                        37.03
+                    ],
+                    [
+                        -122.16,
+                        36.99
+                    ],
+                    [
+                        -122.14999999999999,
+                        36.9799999
+                    ],
+                    [
+                        -122.13999999999999,
+                        36.9799999
+                    ],
+                    [
+                        -122.12999999999998,
+                        36.970000000000006
+                    ],
+                    [
+                        -122.09999999999998,
+                        36.96000000000001
+                    ],
+                    [
+                        -122.06999999999998,
+                        36.93000000000001
+                    ],
+                    [
+                        -122.23999999999998,
+                        36.220000000000006
+                    ],
+                    [
+                        -122.58999999999997,
+                        35.93000000000001
+                    ],
+                    [
+                        -122.74999999999997,
+                        36.620000000000005
+                    ],
+                    [
+                        -122.27,
+                        37.09
+                    ]
+                ]
+            ]
+        },
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8dac4df3c462b00a8e1b83535ff4e94e51a674b3.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.8dac4df3c462b00a8e1b83535ff4e94e51a674b3.001.1",
+            "areaDesc": "Coastal Waters from Pigeon Point to Point Pinos California out to 10 nm; Coastal Waters from Point Pinos to Point Piedras Blancas California out to 10 nm; Waters from Pigeon Point to Point Pinos 10-60 NM; Waters from Point Pinos to Point Piedras Blancas 10-60 NM",
+            "geocode": {
+                "SAME": [
+                    "057560",
+                    "057565",
+                    "057575",
+                    "057576"
+                ],
+                "UGC": [
+                    "PZZ560",
+                    "PZZ565",
+                    "PZZ575",
+                    "PZZ576"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/PZZ560",
+                "https://api.weather.gov/zones/forecast/PZZ565",
+                "https://api.weather.gov/zones/forecast/PZZ575",
+                "https://api.weather.gov/zones/forecast/PZZ576"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b26cb9f0a50236c89927a2278aff850e419965e9.001.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.b26cb9f0a50236c89927a2278aff850e419965e9.001.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T14:15:00-07:00"
+                }
+            ],
+            "sent": "2025-03-12T14:57:00-07:00",
+            "effective": "2025-03-12T14:57:00-07:00",
+            "onset": "2025-03-12T14:57:00-07:00",
+            "expires": "2025-03-12T15:07:00-07:00",
+            "ends": "2025-03-12T15:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Severe",
+            "certainty": "Likely",
+            "urgency": "Immediate",
+            "event": "Special Marine Warning",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS San Francisco CA",
+            "headline": "Special Marine Warning issued March 12 at 2:57PM PDT until March 12 at 3:00PM PDT by NWS San Francisco CA",
+            "description": "The affected areas were...\nCoastal Waters from Pigeon Point to Point Pinos California out to 10\nNM...\nCoastal Waters from Point Pinos to Point Piedras Blancas California\nout to 10 NM...\nWaters from Pigeon Point to Point Pinos 10-60 NM...\nWaters from Point Pinos to Point Piedras Blancas 10-60 NM...\n\nThe thunderstorms have moved out of area and no longer pose a\nsignificant threat to boaters.",
+            "instruction": null,
+            "response": "Avoid",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "MWSMTR"
+                ],
+                "WMOidentifier": [
+                    "FZUS76 KMTR 122157"
+                ],
+                "NWSheadline": [
+                    "SPECIAL MARINE WARNING WILL EXPIRE AT 3 PM PDT"
+                ],
+                "eventMotionDescription": [
+                    "2025-03-12T21:15:00-00:00...storm...203DEG...46KT...36.9,-122.45 36.57,-122.41 36.15,-122.41"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.EXP.KMTR.MA.W.0013.000000T0000Z-250312T2200Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-12T22:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ff5c644aeeabe90bc472cb5062d100b05c443ac5.001.1",
+        "type": "Feature",
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -122.33,
+                        37.4799999
+                    ],
+                    [
+                        -122.09,
+                        37.31
+                    ],
+                    [
+                        -122.31,
+                        37.1
+                    ],
+                    [
+                        -122.33,
+                        37.1
+                    ],
+                    [
+                        -122.34,
+                        37.09
+                    ],
+                    [
+                        -122.35000000000001,
+                        37.1
+                    ],
+                    [
+                        -122.35000000000001,
+                        37.120000000000005
+                    ],
+                    [
+                        -122.41000000000001,
+                        37.190000000000005
+                    ],
+                    [
+                        -122.41000000000001,
+                        37.2299999
+                    ],
+                    [
+                        -122.42000000000002,
+                        37.2299999
+                    ],
+                    [
+                        -122.42000000000002,
+                        37.24
+                    ],
+                    [
+                        -122.41000000000001,
+                        37.260000000000005
+                    ],
+                    [
+                        -122.41000000000001,
+                        37.35000000000001
+                    ],
+                    [
+                        -122.42000000000002,
+                        37.38000000000001
+                    ],
+                    [
+                        -122.33,
+                        37.4799999
+                    ]
+                ]
+            ]
+        },
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ff5c644aeeabe90bc472cb5062d100b05c443ac5.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.ff5c644aeeabe90bc472cb5062d100b05c443ac5.001.1",
+            "areaDesc": "San Mateo, CA; Santa Clara, CA; Santa Cruz, CA",
+            "geocode": {
+                "SAME": [
+                    "006081",
+                    "006085",
+                    "006087"
+                ],
+                "UGC": [
+                    "CAC081",
+                    "CAC085",
+                    "CAC087"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/county/CAC081",
+                "https://api.weather.gov/zones/county/CAC085",
+                "https://api.weather.gov/zones/county/CAC087"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.903f21a970ef2286ef81731299dc5920c276c0d6.001.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.903f21a970ef2286ef81731299dc5920c276c0d6.001.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T14:36:00-07:00"
+                }
+            ],
+            "sent": "2025-03-12T14:55:00-07:00",
+            "effective": "2025-03-12T14:55:00-07:00",
+            "onset": "2025-03-12T14:55:00-07:00",
+            "expires": "2025-03-12T15:05:00-07:00",
+            "ends": "2025-03-12T15:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Severe",
+            "certainty": "Observed",
+            "urgency": "Immediate",
+            "event": "Severe Thunderstorm Warning",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS San Francisco CA",
+            "headline": "Severe Thunderstorm Warning issued March 12 at 2:55PM PDT until March 12 at 3:00PM PDT by NWS San Francisco CA",
+            "description": "The storm which prompted the warning has moved out of the area.\nTherefore, the warning will be allowed to expire.",
+            "instruction": null,
+            "response": "Shelter",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "SVSMTR"
+                ],
+                "WMOidentifier": [
+                    "WWUS56 KMTR 122155"
+                ],
+                "NWSheadline": [
+                    "SEVERE THUNDERSTORM WARNING WILL EXPIRE AT 3 PM PDT FOR SOUTHEASTERN SAN MATEO, WEST CENTRAL SANTA CLARA AND NORTHWESTERN SANTA CRUZ COUNTIES"
+                ],
+                "eventMotionDescription": [
+                    "2025-03-12T21:36:00-00:00...storm...214DEG...41KT...37.22,-122.39"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "EAS-ORG": [
+                    "WXR"
+                ],
+                "VTEC": [
+                    "/O.EXP.KMTR.SV.W.0010.000000T0000Z-250312T2200Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-12T22:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e68efebf31eaba18e4b0d265695dc64213faef25.001.1",
+        "type": "Feature",
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -122.32,
+                        37.87
+                    ],
+                    [
+                        -122.30999999999999,
+                        37.89
+                    ],
+                    [
+                        -122.32999999999998,
+                        37.9099999
+                    ],
+                    [
+                        -122.18999999999998,
+                        38.050000000000004
+                    ],
+                    [
+                        -122.14999999999998,
+                        38.02
+                    ],
+                    [
+                        -121.98999999999998,
+                        38.050000000000004
+                    ],
+                    [
+                        -121.86999999999998,
+                        37.96
+                    ],
+                    [
+                        -122.16999999999997,
+                        37.68
+                    ],
+                    [
+                        -122.19999999999997,
+                        37.71
+                    ],
+                    [
+                        -122.18999999999997,
+                        37.71
+                    ],
+                    [
+                        -122.25999999999996,
+                        37.74
+                    ],
+                    [
+                        -122.24999999999996,
+                        37.75
+                    ],
+                    [
+                        -122.20999999999995,
+                        37.7299999
+                    ],
+                    [
+                        -122.20999999999995,
+                        37.75
+                    ],
+                    [
+                        -122.21999999999996,
+                        37.76
+                    ],
+                    [
+                        -122.20999999999995,
+                        37.76
+                    ],
+                    [
+                        -122.28999999999995,
+                        37.769999999999996
+                    ],
+                    [
+                        -122.32,
+                        37.87
+                    ]
+                ]
+            ]
+        },
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e68efebf31eaba18e4b0d265695dc64213faef25.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.e68efebf31eaba18e4b0d265695dc64213faef25.001.1",
+            "areaDesc": "San Francisco Bay Shoreline; East Bay Interior Valleys; East Bay Hills",
+            "geocode": {
+                "SAME": [
+                    "006001",
+                    "006013",
+                    "006081",
+                    "006085"
+                ],
+                "UGC": [
+                    "CAZ508",
+                    "CAZ510",
+                    "CAZ515"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/CAZ508",
+                "https://api.weather.gov/zones/forecast/CAZ510",
+                "https://api.weather.gov/zones/forecast/CAZ515"
+            ],
+            "references": [],
+            "sent": "2025-03-12T14:54:00-07:00",
+            "effective": "2025-03-12T14:54:00-07:00",
+            "onset": "2025-03-12T14:54:00-07:00",
+            "expires": "2025-03-12T15:15:00-07:00",
+            "ends": null,
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Observed",
+            "urgency": "Expected",
+            "event": "Special Weather Statement",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS San Francisco CA",
+            "headline": "Special Weather Statement issued March 12 at 2:54PM PDT by NWS San Francisco CA",
+            "description": "At 254 PM PDT, Trained spotters reported a strong thunderstorm over\nOrinda, or near Berkeley, moving northeast at 50 mph.\n\nHAZARD...Wind gusts up to 50 mph and pea size hail.\n\nSOURCE...Trained spotters reported.\n\nIMPACT...Gusty winds could knock down tree limbs and blow around\nunsecured objects. Minor damage to outdoor objects is possible.\n\nLocations impacted include...\nOakland, Concord, Berkeley, Richmond, San Leandro, Mountain View,\nAlameda, Walnut Creek, Pittsburg, Danville, Martinez, Pleasant\nHill, Lafayette, El Cerrito, Castro Valley, Hercules, Albany,\nPinole, Orinda and Moraga.",
+            "instruction": "Monitor the weather situation closely and be alert for threatening\nweather conditions.",
+            "response": "Execute",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "SPSMTR"
+                ],
+                "WMOidentifier": [
+                    "WWUS86 KMTR 122154"
+                ],
+                "NWSheadline": [
+                    "A STRONG THUNDERSTORM WILL IMPACT CENTRAL CONTRA COSTA AND NORTHWESTERN ALAMEDA COUNTIES UNTIL 315 PM PDT"
+                ],
+                "eventMotionDescription": [
+                    "2025-03-12T21:54:00-00:00...storm...218DEG...44KT...37.86,-122.19"
+                ],
+                "maxWindGust": [
+                    "50 MPH"
+                ],
+                "maxHailSize": [
+                    "0.25"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "EAS-ORG": [
+                    "WXR"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f7a85d7e6095b34c717dc50112308e1c1e2ae6b0.001.1",
+        "type": "Feature",
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -97.03,
+                        32.04
+                    ],
+                    [
+                        -97.04,
+                        32.24
+                    ],
+                    [
+                        -96.42,
+                        32.31
+                    ],
+                    [
+                        -96.4,
+                        32.02
+                    ],
+                    [
+                        -97.03,
+                        32.04
+                    ]
+                ]
+            ]
+        },
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f7a85d7e6095b34c717dc50112308e1c1e2ae6b0.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.f7a85d7e6095b34c717dc50112308e1c1e2ae6b0.001.1",
+            "areaDesc": "Ellis; Hill; Navarro",
+            "geocode": {
+                "SAME": [
+                    "048139",
+                    "048217",
+                    "048349"
+                ],
+                "UGC": [
+                    "TXZ134",
+                    "TXZ145",
+                    "TXZ146"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/TXZ134",
+                "https://api.weather.gov/zones/forecast/TXZ145",
+                "https://api.weather.gov/zones/forecast/TXZ146"
+            ],
+            "references": [],
+            "sent": "2025-03-12T16:53:00-05:00",
+            "effective": "2025-03-12T16:53:00-05:00",
+            "onset": "2025-03-12T16:53:00-05:00",
+            "expires": "2025-03-12T17:30:00-05:00",
+            "ends": null,
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Observed",
+            "urgency": "Expected",
+            "event": "Special Weather Statement",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Fort Worth TX",
+            "headline": "Special Weather Statement issued March 12 at 4:53PM CDT by NWS Fort Worth TX",
+            "description": "At 453 PM CDT, Doppler radar was tracking a strong thunderstorm near\nItaly, or 14 miles northeast of Hillsboro, moving east at 45 mph.\n\nHAZARD...Winds in excess of 40 mph and half inch hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Gusty winds could knock down tree limbs and blow around\nunsecured objects. Minor damage to outdoor objects is\npossible.\n\nThis strong thunderstorm will be near...\nBarry around 515 PM CDT.\nCorsicana around 520 PM CDT.\n\nOther locations impacted by this storm include Forreston, Oak Valley,\nEmhouse, Dresden, Milford, Mertens, Retreat, Avalon, Brandon, and\nFrost.\n\nThis includes the following highways...\nInterstate 35E between mile markers 375 and 390.\nInterstate 45 between mile markers 226 and 246.",
+            "instruction": "If outdoors, consider seeking shelter inside a building.\n\nA Severe Thunderstorm Watch remains in effect until 1100 PM CDT for\ncentral and north central Texas.",
+            "response": "Execute",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "SPSFWD"
+                ],
+                "WMOidentifier": [
+                    "WWUS84 KFWD 122153"
+                ],
+                "NWSheadline": [
+                    "A strong thunderstorm will impact portions of northeastern Hill, southern Ellis and northwestern Navarro Counties through 530 PM CDT"
+                ],
+                "eventMotionDescription": [
+                    "2025-03-12T21:53:00-00:00...storm...267DEG...40KT...32.15,-96.92"
+                ],
+                "maxWindGust": [
+                    "40 MPH"
+                ],
+                "maxHailSize": [
+                    "0.50"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "EAS-ORG": [
+                    "WXR"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2651ff4eaedff9e382f5d85f8760e52b7d490308.001.1",
+        "type": "Feature",
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -122.6,
+                        37.57
+                    ],
+                    [
+                        -122.5,
+                        37.61
+                    ],
+                    [
+                        -122.52,
+                        37.589999999999996
+                    ],
+                    [
+                        -122.52,
+                        37.519999999999996
+                    ],
+                    [
+                        -122.5,
+                        37.49999999999999
+                    ],
+                    [
+                        -122.47,
+                        37.49999999999999
+                    ],
+                    [
+                        -122.49,
+                        37.489999999999995
+                    ],
+                    [
+                        -122.44999999999999,
+                        37.479999899999996
+                    ],
+                    [
+                        -122.39999999999999,
+                        37.35999999999999
+                    ],
+                    [
+                        -122.39999999999999,
+                        37.24999999999999
+                    ],
+                    [
+                        -122.41,
+                        37.269999999999996
+                    ],
+                    [
+                        -122.42,
+                        37.239999999999995
+                    ],
+                    [
+                        -122.41,
+                        37.199999999999996
+                    ],
+                    [
+                        -122.36999999999999,
+                        37.169999999999995
+                    ],
+                    [
+                        -122.33999999999999,
+                        37.12
+                    ],
+                    [
+                        -122.27,
+                        37.08
+                    ],
+                    [
+                        -122.42999999999999,
+                        36.949999999999996
+                    ],
+                    [
+                        -122.46,
+                        36.97
+                    ],
+                    [
+                        -122.6,
+                        37.57
+                    ]
+                ]
+            ]
+        },
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2651ff4eaedff9e382f5d85f8760e52b7d490308.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.2651ff4eaedff9e382f5d85f8760e52b7d490308.001.1",
+            "areaDesc": "Coastal Waters from Point Reyes to Pigeon Point California out to 10 nm; Coastal Waters from Pigeon Point to Point Pinos California out to 10 nm",
+            "geocode": {
+                "SAME": [
+                    "057545",
+                    "057560"
+                ],
+                "UGC": [
+                    "PZZ545",
+                    "PZZ560"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/PZZ545",
+                "https://api.weather.gov/zones/forecast/PZZ560"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cfc8ce0eeeedb404fdd1a25cd3d183a6e7c3db72.001.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.cfc8ce0eeeedb404fdd1a25cd3d183a6e7c3db72.001.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T14:35:00-07:00"
+                }
+            ],
+            "sent": "2025-03-12T14:53:00-07:00",
+            "effective": "2025-03-12T14:53:00-07:00",
+            "onset": "2025-03-12T14:53:00-07:00",
+            "expires": "2025-03-12T15:03:00-07:00",
+            "ends": "2025-03-12T15:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Severe",
+            "certainty": "Likely",
+            "urgency": "Immediate",
+            "event": "Special Marine Warning",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS San Francisco CA",
+            "headline": "Special Marine Warning issued March 12 at 2:53PM PDT until March 12 at 3:00PM PDT by NWS San Francisco CA",
+            "description": "The affected areas were...\nCoastal Waters from Point Reyes to Pigeon Point California out to 10\nNM...\nCoastal Waters from Pigeon Point to Point Pinos California out to 10\nNM...\n\nThe thunderstorms have moved out of area and no longer pose a\nsignificant threat to boaters.",
+            "instruction": null,
+            "response": "Avoid",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "MWSMTR"
+                ],
+                "WMOidentifier": [
+                    "FZUS76 KMTR 122153"
+                ],
+                "NWSheadline": [
+                    "SPECIAL MARINE WARNING WILL EXPIRE AT 3 PM PDT"
+                ],
+                "eventMotionDescription": [
+                    "2025-03-12T21:35:00-00:00...storm...213DEG...45KT...37.75,-122.31 37.47,-122.33 37.23,-122.38"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.EXP.KMTR.MA.W.0014.000000T0000Z-250312T2200Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-12T22:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.58b17a5a79358ec8c55afd9e81854f1dee943cef.001.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.58b17a5a79358ec8c55afd9e81854f1dee943cef.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.58b17a5a79358ec8c55afd9e81854f1dee943cef.001.1",
+            "areaDesc": "Mineral and Southern Lyon Counties",
+            "geocode": {
+                "SAME": [
+                    "032019",
+                    "032021"
+                ],
+                "UGC": [
+                    "NVZ001"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/NVZ001"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.de6e3c6ca0dec4961c3f544984fe92b525a477ae.001.2",
+                    "identifier": "urn:oid:2.49.0.1.840.0.de6e3c6ca0dec4961c3f544984fe92b525a477ae.001.2",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-11T13:28:00-07:00"
+                }
+            ],
+            "sent": "2025-03-12T14:53:00-07:00",
+            "effective": "2025-03-12T14:53:00-07:00",
+            "onset": "2025-03-12T14:53:00-07:00",
+            "expires": "2025-03-12T23:00:00-07:00",
+            "ends": "2025-03-12T23:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Severe",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "High Wind Warning",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Reno NV",
+            "headline": "High Wind Warning issued March 12 at 2:53PM PDT until March 12 at 11:00PM PDT by NWS Reno NV",
+            "description": "* WHAT...South winds 25 to 35 mph with gusts up to 65 mph.\n\n* WHERE...Mineral and Southern Lyon Counties.\n\n* WHEN...Until 11 PM PDT this evening.\n\n* IMPACTS...Damaging winds will blow down trees and power lines.\nWidespread power outages are expected. Travel will be difficult,\nespecially for high profile vehicles.",
+            "instruction": "Now is the time to secure loose outdoor items such as patio\nfurniture, holiday decorations, and trash cans before winds increase\nwhich could blow these items away. The best thing to do is prepare\nahead of time by making sure you have extra food and water on hand,\nflashlights with spare batteries and/or candles in the event of a\npower outage.",
+            "response": "Prepare",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "NPWREV"
+                ],
+                "WMOidentifier": [
+                    "WWUS75 KREV 122153"
+                ],
+                "NWSheadline": [
+                    "HIGH WIND WARNING REMAINS IN EFFECT UNTIL 11 PM PDT THIS EVENING"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "EAS-ORG": [
+                    "WXR"
+                ],
+                "VTEC": [
+                    "/O.CON.KREV.HW.W.0002.000000T0000Z-250313T0600Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-13T06:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.58b17a5a79358ec8c55afd9e81854f1dee943cef.002.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.58b17a5a79358ec8c55afd9e81854f1dee943cef.002.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.58b17a5a79358ec8c55afd9e81854f1dee943cef.002.1",
+            "areaDesc": "Surprise Valley California; Greater Reno-Carson City-Minden Area; Western Nevada Basin and Range including Pyramid Lake; Northern Washoe County",
+            "geocode": {
+                "SAME": [
+                    "006049",
+                    "032005",
+                    "032019",
+                    "032029",
+                    "032031",
+                    "032510",
+                    "032001",
+                    "032027"
+                ],
+                "UGC": [
+                    "CAZ070",
+                    "NVZ003",
+                    "NVZ004",
+                    "NVZ005"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/CAZ070",
+                "https://api.weather.gov/zones/forecast/NVZ003",
+                "https://api.weather.gov/zones/forecast/NVZ004",
+                "https://api.weather.gov/zones/forecast/NVZ005"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.de6e3c6ca0dec4961c3f544984fe92b525a477ae.002.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.de6e3c6ca0dec4961c3f544984fe92b525a477ae.002.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-11T13:28:00-07:00"
+                }
+            ],
+            "sent": "2025-03-12T14:53:00-07:00",
+            "effective": "2025-03-12T14:53:00-07:00",
+            "onset": "2025-03-12T14:53:00-07:00",
+            "expires": "2025-03-12T23:00:00-07:00",
+            "ends": "2025-03-12T23:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Wind Advisory",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Reno NV",
+            "headline": "Wind Advisory issued March 12 at 2:53PM PDT until March 12 at 11:00PM PDT by NWS Reno NV",
+            "description": "* WHAT...South winds 25 to 35 mph with gusts up to 55 mph. Wind\nprone areas along Hwy 395, Hwy 95, and Hwy 50 may see gusts reach\nup to 65 mph. Winds over Pyramid Lake 30 to 35 mph with gusts up\nto 50 mph and waves 2 to 5 feet.\n\n* WHERE...In California, Surprise Valley California. In Nevada,\nNorthern Washoe County, Western Nevada Basin and Range including\nPyramid Lake, and Greater Reno-Carson City-Minden Area.\n\n* WHEN...Until 11 PM PDT this evening.\n\n* IMPACTS...Gusty winds will blow around unsecured objects. Tree\nlimbs could be blown down and a few power outages may result.\n\n* ADDITIONAL DETAILS...Winds may knock down burned trees in the\nDavis Fire burn area.",
+            "instruction": "Now is the time to secure loose outdoor items such as patio\nfurniture, holiday decorations, and trash cans before winds increase\nwhich could blow these items away. The best thing to do is prepare\nahead of time by making sure you have extra food and water on hand,\nflashlights with spare batteries and/or candles in the event of a\npower outage.\n\nWinds this strong can make driving difficult, especially for high\nprofile vehicles. Use extra caution.\n\nSecure outdoor objects.",
+            "response": "Execute",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "NPWREV"
+                ],
+                "WMOidentifier": [
+                    "WWUS75 KREV 122153"
+                ],
+                "NWSheadline": [
+                    "WIND ADVISORY REMAINS IN EFFECT UNTIL 11 PM PDT THIS EVENING"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.CON.KREV.WI.Y.0007.000000T0000Z-250313T0600Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-13T06:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9cb05b1e3237a639d5f269e9daf27b6d868c6715.001.1",
+        "type": "Feature",
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -122.29,
+                        36.9799999
+                    ],
+                    [
+                        -122.19000000000001,
+                        37
+                    ],
+                    [
+                        -122.07000000000001,
+                        36.95
+                    ],
+                    [
+                        -122.00000000000001,
+                        36.970000000000006
+                    ],
+                    [
+                        -121.97000000000001,
+                        36.95
+                    ],
+                    [
+                        -121.91000000000001,
+                        36.970000000000006
+                    ],
+                    [
+                        -121.80000000000001,
+                        36.86000000000001
+                    ],
+                    [
+                        -121.80000000000001,
+                        36.88000000000001
+                    ],
+                    [
+                        -121.79,
+                        36.81000000000001
+                    ],
+                    [
+                        -121.75,
+                        36.82000000000001
+                    ],
+                    [
+                        -121.76,
+                        36.86000000000001
+                    ],
+                    [
+                        -121.74000000000001,
+                        36.830000000000005
+                    ],
+                    [
+                        -121.92000000000002,
+                        36.440000000000005
+                    ],
+                    [
+                        -121.89000000000001,
+                        36.34
+                    ],
+                    [
+                        -121.90000000000002,
+                        36.31
+                    ],
+                    [
+                        -121.81000000000002,
+                        36.2299999
+                    ],
+                    [
+                        -121.80000000000001,
+                        36.2299999
+                    ],
+                    [
+                        -122.26,
+                        36.150000000000006
+                    ],
+                    [
+                        -122.29,
+                        36.9799999
+                    ]
+                ]
+            ]
+        },
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9cb05b1e3237a639d5f269e9daf27b6d868c6715.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.9cb05b1e3237a639d5f269e9daf27b6d868c6715.001.1",
+            "areaDesc": "Monterey Bay; Coastal Waters from Pigeon Point to Point Pinos California out to 10 nm; Coastal Waters from Point Pinos to Point Piedras Blancas California out to 10 nm; Waters from Pigeon Point to Point Pinos 10-60 NM; Waters from Point Pinos to Point Piedras Blancas 10-60 NM",
+            "geocode": {
+                "SAME": [
+                    "057535",
+                    "057560",
+                    "057565",
+                    "057575",
+                    "057576"
+                ],
+                "UGC": [
+                    "PZZ535",
+                    "PZZ560",
+                    "PZZ565",
+                    "PZZ575",
+                    "PZZ576"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/PZZ535",
+                "https://api.weather.gov/zones/forecast/PZZ560",
+                "https://api.weather.gov/zones/forecast/PZZ565",
+                "https://api.weather.gov/zones/forecast/PZZ575",
+                "https://api.weather.gov/zones/forecast/PZZ576"
+            ],
+            "references": [],
+            "sent": "2025-03-12T14:52:00-07:00",
+            "effective": "2025-03-12T14:52:00-07:00",
+            "onset": "2025-03-12T14:52:00-07:00",
+            "expires": "2025-03-12T15:30:00-07:00",
+            "ends": "2025-03-12T15:30:00-07:00",
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Severe",
+            "certainty": "Likely",
+            "urgency": "Immediate",
+            "event": "Special Marine Warning",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS San Francisco CA",
+            "headline": "Special Marine Warning issued March 12 at 2:52PM PDT until March 12 at 3:30PM PDT by NWS San Francisco CA",
+            "description": "SMWMTR\n\nThe National Weather Service in San Francisco has issued a\n\n* Special Marine Warning for...\nMonterey Bay...\nCoastal Waters from Pigeon Point to Point Pinos California out to\n10 NM...\nCoastal Waters from Point Pinos to Point Piedras Blancas\nCalifornia out to 10 NM...\nWaters from Pigeon Point to Point Pinos 10-60 NM...\nWaters from Point Pinos to Point Piedras Blancas 10-60 NM...\n\n* Until 330 PM PDT.\n\n* At 252 PM PDT, severe thunderstorms capable of producing\nwaterspouts were located along a line from 9 NM southwest of Santa\nCruz Harbor to 14 NM southwest of Point Sur, moving northeast at\n40 knots.\n\nHAZARD...Waterspouts and wind gusts to nearly 50 knots.\n\nSOURCE...Radar indicated.\n\nIMPACT...Waterspouts can easily overturn boats and create\nlocally hazardous seas. Small craft could be damaged\nin briefly higher winds and suddenly higher waves.\n\n* Locations impacted include...\nPoint Pinos, Soberanes Point, Point Sur, Moss Landing and Santa\nCruz Harbor.",
+            "instruction": "Move to safe harbor until hazardous weather passes.",
+            "response": "Avoid",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "SMWMTR"
+                ],
+                "WMOidentifier": [
+                    "WHUS56 KMTR 122152"
+                ],
+                "eventMotionDescription": [
+                    "2025-03-12T21:51:00-00:00...storm...224DEG...38KT...36.85,-122.12 36.54,-122.1 36.21,-122.17"
+                ],
+                "maxWindGust": [
+                    "50 knots"
+                ],
+                "maxHailSize": [
+                    "0.00"
+                ],
+                "waterspoutDetection": [
+                    "POSSIBLE"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "EAS-ORG": [
+                    "WXR"
+                ],
+                "VTEC": [
+                    "/O.NEW.KMTR.MA.W.0016.250312T2152Z-250312T2230Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-12T22:30:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d2daf2ff7a44ed25be42b5e065a6770ae3a83fba.001.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d2daf2ff7a44ed25be42b5e065a6770ae3a83fba.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.d2daf2ff7a44ed25be42b5e065a6770ae3a83fba.001.1",
+            "areaDesc": "Lassen-Eastern Plumas-Eastern Sierra Counties",
+            "geocode": {
+                "SAME": [
+                    "006035",
+                    "006063",
+                    "006091"
+                ],
+                "UGC": [
+                    "CAZ071"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/CAZ071"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e84ae63aa65e9a9e120ccca62df00d3524adbe01.001.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.e84ae63aa65e9a9e120ccca62df00d3524adbe01.001.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-11T13:49:00-07:00"
+                }
+            ],
+            "sent": "2025-03-12T14:51:00-07:00",
+            "effective": "2025-03-12T14:51:00-07:00",
+            "onset": "2025-03-12T14:51:00-07:00",
+            "expires": "2025-03-13T17:00:00-07:00",
+            "ends": "2025-03-13T23:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Severe",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Winter Storm Warning",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Reno NV",
+            "headline": "Winter Storm Warning issued March 12 at 2:51PM PDT until March 13 at 11:00PM PDT by NWS Reno NV",
+            "description": "* WHAT...Heavy snow. For areas along the Sierra crest: snow\naccumulations up to 1 to 3 feet. Below 6000 feet: snow\naccumulations up to 8 inches. Ridge winds gusting as high as 70\nmph.\n\n* WHERE...Lassen-Eastern Plumas-Eastern Sierra Counties.\n\n* WHEN...Until 11 PM PDT Thursday.\n\n* IMPACTS...Travel could be very difficult to impossible. The\nhazardous conditions could impact the Wednesday and Thursday AM\nand PM commutes. Strong winds could cause damage to trees and\npower lines as well as blowing snow that could cause near whiteout\nconditions.",
+            "instruction": "If you must travel, keep an extra flashlight, food, and water in\nyour vehicle in case of an emergency. The latest road conditions for\nthe state you are calling from can be obtained by calling 5 1 1.",
+            "response": "Prepare",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "WSWREV"
+                ],
+                "WMOidentifier": [
+                    "WWUS45 KREV 122151"
+                ],
+                "NWSheadline": [
+                    "WINTER STORM WARNING REMAINS IN EFFECT UNTIL 11 PM PDT THURSDAY"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "EAS-ORG": [
+                    "WXR"
+                ],
+                "VTEC": [
+                    "/O.CON.KREV.WS.W.0005.000000T0000Z-250314T0600Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-14T06:00:00+00:00"
+                ],
+                "expiredReferences": [
+                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.f22db642446416b6279acf190e96074e4bce1704.001.2,2025-03-10T14:00:00-07:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d2daf2ff7a44ed25be42b5e065a6770ae3a83fba.002.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d2daf2ff7a44ed25be42b5e065a6770ae3a83fba.002.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.d2daf2ff7a44ed25be42b5e065a6770ae3a83fba.002.1",
+            "areaDesc": "Greater Lake Tahoe Area; Greater Lake Tahoe Area",
+            "geocode": {
+                "SAME": [
+                    "006003",
+                    "006017",
+                    "006057",
+                    "006061",
+                    "032005",
+                    "032031",
+                    "032510"
+                ],
+                "UGC": [
+                    "CAZ072",
+                    "NVZ002"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/CAZ072",
+                "https://api.weather.gov/zones/forecast/NVZ002"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e84ae63aa65e9a9e120ccca62df00d3524adbe01.002.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.e84ae63aa65e9a9e120ccca62df00d3524adbe01.002.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-11T13:49:00-07:00"
+                }
+            ],
+            "sent": "2025-03-12T14:51:00-07:00",
+            "effective": "2025-03-12T14:51:00-07:00",
+            "onset": "2025-03-12T14:51:00-07:00",
+            "expires": "2025-03-13T17:00:00-07:00",
+            "ends": "2025-03-13T23:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Severe",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Winter Storm Warning",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Reno NV",
+            "headline": "Winter Storm Warning issued March 12 at 2:51PM PDT until March 13 at 11:00PM PDT by NWS Reno NV",
+            "description": "* WHAT...Heavy Snow. For areas along the Sierra crest: snow\naccumulations up to 2 to 3 feet with locally up to 4 feet possible\nat the highest peaks. For the Sierra communities: snow\naccumulations up to 10 to 18 inches. Ridge winds gusting as high\nas 100 mph. For Lake Tahoe: south-southwest winds 20 to 25 mph\ngusting up to 45 mph with waves up to 2 to 4 feet.\n\n* WHERE...Greater Lake Tahoe Area.\n\n* WHEN...Until 11 PM PDT Thursday.\n\n* IMPACTS...Travel could be very difficult to impossible. The\nhazardous conditions could impact the Wednesday and Thursday AM\nand PM commutes. Strong winds could cause damage to trees and\npower lines as well as blowing snow that could cause near whiteout\nconditions.",
+            "instruction": "If you must travel, keep an extra flashlight, food, and water in\nyour vehicle in case of an emergency. The latest road conditions for\nthe state you are calling from can be obtained by calling 5 1 1.",
+            "response": "Prepare",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "WSWREV"
+                ],
+                "WMOidentifier": [
+                    "WWUS45 KREV 122151"
+                ],
+                "NWSheadline": [
+                    "WINTER STORM WARNING REMAINS IN EFFECT UNTIL 11 PM PDT THURSDAY"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "EAS-ORG": [
+                    "WXR"
+                ],
+                "VTEC": [
+                    "/O.CON.KREV.WS.W.0005.000000T0000Z-250314T0600Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-14T06:00:00+00:00"
+                ],
+                "expiredReferences": [
+                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.f22db642446416b6279acf190e96074e4bce1704.002.2,2025-03-10T14:00:00-07:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d2daf2ff7a44ed25be42b5e065a6770ae3a83fba.003.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d2daf2ff7a44ed25be42b5e065a6770ae3a83fba.003.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.d2daf2ff7a44ed25be42b5e065a6770ae3a83fba.003.1",
+            "areaDesc": "Mono",
+            "geocode": {
+                "SAME": [
+                    "006051"
+                ],
+                "UGC": [
+                    "CAZ073"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/CAZ073"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e84ae63aa65e9a9e120ccca62df00d3524adbe01.003.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.e84ae63aa65e9a9e120ccca62df00d3524adbe01.003.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-11T13:49:00-07:00"
+                }
+            ],
+            "sent": "2025-03-12T14:51:00-07:00",
+            "effective": "2025-03-12T14:51:00-07:00",
+            "onset": "2025-03-12T14:51:00-07:00",
+            "expires": "2025-03-13T17:00:00-07:00",
+            "ends": "2025-03-13T23:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Severe",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Winter Storm Warning",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Reno NV",
+            "headline": "Winter Storm Warning issued March 12 at 2:51PM PDT until March 13 at 11:00PM PDT by NWS Reno NV",
+            "description": "* WHAT...Heavy snow. For areas along the Sierra crest: snow\naccumulations up to 1 to 3 feet with locally up to 4 feet possible\nat the highest peaks. For areas along U.S. 395: snow accumulations\nup to 6 to 12 inches. Ridge winds gusting as high as 80 mph.\n\n* WHERE...Mono County.\n\n* WHEN...Until 11 PM PDT Thursday.\n\n* IMPACTS...Travel could be very difficult to impossible. The\nhazardous conditions could impact the Wednesday evening and\nThursday morning commutes. Strong winds could cause damage to\ntrees and power lines.",
+            "instruction": "If you must travel, keep an extra flashlight, food, and water in\nyour vehicle in case of an emergency. The latest road conditions for\nthe state you are calling from can be obtained by calling 5 1 1.",
+            "response": "Prepare",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "WSWREV"
+                ],
+                "WMOidentifier": [
+                    "WWUS45 KREV 122151"
+                ],
+                "NWSheadline": [
+                    "WINTER STORM WARNING REMAINS IN EFFECT UNTIL 11 PM PDT THURSDAY"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "EAS-ORG": [
+                    "WXR"
+                ],
+                "VTEC": [
+                    "/O.CON.KREV.WS.W.0005.000000T0000Z-250314T0600Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-14T06:00:00+00:00"
+                ],
+                "expiredReferences": [
+                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.f22db642446416b6279acf190e96074e4bce1704.003.2,2025-03-10T14:00:00-07:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f64402742e83f4133d81371f42647eb6c508d656.001.1",
+        "type": "Feature",
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -122.25,
+                        37.06
+                    ],
+                    [
+                        -122.12,
+                        37.2
+                    ],
+                    [
+                        -122.01,
+                        37.120000000000005
+                    ],
+                    [
+                        -122.19000000000001,
+                        37.00000000000001
+                    ],
+                    [
+                        -122.22000000000001,
+                        37.02000000000001
+                    ],
+                    [
+                        -122.22000000000001,
+                        37.03000000000001
+                    ],
+                    [
+                        -122.23000000000002,
+                        37.040000000000006
+                    ],
+                    [
+                        -122.25000000000001,
+                        37.050000000000004
+                    ],
+                    [
+                        -122.25,
+                        37.06
+                    ]
+                ]
+            ]
+        },
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f64402742e83f4133d81371f42647eb6c508d656.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.f64402742e83f4133d81371f42647eb6c508d656.001.1",
+            "areaDesc": "Santa Cruz, CA",
+            "geocode": {
+                "SAME": [
+                    "006087"
+                ],
+                "UGC": [
+                    "CAC087"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/county/CAC087"
+            ],
+            "references": [],
+            "sent": "2025-03-12T14:49:00-07:00",
+            "effective": "2025-03-12T14:49:00-07:00",
+            "onset": "2025-03-12T14:49:00-07:00",
+            "expires": "2025-03-12T15:00:00-07:00",
+            "ends": "2025-03-12T15:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Severe",
+            "certainty": "Observed",
+            "urgency": "Immediate",
+            "event": "Severe Thunderstorm Warning",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS San Francisco CA",
+            "headline": "Severe Thunderstorm Warning issued March 12 at 2:49PM PDT until March 12 at 3:00PM PDT by NWS San Francisco CA",
+            "description": "SVRMTR\n\nThe National Weather Service in San Francisco has issued a\n\n* Severe Thunderstorm Warning for...\nNorthwestern Santa Cruz County in northern California...\n\n* Until 300 PM PDT.\n\n* At 249 PM PDT, a severe thunderstorm was located 7 miles southwest\nof Ben Lomond, or 10 miles west of Santa Cruz, moving northeast at\n50 mph.\n\nHAZARD...60 mph wind gusts and small hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Expect damage to roofs, siding, and trees.\n\n* Locations impacted include...\nBoulder Creek and Ben Lomond.",
+            "instruction": "Tornadoes can develop quickly from severe thunderstorms. Seek\nshelter immediately in an interior room on the lowest floor of a\nwell-built structure.\n\nReport severe weather to your nearest law enforcement agency or the\nNational Weather Service office in San Francisco CA.",
+            "response": "Shelter",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "SVRMTR"
+                ],
+                "WMOidentifier": [
+                    "WUUS56 KMTR 122149"
+                ],
+                "eventMotionDescription": [
+                    "2025-03-12T21:49:00-00:00...storm...218DEG...44KT...37.03,-122.21"
+                ],
+                "windThreat": [
+                    "RADAR INDICATED"
+                ],
+                "maxWindGust": [
+                    "60 MPH"
+                ],
+                "hailThreat": [
+                    "RADAR INDICATED"
+                ],
+                "tornadoDetection": [
+                    "POSSIBLE"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "EAS-ORG": [
+                    "WXR"
+                ],
+                "VTEC": [
+                    "/O.NEW.KMTR.SV.W.0012.250312T2149Z-250312T2200Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-12T22:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.001.2",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.001.2",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.001.2",
+            "areaDesc": "Coastal waters from Cape Mendocino to Pt. Arena CA out 10 nm",
+            "geocode": {
+                "SAME": [
+                    "057455"
+                ],
+                "UGC": [
+                    "PZZ455"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/PZZ455"
+            ],
+            "references": [],
+            "sent": "2025-03-12T14:49:00-07:00",
+            "effective": "2025-03-12T14:49:00-07:00",
+            "onset": "2025-03-13T23:00:00-07:00",
+            "expires": "2025-03-12T23:00:00-07:00",
+            "ends": "2025-03-14T09:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "event": "Gale Watch",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Eureka CA",
+            "headline": "Gale Watch issued March 12 at 2:49PM PDT until March 14 at 9:00AM PDT by NWS Eureka CA",
+            "description": "* WHAT...For the Hazardous Seas Warning, very steep and\nhazardous seas 10 to 12 feet. For the Gale Watch, southeast\nwinds 20 to 30 kt with gusts up to 40 kt and seas 8 to 11 feet\npossible.\n\n* WHERE...Cape Mendocino to Pt Arena out 10 nm.\n\n* WHEN...For the Hazardous Seas Warning, until 5 PM PDT this\nafternoon. For the Gale Watch, from Thursday evening through\nFriday morning.\n\n* IMPACTS...Strong winds can cause hazardous seas which could\ncapsize or damage vessels and reduce visibility.",
+            "instruction": "Mariners should consider altering plans to avoid possible\nhazardous conditions.  Remain in port, seek safe harbor, alter\ncourse, and/or secure the vessel for severe wind and seas.",
+            "response": "Prepare",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "MWWEKA"
+                ],
+                "WMOidentifier": [
+                    "WHUS76 KEKA 122149"
+                ],
+                "NWSheadline": [
+                    "HAZARDOUS SEAS WARNING REMAINS IN EFFECT UNTIL 5 PM PDT THIS AFTERNOON... ...GALE WATCH IN EFFECT FROM THURSDAY EVENING THROUGH FRIDAY MORNING"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.NEW.KEKA.GL.A.0009.250314T0600Z-250314T1600Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-14T16:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.002.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.002.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.002.1",
+            "areaDesc": "Waters from Cape Mendocino to Pt. Arena CA from 10 to 60 nm",
+            "geocode": {
+                "SAME": [
+                    "057475"
+                ],
+                "UGC": [
+                    "PZZ475"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/PZZ475"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.605d3badabc559708e60aa18076c9f67cf66d591.002.2",
+                    "identifier": "urn:oid:2.49.0.1.840.0.605d3badabc559708e60aa18076c9f67cf66d591.002.2",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T13:57:00-07:00"
+                }
+            ],
+            "sent": "2025-03-12T14:49:00-07:00",
+            "effective": "2025-03-12T14:49:00-07:00",
+            "onset": "2025-03-12T14:49:00-07:00",
+            "expires": "2025-03-12T23:00:00-07:00",
+            "ends": "2025-03-12T17:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Hazardous Seas Warning",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Eureka CA",
+            "headline": "Hazardous Seas Warning issued March 12 at 2:49PM PDT until March 12 at 5:00PM PDT by NWS Eureka CA",
+            "description": "* WHAT...For the Hazardous Seas Warning, very steep and\nhazardous seas 10 to 12 feet. For the Gale Watch, south winds\n20 to 30 kt with gusts up to 40 kt and seas 10 to 12 feet\npossible.\n\n* WHERE...Cape Mendocino to Pt Arena 10 to 60 nm.\n\n* WHEN...For the Hazardous Seas Warning, until 5 PM PDT this\nafternoon. For the Gale Watch, from Thursday evening through\nFriday morning.\n\n* IMPACTS...Strong winds can cause hazardous seas which could\ncapsize or damage vessels and reduce visibility.",
+            "instruction": "Mariners should consider altering plans to avoid possible\nhazardous conditions.  Remain in port, seek safe harbor, alter\ncourse, and/or secure the vessel for severe wind and seas.",
+            "response": "Avoid",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "MWWEKA"
+                ],
+                "WMOidentifier": [
+                    "WHUS76 KEKA 122149"
+                ],
+                "NWSheadline": [
+                    "HAZARDOUS SEAS WARNING REMAINS IN EFFECT UNTIL 5 PM PDT THIS AFTERNOON... ...GALE WATCH IN EFFECT FROM THURSDAY EVENING THROUGH FRIDAY MORNING"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.CON.KEKA.SE.W.0008.000000T0000Z-250313T0000Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-13T00:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.001.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.001.1",
+            "areaDesc": "Coastal waters from Cape Mendocino to Pt. Arena CA out 10 nm",
+            "geocode": {
+                "SAME": [
+                    "057455"
+                ],
+                "UGC": [
+                    "PZZ455"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/PZZ455"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.605d3badabc559708e60aa18076c9f67cf66d591.001.2",
+                    "identifier": "urn:oid:2.49.0.1.840.0.605d3badabc559708e60aa18076c9f67cf66d591.001.2",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T13:57:00-07:00"
+                }
+            ],
+            "sent": "2025-03-12T14:49:00-07:00",
+            "effective": "2025-03-12T14:49:00-07:00",
+            "onset": "2025-03-12T14:49:00-07:00",
+            "expires": "2025-03-12T23:00:00-07:00",
+            "ends": "2025-03-12T17:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Hazardous Seas Warning",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Eureka CA",
+            "headline": "Hazardous Seas Warning issued March 12 at 2:49PM PDT until March 12 at 5:00PM PDT by NWS Eureka CA",
+            "description": "* WHAT...For the Hazardous Seas Warning, very steep and\nhazardous seas 10 to 12 feet. For the Gale Watch, southeast\nwinds 20 to 30 kt with gusts up to 40 kt and seas 8 to 11 feet\npossible.\n\n* WHERE...Cape Mendocino to Pt Arena out 10 nm.\n\n* WHEN...For the Hazardous Seas Warning, until 5 PM PDT this\nafternoon. For the Gale Watch, from Thursday evening through\nFriday morning.\n\n* IMPACTS...Strong winds can cause hazardous seas which could\ncapsize or damage vessels and reduce visibility.",
+            "instruction": "Mariners should consider altering plans to avoid possible\nhazardous conditions.  Remain in port, seek safe harbor, alter\ncourse, and/or secure the vessel for severe wind and seas.",
+            "response": "Avoid",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "MWWEKA"
+                ],
+                "WMOidentifier": [
+                    "WHUS76 KEKA 122149"
+                ],
+                "NWSheadline": [
+                    "HAZARDOUS SEAS WARNING REMAINS IN EFFECT UNTIL 5 PM PDT THIS AFTERNOON... ...GALE WATCH IN EFFECT FROM THURSDAY EVENING THROUGH FRIDAY MORNING"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.CON.KEKA.SE.W.0008.000000T0000Z-250313T0000Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-13T00:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.004.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.004.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.004.1",
+            "areaDesc": "Waters from Pt. St. George to Cape Mendocino CA from 10 to 60 nm",
+            "geocode": {
+                "SAME": [
+                    "057470"
+                ],
+                "UGC": [
+                    "PZZ470"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/PZZ470"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d5de068f2111a0d667245a66d1e7870d1b0fb08b.003.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.d5de068f2111a0d667245a66d1e7870d1b0fb08b.003.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T11:18:00-07:00"
+                },
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.605d3badabc559708e60aa18076c9f67cf66d591.003.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.605d3badabc559708e60aa18076c9f67cf66d591.003.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T13:57:00-07:00"
+                }
+            ],
+            "sent": "2025-03-12T14:49:00-07:00",
+            "effective": "2025-03-12T14:49:00-07:00",
+            "onset": "2025-03-12T14:49:00-07:00",
+            "expires": "2025-03-12T23:00:00-07:00",
+            "ends": "2025-03-13T23:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Minor",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Small Craft Advisory",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Eureka CA",
+            "headline": "Small Craft Advisory issued March 12 at 2:49PM PDT until March 13 at 11:00PM PDT by NWS Eureka CA",
+            "description": "* WHAT...For the Small Craft Advisory, west winds 10 to 15 kt\nand seas 9 to 13 feet. For the Gale Watch, south winds 25 to\n35 kt with gusts up to 45 kt and seas 10 to 13 feet possible.\n\n* WHERE...Pt St George to Cape Mendocino 10 to 60 nm.\n\n* WHEN...For the Small Craft Advisory, until 11 PM PDT Thursday.\nFor the Gale Watch, from Thursday evening through Friday\nmorning.\n\n* IMPACTS...Strong winds can cause hazardous seas which could\ncapsize or damage vessels and reduce visibility.",
+            "instruction": "Mariners should consider altering plans to avoid possible\nhazardous conditions.  Remain in port, seek safe harbor, alter\ncourse, and/or secure the vessel for severe wind and seas.",
+            "response": "Avoid",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "MWWEKA"
+                ],
+                "WMOidentifier": [
+                    "WHUS76 KEKA 122149"
+                ],
+                "NWSheadline": [
+                    "SMALL CRAFT ADVISORY REMAINS IN EFFECT UNTIL 11 PM PDT THURSDAY... ...GALE WATCH IN EFFECT FROM THURSDAY EVENING THROUGH FRIDAY MORNING"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.CON.KEKA.SC.Y.0033.000000T0000Z-250314T0600Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-14T06:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.003.2",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.003.2",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.003.2",
+            "areaDesc": "Coastal waters from Pt. St. George to Cape Mendocino CA out 10 nm",
+            "geocode": {
+                "SAME": [
+                    "057450"
+                ],
+                "UGC": [
+                    "PZZ450"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/PZZ450"
+            ],
+            "references": [],
+            "sent": "2025-03-12T14:49:00-07:00",
+            "effective": "2025-03-12T14:49:00-07:00",
+            "onset": "2025-03-13T23:00:00-07:00",
+            "expires": "2025-03-12T23:00:00-07:00",
+            "ends": "2025-03-14T09:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "event": "Gale Watch",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Eureka CA",
+            "headline": "Gale Watch issued March 12 at 2:49PM PDT until March 14 at 9:00AM PDT by NWS Eureka CA",
+            "description": "* WHAT...For the Small Craft Advisory, seas 7 to 11 feet. For\nthe Gale Watch, southeast winds 20 to 30 kt with gusts up to\n40 kt and seas 8 to 10 feet possible.\n\n* WHERE...Pt St George to Cape Mendocino out 10 nm.\n\n* WHEN...For the Small Craft Advisory, until 11 PM PDT Thursday.\nFor the Gale Watch, from Thursday evening through Friday\nmorning.\n\n* IMPACTS...Strong winds can cause hazardous seas which could\ncapsize or damage vessels and reduce visibility.",
+            "instruction": "Mariners should consider altering plans to avoid possible\nhazardous conditions.  Remain in port, seek safe harbor, alter\ncourse, and/or secure the vessel for severe wind and seas.",
+            "response": "Prepare",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "MWWEKA"
+                ],
+                "WMOidentifier": [
+                    "WHUS76 KEKA 122149"
+                ],
+                "NWSheadline": [
+                    "SMALL CRAFT ADVISORY REMAINS IN EFFECT UNTIL 11 PM PDT THURSDAY... ...GALE WATCH IN EFFECT FROM THURSDAY EVENING THROUGH FRIDAY MORNING"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.NEW.KEKA.GL.A.0009.250314T0600Z-250314T1600Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-14T16:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.003.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.003.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.003.1",
+            "areaDesc": "Coastal waters from Pt. St. George to Cape Mendocino CA out 10 nm",
+            "geocode": {
+                "SAME": [
+                    "057450"
+                ],
+                "UGC": [
+                    "PZZ450"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/PZZ450"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d5de068f2111a0d667245a66d1e7870d1b0fb08b.003.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.d5de068f2111a0d667245a66d1e7870d1b0fb08b.003.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T11:18:00-07:00"
+                },
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.605d3badabc559708e60aa18076c9f67cf66d591.003.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.605d3badabc559708e60aa18076c9f67cf66d591.003.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T13:57:00-07:00"
+                }
+            ],
+            "sent": "2025-03-12T14:49:00-07:00",
+            "effective": "2025-03-12T14:49:00-07:00",
+            "onset": "2025-03-12T14:49:00-07:00",
+            "expires": "2025-03-12T23:00:00-07:00",
+            "ends": "2025-03-13T23:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Minor",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Small Craft Advisory",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Eureka CA",
+            "headline": "Small Craft Advisory issued March 12 at 2:49PM PDT until March 13 at 11:00PM PDT by NWS Eureka CA",
+            "description": "* WHAT...For the Small Craft Advisory, seas 7 to 11 feet. For\nthe Gale Watch, southeast winds 20 to 30 kt with gusts up to\n40 kt and seas 8 to 10 feet possible.\n\n* WHERE...Pt St George to Cape Mendocino out 10 nm.\n\n* WHEN...For the Small Craft Advisory, until 11 PM PDT Thursday.\nFor the Gale Watch, from Thursday evening through Friday\nmorning.\n\n* IMPACTS...Strong winds can cause hazardous seas which could\ncapsize or damage vessels and reduce visibility.",
+            "instruction": "Mariners should consider altering plans to avoid possible\nhazardous conditions.  Remain in port, seek safe harbor, alter\ncourse, and/or secure the vessel for severe wind and seas.",
+            "response": "Avoid",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "MWWEKA"
+                ],
+                "WMOidentifier": [
+                    "WHUS76 KEKA 122149"
+                ],
+                "NWSheadline": [
+                    "SMALL CRAFT ADVISORY REMAINS IN EFFECT UNTIL 11 PM PDT THURSDAY... ...GALE WATCH IN EFFECT FROM THURSDAY EVENING THROUGH FRIDAY MORNING"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.CON.KEKA.SC.Y.0033.000000T0000Z-250314T0600Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-14T06:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.004.2",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.004.2",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.004.2",
+            "areaDesc": "Waters from Pt. St. George to Cape Mendocino CA from 10 to 60 nm",
+            "geocode": {
+                "SAME": [
+                    "057470"
+                ],
+                "UGC": [
+                    "PZZ470"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/PZZ470"
+            ],
+            "references": [],
+            "sent": "2025-03-12T14:49:00-07:00",
+            "effective": "2025-03-12T14:49:00-07:00",
+            "onset": "2025-03-13T23:00:00-07:00",
+            "expires": "2025-03-12T23:00:00-07:00",
+            "ends": "2025-03-14T09:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "event": "Gale Watch",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Eureka CA",
+            "headline": "Gale Watch issued March 12 at 2:49PM PDT until March 14 at 9:00AM PDT by NWS Eureka CA",
+            "description": "* WHAT...For the Small Craft Advisory, west winds 10 to 15 kt\nand seas 9 to 13 feet. For the Gale Watch, south winds 25 to\n35 kt with gusts up to 45 kt and seas 10 to 13 feet possible.\n\n* WHERE...Pt St George to Cape Mendocino 10 to 60 nm.\n\n* WHEN...For the Small Craft Advisory, until 11 PM PDT Thursday.\nFor the Gale Watch, from Thursday evening through Friday\nmorning.\n\n* IMPACTS...Strong winds can cause hazardous seas which could\ncapsize or damage vessels and reduce visibility.",
+            "instruction": "Mariners should consider altering plans to avoid possible\nhazardous conditions.  Remain in port, seek safe harbor, alter\ncourse, and/or secure the vessel for severe wind and seas.",
+            "response": "Prepare",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "MWWEKA"
+                ],
+                "WMOidentifier": [
+                    "WHUS76 KEKA 122149"
+                ],
+                "NWSheadline": [
+                    "SMALL CRAFT ADVISORY REMAINS IN EFFECT UNTIL 11 PM PDT THURSDAY... ...GALE WATCH IN EFFECT FROM THURSDAY EVENING THROUGH FRIDAY MORNING"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.NEW.KEKA.GL.A.0009.250314T0600Z-250314T1600Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-14T16:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.002.2",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.002.2",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.002.2",
+            "areaDesc": "Waters from Cape Mendocino to Pt. Arena CA from 10 to 60 nm",
+            "geocode": {
+                "SAME": [
+                    "057475"
+                ],
+                "UGC": [
+                    "PZZ475"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/PZZ475"
+            ],
+            "references": [],
+            "sent": "2025-03-12T14:49:00-07:00",
+            "effective": "2025-03-12T14:49:00-07:00",
+            "onset": "2025-03-13T23:00:00-07:00",
+            "expires": "2025-03-12T23:00:00-07:00",
+            "ends": "2025-03-14T09:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "event": "Gale Watch",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Eureka CA",
+            "headline": "Gale Watch issued March 12 at 2:49PM PDT until March 14 at 9:00AM PDT by NWS Eureka CA",
+            "description": "* WHAT...For the Hazardous Seas Warning, very steep and\nhazardous seas 10 to 12 feet. For the Gale Watch, south winds\n20 to 30 kt with gusts up to 40 kt and seas 10 to 12 feet\npossible.\n\n* WHERE...Cape Mendocino to Pt Arena 10 to 60 nm.\n\n* WHEN...For the Hazardous Seas Warning, until 5 PM PDT this\nafternoon. For the Gale Watch, from Thursday evening through\nFriday morning.\n\n* IMPACTS...Strong winds can cause hazardous seas which could\ncapsize or damage vessels and reduce visibility.",
+            "instruction": "Mariners should consider altering plans to avoid possible\nhazardous conditions.  Remain in port, seek safe harbor, alter\ncourse, and/or secure the vessel for severe wind and seas.",
+            "response": "Prepare",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "MWWEKA"
+                ],
+                "WMOidentifier": [
+                    "WHUS76 KEKA 122149"
+                ],
+                "NWSheadline": [
+                    "HAZARDOUS SEAS WARNING REMAINS IN EFFECT UNTIL 5 PM PDT THIS AFTERNOON... ...GALE WATCH IN EFFECT FROM THURSDAY EVENING THROUGH FRIDAY MORNING"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.NEW.KEKA.GL.A.0009.250314T0600Z-250314T1600Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-14T16:00:00+00:00"
                 ]
             }
         }
@@ -442,313 +2367,6 @@
                 ],
                 "eventEndingTime": [
                     "2025-03-12T22:30:00+00:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.903f21a970ef2286ef81731299dc5920c276c0d6.001.1",
-        "type": "Feature",
-        "geometry": {
-            "type": "Polygon",
-            "coordinates": [
-                [
-                    [
-                        -122.33,
-                        37.4799999
-                    ],
-                    [
-                        -122.09,
-                        37.31
-                    ],
-                    [
-                        -122.31,
-                        37.1
-                    ],
-                    [
-                        -122.33,
-                        37.1
-                    ],
-                    [
-                        -122.34,
-                        37.09
-                    ],
-                    [
-                        -122.35000000000001,
-                        37.1
-                    ],
-                    [
-                        -122.35000000000001,
-                        37.120000000000005
-                    ],
-                    [
-                        -122.41000000000001,
-                        37.190000000000005
-                    ],
-                    [
-                        -122.41000000000001,
-                        37.2299999
-                    ],
-                    [
-                        -122.42000000000002,
-                        37.2299999
-                    ],
-                    [
-                        -122.42000000000002,
-                        37.24
-                    ],
-                    [
-                        -122.41000000000001,
-                        37.260000000000005
-                    ],
-                    [
-                        -122.41000000000001,
-                        37.35000000000001
-                    ],
-                    [
-                        -122.42000000000002,
-                        37.38000000000001
-                    ],
-                    [
-                        -122.33,
-                        37.4799999
-                    ]
-                ]
-            ]
-        },
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.903f21a970ef2286ef81731299dc5920c276c0d6.001.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.903f21a970ef2286ef81731299dc5920c276c0d6.001.1",
-            "areaDesc": "San Mateo, CA; Santa Clara, CA; Santa Cruz, CA",
-            "geocode": {
-                "SAME": [
-                    "006081",
-                    "006085",
-                    "006087"
-                ],
-                "UGC": [
-                    "CAC081",
-                    "CAC085",
-                    "CAC087"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/county/CAC081",
-                "https://api.weather.gov/zones/county/CAC085",
-                "https://api.weather.gov/zones/county/CAC087"
-            ],
-            "references": [],
-            "sent": "2025-03-12T14:36:00-07:00",
-            "effective": "2025-03-12T14:36:00-07:00",
-            "onset": "2025-03-12T14:36:00-07:00",
-            "expires": "2025-03-12T15:00:00-07:00",
-            "ends": "2025-03-12T15:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Alert",
-            "category": "Met",
-            "severity": "Severe",
-            "certainty": "Observed",
-            "urgency": "Immediate",
-            "event": "Severe Thunderstorm Warning",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS San Francisco CA",
-            "headline": "Severe Thunderstorm Warning issued March 12 at 2:36PM PDT until March 12 at 3:00PM PDT by NWS San Francisco CA",
-            "description": "SVRMTR\n\nThe National Weather Service in San Francisco has issued a\n\n* Severe Thunderstorm Warning for...\nSoutheastern San Mateo County in northern California...\nWest Central Santa Clara County in northern California...\nNorthwestern Santa Cruz County in northern California...\n\n* Until 300 PM PDT.\n\n* At 236 PM PDT, a severe thunderstorm was located 16 miles\nsouthwest of Woodside, or 18 miles southwest of Palo Alto, moving\nnortheast at 50 mph.\n\nHAZARD...60 mph wind gusts and small hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Expect damage to roofs, siding, and trees.\n\n* Locations impacted include...\nPalo Alto, Los Altos Hills, Woodside and Portola Valley.",
-            "instruction": "Tornadoes can develop quickly from severe thunderstorms. Seek\nshelter immediately in an interior room on the lowest floor of a\nwell-built structure.\n\nReport severe weather to your nearest law enforcement agency or the\nNational Weather Service office in San Francisco CA.",
-            "response": "Shelter",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "SVRMTR"
-                ],
-                "WMOidentifier": [
-                    "WUUS56 KMTR 122136"
-                ],
-                "eventMotionDescription": [
-                    "2025-03-12T21:36:00-00:00...storm...214DEG...41KT...37.21,-122.39"
-                ],
-                "windThreat": [
-                    "RADAR INDICATED"
-                ],
-                "maxWindGust": [
-                    "60 MPH"
-                ],
-                "hailThreat": [
-                    "RADAR INDICATED"
-                ],
-                "tornadoDetection": [
-                    "POSSIBLE"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "EAS-ORG": [
-                    "WXR"
-                ],
-                "VTEC": [
-                    "/O.NEW.KMTR.SV.W.0010.250312T2136Z-250312T2200Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-12T22:00:00+00:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cfc8ce0eeeedb404fdd1a25cd3d183a6e7c3db72.001.1",
-        "type": "Feature",
-        "geometry": {
-            "type": "Polygon",
-            "coordinates": [
-                [
-                    [
-                        -122.6,
-                        37.57
-                    ],
-                    [
-                        -122.5,
-                        37.61
-                    ],
-                    [
-                        -122.52,
-                        37.589999999999996
-                    ],
-                    [
-                        -122.52,
-                        37.519999999999996
-                    ],
-                    [
-                        -122.5,
-                        37.49999999999999
-                    ],
-                    [
-                        -122.47,
-                        37.49999999999999
-                    ],
-                    [
-                        -122.49,
-                        37.489999999999995
-                    ],
-                    [
-                        -122.44999999999999,
-                        37.479999899999996
-                    ],
-                    [
-                        -122.39999999999999,
-                        37.35999999999999
-                    ],
-                    [
-                        -122.39999999999999,
-                        37.24999999999999
-                    ],
-                    [
-                        -122.41,
-                        37.269999999999996
-                    ],
-                    [
-                        -122.42,
-                        37.239999999999995
-                    ],
-                    [
-                        -122.41,
-                        37.199999999999996
-                    ],
-                    [
-                        -122.36999999999999,
-                        37.169999999999995
-                    ],
-                    [
-                        -122.33999999999999,
-                        37.12
-                    ],
-                    [
-                        -122.27,
-                        37.08
-                    ],
-                    [
-                        -122.42999999999999,
-                        36.949999999999996
-                    ],
-                    [
-                        -122.46,
-                        36.97
-                    ],
-                    [
-                        -122.6,
-                        37.57
-                    ]
-                ]
-            ]
-        },
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cfc8ce0eeeedb404fdd1a25cd3d183a6e7c3db72.001.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.cfc8ce0eeeedb404fdd1a25cd3d183a6e7c3db72.001.1",
-            "areaDesc": "Coastal Waters from Point Reyes to Pigeon Point California out to 10 nm; Coastal Waters from Pigeon Point to Point Pinos California out to 10 nm",
-            "geocode": {
-                "SAME": [
-                    "057545",
-                    "057560"
-                ],
-                "UGC": [
-                    "PZZ545",
-                    "PZZ560"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/PZZ545",
-                "https://api.weather.gov/zones/forecast/PZZ560"
-            ],
-            "references": [],
-            "sent": "2025-03-12T14:35:00-07:00",
-            "effective": "2025-03-12T14:35:00-07:00",
-            "onset": "2025-03-12T14:35:00-07:00",
-            "expires": "2025-03-12T15:00:00-07:00",
-            "ends": "2025-03-12T15:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Alert",
-            "category": "Met",
-            "severity": "Severe",
-            "certainty": "Likely",
-            "urgency": "Immediate",
-            "event": "Special Marine Warning",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS San Francisco CA",
-            "headline": "Special Marine Warning issued March 12 at 2:35PM PDT until March 12 at 3:00PM PDT by NWS San Francisco CA",
-            "description": "SMWMTR\n\nThe National Weather Service in San Francisco has issued a\n\n* Special Marine Warning for...\nCoastal Waters from Point Reyes to Pigeon Point California out to\n10 NM...\nCoastal Waters from Pigeon Point to Point Pinos California out to\n10 NM...\n\n* Until 300 PM PDT.\n\n* At 235 PM PDT, severe thunderstorms capable of producing\nwaterspouts were located along a line from 11 NM east of Point\nBonita to 8 NM northwest of Point Ano Nuevo, moving northeast at\n45 knots.\n\nHAZARD...Waterspouts and wind gusts in excess of 50 knots.\n\nSOURCE...Radar indicated.\n\nIMPACT...Waterspouts can easily overturn boats and create\nlocally hazardous seas. Boats could suffer significant\nstructural damage in high winds. Small craft could\ncapsize in suddenly higher waves.\n\n* Locations impacted include...\nMainly open waters of Coastal Waters from Point Reyes to Pigeon\nPoint California out to 10 NM and Coastal Waters from Pigeon Point\nto Point Pinos California out to 10 NM.",
-            "instruction": "Move to safe harbor until hazardous weather passes.\n\nThunderstorms can produce sudden waterspouts. Waterspouts can easily\noverturn boats and create locally hazardous seas. Seek safe harbor\nimmediately.\n\nReport severe weather to the Coast Guard or nearest law enforcement\nagency. They will relay your report to the National Weather Service\noffice.",
-            "response": "Avoid",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "SMWMTR"
-                ],
-                "WMOidentifier": [
-                    "WHUS56 KMTR 122135"
-                ],
-                "eventMotionDescription": [
-                    "2025-03-12T21:34:00-00:00...storm...213DEG...45KT...37.74,-122.32 37.46,-122.34 37.22,-122.4"
-                ],
-                "maxHailSize": [
-                    "0.00"
-                ],
-                "waterspoutDetection": [
-                    "POSSIBLE"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "EAS-ORG": [
-                    "WXR"
-                ],
-                "VTEC": [
-                    "/O.NEW.KMTR.MA.W.0014.250312T2135Z-250312T2200Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-12T22:00:00+00:00"
                 ]
             }
         }
@@ -2897,144 +4515,6 @@
                 ],
                 "eventEndingTime": [
                     "2025-03-14T12:00:00+00:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b26cb9f0a50236c89927a2278aff850e419965e9.001.1",
-        "type": "Feature",
-        "geometry": {
-            "type": "Polygon",
-            "coordinates": [
-                [
-                    [
-                        -122.27,
-                        37.09
-                    ],
-                    [
-                        -122.22,
-                        37.03
-                    ],
-                    [
-                        -122.16,
-                        36.99
-                    ],
-                    [
-                        -122.14999999999999,
-                        36.9799999
-                    ],
-                    [
-                        -122.13999999999999,
-                        36.9799999
-                    ],
-                    [
-                        -122.12999999999998,
-                        36.970000000000006
-                    ],
-                    [
-                        -122.09999999999998,
-                        36.96000000000001
-                    ],
-                    [
-                        -122.06999999999998,
-                        36.93000000000001
-                    ],
-                    [
-                        -122.23999999999998,
-                        36.220000000000006
-                    ],
-                    [
-                        -122.58999999999997,
-                        35.93000000000001
-                    ],
-                    [
-                        -122.74999999999997,
-                        36.620000000000005
-                    ],
-                    [
-                        -122.27,
-                        37.09
-                    ]
-                ]
-            ]
-        },
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b26cb9f0a50236c89927a2278aff850e419965e9.001.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.b26cb9f0a50236c89927a2278aff850e419965e9.001.1",
-            "areaDesc": "Coastal Waters from Pigeon Point to Point Pinos California out to 10 nm; Coastal Waters from Point Pinos to Point Piedras Blancas California out to 10 nm; Waters from Pigeon Point to Point Pinos 10-60 NM; Waters from Point Pinos to Point Piedras Blancas 10-60 NM",
-            "geocode": {
-                "SAME": [
-                    "057560",
-                    "057565",
-                    "057575",
-                    "057576"
-                ],
-                "UGC": [
-                    "PZZ560",
-                    "PZZ565",
-                    "PZZ575",
-                    "PZZ576"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/PZZ560",
-                "https://api.weather.gov/zones/forecast/PZZ565",
-                "https://api.weather.gov/zones/forecast/PZZ575",
-                "https://api.weather.gov/zones/forecast/PZZ576"
-            ],
-            "references": [],
-            "sent": "2025-03-12T14:15:00-07:00",
-            "effective": "2025-03-12T14:15:00-07:00",
-            "onset": "2025-03-12T14:15:00-07:00",
-            "expires": "2025-03-12T15:00:00-07:00",
-            "ends": "2025-03-12T15:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Alert",
-            "category": "Met",
-            "severity": "Severe",
-            "certainty": "Likely",
-            "urgency": "Immediate",
-            "event": "Special Marine Warning",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS San Francisco CA",
-            "headline": "Special Marine Warning issued March 12 at 2:15PM PDT until March 12 at 3:00PM PDT by NWS San Francisco CA",
-            "description": "SMWMTR\n\nThe National Weather Service in San Francisco has issued a\n\n* Special Marine Warning for...\nCoastal Waters from Pigeon Point to Point Pinos California out to\n10 NM...\nCoastal Waters from Point Pinos to Point Piedras Blancas\nCalifornia out to 10 NM...\nWaters from Pigeon Point to Point Pinos 10-60 NM...\nWaters from Point Pinos to Point Piedras Blancas 10-60 NM...\n\n* Until 300 PM PDT.\n\n* At 215 PM PDT, severe thunderstorms capable of producing\nwaterspouts were located along a line from 15 NM southwest of\nPoint Ano Nuevo to 27 NM west of Point Sur, moving northeast at 45\nknots.\n\nHAZARD...Waterspouts and wind gusts to nearly 50 knots.\n\nSOURCE...Radar indicated.\n\nIMPACT...Waterspouts can easily overturn boats and create\nlocally hazardous seas. Small craft could be damaged\nin briefly higher winds and suddenly higher waves.\n\n* Locations impacted include...\nMainly open waters of Coastal Waters from Pigeon Point to Point\nPinos California out to 10 NM, Coastal Waters from Point Pinos to\nPoint Piedras Blancas California out to 10 NM, Waters from Pigeon\nPoint to Point Pinos 10-60 NM and Waters from Point Pinos to Point\nPiedras Blancas 10-60 NM.",
-            "instruction": "Move to safe harbor until hazardous weather passes.",
-            "response": "Avoid",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "SMWMTR"
-                ],
-                "WMOidentifier": [
-                    "WHUS56 KMTR 122115"
-                ],
-                "eventMotionDescription": [
-                    "2025-03-12T21:15:00-00:00...storm...203DEG...46KT...36.89,-122.46 36.56,-122.41 36.14,-122.42"
-                ],
-                "maxWindGust": [
-                    "50 knots"
-                ],
-                "maxHailSize": [
-                    "0.00"
-                ],
-                "waterspoutDetection": [
-                    "POSSIBLE"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "EAS-ORG": [
-                    "WXR"
-                ],
-                "VTEC": [
-                    "/O.NEW.KMTR.MA.W.0013.250312T2115Z-250312T2200Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-12T22:00:00+00:00"
                 ]
             }
         }
@@ -6118,205 +7598,6 @@
                 ],
                 "eventEndingTime": [
                     "2025-03-14T06:00:00+00:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.605d3badabc559708e60aa18076c9f67cf66d591.003.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.605d3badabc559708e60aa18076c9f67cf66d591.003.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.605d3badabc559708e60aa18076c9f67cf66d591.003.1",
-            "areaDesc": "Coastal waters from Pt. St. George to Cape Mendocino CA out 10 nm; Waters from Pt. St. George to Cape Mendocino CA from 10 to 60 nm",
-            "geocode": {
-                "SAME": [
-                    "057450",
-                    "057470"
-                ],
-                "UGC": [
-                    "PZZ450",
-                    "PZZ470"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/PZZ450",
-                "https://api.weather.gov/zones/forecast/PZZ470"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d5de068f2111a0d667245a66d1e7870d1b0fb08b.003.1",
-                    "identifier": "urn:oid:2.49.0.1.840.0.d5de068f2111a0d667245a66d1e7870d1b0fb08b.003.1",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-12T11:18:00-07:00"
-                }
-            ],
-            "sent": "2025-03-12T13:57:00-07:00",
-            "effective": "2025-03-12T13:57:00-07:00",
-            "onset": "2025-03-12T13:57:00-07:00",
-            "expires": "2025-03-12T22:00:00-07:00",
-            "ends": "2025-03-13T23:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Minor",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "Small Craft Advisory",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Eureka CA",
-            "headline": "Small Craft Advisory issued March 12 at 1:57PM PDT until March 13 at 11:00PM PDT by NWS Eureka CA",
-            "description": "* WHAT...West winds 5 to 15 kt and seas 8 to 12 feet.\n\n* WHERE...Pt St George to Cape Mendocino out 10 nm and Pt St\nGeorge to Cape Mendocino 10 to 60 nm.\n\n* WHEN...Until 11 PM PDT Thursday.\n\n* IMPACTS...Conditions will be hazardous to small craft.",
-            "instruction": "Inexperienced mariners, especially those operating smaller\nvessels, should avoid navigating in hazardous conditions.",
-            "response": "Avoid",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "MWWEKA"
-                ],
-                "WMOidentifier": [
-                    "WHUS76 KEKA 122057"
-                ],
-                "NWSheadline": [
-                    "SMALL CRAFT ADVISORY NOW IN EFFECT UNTIL 11 PM PDT THURSDAY"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.EXT.KEKA.SC.Y.0033.000000T0000Z-250314T0600Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-14T06:00:00+00:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.605d3badabc559708e60aa18076c9f67cf66d591.001.2",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.605d3badabc559708e60aa18076c9f67cf66d591.001.2",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.605d3badabc559708e60aa18076c9f67cf66d591.001.2",
-            "areaDesc": "Coastal waters from Cape Mendocino to Pt. Arena CA out 10 nm",
-            "geocode": {
-                "SAME": [
-                    "057455"
-                ],
-                "UGC": [
-                    "PZZ455"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/PZZ455"
-            ],
-            "references": [],
-            "sent": "2025-03-12T13:57:00-07:00",
-            "effective": "2025-03-12T13:57:00-07:00",
-            "onset": "2025-03-12T14:00:00-07:00",
-            "expires": "2025-03-12T17:00:00-07:00",
-            "ends": "2025-03-12T17:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Alert",
-            "category": "Met",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "Hazardous Seas Warning",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Eureka CA",
-            "headline": "Hazardous Seas Warning issued March 12 at 1:57PM PDT until March 12 at 5:00PM PDT by NWS Eureka CA",
-            "description": "* WHAT...Very steep and hazardous seas 10 to 12 feet expected.\n\n* WHERE...Cape Mendocino to Pt Arena out 10 nm.\n\n* WHEN...Until 5 PM PDT this afternoon.\n\n* IMPACTS...Very steep and hazardous seas could capsize or cause\ndamage to vessels.",
-            "instruction": "Recreational boaters should remain in port. Commercial vessels\nshould prepare for rough seas and consider remaining in port\nuntil hazardous seas subside.",
-            "response": "Avoid",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "MWWEKA"
-                ],
-                "WMOidentifier": [
-                    "WHUS76 KEKA 122057"
-                ],
-                "NWSheadline": [
-                    "HAZARDOUS SEAS WARNING IN EFFECT UNTIL 5 PM PDT THIS AFTERNOON... ...GALE WARNING WILL EXPIRE AT 2 PM PDT THIS AFTERNOON"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.NEW.KEKA.SE.W.0008.250312T2100Z-250313T0000Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-13T00:00:00+00:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.605d3badabc559708e60aa18076c9f67cf66d591.002.2",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.605d3badabc559708e60aa18076c9f67cf66d591.002.2",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.605d3badabc559708e60aa18076c9f67cf66d591.002.2",
-            "areaDesc": "Waters from Cape Mendocino to Pt. Arena CA from 10 to 60 nm",
-            "geocode": {
-                "SAME": [
-                    "057475"
-                ],
-                "UGC": [
-                    "PZZ475"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/PZZ475"
-            ],
-            "references": [],
-            "sent": "2025-03-12T13:57:00-07:00",
-            "effective": "2025-03-12T13:57:00-07:00",
-            "onset": "2025-03-12T14:00:00-07:00",
-            "expires": "2025-03-12T17:00:00-07:00",
-            "ends": "2025-03-12T17:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Alert",
-            "category": "Met",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "Hazardous Seas Warning",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Eureka CA",
-            "headline": "Hazardous Seas Warning issued March 12 at 1:57PM PDT until March 12 at 5:00PM PDT by NWS Eureka CA",
-            "description": "* WHAT...Very steep and hazardous seas 10 to 12 feet expected.\n\n* WHERE...Cape Mendocino to Pt Arena 10 to 60 nm.\n\n* WHEN...Until 5 PM PDT this afternoon.\n\n* IMPACTS...Very steep and hazardous seas could capsize or cause\ndamage to vessels.",
-            "instruction": "Recreational boaters should remain in port. Commercial vessels\nshould prepare for rough seas and consider remaining in port\nuntil hazardous seas subside.",
-            "response": "Avoid",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "MWWEKA"
-                ],
-                "WMOidentifier": [
-                    "WHUS76 KEKA 122057"
-                ],
-                "NWSheadline": [
-                    "HAZARDOUS SEAS WARNING IN EFFECT UNTIL 5 PM PDT THIS AFTERNOON... ...GALE WARNING WILL EXPIRE AT 2 PM PDT THIS AFTERNOON"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.NEW.KEKA.SE.W.0008.250312T2100Z-250313T0000Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-13T00:00:00+00:00"
                 ]
             }
         }
@@ -35806,378 +37087,6 @@
                     "EAS",
                     "NWEM",
                     "CMAS"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e84ae63aa65e9a9e120ccca62df00d3524adbe01.003.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e84ae63aa65e9a9e120ccca62df00d3524adbe01.003.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.e84ae63aa65e9a9e120ccca62df00d3524adbe01.003.1",
-            "areaDesc": "Mono",
-            "geocode": {
-                "SAME": [
-                    "006051"
-                ],
-                "UGC": [
-                    "CAZ073"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/CAZ073"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f22db642446416b6279acf190e96074e4bce1704.003.2",
-                    "identifier": "urn:oid:2.49.0.1.840.0.f22db642446416b6279acf190e96074e4bce1704.003.2",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-10T14:00:00-07:00"
-                }
-            ],
-            "sent": "2025-03-11T13:49:00-07:00",
-            "effective": "2025-03-11T13:49:00-07:00",
-            "onset": "2025-03-12T05:00:00-07:00",
-            "expires": "2025-03-12T17:00:00-07:00",
-            "ends": "2025-03-13T23:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Severe",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "Winter Storm Warning",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Reno NV",
-            "headline": "Winter Storm Warning issued March 11 at 1:49PM PDT until March 13 at 11:00PM PDT by NWS Reno NV",
-            "description": "* WHAT...Heavy snow. For areas along the Sierra crest: snow\naccumulations up to 1 to 3 feet with locally up to 4 feet possible\nat the highest peaks. For areas along U.S. 395: snow accumulations\nup to 6 to 12 inches. Ridge winds gusting as high as 80 mph.\n\n* WHERE...Mono County.\n\n* WHEN...From 5 AM Wednesday to 11 PM PDT Thursday.\n\n* IMPACTS...Travel could be very difficult to impossible. The\nhazardous conditions could impact the Wednesday morning and\nevening commutes. Very strong winds could cause extensive damage\nto trees and power lines.",
-            "instruction": "If you must travel, keep an extra flashlight, food, and water in\nyour vehicle in case of an emergency. The latest road conditions for\nthe state you are calling from can be obtained by calling 5 1 1.",
-            "response": "Prepare",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "WSWREV"
-                ],
-                "WMOidentifier": [
-                    "WWUS45 KREV 112049"
-                ],
-                "NWSheadline": [
-                    "WINTER STORM WARNING REMAINS IN EFFECT FROM 5 AM WEDNESDAY TO 11 PM PDT THURSDAY"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "EAS-ORG": [
-                    "WXR"
-                ],
-                "VTEC": [
-                    "/O.CON.KREV.WS.W.0005.250312T1200Z-250314T0600Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-14T06:00:00+00:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e84ae63aa65e9a9e120ccca62df00d3524adbe01.001.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e84ae63aa65e9a9e120ccca62df00d3524adbe01.001.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.e84ae63aa65e9a9e120ccca62df00d3524adbe01.001.1",
-            "areaDesc": "Lassen-Eastern Plumas-Eastern Sierra Counties",
-            "geocode": {
-                "SAME": [
-                    "006035",
-                    "006063",
-                    "006091"
-                ],
-                "UGC": [
-                    "CAZ071"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/CAZ071"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f22db642446416b6279acf190e96074e4bce1704.001.2",
-                    "identifier": "urn:oid:2.49.0.1.840.0.f22db642446416b6279acf190e96074e4bce1704.001.2",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-10T14:00:00-07:00"
-                }
-            ],
-            "sent": "2025-03-11T13:49:00-07:00",
-            "effective": "2025-03-11T13:49:00-07:00",
-            "onset": "2025-03-11T23:00:00-07:00",
-            "expires": "2025-03-12T17:00:00-07:00",
-            "ends": "2025-03-13T23:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Severe",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "Winter Storm Warning",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Reno NV",
-            "headline": "Winter Storm Warning issued March 11 at 1:49PM PDT until March 13 at 11:00PM PDT by NWS Reno NV",
-            "description": "* WHAT...Heavy snow. For areas along the Sierra crest: snow\naccumulations up to 1 to 3 feet. Below 6000 feet: snow\naccumulations up to 6 inches. Ridge winds gusting as high as 70\nmph.\n\n* WHERE...Lassen-Eastern Plumas-Eastern Sierra Counties.\n\n* WHEN...From 11 PM this evening to 11 PM PDT Thursday.\n\n* IMPACTS...Travel could be very difficult to impossible. The\nhazardous conditions could impact the Wednesday and Thursday AM\nand PM commutes. Strong winds could cause damage to trees and\npower lines as well as blowing snow that could cause near whiteout\nconditions.",
-            "instruction": "If you must travel, keep an extra flashlight, food, and water in\nyour vehicle in case of an emergency. The latest road conditions for\nthe state you are calling from can be obtained by calling 5 1 1.",
-            "response": "Prepare",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "WSWREV"
-                ],
-                "WMOidentifier": [
-                    "WWUS45 KREV 112049"
-                ],
-                "NWSheadline": [
-                    "WINTER STORM WARNING REMAINS IN EFFECT FROM 11 PM THIS EVENING TO 11 PM PDT THURSDAY"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "EAS-ORG": [
-                    "WXR"
-                ],
-                "VTEC": [
-                    "/O.CON.KREV.WS.W.0005.250312T0600Z-250314T0600Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-14T06:00:00+00:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e84ae63aa65e9a9e120ccca62df00d3524adbe01.002.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e84ae63aa65e9a9e120ccca62df00d3524adbe01.002.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.e84ae63aa65e9a9e120ccca62df00d3524adbe01.002.1",
-            "areaDesc": "Greater Lake Tahoe Area; Greater Lake Tahoe Area",
-            "geocode": {
-                "SAME": [
-                    "006003",
-                    "006017",
-                    "006057",
-                    "006061",
-                    "032005",
-                    "032031",
-                    "032510"
-                ],
-                "UGC": [
-                    "CAZ072",
-                    "NVZ002"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/CAZ072",
-                "https://api.weather.gov/zones/forecast/NVZ002"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f22db642446416b6279acf190e96074e4bce1704.002.2",
-                    "identifier": "urn:oid:2.49.0.1.840.0.f22db642446416b6279acf190e96074e4bce1704.002.2",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-10T14:00:00-07:00"
-                }
-            ],
-            "sent": "2025-03-11T13:49:00-07:00",
-            "effective": "2025-03-11T13:49:00-07:00",
-            "onset": "2025-03-11T23:00:00-07:00",
-            "expires": "2025-03-12T17:00:00-07:00",
-            "ends": "2025-03-13T23:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Severe",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "Winter Storm Warning",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Reno NV",
-            "headline": "Winter Storm Warning issued March 11 at 1:49PM PDT until March 13 at 11:00PM PDT by NWS Reno NV",
-            "description": "* WHAT...Heavy Snow. For areas along the Sierra crest: snow\naccumulations up to 2 to 3 feet with locally up to 4 feet possible\nat the highest peaks. For the Sierra communities: snow\naccumulations up to 8 to 18 inches. Ridge winds gusting as high as\n110 mph. For Lake Tahoe: south-southwest winds 20 to 25 mph\ngusting up to 45 mph with waves up to 2 to 4 feet.\n\n* WHERE...Greater Lake Tahoe Area.\n\n* WHEN...From 11 PM this evening to 11 PM PDT Thursday.\n\n* IMPACTS...Travel could be very difficult to impossible. The\nhazardous conditions could impact the Wednesday and Thursday AM\nand PM commutes. Strong winds could cause damage to trees and\npower lines as well as blowing snow that could cause near whiteout\nconditions.",
-            "instruction": "If you must travel, keep an extra flashlight, food, and water in\nyour vehicle in case of an emergency. The latest road conditions for\nthe state you are calling from can be obtained by calling 5 1 1.",
-            "response": "Prepare",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "WSWREV"
-                ],
-                "WMOidentifier": [
-                    "WWUS45 KREV 112049"
-                ],
-                "NWSheadline": [
-                    "WINTER STORM WARNING REMAINS IN EFFECT FROM 11 PM THIS EVENING TO 11 PM PDT THURSDAY"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "EAS-ORG": [
-                    "WXR"
-                ],
-                "VTEC": [
-                    "/O.CON.KREV.WS.W.0005.250312T0600Z-250314T0600Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-14T06:00:00+00:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.de6e3c6ca0dec4961c3f544984fe92b525a477ae.001.2",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.de6e3c6ca0dec4961c3f544984fe92b525a477ae.001.2",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.de6e3c6ca0dec4961c3f544984fe92b525a477ae.001.2",
-            "areaDesc": "Mineral and Southern Lyon Counties",
-            "geocode": {
-                "SAME": [
-                    "032019",
-                    "032021"
-                ],
-                "UGC": [
-                    "NVZ001"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/NVZ001"
-            ],
-            "references": [],
-            "sent": "2025-03-11T13:28:00-07:00",
-            "effective": "2025-03-11T13:28:00-07:00",
-            "onset": "2025-03-12T11:00:00-07:00",
-            "expires": "2025-03-12T17:00:00-07:00",
-            "ends": "2025-03-12T23:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Alert",
-            "category": "Met",
-            "severity": "Severe",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "High Wind Warning",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Reno NV",
-            "headline": "High Wind Warning issued March 11 at 1:28PM PDT until March 12 at 11:00PM PDT by NWS Reno NV",
-            "description": "* WHAT...South winds 25 to 35 mph with gusts up to 60 mph.\n\n* WHERE...Mineral and Southern Lyon Counties.\n\n* WHEN...From 11 AM to 11 PM PDT Wednesday.\n\n* IMPACTS...Damaging winds will blow down trees and power lines.\nWidespread power outages are expected. Travel will be difficult,\nespecially for high profile vehicles.",
-            "instruction": "Now is the time to secure loose outdoor items such as patio\nfurniture and trash cans before winds increase which could blow\nthese items away. The best thing to do is prepare ahead of time by\nmaking sure you have extra food and water on hand, flashlights with\nspare batteries and/or candles in the event of a power outage.",
-            "response": "Prepare",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "NPWREV"
-                ],
-                "WMOidentifier": [
-                    "WWUS75 KREV 112028"
-                ],
-                "NWSheadline": [
-                    "HIGH WIND WARNING IN EFFECT FROM 11 AM TO 11 PM PDT WEDNESDAY"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "EAS-ORG": [
-                    "WXR"
-                ],
-                "VTEC": [
-                    "/O.NEW.KREV.HW.W.0002.250312T1800Z-250313T0600Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-13T06:00:00+00:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.de6e3c6ca0dec4961c3f544984fe92b525a477ae.002.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.de6e3c6ca0dec4961c3f544984fe92b525a477ae.002.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.de6e3c6ca0dec4961c3f544984fe92b525a477ae.002.1",
-            "areaDesc": "Surprise Valley California; Greater Reno-Carson City-Minden Area; Western Nevada Basin and Range including Pyramid Lake; Northern Washoe County",
-            "geocode": {
-                "SAME": [
-                    "006049",
-                    "032005",
-                    "032019",
-                    "032029",
-                    "032031",
-                    "032510",
-                    "032001",
-                    "032027"
-                ],
-                "UGC": [
-                    "CAZ070",
-                    "NVZ003",
-                    "NVZ004",
-                    "NVZ005"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/CAZ070",
-                "https://api.weather.gov/zones/forecast/NVZ003",
-                "https://api.weather.gov/zones/forecast/NVZ004",
-                "https://api.weather.gov/zones/forecast/NVZ005"
-            ],
-            "references": [],
-            "sent": "2025-03-11T13:28:00-07:00",
-            "effective": "2025-03-11T13:28:00-07:00",
-            "onset": "2025-03-12T11:00:00-07:00",
-            "expires": "2025-03-12T17:00:00-07:00",
-            "ends": "2025-03-12T23:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Alert",
-            "category": "Met",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "Wind Advisory",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Reno NV",
-            "headline": "Wind Advisory issued March 11 at 1:28PM PDT until March 12 at 11:00PM PDT by NWS Reno NV",
-            "description": "* WHAT...South winds 25 to 35 mph with gusts up to 55 mph. Wind\nprone areas along Hwy 395, Hwy 95, and Hwy 50 may see gusts reach\nup to 65 mph. Winds over Pyramid Lake 30 to 35 mph with gusts up\nto 50 mph and waves 2 to 5 feet.\n\n* WHERE...In California, Surprise Valley California. In Nevada,\nNorthern Washoe County, Western Nevada Basin and Range including\nPyramid Lake, and Greater Reno-Carson City-Minden Area.\n\n* WHEN...From 11 AM to 11 PM PDT Wednesday.\n\n* IMPACTS...Gusty winds will blow around unsecured objects. Tree\nlimbs could be blown down and a few power outages may result.\n\n* ADDITIONAL DETAILS...Winds may knock down burned trees in the\nDavis Fire burn area.",
-            "instruction": "Now is the time to secure loose outdoor items such as patio\nfurniture, holiday decorations, and trash cans before winds increase\nwhich could blow these items away. The best thing to do is prepare\nahead of time by making sure you have extra food and water on hand,\nflashlights with spare batteries and/or candles in the event of a\npower outage.\n\nWinds this strong can make driving difficult, especially for high\nprofile vehicles. Use extra caution.\n\nSecure outdoor objects.",
-            "response": "Execute",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "NPWREV"
-                ],
-                "WMOidentifier": [
-                    "WWUS75 KREV 112028"
-                ],
-                "NWSheadline": [
-                    "WIND ADVISORY IN EFFECT FROM 11 AM TO 11 PM PDT WEDNESDAY"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.NEW.KREV.WI.Y.0007.250312T1800Z-250313T0600Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-13T06:00:00+00:00"
                 ]
             }
         }
