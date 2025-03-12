@@ -14,6 +14,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Set up Git configuration
+        run: |
+          git config --global user.name "G34hWeatherSpotter"
+          git config --global user.email "G34hWeatherSpotter@users.noreply.github.com"
+
+      - name: Create gh-pages branch if it doesn't exist
+        run: |
+          git fetch
+          git checkout --orphan gh-pages || git checkout gh-pages
+          git reset --hard
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
@@ -22,8 +33,6 @@ jobs:
 
       - name: Commit and push to gh-pages
         run: |
-          git config --global user.name "G34hWeatherSpotter"
-          git config --global user.email "G34hWeatherSpotter@users.noreply.github.com"
           git add .
           git commit -m "Deploy updates"
-          git push --force origin main:gh-pages  # Force push to the gh-pages branch if necessary
+          git push --force origin gh-pages  # Force push to the gh-pages branch
