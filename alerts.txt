@@ -1,5 +1,905 @@
 [
     {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0d565f39c1031dbcdf4017f4cadd7715c0e83433.001.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0d565f39c1031dbcdf4017f4cadd7715c0e83433.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.0d565f39c1031dbcdf4017f4cadd7715c0e83433.001.1",
+            "areaDesc": "Mendocino Coast; Northwestern Mendocino Interior; Southwestern Mendocino Interior; Southeastern Mendocino Interior; Southern Lake County",
+            "geocode": {
+                "SAME": [
+                    "006045",
+                    "006033"
+                ],
+                "UGC": [
+                    "CAZ109",
+                    "CAZ110",
+                    "CAZ112",
+                    "CAZ113",
+                    "CAZ115"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/CAZ109",
+                "https://api.weather.gov/zones/forecast/CAZ110",
+                "https://api.weather.gov/zones/forecast/CAZ112",
+                "https://api.weather.gov/zones/forecast/CAZ113",
+                "https://api.weather.gov/zones/forecast/CAZ115"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c192ac292d5803cc05b10cad0862b3a83b65d710.002.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.c192ac292d5803cc05b10cad0862b3a83b65d710.002.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T14:12:00-07:00"
+                },
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c192ac292d5803cc05b10cad0862b3a83b65d710.003.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.c192ac292d5803cc05b10cad0862b3a83b65d710.003.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T14:12:00-07:00"
+                }
+            ],
+            "sent": "2025-03-12T16:46:00-07:00",
+            "effective": "2025-03-12T16:46:00-07:00",
+            "onset": "2025-03-12T16:46:00-07:00",
+            "expires": "2025-03-12T18:00:00-07:00",
+            "ends": "2025-03-12T17:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Wind Advisory",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Eureka CA",
+            "headline": "Wind Advisory issued March 12 at 4:46PM PDT until March 12 at 5:00PM PDT by NWS Eureka CA",
+            "description": "The threat has ended.",
+            "instruction": null,
+            "response": "Execute",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "NPWEKA"
+                ],
+                "WMOidentifier": [
+                    "WWUS76 KEKA 122346"
+                ],
+                "NWSheadline": [
+                    "WIND ADVISORY WILL EXPIRE AT 5 PM PDT THIS AFTERNOON"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.EXP.KEKA.WI.Y.0011.000000T0000Z-250313T0000Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-13T00:00:00+00:00"
+                ],
+                "expiredReferences": [
+                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.7d2568a5080ed90f485843e0d964a2e785c50611.001.1,2025-03-12T08:23:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.7d2568a5080ed90f485843e0d964a2e785c50611.003.1,2025-03-12T08:23:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.49f3d64714e0c25e6c661c17176d663b7f1b987c.002.1,2025-03-12T04:12:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.ad93a58ade23961cc18d3c8f50600eb79c0d9f4b.002.1,2025-03-11T19:31:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.5c81421d65ac2a29a6559cf7dd8d4cd0905ded10.002.1,2025-03-11T11:41:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.35206d48272f78b320627395763539644c5333ce.002.1,2025-03-11T03:33:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.7d5172dfd44cc609fb123a5092514f79f3e5d693.002.1,2025-03-10T20:40:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.51db5c82713e1946dff390b4b563f3e135010003.002.1,2025-03-10T13:00:00-07:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e2575cd57cb1f350e1d008099a0e7f08f3b36739.004.2",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e2575cd57cb1f350e1d008099a0e7f08f3b36739.004.2",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.e2575cd57cb1f350e1d008099a0e7f08f3b36739.004.2",
+            "areaDesc": "Waters from Pt. St. George to Cape Mendocino CA from 10 to 60 nm",
+            "geocode": {
+                "SAME": [
+                    "057470"
+                ],
+                "UGC": [
+                    "PZZ470"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/PZZ470"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.004.2",
+                    "identifier": "urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.004.2",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T14:49:00-07:00"
+                }
+            ],
+            "sent": "2025-03-12T16:40:00-07:00",
+            "effective": "2025-03-12T16:40:00-07:00",
+            "onset": "2025-03-13T23:00:00-07:00",
+            "expires": "2025-03-12T17:45:00-07:00",
+            "ends": "2025-03-14T09:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "event": "Gale Watch",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Eureka CA",
+            "headline": "Gale Watch issued March 12 at 4:40PM PDT until March 14 at 9:00AM PDT by NWS Eureka CA",
+            "description": "* WHAT...For the Small Craft Advisory, west winds 10 to 15 kt\nand seas 9 to 13 feet. For the Gale Watch, south winds 25 to\n35 kt with gusts up to 45 kt and seas 10 to 13 feet possible.\n\n* WHERE...Pt St George to Cape Mendocino 10 to 60 nm.\n\n* WHEN...For the Small Craft Advisory, until 11 PM PDT Thursday.\nFor the Gale Watch, from Thursday evening through Friday\nmorning.\n\n* IMPACTS...Strong winds can cause hazardous seas which could\ncapsize or damage vessels and reduce visibility.",
+            "instruction": "Mariners should consider altering plans to avoid possible\nhazardous conditions.  Remain in port, seek safe harbor, alter\ncourse, and/or secure the vessel for severe wind and seas.",
+            "response": "Prepare",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "MWWEKA"
+                ],
+                "WMOidentifier": [
+                    "WHUS76 KEKA 122340"
+                ],
+                "NWSheadline": [
+                    "SMALL CRAFT ADVISORY REMAINS IN EFFECT UNTIL 11 PM PDT THURSDAY... ...GALE WATCH REMAINS IN EFFECT FROM THURSDAY EVENING THROUGH FRIDAY MORNING"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.CON.KEKA.GL.A.0009.250314T0600Z-250314T1600Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-14T16:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e2575cd57cb1f350e1d008099a0e7f08f3b36739.003.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e2575cd57cb1f350e1d008099a0e7f08f3b36739.003.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.e2575cd57cb1f350e1d008099a0e7f08f3b36739.003.1",
+            "areaDesc": "Coastal waters from Pt. St. George to Cape Mendocino CA out 10 nm",
+            "geocode": {
+                "SAME": [
+                    "057450"
+                ],
+                "UGC": [
+                    "PZZ450"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/PZZ450"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d5de068f2111a0d667245a66d1e7870d1b0fb08b.003.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.d5de068f2111a0d667245a66d1e7870d1b0fb08b.003.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T11:18:00-07:00"
+                },
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.605d3badabc559708e60aa18076c9f67cf66d591.003.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.605d3badabc559708e60aa18076c9f67cf66d591.003.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T13:57:00-07:00"
+                },
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.003.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.003.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T14:49:00-07:00"
+                }
+            ],
+            "sent": "2025-03-12T16:40:00-07:00",
+            "effective": "2025-03-12T16:40:00-07:00",
+            "onset": "2025-03-12T16:40:00-07:00",
+            "expires": "2025-03-12T17:45:00-07:00",
+            "ends": "2025-03-13T23:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Minor",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Small Craft Advisory",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Eureka CA",
+            "headline": "Small Craft Advisory issued March 12 at 4:40PM PDT until March 13 at 11:00PM PDT by NWS Eureka CA",
+            "description": "* WHAT...For the Small Craft Advisory, seas 7 to 11 feet. For\nthe Gale Watch, southeast winds 20 to 30 kt with gusts up to\n40 kt and seas 8 to 10 feet possible.\n\n* WHERE...Pt St George to Cape Mendocino out 10 nm.\n\n* WHEN...For the Small Craft Advisory, until 11 PM PDT Thursday.\nFor the Gale Watch, from Thursday evening through Friday\nmorning.\n\n* IMPACTS...Strong winds can cause hazardous seas which could\ncapsize or damage vessels and reduce visibility.",
+            "instruction": "Mariners should consider altering plans to avoid possible\nhazardous conditions.  Remain in port, seek safe harbor, alter\ncourse, and/or secure the vessel for severe wind and seas.",
+            "response": "Avoid",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "MWWEKA"
+                ],
+                "WMOidentifier": [
+                    "WHUS76 KEKA 122340"
+                ],
+                "NWSheadline": [
+                    "SMALL CRAFT ADVISORY REMAINS IN EFFECT UNTIL 11 PM PDT THURSDAY... ...GALE WATCH REMAINS IN EFFECT FROM THURSDAY EVENING THROUGH FRIDAY MORNING"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.CON.KEKA.SC.Y.0033.000000T0000Z-250314T0600Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-14T06:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e2575cd57cb1f350e1d008099a0e7f08f3b36739.001.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e2575cd57cb1f350e1d008099a0e7f08f3b36739.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.e2575cd57cb1f350e1d008099a0e7f08f3b36739.001.1",
+            "areaDesc": "Coastal waters from Cape Mendocino to Pt. Arena CA out 10 nm",
+            "geocode": {
+                "SAME": [
+                    "057455"
+                ],
+                "UGC": [
+                    "PZZ455"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/PZZ455"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.605d3badabc559708e60aa18076c9f67cf66d591.001.2",
+                    "identifier": "urn:oid:2.49.0.1.840.0.605d3badabc559708e60aa18076c9f67cf66d591.001.2",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T13:57:00-07:00"
+                },
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.001.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.001.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T14:49:00-07:00"
+                }
+            ],
+            "sent": "2025-03-12T16:40:00-07:00",
+            "effective": "2025-03-12T16:40:00-07:00",
+            "onset": "2025-03-12T16:40:00-07:00",
+            "expires": "2025-03-12T17:45:00-07:00",
+            "ends": "2025-03-12T21:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Hazardous Seas Warning",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Eureka CA",
+            "headline": "Hazardous Seas Warning issued March 12 at 4:40PM PDT until March 12 at 9:00PM PDT by NWS Eureka CA",
+            "description": "* WHAT...For the Hazardous Seas Warning, very steep and\nhazardous seas 9 to 12 feet. For the Gale Watch, southeast\nwinds 20 to 30 kt with gusts up to 40 kt and seas 8 to 11 feet\npossible.\n\n* WHERE...Cape Mendocino to Pt Arena out 10 nm.\n\n* WHEN...For the Hazardous Seas Warning, until 9 PM PDT this\nevening. For the Gale Watch, from Thursday evening through\nFriday morning.\n\n* IMPACTS...Strong winds can cause hazardous seas which could\ncapsize or damage vessels and reduce visibility.",
+            "instruction": "Mariners should consider altering plans to avoid possible\nhazardous conditions.  Remain in port, seek safe harbor, alter\ncourse, and/or secure the vessel for severe wind and seas.",
+            "response": "Avoid",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "MWWEKA"
+                ],
+                "WMOidentifier": [
+                    "WHUS76 KEKA 122340"
+                ],
+                "NWSheadline": [
+                    "HAZARDOUS SEAS WARNING NOW IN EFFECT UNTIL 9 PM PDT THIS EVENING... ...GALE WATCH REMAINS IN EFFECT FROM THURSDAY EVENING THROUGH FRIDAY MORNING"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.EXT.KEKA.SE.W.0008.000000T0000Z-250313T0400Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-13T04:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e2575cd57cb1f350e1d008099a0e7f08f3b36739.002.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e2575cd57cb1f350e1d008099a0e7f08f3b36739.002.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.e2575cd57cb1f350e1d008099a0e7f08f3b36739.002.1",
+            "areaDesc": "Waters from Cape Mendocino to Pt. Arena CA from 10 to 60 nm",
+            "geocode": {
+                "SAME": [
+                    "057475"
+                ],
+                "UGC": [
+                    "PZZ475"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/PZZ475"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.605d3badabc559708e60aa18076c9f67cf66d591.002.2",
+                    "identifier": "urn:oid:2.49.0.1.840.0.605d3badabc559708e60aa18076c9f67cf66d591.002.2",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T13:57:00-07:00"
+                },
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.002.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.002.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T14:49:00-07:00"
+                }
+            ],
+            "sent": "2025-03-12T16:40:00-07:00",
+            "effective": "2025-03-12T16:40:00-07:00",
+            "onset": "2025-03-12T16:40:00-07:00",
+            "expires": "2025-03-12T17:45:00-07:00",
+            "ends": "2025-03-12T21:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Hazardous Seas Warning",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Eureka CA",
+            "headline": "Hazardous Seas Warning issued March 12 at 4:40PM PDT until March 12 at 9:00PM PDT by NWS Eureka CA",
+            "description": "* WHAT...For the Hazardous Seas Warning, very steep and\nhazardous seas 10 to 12 feet. For the Gale Watch, south winds\n20 to 30 kt with gusts up to 40 kt and seas 10 to 12 feet\npossible.\n\n* WHERE...Cape Mendocino to Pt Arena 10 to 60 nm.\n\n* WHEN...For the Hazardous Seas Warning, until 9 PM PDT this\nevening. For the Gale Watch, from Thursday evening through\nFriday morning.\n\n* IMPACTS...Strong winds can cause hazardous seas which could\ncapsize or damage vessels and reduce visibility.",
+            "instruction": "Mariners should consider altering plans to avoid possible\nhazardous conditions.  Remain in port, seek safe harbor, alter\ncourse, and/or secure the vessel for severe wind and seas.",
+            "response": "Avoid",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "MWWEKA"
+                ],
+                "WMOidentifier": [
+                    "WHUS76 KEKA 122340"
+                ],
+                "NWSheadline": [
+                    "HAZARDOUS SEAS WARNING NOW IN EFFECT UNTIL 9 PM PDT THIS EVENING... ...GALE WATCH REMAINS IN EFFECT FROM THURSDAY EVENING THROUGH FRIDAY MORNING"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.EXT.KEKA.SE.W.0008.000000T0000Z-250313T0400Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-13T04:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e2575cd57cb1f350e1d008099a0e7f08f3b36739.004.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e2575cd57cb1f350e1d008099a0e7f08f3b36739.004.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.e2575cd57cb1f350e1d008099a0e7f08f3b36739.004.1",
+            "areaDesc": "Waters from Pt. St. George to Cape Mendocino CA from 10 to 60 nm",
+            "geocode": {
+                "SAME": [
+                    "057470"
+                ],
+                "UGC": [
+                    "PZZ470"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/PZZ470"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d5de068f2111a0d667245a66d1e7870d1b0fb08b.003.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.d5de068f2111a0d667245a66d1e7870d1b0fb08b.003.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T11:18:00-07:00"
+                },
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.605d3badabc559708e60aa18076c9f67cf66d591.003.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.605d3badabc559708e60aa18076c9f67cf66d591.003.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T13:57:00-07:00"
+                },
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.004.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.004.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T14:49:00-07:00"
+                }
+            ],
+            "sent": "2025-03-12T16:40:00-07:00",
+            "effective": "2025-03-12T16:40:00-07:00",
+            "onset": "2025-03-12T16:40:00-07:00",
+            "expires": "2025-03-12T17:45:00-07:00",
+            "ends": "2025-03-13T23:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Minor",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Small Craft Advisory",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Eureka CA",
+            "headline": "Small Craft Advisory issued March 12 at 4:40PM PDT until March 13 at 11:00PM PDT by NWS Eureka CA",
+            "description": "* WHAT...For the Small Craft Advisory, west winds 10 to 15 kt\nand seas 9 to 13 feet. For the Gale Watch, south winds 25 to\n35 kt with gusts up to 45 kt and seas 10 to 13 feet possible.\n\n* WHERE...Pt St George to Cape Mendocino 10 to 60 nm.\n\n* WHEN...For the Small Craft Advisory, until 11 PM PDT Thursday.\nFor the Gale Watch, from Thursday evening through Friday\nmorning.\n\n* IMPACTS...Strong winds can cause hazardous seas which could\ncapsize or damage vessels and reduce visibility.",
+            "instruction": "Mariners should consider altering plans to avoid possible\nhazardous conditions.  Remain in port, seek safe harbor, alter\ncourse, and/or secure the vessel for severe wind and seas.",
+            "response": "Avoid",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "MWWEKA"
+                ],
+                "WMOidentifier": [
+                    "WHUS76 KEKA 122340"
+                ],
+                "NWSheadline": [
+                    "SMALL CRAFT ADVISORY REMAINS IN EFFECT UNTIL 11 PM PDT THURSDAY... ...GALE WATCH REMAINS IN EFFECT FROM THURSDAY EVENING THROUGH FRIDAY MORNING"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.CON.KEKA.SC.Y.0033.000000T0000Z-250314T0600Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-14T06:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e2575cd57cb1f350e1d008099a0e7f08f3b36739.002.2",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e2575cd57cb1f350e1d008099a0e7f08f3b36739.002.2",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.e2575cd57cb1f350e1d008099a0e7f08f3b36739.002.2",
+            "areaDesc": "Waters from Cape Mendocino to Pt. Arena CA from 10 to 60 nm",
+            "geocode": {
+                "SAME": [
+                    "057475"
+                ],
+                "UGC": [
+                    "PZZ475"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/PZZ475"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.002.2",
+                    "identifier": "urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.002.2",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T14:49:00-07:00"
+                }
+            ],
+            "sent": "2025-03-12T16:40:00-07:00",
+            "effective": "2025-03-12T16:40:00-07:00",
+            "onset": "2025-03-13T23:00:00-07:00",
+            "expires": "2025-03-12T17:45:00-07:00",
+            "ends": "2025-03-14T09:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "event": "Gale Watch",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Eureka CA",
+            "headline": "Gale Watch issued March 12 at 4:40PM PDT until March 14 at 9:00AM PDT by NWS Eureka CA",
+            "description": "* WHAT...For the Hazardous Seas Warning, very steep and\nhazardous seas 10 to 12 feet. For the Gale Watch, south winds\n20 to 30 kt with gusts up to 40 kt and seas 10 to 12 feet\npossible.\n\n* WHERE...Cape Mendocino to Pt Arena 10 to 60 nm.\n\n* WHEN...For the Hazardous Seas Warning, until 9 PM PDT this\nevening. For the Gale Watch, from Thursday evening through\nFriday morning.\n\n* IMPACTS...Strong winds can cause hazardous seas which could\ncapsize or damage vessels and reduce visibility.",
+            "instruction": "Mariners should consider altering plans to avoid possible\nhazardous conditions.  Remain in port, seek safe harbor, alter\ncourse, and/or secure the vessel for severe wind and seas.",
+            "response": "Prepare",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "MWWEKA"
+                ],
+                "WMOidentifier": [
+                    "WHUS76 KEKA 122340"
+                ],
+                "NWSheadline": [
+                    "HAZARDOUS SEAS WARNING NOW IN EFFECT UNTIL 9 PM PDT THIS EVENING... ...GALE WATCH REMAINS IN EFFECT FROM THURSDAY EVENING THROUGH FRIDAY MORNING"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.CON.KEKA.GL.A.0009.250314T0600Z-250314T1600Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-14T16:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e2575cd57cb1f350e1d008099a0e7f08f3b36739.001.2",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e2575cd57cb1f350e1d008099a0e7f08f3b36739.001.2",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.e2575cd57cb1f350e1d008099a0e7f08f3b36739.001.2",
+            "areaDesc": "Coastal waters from Cape Mendocino to Pt. Arena CA out 10 nm",
+            "geocode": {
+                "SAME": [
+                    "057455"
+                ],
+                "UGC": [
+                    "PZZ455"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/PZZ455"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.001.2",
+                    "identifier": "urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.001.2",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T14:49:00-07:00"
+                }
+            ],
+            "sent": "2025-03-12T16:40:00-07:00",
+            "effective": "2025-03-12T16:40:00-07:00",
+            "onset": "2025-03-13T23:00:00-07:00",
+            "expires": "2025-03-12T17:45:00-07:00",
+            "ends": "2025-03-14T09:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "event": "Gale Watch",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Eureka CA",
+            "headline": "Gale Watch issued March 12 at 4:40PM PDT until March 14 at 9:00AM PDT by NWS Eureka CA",
+            "description": "* WHAT...For the Hazardous Seas Warning, very steep and\nhazardous seas 9 to 12 feet. For the Gale Watch, southeast\nwinds 20 to 30 kt with gusts up to 40 kt and seas 8 to 11 feet\npossible.\n\n* WHERE...Cape Mendocino to Pt Arena out 10 nm.\n\n* WHEN...For the Hazardous Seas Warning, until 9 PM PDT this\nevening. For the Gale Watch, from Thursday evening through\nFriday morning.\n\n* IMPACTS...Strong winds can cause hazardous seas which could\ncapsize or damage vessels and reduce visibility.",
+            "instruction": "Mariners should consider altering plans to avoid possible\nhazardous conditions.  Remain in port, seek safe harbor, alter\ncourse, and/or secure the vessel for severe wind and seas.",
+            "response": "Prepare",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "MWWEKA"
+                ],
+                "WMOidentifier": [
+                    "WHUS76 KEKA 122340"
+                ],
+                "NWSheadline": [
+                    "HAZARDOUS SEAS WARNING NOW IN EFFECT UNTIL 9 PM PDT THIS EVENING... ...GALE WATCH REMAINS IN EFFECT FROM THURSDAY EVENING THROUGH FRIDAY MORNING"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.CON.KEKA.GL.A.0009.250314T0600Z-250314T1600Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-14T16:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e2575cd57cb1f350e1d008099a0e7f08f3b36739.003.2",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e2575cd57cb1f350e1d008099a0e7f08f3b36739.003.2",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.e2575cd57cb1f350e1d008099a0e7f08f3b36739.003.2",
+            "areaDesc": "Coastal waters from Pt. St. George to Cape Mendocino CA out 10 nm",
+            "geocode": {
+                "SAME": [
+                    "057450"
+                ],
+                "UGC": [
+                    "PZZ450"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/PZZ450"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.003.2",
+                    "identifier": "urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.003.2",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T14:49:00-07:00"
+                }
+            ],
+            "sent": "2025-03-12T16:40:00-07:00",
+            "effective": "2025-03-12T16:40:00-07:00",
+            "onset": "2025-03-13T23:00:00-07:00",
+            "expires": "2025-03-12T17:45:00-07:00",
+            "ends": "2025-03-14T09:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "event": "Gale Watch",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Eureka CA",
+            "headline": "Gale Watch issued March 12 at 4:40PM PDT until March 14 at 9:00AM PDT by NWS Eureka CA",
+            "description": "* WHAT...For the Small Craft Advisory, seas 7 to 11 feet. For\nthe Gale Watch, southeast winds 20 to 30 kt with gusts up to\n40 kt and seas 8 to 10 feet possible.\n\n* WHERE...Pt St George to Cape Mendocino out 10 nm.\n\n* WHEN...For the Small Craft Advisory, until 11 PM PDT Thursday.\nFor the Gale Watch, from Thursday evening through Friday\nmorning.\n\n* IMPACTS...Strong winds can cause hazardous seas which could\ncapsize or damage vessels and reduce visibility.",
+            "instruction": "Mariners should consider altering plans to avoid possible\nhazardous conditions.  Remain in port, seek safe harbor, alter\ncourse, and/or secure the vessel for severe wind and seas.",
+            "response": "Prepare",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "MWWEKA"
+                ],
+                "WMOidentifier": [
+                    "WHUS76 KEKA 122340"
+                ],
+                "NWSheadline": [
+                    "SMALL CRAFT ADVISORY REMAINS IN EFFECT UNTIL 11 PM PDT THURSDAY... ...GALE WATCH REMAINS IN EFFECT FROM THURSDAY EVENING THROUGH FRIDAY MORNING"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.CON.KEKA.GL.A.0009.250314T0600Z-250314T1600Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-14T16:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-34445",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-34445",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0-KEEPALIVE-34445",
+            "areaDesc": "Montgomery",
+            "geocode": {
+                "SAME": [
+                    "024031"
+                ],
+                "UGC": [
+                    "MDC031"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/county/MDC031"
+            ],
+            "references": [],
+            "sent": "2025-03-12T23:39:09+00:00",
+            "effective": "2025-03-12T23:39:09+00:00",
+            "onset": null,
+            "expires": "2025-03-12T23:49:09+00:00",
+            "ends": null,
+            "status": "Test",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Unknown",
+            "certainty": "Unknown",
+            "urgency": "Unknown",
+            "event": "Test Message",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS",
+            "headline": null,
+            "description": "Monitoring message only. Please disregard.",
+            "instruction": "Monitoring message only. Please disregard.",
+            "response": "None",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "KEPWBC"
+                ],
+                "WMOidentifier": [
+                    "NZUS91 KWBC 122339"
+                ],
+                "BLOCKCHANNEL": [
+                    "CMAS",
+                    "EAS",
+                    "NWEM"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e8fa66b283aa970ada5d6a1f88eb240d2d158e3c.001.1",
+        "type": "Feature",
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -95.4599999,
+                        32.13
+                    ],
+                    [
+                        -95.48,
+                        32.150000000000006
+                    ],
+                    [
+                        -95.4599999,
+                        32.18000000000001
+                    ],
+                    [
+                        -95.4599999,
+                        32.20000000000001
+                    ],
+                    [
+                        -95.49,
+                        32.24000000000001
+                    ],
+                    [
+                        -95.47,
+                        32.25000000000001
+                    ],
+                    [
+                        -95.47,
+                        32.260000000000005
+                    ],
+                    [
+                        -95.45,
+                        32.300000000000004
+                    ],
+                    [
+                        -95.4599999,
+                        32.330000000000005
+                    ],
+                    [
+                        -95.45,
+                        32.36000000000001
+                    ],
+                    [
+                        -95.47,
+                        32.370000000000005
+                    ],
+                    [
+                        -95.11,
+                        32.370000000000005
+                    ],
+                    [
+                        -95.29,
+                        32.010000000000005
+                    ],
+                    [
+                        -95.43,
+                        32.010000000000005
+                    ],
+                    [
+                        -95.44000000000001,
+                        32.040000000000006
+                    ],
+                    [
+                        -95.42000000000002,
+                        32.050000000000004
+                    ],
+                    [
+                        -95.44000000000001,
+                        32.050000000000004
+                    ],
+                    [
+                        -95.44000000000001,
+                        32.07000000000001
+                    ],
+                    [
+                        -95.42000000000002,
+                        32.080000000000005
+                    ],
+                    [
+                        -95.45999990000001,
+                        32.11000000000001
+                    ],
+                    [
+                        -95.4599999,
+                        32.13
+                    ]
+                ]
+            ]
+        },
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e8fa66b283aa970ada5d6a1f88eb240d2d158e3c.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.e8fa66b283aa970ada5d6a1f88eb240d2d158e3c.001.1",
+            "areaDesc": "Smith; Cherokee",
+            "geocode": {
+                "SAME": [
+                    "048423",
+                    "048073"
+                ],
+                "UGC": [
+                    "TXZ136",
+                    "TXZ149"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/TXZ136",
+                "https://api.weather.gov/zones/forecast/TXZ149"
+            ],
+            "references": [],
+            "sent": "2025-03-12T18:38:00-05:00",
+            "effective": "2025-03-12T18:38:00-05:00",
+            "onset": "2025-03-12T18:38:00-05:00",
+            "expires": "2025-03-12T19:15:00-05:00",
+            "ends": null,
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Observed",
+            "urgency": "Expected",
+            "event": "Special Weather Statement",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Shreveport LA",
+            "headline": "Special Weather Statement issued March 12 at 6:38PM CDT by NWS Shreveport LA",
+            "description": "At 638 PM CDT, Doppler radar was tracking a line of strong\nthunderstorms extending from 16 miles west of Tyler to 20 miles west\nof Reese, or extending from 16 miles west of Tyler to 28 miles west\nof Jacksonville, moving east at 45 mph.\n\nHAZARD...Wind gusts up to 30 mph and half inch size hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Gusty winds could knock down tree limbs and blow around\nunsecured objects. Minor damage to outdoor objects is possible.\n\nLocations impacted include...\nTyler, Jacksonville, Whitehouse, Bullard, Mount Selman, Reese,\nNoonday, New Chapel Hill, Cuney and Teaselville.",
+            "instruction": "Monitor the weather situation closely and be alert for threatening\nweather conditions.",
+            "response": "Execute",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "SPSSHV"
+                ],
+                "WMOidentifier": [
+                    "WWUS84 KSHV 122338"
+                ],
+                "NWSheadline": [
+                    "A LINE OF STRONG THUNDERSTORMS WILL IMPACT NORTHWESTERN CHEROKEE AND SOUTHERN SMITH COUNTIES UNTIL 715 PM CDT"
+                ],
+                "eventMotionDescription": [
+                    "2025-03-12T23:38:00-00:00...storm...267DEG...40KT...32.26,-95.57 32.18,-95.64 32.08,-95.72"
+                ],
+                "maxWindGust": [
+                    "30 MPH"
+                ],
+                "maxHailSize": [
+                    "0.50"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "EAS-ORG": [
+                    "WXR"
+                ]
+            }
+        }
+    },
+    {
         "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c25d9154b78d1d0f4d2a32458549d78997091b0d.001.1",
         "type": "Feature",
         "geometry": {
@@ -107,60 +1007,6 @@
                 ],
                 "EAS-ORG": [
                     "WXR"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-50021",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-50021",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0-KEEPALIVE-50021",
-            "areaDesc": "Montgomery",
-            "geocode": {
-                "SAME": [
-                    "024031"
-                ],
-                "UGC": [
-                    "MDC031"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/county/MDC031"
-            ],
-            "references": [],
-            "sent": "2025-03-12T23:29:09+00:00",
-            "effective": "2025-03-12T23:29:09+00:00",
-            "onset": null,
-            "expires": "2025-03-12T23:39:09+00:00",
-            "ends": null,
-            "status": "Test",
-            "messageType": "Alert",
-            "category": "Met",
-            "severity": "Unknown",
-            "certainty": "Unknown",
-            "urgency": "Unknown",
-            "event": "Test Message",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS",
-            "headline": null,
-            "description": "Monitoring message only. Please disregard.",
-            "instruction": "Monitoring message only. Please disregard.",
-            "response": "None",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "KEPWBC"
-                ],
-                "WMOidentifier": [
-                    "NZUS91 KWBC 122329"
-                ],
-                "BLOCKCHANNEL": [
-                    "CMAS",
-                    "EAS",
-                    "NWEM"
                 ]
             }
         }
@@ -670,132 +1516,6 @@
                 ],
                 "eventMotionDescription": [
                     "2025-03-12T23:23:00-00:00...storm...200DEG...30KT...40.64,-122.29 40.12,-122.19"
-                ],
-                "maxWindGust": [
-                    "50 MPH"
-                ],
-                "maxHailSize": [
-                    "0.25"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "EAS-ORG": [
-                    "WXR"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.517ba0223e60591c28e964e38995d9409cd01330.001.1",
-        "type": "Feature",
-        "geometry": {
-            "type": "Polygon",
-            "coordinates": [
-                [
-                    [
-                        -121.58,
-                        40.11
-                    ],
-                    [
-                        -121.17999999999999,
-                        39.15
-                    ],
-                    [
-                        -121.63999999999999,
-                        38.86
-                    ],
-                    [
-                        -121.73999999999998,
-                        39.4099999
-                    ],
-                    [
-                        -122.00999999999998,
-                        39.92
-                    ],
-                    [
-                        -121.58,
-                        40.11
-                    ]
-                ]
-            ]
-        },
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.517ba0223e60591c28e964e38995d9409cd01330.001.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.517ba0223e60591c28e964e38995d9409cd01330.001.1",
-            "areaDesc": "Northern Sacramento Valley; Central Sacramento Valley; Southern Sacramento Valley; Northeast Foothills/Sacramento Valley; Motherlode; Western Plumas County/Lassen Park",
-            "geocode": {
-                "SAME": [
-                    "006089",
-                    "006103",
-                    "006007",
-                    "006011",
-                    "006021",
-                    "006057",
-                    "006101",
-                    "006115",
-                    "006005",
-                    "006017",
-                    "006061",
-                    "006067",
-                    "006095",
-                    "006113",
-                    "006009",
-                    "006109",
-                    "006035",
-                    "006063"
-                ],
-                "UGC": [
-                    "CAZ015",
-                    "CAZ016",
-                    "CAZ017",
-                    "CAZ066",
-                    "CAZ067",
-                    "CAZ068"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/CAZ015",
-                "https://api.weather.gov/zones/forecast/CAZ016",
-                "https://api.weather.gov/zones/forecast/CAZ017",
-                "https://api.weather.gov/zones/forecast/CAZ066",
-                "https://api.weather.gov/zones/forecast/CAZ067",
-                "https://api.weather.gov/zones/forecast/CAZ068"
-            ],
-            "references": [],
-            "sent": "2025-03-12T16:20:00-07:00",
-            "effective": "2025-03-12T16:20:00-07:00",
-            "onset": "2025-03-12T16:20:00-07:00",
-            "expires": "2025-03-12T16:45:00-07:00",
-            "ends": null,
-            "status": "Actual",
-            "messageType": "Alert",
-            "category": "Met",
-            "severity": "Moderate",
-            "certainty": "Observed",
-            "urgency": "Expected",
-            "event": "Special Weather Statement",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Sacramento CA",
-            "headline": "Special Weather Statement issued March 12 at 4:20PM PDT by NWS Sacramento CA",
-            "description": "At 420 PM PDT, Doppler radar was tracking strong thunderstorms along\na line extending from near Vina to near Thermalito to Marysville to\nnear Tudor. Movement was northeast at 50 mph.\n\nHAZARD...Wind gusts up to 50 mph and pea size hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Gusty winds could knock down tree limbs and blow around\nunsecured objects. Minor hail damage to vegetation is\npossible.\n\nLocations impacted include...\nThermalito, Stirling City, Hurleton, Stanfield Hill, Olivehurst,\nOroville East, Concow, Linda, Iowa City, Palermo, Tudor, Chico,\nBangor, Nicolaus, Hammonton, South Oroville, Loma Rica, Beale AFB,\nTierra Buena, and South Yuba City.",
-            "instruction": "If outdoors, consider seeking shelter inside a building.",
-            "response": "Execute",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "SPSSTO"
-                ],
-                "WMOidentifier": [
-                    "WWUS86 KSTO 122320"
-                ],
-                "NWSheadline": [
-                    "STRONG THUNDERSTORMS WILL IMPACT CENTRAL SUTTER...WESTERN PLACER...SOUTHEASTERN TEHAMA...BUTTE...YUBA AND WEST CENTRAL NEVADA COUNTIES THROUGH 445 PM PDT"
-                ],
-                "eventMotionDescription": [
-                    "2025-03-12T23:20:00-00:00...storm...211DEG...42KT...39.91,-121.97 39.46,-121.71 39.14,-121.56 38.95,-121.63"
                 ],
                 "maxWindGust": [
                     "50 MPH"
@@ -3024,135 +3744,6 @@
         }
     },
     {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ef534e3d17c878b7349feaed15f9e9d57abc1288.001.1",
-        "type": "Feature",
-        "geometry": {
-            "type": "Polygon",
-            "coordinates": [
-                [
-                    [
-                        -121.51,
-                        38.82
-                    ],
-                    [
-                        -121,
-                        38.89
-                    ],
-                    [
-                        -120.83,
-                        38.1599999
-                    ],
-                    [
-                        -121.39,
-                        37.9099999
-                    ],
-                    [
-                        -121.52,
-                        37.900000000000006
-                    ],
-                    [
-                        -121.61,
-                        38.260000000000005
-                    ],
-                    [
-                        -121.65,
-                        38.45
-                    ],
-                    [
-                        -121.82000000000001,
-                        38.7
-                    ],
-                    [
-                        -121.51,
-                        38.82
-                    ]
-                ]
-            ]
-        },
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ef534e3d17c878b7349feaed15f9e9d57abc1288.001.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.ef534e3d17c878b7349feaed15f9e9d57abc1288.001.1",
-            "areaDesc": "Southern Sacramento Valley; Carquinez Strait and Delta; Northern San Joaquin Valley; Motherlode",
-            "geocode": {
-                "SAME": [
-                    "006005",
-                    "006017",
-                    "006061",
-                    "006067",
-                    "006095",
-                    "006101",
-                    "006113",
-                    "006077",
-                    "006009",
-                    "006099",
-                    "006109",
-                    "006057",
-                    "006115"
-                ],
-                "UGC": [
-                    "CAZ017",
-                    "CAZ018",
-                    "CAZ019",
-                    "CAZ067"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/CAZ017",
-                "https://api.weather.gov/zones/forecast/CAZ018",
-                "https://api.weather.gov/zones/forecast/CAZ019",
-                "https://api.weather.gov/zones/forecast/CAZ067"
-            ],
-            "references": [],
-            "sent": "2025-03-12T16:07:00-07:00",
-            "effective": "2025-03-12T16:07:00-07:00",
-            "onset": "2025-03-12T16:07:00-07:00",
-            "expires": "2025-03-12T16:45:00-07:00",
-            "ends": null,
-            "status": "Actual",
-            "messageType": "Alert",
-            "category": "Met",
-            "severity": "Moderate",
-            "certainty": "Observed",
-            "urgency": "Expected",
-            "event": "Special Weather Statement",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Sacramento CA",
-            "headline": "Special Weather Statement issued March 12 at 4:07PM PDT by NWS Sacramento CA",
-            "description": "At 407 PM PDT, Doppler radar was tracking strong thunderstorms along\na line extending from near Karnak to near West Sacramento to Walnut\nGrove to near Discovery Bay. Movement was northeast at 50 mph.\n\nHAZARD...Wind gusts up to 50 mph.\n\nSOURCE...Radar indicated.\n\nIMPACT...Gusty winds could knock down tree limbs and blow around\nunsecured objects.\n\nLocations impacted include...\nPaintersville, Franklin, Laguna, Clarksville, Gold River, Foothill\nFarms, Waterloo, West Sacramento, Rio Linda, Pleasant Grove,\nVineyard, Morada, Cal Expo, Rocklin, Rancho Murieta, Sacramento,\nGalt, Rosemont, Citrus Heights, and Raley Field.",
-            "instruction": "If outdoors, consider seeking shelter inside a building.\n\nTorrential rainfall is also occurring with these storms and may lead\nto localized flooding. Do not drive your vehicle through flooded\nroadways.",
-            "response": "Execute",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "SPSSTO"
-                ],
-                "WMOidentifier": [
-                    "WWUS86 KSTO 122307"
-                ],
-                "NWSheadline": [
-                    "STRONG THUNDERSTORMS WILL IMPACT SOUTHEASTERN YOLO...SOUTHEASTERN SUTTER...SACRAMENTO...NORTHERN SAN JOAQUIN...EAST CENTRAL SOLANO... SOUTHWESTERN EL DORADO...SOUTHWESTERN PLACER...WEST CENTRAL CALAVERAS AND SOUTHWESTERN AMADOR COUNTIES THROUGH 445 PM PDT"
-                ],
-                "eventMotionDescription": [
-                    "2025-03-12T23:07:00-00:00...storm...187DEG...56KT...38.73,-121.7 38.52,-121.58 38.26,-121.53 37.96,-121.53"
-                ],
-                "maxWindGust": [
-                    "50 MPH"
-                ],
-                "maxHailSize": [
-                    "0.00"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "EAS-ORG": [
-                    "WXR"
-                ]
-            }
-        }
-    },
-    {
         "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.364f7c2e2d563346f6060902fcb1829405922fa4.001.1",
         "type": "Feature",
         "geometry": null,
@@ -5299,550 +5890,6 @@
                 ],
                 "expiredReferences": [
                     "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.f22db642446416b6279acf190e96074e4bce1704.003.2,2025-03-10T14:00:00-07:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.001.2",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.001.2",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.001.2",
-            "areaDesc": "Coastal waters from Cape Mendocino to Pt. Arena CA out 10 nm",
-            "geocode": {
-                "SAME": [
-                    "057455"
-                ],
-                "UGC": [
-                    "PZZ455"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/PZZ455"
-            ],
-            "references": [],
-            "sent": "2025-03-12T14:49:00-07:00",
-            "effective": "2025-03-12T14:49:00-07:00",
-            "onset": "2025-03-13T23:00:00-07:00",
-            "expires": "2025-03-12T23:00:00-07:00",
-            "ends": "2025-03-14T09:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Alert",
-            "category": "Met",
-            "severity": "Moderate",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "event": "Gale Watch",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Eureka CA",
-            "headline": "Gale Watch issued March 12 at 2:49PM PDT until March 14 at 9:00AM PDT by NWS Eureka CA",
-            "description": "* WHAT...For the Hazardous Seas Warning, very steep and\nhazardous seas 10 to 12 feet. For the Gale Watch, southeast\nwinds 20 to 30 kt with gusts up to 40 kt and seas 8 to 11 feet\npossible.\n\n* WHERE...Cape Mendocino to Pt Arena out 10 nm.\n\n* WHEN...For the Hazardous Seas Warning, until 5 PM PDT this\nafternoon. For the Gale Watch, from Thursday evening through\nFriday morning.\n\n* IMPACTS...Strong winds can cause hazardous seas which could\ncapsize or damage vessels and reduce visibility.",
-            "instruction": "Mariners should consider altering plans to avoid possible\nhazardous conditions.  Remain in port, seek safe harbor, alter\ncourse, and/or secure the vessel for severe wind and seas.",
-            "response": "Prepare",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "MWWEKA"
-                ],
-                "WMOidentifier": [
-                    "WHUS76 KEKA 122149"
-                ],
-                "NWSheadline": [
-                    "HAZARDOUS SEAS WARNING REMAINS IN EFFECT UNTIL 5 PM PDT THIS AFTERNOON... ...GALE WATCH IN EFFECT FROM THURSDAY EVENING THROUGH FRIDAY MORNING"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.NEW.KEKA.GL.A.0009.250314T0600Z-250314T1600Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-14T16:00:00+00:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.002.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.002.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.002.1",
-            "areaDesc": "Waters from Cape Mendocino to Pt. Arena CA from 10 to 60 nm",
-            "geocode": {
-                "SAME": [
-                    "057475"
-                ],
-                "UGC": [
-                    "PZZ475"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/PZZ475"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.605d3badabc559708e60aa18076c9f67cf66d591.002.2",
-                    "identifier": "urn:oid:2.49.0.1.840.0.605d3badabc559708e60aa18076c9f67cf66d591.002.2",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-12T13:57:00-07:00"
-                }
-            ],
-            "sent": "2025-03-12T14:49:00-07:00",
-            "effective": "2025-03-12T14:49:00-07:00",
-            "onset": "2025-03-12T14:49:00-07:00",
-            "expires": "2025-03-12T23:00:00-07:00",
-            "ends": "2025-03-12T17:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "Hazardous Seas Warning",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Eureka CA",
-            "headline": "Hazardous Seas Warning issued March 12 at 2:49PM PDT until March 12 at 5:00PM PDT by NWS Eureka CA",
-            "description": "* WHAT...For the Hazardous Seas Warning, very steep and\nhazardous seas 10 to 12 feet. For the Gale Watch, south winds\n20 to 30 kt with gusts up to 40 kt and seas 10 to 12 feet\npossible.\n\n* WHERE...Cape Mendocino to Pt Arena 10 to 60 nm.\n\n* WHEN...For the Hazardous Seas Warning, until 5 PM PDT this\nafternoon. For the Gale Watch, from Thursday evening through\nFriday morning.\n\n* IMPACTS...Strong winds can cause hazardous seas which could\ncapsize or damage vessels and reduce visibility.",
-            "instruction": "Mariners should consider altering plans to avoid possible\nhazardous conditions.  Remain in port, seek safe harbor, alter\ncourse, and/or secure the vessel for severe wind and seas.",
-            "response": "Avoid",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "MWWEKA"
-                ],
-                "WMOidentifier": [
-                    "WHUS76 KEKA 122149"
-                ],
-                "NWSheadline": [
-                    "HAZARDOUS SEAS WARNING REMAINS IN EFFECT UNTIL 5 PM PDT THIS AFTERNOON... ...GALE WATCH IN EFFECT FROM THURSDAY EVENING THROUGH FRIDAY MORNING"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.CON.KEKA.SE.W.0008.000000T0000Z-250313T0000Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-13T00:00:00+00:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.001.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.001.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.001.1",
-            "areaDesc": "Coastal waters from Cape Mendocino to Pt. Arena CA out 10 nm",
-            "geocode": {
-                "SAME": [
-                    "057455"
-                ],
-                "UGC": [
-                    "PZZ455"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/PZZ455"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.605d3badabc559708e60aa18076c9f67cf66d591.001.2",
-                    "identifier": "urn:oid:2.49.0.1.840.0.605d3badabc559708e60aa18076c9f67cf66d591.001.2",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-12T13:57:00-07:00"
-                }
-            ],
-            "sent": "2025-03-12T14:49:00-07:00",
-            "effective": "2025-03-12T14:49:00-07:00",
-            "onset": "2025-03-12T14:49:00-07:00",
-            "expires": "2025-03-12T23:00:00-07:00",
-            "ends": "2025-03-12T17:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "Hazardous Seas Warning",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Eureka CA",
-            "headline": "Hazardous Seas Warning issued March 12 at 2:49PM PDT until March 12 at 5:00PM PDT by NWS Eureka CA",
-            "description": "* WHAT...For the Hazardous Seas Warning, very steep and\nhazardous seas 10 to 12 feet. For the Gale Watch, southeast\nwinds 20 to 30 kt with gusts up to 40 kt and seas 8 to 11 feet\npossible.\n\n* WHERE...Cape Mendocino to Pt Arena out 10 nm.\n\n* WHEN...For the Hazardous Seas Warning, until 5 PM PDT this\nafternoon. For the Gale Watch, from Thursday evening through\nFriday morning.\n\n* IMPACTS...Strong winds can cause hazardous seas which could\ncapsize or damage vessels and reduce visibility.",
-            "instruction": "Mariners should consider altering plans to avoid possible\nhazardous conditions.  Remain in port, seek safe harbor, alter\ncourse, and/or secure the vessel for severe wind and seas.",
-            "response": "Avoid",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "MWWEKA"
-                ],
-                "WMOidentifier": [
-                    "WHUS76 KEKA 122149"
-                ],
-                "NWSheadline": [
-                    "HAZARDOUS SEAS WARNING REMAINS IN EFFECT UNTIL 5 PM PDT THIS AFTERNOON... ...GALE WATCH IN EFFECT FROM THURSDAY EVENING THROUGH FRIDAY MORNING"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.CON.KEKA.SE.W.0008.000000T0000Z-250313T0000Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-13T00:00:00+00:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.004.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.004.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.004.1",
-            "areaDesc": "Waters from Pt. St. George to Cape Mendocino CA from 10 to 60 nm",
-            "geocode": {
-                "SAME": [
-                    "057470"
-                ],
-                "UGC": [
-                    "PZZ470"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/PZZ470"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d5de068f2111a0d667245a66d1e7870d1b0fb08b.003.1",
-                    "identifier": "urn:oid:2.49.0.1.840.0.d5de068f2111a0d667245a66d1e7870d1b0fb08b.003.1",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-12T11:18:00-07:00"
-                },
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.605d3badabc559708e60aa18076c9f67cf66d591.003.1",
-                    "identifier": "urn:oid:2.49.0.1.840.0.605d3badabc559708e60aa18076c9f67cf66d591.003.1",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-12T13:57:00-07:00"
-                }
-            ],
-            "sent": "2025-03-12T14:49:00-07:00",
-            "effective": "2025-03-12T14:49:00-07:00",
-            "onset": "2025-03-12T14:49:00-07:00",
-            "expires": "2025-03-12T23:00:00-07:00",
-            "ends": "2025-03-13T23:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Minor",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "Small Craft Advisory",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Eureka CA",
-            "headline": "Small Craft Advisory issued March 12 at 2:49PM PDT until March 13 at 11:00PM PDT by NWS Eureka CA",
-            "description": "* WHAT...For the Small Craft Advisory, west winds 10 to 15 kt\nand seas 9 to 13 feet. For the Gale Watch, south winds 25 to\n35 kt with gusts up to 45 kt and seas 10 to 13 feet possible.\n\n* WHERE...Pt St George to Cape Mendocino 10 to 60 nm.\n\n* WHEN...For the Small Craft Advisory, until 11 PM PDT Thursday.\nFor the Gale Watch, from Thursday evening through Friday\nmorning.\n\n* IMPACTS...Strong winds can cause hazardous seas which could\ncapsize or damage vessels and reduce visibility.",
-            "instruction": "Mariners should consider altering plans to avoid possible\nhazardous conditions.  Remain in port, seek safe harbor, alter\ncourse, and/or secure the vessel for severe wind and seas.",
-            "response": "Avoid",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "MWWEKA"
-                ],
-                "WMOidentifier": [
-                    "WHUS76 KEKA 122149"
-                ],
-                "NWSheadline": [
-                    "SMALL CRAFT ADVISORY REMAINS IN EFFECT UNTIL 11 PM PDT THURSDAY... ...GALE WATCH IN EFFECT FROM THURSDAY EVENING THROUGH FRIDAY MORNING"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.CON.KEKA.SC.Y.0033.000000T0000Z-250314T0600Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-14T06:00:00+00:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.003.2",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.003.2",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.003.2",
-            "areaDesc": "Coastal waters from Pt. St. George to Cape Mendocino CA out 10 nm",
-            "geocode": {
-                "SAME": [
-                    "057450"
-                ],
-                "UGC": [
-                    "PZZ450"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/PZZ450"
-            ],
-            "references": [],
-            "sent": "2025-03-12T14:49:00-07:00",
-            "effective": "2025-03-12T14:49:00-07:00",
-            "onset": "2025-03-13T23:00:00-07:00",
-            "expires": "2025-03-12T23:00:00-07:00",
-            "ends": "2025-03-14T09:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Alert",
-            "category": "Met",
-            "severity": "Moderate",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "event": "Gale Watch",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Eureka CA",
-            "headline": "Gale Watch issued March 12 at 2:49PM PDT until March 14 at 9:00AM PDT by NWS Eureka CA",
-            "description": "* WHAT...For the Small Craft Advisory, seas 7 to 11 feet. For\nthe Gale Watch, southeast winds 20 to 30 kt with gusts up to\n40 kt and seas 8 to 10 feet possible.\n\n* WHERE...Pt St George to Cape Mendocino out 10 nm.\n\n* WHEN...For the Small Craft Advisory, until 11 PM PDT Thursday.\nFor the Gale Watch, from Thursday evening through Friday\nmorning.\n\n* IMPACTS...Strong winds can cause hazardous seas which could\ncapsize or damage vessels and reduce visibility.",
-            "instruction": "Mariners should consider altering plans to avoid possible\nhazardous conditions.  Remain in port, seek safe harbor, alter\ncourse, and/or secure the vessel for severe wind and seas.",
-            "response": "Prepare",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "MWWEKA"
-                ],
-                "WMOidentifier": [
-                    "WHUS76 KEKA 122149"
-                ],
-                "NWSheadline": [
-                    "SMALL CRAFT ADVISORY REMAINS IN EFFECT UNTIL 11 PM PDT THURSDAY... ...GALE WATCH IN EFFECT FROM THURSDAY EVENING THROUGH FRIDAY MORNING"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.NEW.KEKA.GL.A.0009.250314T0600Z-250314T1600Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-14T16:00:00+00:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.002.2",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.002.2",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.002.2",
-            "areaDesc": "Waters from Cape Mendocino to Pt. Arena CA from 10 to 60 nm",
-            "geocode": {
-                "SAME": [
-                    "057475"
-                ],
-                "UGC": [
-                    "PZZ475"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/PZZ475"
-            ],
-            "references": [],
-            "sent": "2025-03-12T14:49:00-07:00",
-            "effective": "2025-03-12T14:49:00-07:00",
-            "onset": "2025-03-13T23:00:00-07:00",
-            "expires": "2025-03-12T23:00:00-07:00",
-            "ends": "2025-03-14T09:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Alert",
-            "category": "Met",
-            "severity": "Moderate",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "event": "Gale Watch",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Eureka CA",
-            "headline": "Gale Watch issued March 12 at 2:49PM PDT until March 14 at 9:00AM PDT by NWS Eureka CA",
-            "description": "* WHAT...For the Hazardous Seas Warning, very steep and\nhazardous seas 10 to 12 feet. For the Gale Watch, south winds\n20 to 30 kt with gusts up to 40 kt and seas 10 to 12 feet\npossible.\n\n* WHERE...Cape Mendocino to Pt Arena 10 to 60 nm.\n\n* WHEN...For the Hazardous Seas Warning, until 5 PM PDT this\nafternoon. For the Gale Watch, from Thursday evening through\nFriday morning.\n\n* IMPACTS...Strong winds can cause hazardous seas which could\ncapsize or damage vessels and reduce visibility.",
-            "instruction": "Mariners should consider altering plans to avoid possible\nhazardous conditions.  Remain in port, seek safe harbor, alter\ncourse, and/or secure the vessel for severe wind and seas.",
-            "response": "Prepare",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "MWWEKA"
-                ],
-                "WMOidentifier": [
-                    "WHUS76 KEKA 122149"
-                ],
-                "NWSheadline": [
-                    "HAZARDOUS SEAS WARNING REMAINS IN EFFECT UNTIL 5 PM PDT THIS AFTERNOON... ...GALE WATCH IN EFFECT FROM THURSDAY EVENING THROUGH FRIDAY MORNING"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.NEW.KEKA.GL.A.0009.250314T0600Z-250314T1600Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-14T16:00:00+00:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.003.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.003.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.003.1",
-            "areaDesc": "Coastal waters from Pt. St. George to Cape Mendocino CA out 10 nm",
-            "geocode": {
-                "SAME": [
-                    "057450"
-                ],
-                "UGC": [
-                    "PZZ450"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/PZZ450"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d5de068f2111a0d667245a66d1e7870d1b0fb08b.003.1",
-                    "identifier": "urn:oid:2.49.0.1.840.0.d5de068f2111a0d667245a66d1e7870d1b0fb08b.003.1",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-12T11:18:00-07:00"
-                },
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.605d3badabc559708e60aa18076c9f67cf66d591.003.1",
-                    "identifier": "urn:oid:2.49.0.1.840.0.605d3badabc559708e60aa18076c9f67cf66d591.003.1",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-12T13:57:00-07:00"
-                }
-            ],
-            "sent": "2025-03-12T14:49:00-07:00",
-            "effective": "2025-03-12T14:49:00-07:00",
-            "onset": "2025-03-12T14:49:00-07:00",
-            "expires": "2025-03-12T23:00:00-07:00",
-            "ends": "2025-03-13T23:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Minor",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "Small Craft Advisory",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Eureka CA",
-            "headline": "Small Craft Advisory issued March 12 at 2:49PM PDT until March 13 at 11:00PM PDT by NWS Eureka CA",
-            "description": "* WHAT...For the Small Craft Advisory, seas 7 to 11 feet. For\nthe Gale Watch, southeast winds 20 to 30 kt with gusts up to\n40 kt and seas 8 to 10 feet possible.\n\n* WHERE...Pt St George to Cape Mendocino out 10 nm.\n\n* WHEN...For the Small Craft Advisory, until 11 PM PDT Thursday.\nFor the Gale Watch, from Thursday evening through Friday\nmorning.\n\n* IMPACTS...Strong winds can cause hazardous seas which could\ncapsize or damage vessels and reduce visibility.",
-            "instruction": "Mariners should consider altering plans to avoid possible\nhazardous conditions.  Remain in port, seek safe harbor, alter\ncourse, and/or secure the vessel for severe wind and seas.",
-            "response": "Avoid",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "MWWEKA"
-                ],
-                "WMOidentifier": [
-                    "WHUS76 KEKA 122149"
-                ],
-                "NWSheadline": [
-                    "SMALL CRAFT ADVISORY REMAINS IN EFFECT UNTIL 11 PM PDT THURSDAY... ...GALE WATCH IN EFFECT FROM THURSDAY EVENING THROUGH FRIDAY MORNING"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.CON.KEKA.SC.Y.0033.000000T0000Z-250314T0600Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-14T06:00:00+00:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.004.2",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.004.2",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.d9700fcf0f4caeff0f41be90189f5fad6181f012.004.2",
-            "areaDesc": "Waters from Pt. St. George to Cape Mendocino CA from 10 to 60 nm",
-            "geocode": {
-                "SAME": [
-                    "057470"
-                ],
-                "UGC": [
-                    "PZZ470"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/PZZ470"
-            ],
-            "references": [],
-            "sent": "2025-03-12T14:49:00-07:00",
-            "effective": "2025-03-12T14:49:00-07:00",
-            "onset": "2025-03-13T23:00:00-07:00",
-            "expires": "2025-03-12T23:00:00-07:00",
-            "ends": "2025-03-14T09:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Alert",
-            "category": "Met",
-            "severity": "Moderate",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "event": "Gale Watch",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Eureka CA",
-            "headline": "Gale Watch issued March 12 at 2:49PM PDT until March 14 at 9:00AM PDT by NWS Eureka CA",
-            "description": "* WHAT...For the Small Craft Advisory, west winds 10 to 15 kt\nand seas 9 to 13 feet. For the Gale Watch, south winds 25 to\n35 kt with gusts up to 45 kt and seas 10 to 13 feet possible.\n\n* WHERE...Pt St George to Cape Mendocino 10 to 60 nm.\n\n* WHEN...For the Small Craft Advisory, until 11 PM PDT Thursday.\nFor the Gale Watch, from Thursday evening through Friday\nmorning.\n\n* IMPACTS...Strong winds can cause hazardous seas which could\ncapsize or damage vessels and reduce visibility.",
-            "instruction": "Mariners should consider altering plans to avoid possible\nhazardous conditions.  Remain in port, seek safe harbor, alter\ncourse, and/or secure the vessel for severe wind and seas.",
-            "response": "Prepare",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "MWWEKA"
-                ],
-                "WMOidentifier": [
-                    "WHUS76 KEKA 122149"
-                ],
-                "NWSheadline": [
-                    "SMALL CRAFT ADVISORY REMAINS IN EFFECT UNTIL 11 PM PDT THURSDAY... ...GALE WATCH IN EFFECT FROM THURSDAY EVENING THROUGH FRIDAY MORNING"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.NEW.KEKA.GL.A.0009.250314T0600Z-250314T1600Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-14T16:00:00+00:00"
                 ]
             }
         }
@@ -8101,155 +8148,6 @@
                 ],
                 "eventEndingTime": [
                     "2025-03-14T06:00:00+00:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c192ac292d5803cc05b10cad0862b3a83b65d710.003.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c192ac292d5803cc05b10cad0862b3a83b65d710.003.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.c192ac292d5803cc05b10cad0862b3a83b65d710.003.1",
-            "areaDesc": "Southern Lake County",
-            "geocode": {
-                "SAME": [
-                    "006033"
-                ],
-                "UGC": [
-                    "CAZ115"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/CAZ115"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7d2568a5080ed90f485843e0d964a2e785c50611.003.1",
-                    "identifier": "urn:oid:2.49.0.1.840.0.7d2568a5080ed90f485843e0d964a2e785c50611.003.1",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-12T08:23:00-07:00"
-                }
-            ],
-            "sent": "2025-03-12T14:12:00-07:00",
-            "effective": "2025-03-12T14:12:00-07:00",
-            "onset": "2025-03-12T14:12:00-07:00",
-            "expires": "2025-03-12T17:00:00-07:00",
-            "ends": "2025-03-12T17:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "Wind Advisory",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Eureka CA",
-            "headline": "Wind Advisory issued March 12 at 2:12PM PDT until March 12 at 5:00PM PDT by NWS Eureka CA",
-            "description": "* WHAT...South winds 25 to 35 mph with gusts up to 50 mph expected.\nLocally higher gusts to 60 mph possible on exposed ridges and\nhigher terrain.\n\n* WHERE...Southern Lake.\n\n* WHEN...Until 5 PM PDT this afternoon.\n\n* IMPACTS...Wind gusts will be particularly strong along windward\nridges and exposed coastal headlands. There is an increased risk\nof tree branches and other debris on roadways. Gusty winds will\nblow around unsecured objects. Tree limbs could be blown down and\na few power outages may result.",
-            "instruction": "Winds this strong can make driving difficult, especially for high\nprofile vehicles. Use extra caution.\n\nSecure outdoor objects.",
-            "response": "Execute",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "NPWEKA"
-                ],
-                "WMOidentifier": [
-                    "WWUS76 KEKA 122112"
-                ],
-                "NWSheadline": [
-                    "WIND ADVISORY REMAINS IN EFFECT UNTIL 5 PM PDT THIS AFTERNOON"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.CON.KEKA.WI.Y.0011.000000T0000Z-250313T0000Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-13T00:00:00+00:00"
-                ],
-                "expiredReferences": [
-                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.49f3d64714e0c25e6c661c17176d663b7f1b987c.002.1,2025-03-12T04:12:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.ad93a58ade23961cc18d3c8f50600eb79c0d9f4b.002.1,2025-03-11T19:31:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.5c81421d65ac2a29a6559cf7dd8d4cd0905ded10.002.1,2025-03-11T11:41:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.35206d48272f78b320627395763539644c5333ce.002.1,2025-03-11T03:33:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.7d5172dfd44cc609fb123a5092514f79f3e5d693.002.1,2025-03-10T20:40:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.51db5c82713e1946dff390b4b563f3e135010003.002.1,2025-03-10T13:00:00-07:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c192ac292d5803cc05b10cad0862b3a83b65d710.002.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c192ac292d5803cc05b10cad0862b3a83b65d710.002.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.c192ac292d5803cc05b10cad0862b3a83b65d710.002.1",
-            "areaDesc": "Mendocino Coast; Northwestern Mendocino Interior; Southwestern Mendocino Interior; Southeastern Mendocino Interior",
-            "geocode": {
-                "SAME": [
-                    "006045"
-                ],
-                "UGC": [
-                    "CAZ109",
-                    "CAZ110",
-                    "CAZ112",
-                    "CAZ113"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/CAZ109",
-                "https://api.weather.gov/zones/forecast/CAZ110",
-                "https://api.weather.gov/zones/forecast/CAZ112",
-                "https://api.weather.gov/zones/forecast/CAZ113"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7d2568a5080ed90f485843e0d964a2e785c50611.001.1",
-                    "identifier": "urn:oid:2.49.0.1.840.0.7d2568a5080ed90f485843e0d964a2e785c50611.001.1",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-12T08:23:00-07:00"
-                }
-            ],
-            "sent": "2025-03-12T14:12:00-07:00",
-            "effective": "2025-03-12T14:12:00-07:00",
-            "onset": "2025-03-12T14:12:00-07:00",
-            "expires": "2025-03-12T17:00:00-07:00",
-            "ends": "2025-03-12T17:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "Wind Advisory",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Eureka CA",
-            "headline": "Wind Advisory issued March 12 at 2:12PM PDT until March 12 at 5:00PM PDT by NWS Eureka CA",
-            "description": "* WHAT...South winds 15 to 30 mph with gusts up to 50 mph expected.\n\n* WHERE...Western Mendocino, and Southeastern Mendocino Interior.\n\n* WHEN...Until 5 PM PDT this afternoon.\n\n* IMPACTS...Wind gusts will be particularly strong along windward\nridges and exposed coastal headlands.",
-            "instruction": "Winds this strong can make driving difficult, especially for high\nprofile vehicles. Use extra caution.",
-            "response": "Execute",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "NPWEKA"
-                ],
-                "WMOidentifier": [
-                    "WWUS76 KEKA 122112"
-                ],
-                "NWSheadline": [
-                    "WIND ADVISORY REMAINS IN EFFECT UNTIL 5 PM PDT THIS AFTERNOON"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.CON.KEKA.WI.Y.0011.000000T0000Z-250313T0000Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-13T00:00:00+00:00"
                 ]
             }
         }
