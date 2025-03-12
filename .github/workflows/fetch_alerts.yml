@@ -1,18 +1,19 @@
-name: Fetch Weather Alerts
+name: Update Weather Alerts
 
 on:
   schedule:
-    # This cron job will run the script every minute
-    - cron: '*/1 * * * *'  # Runs every minute
-  workflow_dispatch:  # Allows manual trigger from GitHub UI
+    - cron: '*/5 * * * *'  # Run every 5 minutes
+  workflow_dispatch:  # Allows manual trigger
 
 jobs:
-  fetch_alerts:
+  update_alerts:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}  # Use GitHub Actions Token
 
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -24,13 +25,16 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-      - name: Run fetch_alerts.py script
-        run: python fetch_alerts.py
+      - name: Run update_alerts.py
+        run: python scripts/update_alerts.py
 
-      - name: Commit and push changes to alerts.txt
+      - name: Commit and push changes
         run: |
-          git config --global user.name "G34hWeatherSpotter"
-          git config --global user.email "G34hWeatherSpotter@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add alerts.txt
-          git commit -m "Update alerts.txt with new weather alerts"
+          git commit -m "Update alerts.txt with new weather alerts" || echo "No changes to commit"
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Authenticate push
+
