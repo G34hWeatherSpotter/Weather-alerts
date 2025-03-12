@@ -35,11 +35,16 @@
                 if (!response.ok) {
                     throw new Error(`HTTP error! Status: ${response.status}`);
                 }
-                const text = await response.text();
+                const text = await response.text().trim();
 
-                // Ensure text is not empty before processing
-                if (!text.trim()) {
-                    document.getElementById('alerts').innerHTML = "<p>No active alerts at this time.</p>";
+                // If alerts.txt is empty, display a "Test Alert"
+                if (!text) {
+                    document.getElementById('alerts').innerHTML = `
+                        <div class="alert">
+                            <div class="alert-title">Test Alert</div>
+                            <div>This is a sample weather alert.</div>
+                        </div>
+                    `;
                     return;
                 }
 
@@ -55,7 +60,7 @@
                     })
                     .join('');
 
-                document.getElementById('alerts').innerHTML = alerts || "<p>No active alerts.</p>";
+                document.getElementById('alerts').innerHTML = alerts;
             } catch (error) {
                 console.error('Error fetching alerts:', error);
                 document.getElementById('alerts').innerHTML = "<p style='color:red;'>Failed to load alerts. Please try again later.</p>";
