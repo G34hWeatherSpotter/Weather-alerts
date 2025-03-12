@@ -11,6 +11,12 @@
             color: #333;
             padding: 20px;
         }
+        h1 {
+            text-align: center;
+        }
+        #alerts {
+            margin-top: 20px;
+        }
         .alert {
             background-color: #fff;
             border: 1px solid #ddd;
@@ -21,6 +27,15 @@
         .alert-title {
             font-weight: bold;
             color: #d9534f;
+        }
+        .alert.warning {
+            background-color: #ffcc00;
+        }
+        .alert.info {
+            background-color: #3399ff;
+        }
+        .alert.success {
+            background-color: #66cc66;
         }
     </style>
 </head>
@@ -56,7 +71,23 @@
                         if (parts.length < 2) {
                             return `<div class="alert"><div class="alert-title">Unknown Alert</div><div>${alert}</div></div>`;
                         }
-                        return `<div class="alert"><div class="alert-title">${parts[0]}</div><div>${parts.slice(1).join(':')}</div></div>`;
+                        const alertTitle = parts[0].trim();
+                        const alertMessage = parts.slice(1).join(':').trim();
+                        
+                        // Example of adding custom styling for alert types (warning, info, etc.)
+                        let alertClass = '';
+                        if (alertTitle.includes('Warning')) {
+                            alertClass = 'warning';
+                        } else if (alertTitle.includes('Info')) {
+                            alertClass = 'info';
+                        } else if (alertTitle.includes('Success')) {
+                            alertClass = 'success';
+                        }
+                        
+                        return `<div class="alert ${alertClass}">
+                            <div class="alert-title">${alertTitle}</div>
+                            <div>${alertMessage}</div>
+                        </div>`;
                     })
                     .join('');
 
@@ -67,8 +98,11 @@
             }
         }
 
+        // Fetch alerts when the page loads
         fetchAlerts();
-        setInterval(fetchAlerts, 60000); // Refresh every 1 minute
+
+        // Set an interval to refresh alerts every 1 minute
+        setInterval(fetchAlerts, 60000);
     </script>
 </body>
 </html>
