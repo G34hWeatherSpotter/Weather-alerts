@@ -26,25 +26,44 @@
 </head>
 <body>
     <h1>Live Weather Alerts</h1>
-    <div id="alerts"></div>
+    <div id="alerts">Loading alerts...</div>
+
     <script>
         async function fetchAlerts() {
             try {
-                const response = await fetch('https://raw.githubusercontent.com/G34hWeatherSpotter/Weather-alerts/main/alerts.txt');
+                const response = await fetch('https://raw.githubusercontent.com/G34hWeatherSpotter/Weather-alerts/main/alerts.txt', { cache: "no-cache" });
                 if (!response.ok) {
-                    throw new Error('Network response was not ok');
+                    throw new Error(`HTTP error! Status: ${response.status}`);
                 }
                 const text = await response.text();
-                const alerts = text.split('\n').filter(alert => alert.trim() !== '');
-                const alertsContainer = document.getElementById('alerts');
-                alertsContainer.innerHTML = alerts.map(alert => `<div class="alert"><div class="alert-title">${alert.split(':')[0]}</div><div>${alert.split(':')[1]}</div></div>`).join('');
+
+                // Ensure text is not empty before processing
+                if (!text.trim()) {
+                    document.getElementById('alerts').innerHTML = "<p>No active alerts at this time.</p>";
+                    return;
+                }
+
+                const alerts = text.split('\n')
+                    .map(line => line.trim())
+                    .filter(line => line !== '')
+                    .map(alert => {
+                        const parts = alert.split(':');
+                        if (parts.length < 2) {
+                            return `<div class="alert"><div class="alert-title">Unknown Alert</div><div>${alert}</div></div>`;
+                        }
+                        return `<div class="alert"><div class="alert-title">${parts[0]}</div><div>${parts.slice(1).join(':')}</div></div>`;
+                    })
+                    .join('');
+
+                document.getElementById('alerts').innerHTML = alerts || "<p>No active alerts.</p>";
             } catch (error) {
                 console.error('Error fetching alerts:', error);
+                document.getElementById('alerts').innerHTML = "<p style='color:red;'>Failed to load alerts. Please try again later.</p>";
             }
         }
+
         fetchAlerts();
         setInterval(fetchAlerts, 60000); // Refresh every 1 minute
     </script>
 </body>
 </html>
-```
