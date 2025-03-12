@@ -1,1 +1,1 @@
-No active alerts.
+Test Alert: This is a sample weather alert.
