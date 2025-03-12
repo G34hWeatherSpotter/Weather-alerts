@@ -1,0 +1,35 @@
+name: Fetch Alerts
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Runs every hour (adjust to your preference)
+  workflow_dispatch:  # Allows manual trigger from the GitHub UI
+
+jobs:
+  fetch_alerts:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Run the fetch_alerts script
+        run: python fetch_alerts.py
+
+      - name: Commit and push changes to alerts.txt
+        run: |
+          git config --global user.name "G34hWeatherSpotter"
+          git config --global user.email "G34hWeatherSpotter@users.noreply.github.com"
+          git add alerts.txt
+          git commit -m "Update alerts.txt"
+          git push
