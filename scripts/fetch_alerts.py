@@ -2,7 +2,7 @@ import requests
 import json
 import os
 
-# URL for the weather alert API (this is just an example, replace it with the actual API you're using)
+# URL for the weather alert API
 API_URL = "https://api.weather.gov/alerts/active"
 
 # File where the alerts will be stored
