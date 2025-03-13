@@ -1,93 +1,392 @@
 [
     {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c3ab88ae58540782d2a40813ac1e42ae9ed1d760.001.1",
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-11939",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-11939",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0-KEEPALIVE-11939",
+            "areaDesc": "Montgomery",
+            "geocode": {
+                "SAME": [
+                    "024031"
+                ],
+                "UGC": [
+                    "MDC031"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/county/MDC031"
+            ],
+            "references": [],
+            "sent": "2025-03-13T05:09:09+00:00",
+            "effective": "2025-03-13T05:09:09+00:00",
+            "onset": null,
+            "expires": "2025-03-13T05:19:09+00:00",
+            "ends": null,
+            "status": "Test",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Unknown",
+            "certainty": "Unknown",
+            "urgency": "Unknown",
+            "event": "Test Message",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS",
+            "headline": null,
+            "description": "Monitoring message only. Please disregard.",
+            "instruction": "Monitoring message only. Please disregard.",
+            "response": "None",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "KEPWBC"
+                ],
+                "WMOidentifier": [
+                    "NZUS91 KWBC 130509"
+                ],
+                "BLOCKCHANNEL": [
+                    "CMAS",
+                    "EAS",
+                    "NWEM"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ca4519eab3d9c7b80d5a3c85408f67b9341ddddc.001.1",
         "type": "Feature",
         "geometry": {
             "type": "Polygon",
             "coordinates": [
                 [
                     [
-                        -92.49,
-                        34.53
+                        -124.06,
+                        40.19
                     ],
                     [
-                        -92.55999999999999,
-                        34.6
+                        -123.92,
+                        40.159999899999995
                     ],
                     [
-                        -92.39999999999999,
-                        34.82
+                        -123.91,
+                        40.13999999999999
                     ],
                     [
-                        -92.19999999999999,
-                        34.7
+                        -123.86999999999999,
+                        40.10999999999999
                     ],
                     [
-                        -92.49,
-                        34.53
+                        -123.85999999999999,
+                        40.08999999999999
+                    ],
+                    [
+                        -123.96999999999998,
+                        39.94999999999999
+                    ],
+                    [
+                        -123.97999999999999,
+                        39.95999999999999
+                    ],
+                    [
+                        -123.99999999999999,
+                        39.969999999999985
+                    ],
+                    [
+                        -124.01999999999998,
+                        39.999999999999986
+                    ],
+                    [
+                        -124.03999999999998,
+                        40.01999999999999
+                    ],
+                    [
+                        -124.06999999999998,
+                        40.01999999999999
+                    ],
+                    [
+                        -124.07999999999998,
+                        40.02999999999999
+                    ],
+                    [
+                        -124.06,
+                        40.19
                     ]
                 ]
             ]
         },
         "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c3ab88ae58540782d2a40813ac1e42ae9ed1d760.001.1",
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ca4519eab3d9c7b80d5a3c85408f67b9341ddddc.001.1",
             "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.c3ab88ae58540782d2a40813ac1e42ae9ed1d760.001.1",
-            "areaDesc": "Pulaski, AR; Saline, AR",
+            "id": "urn:oid:2.49.0.1.840.0.ca4519eab3d9c7b80d5a3c85408f67b9341ddddc.001.1",
+            "areaDesc": "Southwestern Humboldt; Mendocino Coast",
             "geocode": {
                 "SAME": [
-                    "005119",
-                    "005125"
+                    "006023",
+                    "006045"
                 ],
                 "UGC": [
-                    "ARC119",
-                    "ARC125"
+                    "CAZ104",
+                    "CAZ109"
                 ]
             },
             "affectedZones": [
-                "https://api.weather.gov/zones/county/ARC119",
-                "https://api.weather.gov/zones/county/ARC125"
+                "https://api.weather.gov/zones/forecast/CAZ104",
+                "https://api.weather.gov/zones/forecast/CAZ109"
             ],
             "references": [],
-            "sent": "2025-03-12T23:53:00-05:00",
-            "effective": "2025-03-12T23:53:00-05:00",
-            "onset": "2025-03-12T23:53:00-05:00",
-            "expires": "2025-03-13T00:30:00-05:00",
-            "ends": "2025-03-13T00:30:00-05:00",
+            "sent": "2025-03-12T22:05:00-07:00",
+            "effective": "2025-03-12T22:05:00-07:00",
+            "onset": "2025-03-12T22:05:00-07:00",
+            "expires": "2025-03-12T22:30:00-07:00",
+            "ends": null,
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Observed",
+            "urgency": "Expected",
+            "event": "Special Weather Statement",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Eureka CA",
+            "headline": "Special Weather Statement issued March 12 at 10:05PM PDT by NWS Eureka CA",
+            "description": "At 1005 PM PDT, Doppler radar was tracking a shower near Shelter\nCove, moving northeast at 25 mph.\n\nHAZARD...Pea size hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Minor damage to outdoor objects is possible.\n\nLocations impacted include...\nShelter Cove, Whitehorn, Ettersburg and Briceland.",
+            "instruction": "Monitor the weather situation closely and be alert for threatening\nweather conditions.",
+            "response": "Execute",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "SPSEKA"
+                ],
+                "WMOidentifier": [
+                    "WWUS86 KEKA 130505"
+                ],
+                "NWSheadline": [
+                    "A SHOWER WILL IMPACT NORTHWESTERN MENDOCINO AND SOUTH CENTRAL HUMBOLDT COUNTIES UNTIL 1030 PM PDT"
+                ],
+                "eventMotionDescription": [
+                    "2025-03-13T05:05:00-00:00...storm...203DEG...22KT...39.98,-124.02"
+                ],
+                "maxWindGust": [
+                    "Up to 30 MPH"
+                ],
+                "maxHailSize": [
+                    "0.25"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "EAS-ORG": [
+                    "WXR"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f1fc801656d7110780532bdf8cb2ad8c6e0a33ed.002.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f1fc801656d7110780532bdf8cb2ad8c6e0a33ed.002.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.f1fc801656d7110780532bdf8cb2ad8c6e0a33ed.002.1",
+            "areaDesc": "Pohnpei Coastal Waters; Kosrae Coastal Waters",
+            "geocode": {
+                "SAME": [
+                    "065173",
+                    "065174"
+                ],
+                "UGC": [
+                    "PMZ173",
+                    "PMZ174"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/PMZ173",
+                "https://api.weather.gov/zones/forecast/PMZ174"
+            ],
+            "references": [],
+            "sent": "2025-03-13T15:02:00+10:00",
+            "effective": "2025-03-13T15:02:00+10:00",
+            "onset": "2025-03-14T03:00:00+10:00",
+            "expires": "2025-03-14T06:15:00+10:00",
+            "ends": "2025-03-15T15:00:00+10:00",
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Minor",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Small Craft Advisory",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Tiyan GU",
+            "headline": "Small Craft Advisory issued March 13 at 3:02PM ChST until March 15 at 3:00PM ChST by NWS Tiyan GU",
+            "description": "* WHAT...Seas 8 to 11 feet expected.\n\n* WHERE...Pohnpei and Kosrae Coastal Waters.\n\n* WHEN...From 3 AM Friday to 3 PM ChST Saturday.\n\n* IMPACTS...Conditions will be hazardous to small craft.\n\n* ADDITIONAL DETAILS...A long-period north swell will move into\nthe region by Friday, building seas to around 8 to 11 feet.",
+            "instruction": "Inexperienced mariners, especially those operating smaller\nvessels, should avoid boating in hazardous conditions.",
+            "response": "Avoid",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "MWWPQ1"
+                ],
+                "WMOidentifier": [
+                    "WHGM71 PGUM 130502"
+                ],
+                "NWSheadline": [
+                    "SMALL CRAFT ADVISORY IN EFFECT FROM 3 AM FRIDAY TO 3 PM CHST SATURDAY"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.NEW.PGUM.SC.Y.0025.250313T1700Z-250315T0500Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-15T05:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e51876dab19864a4861a6e4101c6256ce7b3d935.001.1",
+        "type": "Feature",
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -120.26,
+                        33.63
+                    ],
+                    [
+                        -120.18,
+                        33.92
+                    ],
+                    [
+                        -120.11000000000001,
+                        33.89
+                    ],
+                    [
+                        -119.97000000000001,
+                        33.95
+                    ],
+                    [
+                        -119.98000000000002,
+                        33.99
+                    ],
+                    [
+                        -120.05000000000001,
+                        34
+                    ],
+                    [
+                        -120.05000000000001,
+                        34.04
+                    ],
+                    [
+                        -120.12,
+                        34.019999999999996
+                    ],
+                    [
+                        -120.04,
+                        34.459999999999994
+                    ],
+                    [
+                        -119.85000000000001,
+                        34.39999999999999
+                    ],
+                    [
+                        -119.78000000000002,
+                        34.419999999999995
+                    ],
+                    [
+                        -119.70000000000002,
+                        34.39999999999999
+                    ],
+                    [
+                        -119.68000000000002,
+                        34.419999999999995
+                    ],
+                    [
+                        -119.56000000000002,
+                        34.419999999999995
+                    ],
+                    [
+                        -119.27000000000001,
+                        34.26
+                    ],
+                    [
+                        -119.23,
+                        34.169999999999995
+                    ],
+                    [
+                        -119.34,
+                        33.56999999999999
+                    ],
+                    [
+                        -120.26,
+                        33.63
+                    ]
+                ]
+            ]
+        },
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e51876dab19864a4861a6e4101c6256ce7b3d935.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.e51876dab19864a4861a6e4101c6256ce7b3d935.001.1",
+            "areaDesc": "East Santa Barbara Channel from Pt. Conception to Pt. Mugu CA including Santa Cruz Island; Inner waters from Point Mugu to San Mateo Pt. CA including Santa Catalina and Anacapa Islands; Waters from Pt. Sal to Santa Cruz Island CA and westward 60 nm including San Miguel and Santa Rosa Islands; Outer waters from Santa Cruz Island to San Clemente Island to 60 NM offshore including San Nicolas and Santa Barbara Islands",
+            "geocode": {
+                "SAME": [
+                    "057650",
+                    "057655",
+                    "057673",
+                    "057676"
+                ],
+                "UGC": [
+                    "PZZ650",
+                    "PZZ655",
+                    "PZZ673",
+                    "PZZ676"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/PZZ650",
+                "https://api.weather.gov/zones/forecast/PZZ655",
+                "https://api.weather.gov/zones/forecast/PZZ673",
+                "https://api.weather.gov/zones/forecast/PZZ676"
+            ],
+            "references": [],
+            "sent": "2025-03-12T22:01:00-07:00",
+            "effective": "2025-03-12T22:01:00-07:00",
+            "onset": "2025-03-12T22:01:00-07:00",
+            "expires": "2025-03-13T00:00:00-07:00",
+            "ends": "2025-03-13T00:00:00-07:00",
             "status": "Actual",
             "messageType": "Alert",
             "category": "Met",
             "severity": "Severe",
-            "certainty": "Observed",
+            "certainty": "Likely",
             "urgency": "Immediate",
-            "event": "Severe Thunderstorm Warning",
+            "event": "Special Marine Warning",
             "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Little Rock AR",
-            "headline": "Severe Thunderstorm Warning issued March 12 at 11:53PM CDT until March 13 at 12:30AM CDT by NWS Little Rock AR",
-            "description": "SVRLZK\n\nThe National Weather Service in Little Rock has issued a\n\n* Severe Thunderstorm Warning for...\nEast central Saline County in central Arkansas...\nCentral Pulaski County in central Arkansas...\n\n* Until 1230 AM CDT.\n\n* At 1152 PM CDT, a severe thunderstorm was located over Bryant,\nmoving northeast at 20 mph.\n\nHAZARD...Quarter size hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Damage to vehicles is expected.\n\n* Locations impacted include...\nBryant...                         Alexander...\nOtter Creek...                    The Heights...\nShannon Hills...                  College Station...\nBaseline...                       Cammack Village...\nSouthwest Little Rock...          Bauxite...\nGeyer Springs...                  Quapaw Quarter...\nVimy Ridge...                     Mabelvale...\nWest Little Rock...               Hillcrest Neighborhood...\nDowntown Little Rock...           State Fairgrounds...\nLittle Rock...                    War Memorial Stadium...",
-            "instruction": "For your protection move to an interior room on the lowest floor of a\nbuilding.",
-            "response": "Shelter",
+            "senderName": "NWS Los Angeles/Oxnard CA",
+            "headline": "Special Marine Warning issued March 12 at 10:01PM PDT until March 13 at 12:00AM PDT by NWS Los Angeles/Oxnard CA",
+            "description": "SMWLOX\n\nThe National Weather Service in OXNARD has issued a\n\n* Special Marine Warning for...\nEast Santa Barbara Channel from Pt. Conception to Pt. Mugu CA\nincluding Santa Cruz Island...\nInner waters from Point Mugu to San Mateo Pt. CA including Santa\nCatalina and Anacapa Islands...\nOuter waters from Santa Cruz Island to San Clemente Island to 60 NM\noffshore including San Nicolas and Santa Barbara Islands...\nWaters from Pt. Sal to Santa Cruz Island CA and westward 60 nm\nincluding San Miguel and Santa Rosa Islands...\n\n* Until midnight PDT.\n\n* At 1000 PM PDT, severe thunderstorms capable of producing\nwaterspouts were located along a line extending from 7 nm northwest\nof Goleta Point to 16 nm south of Santa Rosa Island, moving east at\n25 knots.\n\nHAZARD...Waterspouts and wind gusts 34 knots or greater.\n\nSOURCE...Radar.\n\nIMPACT...Waterspouts can easily overturn boats and create locally\nhazardous seas. Small craft could be damaged in briefly\nhigher winds and suddenly higher waves.\n\n* Locations impacted include...\nWest Point Santa Cruz Island...\nVentura Harbor...\nAnacapa Island...\nand Rincon Point.",
+            "instruction": "Move to safe harbor immediately as gusty winds and high waves are\nexpected.\n\nThunderstorms can produce sudden waterspouts. Waterspouts can easily\noverturn boats and create locally hazardous seas. Seek safe harbor\nimmediately.",
+            "response": "Avoid",
             "parameters": {
                 "AWIPSidentifier": [
-                    "SVRLZK"
+                    "SMWLOX"
                 ],
                 "WMOidentifier": [
-                    "WUUS54 KLZK 130453"
+                    "WHUS56 KLOX 130501"
                 ],
                 "eventMotionDescription": [
-                    "2025-03-13T04:52:00-00:00...storm...223DEG...17KT...34.6,-92.49"
+                    "2025-03-13T05:00:00-00:00...storm...277DEG...25KT...34.5,-119.95 33.69,-120.1"
                 ],
-                "windThreat": [
-                    "RADAR INDICATED"
-                ],
-                "maxWindGust": [
-                    "Up to 50 MPH"
-                ],
-                "hailThreat": [
-                    "RADAR INDICATED"
-                ],
-                "maxHailSize": [
-                    "1.00"
+                "waterspoutDetection": [
+                    "POSSIBLE"
                 ],
                 "BLOCKCHANNEL": [
                     "EAS",
@@ -98,10 +397,315 @@
                     "WXR"
                 ],
                 "VTEC": [
-                    "/O.NEW.KLZK.SV.W.0009.250313T0453Z-250313T0530Z/"
+                    "/O.NEW.KLOX.MA.W.0022.250313T0501Z-250313T0700Z/"
                 ],
                 "eventEndingTime": [
-                    "2025-03-13T05:30:00+00:00"
+                    "2025-03-13T07:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.234319b071f13a505c863760fa11ab2b38ba5c32.003.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.234319b071f13a505c863760fa11ab2b38ba5c32.003.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.234319b071f13a505c863760fa11ab2b38ba5c32.003.1",
+            "areaDesc": "San Gorgonio Pass Near Banning",
+            "geocode": {
+                "SAME": [
+                    "006065"
+                ],
+                "UGC": [
+                    "CAZ065"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/CAZ065"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4e7ccd5e41e65429becff3073c04df9b5bed46d7.003.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.4e7ccd5e41e65429becff3073c04df9b5bed46d7.003.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T13:16:00-07:00"
+                }
+            ],
+            "sent": "2025-03-12T21:57:00-07:00",
+            "effective": "2025-03-12T21:57:00-07:00",
+            "onset": "2025-03-12T21:57:00-07:00",
+            "expires": "2025-03-13T06:00:00-07:00",
+            "ends": "2025-03-14T05:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Wind Advisory",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS San Diego CA",
+            "headline": "Wind Advisory issued March 12 at 9:57PM PDT until March 14 at 5:00AM PDT by NWS San Diego CA",
+            "description": "* WHAT...West winds 20 to 30 mph with gusts up to 60 mph.\n\n* WHERE...San Gorgonio Pass near Banning.\n\n* WHEN...Until 5 AM PDT Friday.\n\n* IMPACTS...Gusty winds will blow around unsecured objects. Tree\nlimbs could be blown down and a few power outages may result.",
+            "instruction": "Winds this strong can make driving difficult, especially for high\nprofile vehicles. Use extra caution.",
+            "response": "Execute",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "NPWSGX"
+                ],
+                "WMOidentifier": [
+                    "WWUS76 KSGX 130457"
+                ],
+                "NWSheadline": [
+                    "WIND ADVISORY REMAINS IN EFFECT UNTIL 5 AM PDT FRIDAY"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.CON.KSGX.WI.Y.0009.000000T0000Z-250314T1200Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-14T12:00:00+00:00"
+                ],
+                "expiredReferences": [
+                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.97378a871d2f659342642093e356aba571cdbf67.004.1,2025-03-12T02:16:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.16e10f6bf679764f3a9d01ef3c2ed2e940360693.003.1,2025-03-11T21:52:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.c240084b2a6294da28851de3f8f1fba5bc038018.003.1,2025-03-11T13:26:00-07:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.234319b071f13a505c863760fa11ab2b38ba5c32.002.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.234319b071f13a505c863760fa11ab2b38ba5c32.002.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.234319b071f13a505c863760fa11ab2b38ba5c32.002.1",
+            "areaDesc": "San Diego County Deserts",
+            "geocode": {
+                "SAME": [
+                    "006073"
+                ],
+                "UGC": [
+                    "CAZ062"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/CAZ062"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4e7ccd5e41e65429becff3073c04df9b5bed46d7.002.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.4e7ccd5e41e65429becff3073c04df9b5bed46d7.002.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T13:16:00-07:00"
+                }
+            ],
+            "sent": "2025-03-12T21:57:00-07:00",
+            "effective": "2025-03-12T21:57:00-07:00",
+            "onset": "2025-03-12T21:57:00-07:00",
+            "expires": "2025-03-13T06:00:00-07:00",
+            "ends": "2025-03-13T23:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Wind Advisory",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS San Diego CA",
+            "headline": "Wind Advisory issued March 12 at 9:57PM PDT until March 13 at 11:00PM PDT by NWS San Diego CA",
+            "description": "* WHAT...West winds 20 to 30 mph with gusts up to 55 mph.\n\n* WHERE...San Diego County Deserts.\n\n* WHEN...Until 11 PM PDT Thursday.\n\n* IMPACTS...Gusty winds will blow around unsecured objects. Tree\nlimbs could be blown down and a few power outages may result.",
+            "instruction": "Winds this strong can make driving difficult, especially for high\nprofile vehicles. Use extra caution.",
+            "response": "Execute",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "NPWSGX"
+                ],
+                "WMOidentifier": [
+                    "WWUS76 KSGX 130457"
+                ],
+                "NWSheadline": [
+                    "WIND ADVISORY REMAINS IN EFFECT UNTIL 11 PM PDT THURSDAY"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.CON.KSGX.WI.Y.0009.000000T0000Z-250314T0600Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-14T06:00:00+00:00"
+                ],
+                "expiredReferences": [
+                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.97378a871d2f659342642093e356aba571cdbf67.002.1,2025-03-12T02:16:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.16e10f6bf679764f3a9d01ef3c2ed2e940360693.002.1,2025-03-11T21:52:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.c240084b2a6294da28851de3f8f1fba5bc038018.002.1,2025-03-11T13:26:00-07:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.234319b071f13a505c863760fa11ab2b38ba5c32.004.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.234319b071f13a505c863760fa11ab2b38ba5c32.004.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.234319b071f13a505c863760fa11ab2b38ba5c32.004.1",
+            "areaDesc": "San Diego County Coastal Areas; San Bernardino and Riverside County Valleys-The Inland Empire; San Diego County Inland Valleys; Santa Ana Mountains and Foothills; Orange County Coastal; Orange County Inland",
+            "geocode": {
+                "SAME": [
+                    "006073",
+                    "006065",
+                    "006071",
+                    "006059"
+                ],
+                "UGC": [
+                    "CAZ043",
+                    "CAZ048",
+                    "CAZ050",
+                    "CAZ057",
+                    "CAZ552",
+                    "CAZ554"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/CAZ043",
+                "https://api.weather.gov/zones/forecast/CAZ048",
+                "https://api.weather.gov/zones/forecast/CAZ050",
+                "https://api.weather.gov/zones/forecast/CAZ057",
+                "https://api.weather.gov/zones/forecast/CAZ552",
+                "https://api.weather.gov/zones/forecast/CAZ554"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4e7ccd5e41e65429becff3073c04df9b5bed46d7.004.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.4e7ccd5e41e65429becff3073c04df9b5bed46d7.004.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T13:16:00-07:00"
+                }
+            ],
+            "sent": "2025-03-12T21:57:00-07:00",
+            "effective": "2025-03-12T21:57:00-07:00",
+            "onset": "2025-03-13T12:00:00-07:00",
+            "expires": "2025-03-13T06:00:00-07:00",
+            "ends": "2025-03-13T20:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Wind Advisory",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS San Diego CA",
+            "headline": "Wind Advisory issued March 12 at 9:57PM PDT until March 13 at 8:00PM PDT by NWS San Diego CA",
+            "description": "* WHAT...West winds 15 to 25 mph with gusts up to 40 mph expected.\n\n* WHERE...Orange County Coastal Areas, Orange County Inland Areas,\nSan Bernardino and Riverside County Valleys-The Inland Empire, San\nDiego County Coastal Areas, San Diego County Valleys, and Santa\nAna Mountains and Foothills.\n\n* WHEN...From noon to 8 PM PDT Thursday.\n\n* IMPACTS...Gusty winds will blow around unsecured objects. Tree\nlimbs could be blown down and a few power outages may result.",
+            "instruction": "Winds this strong can make driving difficult, especially for high\nprofile vehicles. Use extra caution.",
+            "response": "Execute",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "NPWSGX"
+                ],
+                "WMOidentifier": [
+                    "WWUS76 KSGX 130457"
+                ],
+                "NWSheadline": [
+                    "WIND ADVISORY REMAINS IN EFFECT FROM NOON TO 8 PM PDT THURSDAY"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.CON.KSGX.WI.Y.0009.250313T1900Z-250314T0300Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-14T03:00:00+00:00"
+                ],
+                "expiredReferences": [
+                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.97378a871d2f659342642093e356aba571cdbf67.001.1,2025-03-12T02:16:00-07:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.234319b071f13a505c863760fa11ab2b38ba5c32.001.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.234319b071f13a505c863760fa11ab2b38ba5c32.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.234319b071f13a505c863760fa11ab2b38ba5c32.001.1",
+            "areaDesc": "Apple and Lucerne Valleys",
+            "geocode": {
+                "SAME": [
+                    "006071"
+                ],
+                "UGC": [
+                    "CAZ060"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/CAZ060"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4e7ccd5e41e65429becff3073c04df9b5bed46d7.001.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.4e7ccd5e41e65429becff3073c04df9b5bed46d7.001.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T13:16:00-07:00"
+                }
+            ],
+            "sent": "2025-03-12T21:57:00-07:00",
+            "effective": "2025-03-12T21:57:00-07:00",
+            "onset": "2025-03-12T21:57:00-07:00",
+            "expires": "2025-03-13T06:00:00-07:00",
+            "ends": "2025-03-14T05:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Wind Advisory",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS San Diego CA",
+            "headline": "Wind Advisory issued March 12 at 9:57PM PDT until March 14 at 5:00AM PDT by NWS San Diego CA",
+            "description": "* WHAT...West winds 20 to 30 mph with gusts up to 55 mph.\n\n* WHERE...Apple and Lucerne Valleys.\n\n* WHEN...Until 5 AM PDT Friday.\n\n* IMPACTS...Gusty winds will blow around unsecured objects. Tree\nlimbs could be blown down and a few power outages may result.",
+            "instruction": "Winds this strong can make driving difficult, especially for high\nprofile vehicles. Use extra caution.",
+            "response": "Execute",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "NPWSGX"
+                ],
+                "WMOidentifier": [
+                    "WWUS76 KSGX 130457"
+                ],
+                "NWSheadline": [
+                    "WIND ADVISORY REMAINS IN EFFECT UNTIL 5 AM PDT FRIDAY"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.CON.KSGX.WI.Y.0009.000000T0000Z-250314T1200Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-14T12:00:00+00:00"
+                ],
+                "expiredReferences": [
+                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.97378a871d2f659342642093e356aba571cdbf67.003.1,2025-03-12T02:16:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.16e10f6bf679764f3a9d01ef3c2ed2e940360693.001.1,2025-03-11T21:52:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.c240084b2a6294da28851de3f8f1fba5bc038018.001.1,2025-03-11T13:26:00-07:00"
                 ]
             }
         }
@@ -349,60 +953,6 @@
                 ],
                 "expiredReferences": [
                     "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.e4c8027e67704215b90b6aba6e36f07ea8300fef.001.1,2025-03-12T02:22:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.2d7bceea7315f0061f835ae6010885c9fb6d9d37.001.1,2025-03-11T21:49:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.0bde6e3e69305c09b7e38299399b3b305b13cdcd.001.1,2025-03-11T13:18:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.dbbb3b451640b0885a4f91a8493d9202af5afa2d.001.1,2025-03-11T02:57:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.cd8afd11fa1d63a43b15d5ae5c28fc007d056851.001.1,2025-03-10T20:58:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.77366714e20f37b0b56c66475e6724dd463c8b70.001.1,2025-03-10T13:28:00-07:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-6876",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-6876",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0-KEEPALIVE-6876",
-            "areaDesc": "Montgomery",
-            "geocode": {
-                "SAME": [
-                    "024031"
-                ],
-                "UGC": [
-                    "MDC031"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/county/MDC031"
-            ],
-            "references": [],
-            "sent": "2025-03-13T04:49:09+00:00",
-            "effective": "2025-03-13T04:49:09+00:00",
-            "onset": null,
-            "expires": "2025-03-13T04:59:09+00:00",
-            "ends": null,
-            "status": "Test",
-            "messageType": "Alert",
-            "category": "Met",
-            "severity": "Unknown",
-            "certainty": "Unknown",
-            "urgency": "Unknown",
-            "event": "Test Message",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS",
-            "headline": null,
-            "description": "Monitoring message only. Please disregard.",
-            "instruction": "Monitoring message only. Please disregard.",
-            "response": "None",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "KEPWBC"
-                ],
-                "WMOidentifier": [
-                    "NZUS91 KWBC 130449"
-                ],
-                "BLOCKCHANNEL": [
-                    "CMAS",
-                    "EAS",
-                    "NWEM"
                 ]
             }
         }
@@ -999,155 +1549,6 @@
         }
     },
     {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e28323604da8fc110b814312ced11864993e201.001.1",
-        "type": "Feature",
-        "geometry": {
-            "type": "Polygon",
-            "coordinates": [
-                [
-                    [
-                        -92.01,
-                        31.93
-                    ],
-                    [
-                        -91.9,
-                        31.93
-                    ],
-                    [
-                        -91.9,
-                        32.03
-                    ],
-                    [
-                        -91.93,
-                        32.07
-                    ],
-                    [
-                        -91.87,
-                        32.09
-                    ],
-                    [
-                        -91.9,
-                        32.17
-                    ],
-                    [
-                        -91.98,
-                        32.17
-                    ],
-                    [
-                        -91.98,
-                        32.2
-                    ],
-                    [
-                        -92.01,
-                        32.190000000000005
-                    ],
-                    [
-                        -92,
-                        32.2299999
-                    ],
-                    [
-                        -91.5,
-                        32.42
-                    ],
-                    [
-                        -91.39,
-                        31.590000000000003
-                    ],
-                    [
-                        -92.01,
-                        31.590000000000003
-                    ],
-                    [
-                        -92.01,
-                        31.93
-                    ]
-                ]
-            ]
-        },
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e28323604da8fc110b814312ced11864993e201.001.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.9e28323604da8fc110b814312ced11864993e201.001.1",
-            "areaDesc": "Richland; Madison; Franklin; Catahoula; Tensas; Concordia; Adams",
-            "geocode": {
-                "SAME": [
-                    "022083",
-                    "022065",
-                    "022041",
-                    "022025",
-                    "022107",
-                    "022029",
-                    "028001"
-                ],
-                "UGC": [
-                    "LAZ015",
-                    "LAZ016",
-                    "LAZ023",
-                    "LAZ024",
-                    "LAZ025",
-                    "LAZ026",
-                    "MSZ060"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/LAZ015",
-                "https://api.weather.gov/zones/forecast/LAZ016",
-                "https://api.weather.gov/zones/forecast/LAZ023",
-                "https://api.weather.gov/zones/forecast/LAZ024",
-                "https://api.weather.gov/zones/forecast/LAZ025",
-                "https://api.weather.gov/zones/forecast/LAZ026",
-                "https://api.weather.gov/zones/forecast/MSZ060"
-            ],
-            "references": [],
-            "sent": "2025-03-12T23:27:00-05:00",
-            "effective": "2025-03-12T23:27:00-05:00",
-            "onset": "2025-03-12T23:27:00-05:00",
-            "expires": "2025-03-13T00:15:00-05:00",
-            "ends": null,
-            "status": "Actual",
-            "messageType": "Alert",
-            "category": "Met",
-            "severity": "Moderate",
-            "certainty": "Observed",
-            "urgency": "Expected",
-            "event": "Special Weather Statement",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Jackson MS",
-            "headline": "Special Weather Statement issued March 12 at 11:27PM CDT by NWS Jackson MS",
-            "description": "At 1126 PM CDT, Doppler radar was tracking a cluster of strong\nthunderstorms near Columbia, moving northeast at 40 mph.\n\nHAZARD...Wind gusts up to 40 mph and pea size hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Gusty winds could knock down tree limbs and blow around\nunsecured objects. Minor hail damage to vegetation is\npossible.\n\nThis strong thunderstorm will be near...\nLiddieville around 1130 PM CDT.\nWinnsboro around 1135 PM CDT.\nBaskin around 1145 PM CDT.\nCrowville around 1155 PM CDT.\nBakers around 1205 AM CDT.",
-            "instruction": "If outdoors, consider seeking shelter inside a building.",
-            "response": "Execute",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "SPSJAN"
-                ],
-                "WMOidentifier": [
-                    "WWUS84 KJAN 130427"
-                ],
-                "NWSheadline": [
-                    "STRONG THUNDERSTORMS WILL IMPACT WESTERN TENSAS...WEST CENTRAL MADISON...NORTHERN CONCORDIA...CATAHOULA...CENTRAL RICHLAND... FRANKLIN PARISHES IN NORTHEASTERN LOUISIANA AND NORTH CENTRAL ADAMS COUNTIES THROUGH 1215 AM CDT"
-                ],
-                "eventMotionDescription": [
-                    "2025-03-13T04:26:00-00:00...storm...244DEG...33KT...32.08,-91.97"
-                ],
-                "maxWindGust": [
-                    "40 MPH"
-                ],
-                "maxHailSize": [
-                    "0.25"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "EAS-ORG": [
-                    "WXR"
-                ]
-            }
-        }
-    },
-    {
         "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4abc14afe14a8c4912f0fbc1e2a3609cc66d6512.001.1",
         "type": "Feature",
         "geometry": {
@@ -1246,150 +1647,6 @@
                 ],
                 "eventEndingTime": [
                     "2025-03-13T09:00:00+00:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0fa92dd8d17267b3568eed0b6524edd5a749a622.001.1",
-        "type": "Feature",
-        "geometry": {
-            "type": "Polygon",
-            "coordinates": [
-                [
-                    [
-                        -120.41,
-                        33.84
-                    ],
-                    [
-                        -120.35,
-                        34.46
-                    ],
-                    [
-                        -120.00999999999999,
-                        34.46
-                    ],
-                    [
-                        -119.88,
-                        34.4099999
-                    ],
-                    [
-                        -119.81,
-                        34.4099999
-                    ],
-                    [
-                        -119.95,
-                        33.92
-                    ],
-                    [
-                        -120.07000000000001,
-                        33.9099999
-                    ],
-                    [
-                        -119.97000000000001,
-                        33.95
-                    ],
-                    [
-                        -120.05000000000001,
-                        34.040000000000006
-                    ],
-                    [
-                        -120.23000000000002,
-                        34.010000000000005
-                    ],
-                    [
-                        -120.18000000000002,
-                        33.93000000000001
-                    ],
-                    [
-                        -120.09000000000002,
-                        33.900000000000006
-                    ],
-                    [
-                        -120.13000000000002,
-                        33.89000000000001
-                    ],
-                    [
-                        -120.41,
-                        33.84
-                    ]
-                ]
-            ]
-        },
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0fa92dd8d17267b3568eed0b6524edd5a749a622.001.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.0fa92dd8d17267b3568eed0b6524edd5a749a622.001.1",
-            "areaDesc": "East Santa Barbara Channel from Pt. Conception to Pt. Mugu CA including Santa Cruz Island; Waters from Pt. Sal to Santa Cruz Island CA and westward 60 nm including San Miguel and Santa Rosa Islands; Outer waters from Santa Cruz Island to San Clemente Island to 60 NM offshore including San Nicolas and Santa Barbara Islands",
-            "geocode": {
-                "SAME": [
-                    "057650",
-                    "057673",
-                    "057676"
-                ],
-                "UGC": [
-                    "PZZ650",
-                    "PZZ673",
-                    "PZZ676"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/PZZ650",
-                "https://api.weather.gov/zones/forecast/PZZ673",
-                "https://api.weather.gov/zones/forecast/PZZ676"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a6e57d4d0f89417e6a9414bfc951312f10ce9a0a.001.1",
-                    "identifier": "urn:oid:2.49.0.1.840.0.a6e57d4d0f89417e6a9414bfc951312f10ce9a0a.001.1",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-12T20:55:00-07:00"
-                }
-            ],
-            "sent": "2025-03-12T21:23:00-07:00",
-            "effective": "2025-03-12T21:23:00-07:00",
-            "onset": "2025-03-12T21:23:00-07:00",
-            "expires": "2025-03-12T22:00:00-07:00",
-            "ends": "2025-03-12T22:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Severe",
-            "certainty": "Likely",
-            "urgency": "Immediate",
-            "event": "Special Marine Warning",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Los Angeles/Oxnard CA",
-            "headline": "Special Marine Warning issued March 12 at 9:23PM PDT until March 12 at 10:00PM PDT by NWS Los Angeles/Oxnard CA",
-            "description": "For the following areas...\nEast Santa Barbara Channel from Pt. Conception to Pt. Mugu CA\nincluding Santa Cruz Island...\nOuter waters from Santa Cruz Island to San Clemente Island to 60 NM\noffshore including San Nicolas and Santa Barbara Islands...\nWaters from Pt. Sal to Santa Cruz Island CA and westward 60 nm\nincluding San Miguel and Santa Rosa Islands...\n\nAt 922 PM PDT, severe thunderstorms capable of producing waterspouts\nwere located along a line extending from 12 nm west of Goleta Point\nto near Santa Rosa Island, moving east at 15 knots.\n\nHAZARD...Waterspouts, wind gusts 34 knots or greater, and small\nhail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Waterspouts can easily overturn boats and create locally\nhazardous seas. Small craft could be damaged in briefly\nhigher winds and suddenly higher waves.\n\nLocations impacted include...\nWest Point Santa Cruz Island, Goleta Point, San Miguel Island, and\nSanta Rosa Island.",
-            "instruction": "Move to safe harbor immediately as gusty winds and high waves are\nexpected.\n\nThunderstorms can produce sudden waterspouts. Waterspouts can easily\noverturn boats and create locally hazardous seas. Seek safe harbor\nimmediately.",
-            "response": "Avoid",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "MWSLOX"
-                ],
-                "WMOidentifier": [
-                    "FZUS76 KLOX 130423"
-                ],
-                "NWSheadline": [
-                    "A SPECIAL MARINE WARNING REMAINS IN EFFECT UNTIL 1000 PM PDT"
-                ],
-                "eventMotionDescription": [
-                    "2025-03-13T04:22:00-00:00...storm...264DEG...16KT...34.46,-120.09 33.91,-120.19"
-                ],
-                "waterspoutDetection": [
-                    "POSSIBLE"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.CON.KLOX.MA.W.0021.000000T0000Z-250313T0500Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-13T05:00:00+00:00"
                 ]
             }
         }
@@ -24245,308 +24502,6 @@
         }
     },
     {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4e7ccd5e41e65429becff3073c04df9b5bed46d7.004.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4e7ccd5e41e65429becff3073c04df9b5bed46d7.004.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.4e7ccd5e41e65429becff3073c04df9b5bed46d7.004.1",
-            "areaDesc": "San Diego County Coastal Areas; San Bernardino and Riverside County Valleys-The Inland Empire; San Diego County Inland Valleys; Santa Ana Mountains and Foothills; Orange County Coastal; Orange County Inland",
-            "geocode": {
-                "SAME": [
-                    "006073",
-                    "006065",
-                    "006071",
-                    "006059"
-                ],
-                "UGC": [
-                    "CAZ043",
-                    "CAZ048",
-                    "CAZ050",
-                    "CAZ057",
-                    "CAZ552",
-                    "CAZ554"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/CAZ043",
-                "https://api.weather.gov/zones/forecast/CAZ048",
-                "https://api.weather.gov/zones/forecast/CAZ050",
-                "https://api.weather.gov/zones/forecast/CAZ057",
-                "https://api.weather.gov/zones/forecast/CAZ552",
-                "https://api.weather.gov/zones/forecast/CAZ554"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.97378a871d2f659342642093e356aba571cdbf67.001.1",
-                    "identifier": "urn:oid:2.49.0.1.840.0.97378a871d2f659342642093e356aba571cdbf67.001.1",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-12T02:16:00-07:00"
-                }
-            ],
-            "sent": "2025-03-12T13:16:00-07:00",
-            "effective": "2025-03-12T13:16:00-07:00",
-            "onset": "2025-03-13T12:00:00-07:00",
-            "expires": "2025-03-12T22:15:00-07:00",
-            "ends": "2025-03-13T20:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "Wind Advisory",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS San Diego CA",
-            "headline": "Wind Advisory issued March 12 at 1:16PM PDT until March 13 at 8:00PM PDT by NWS San Diego CA",
-            "description": "* WHAT...West winds 15 to 25 mph with gusts 30 to 40 mph expected.\n\n* WHERE...Orange County Coastal Areas, Orange County Inland Areas,\nSan Bernardino and Riverside County Valleys-The Inland Empire, San\nDiego County Coastal Areas, San Diego County Valleys, and Santa\nAna Mountains and Foothills.\n\n* WHEN...From noon to 8 PM PDT Thursday.\n\n* IMPACTS...Gusty winds will blow around unsecured objects. Tree\nlimbs could be blown down and a few power outages may result.",
-            "instruction": "Winds this strong can make driving difficult, especially for high\nprofile vehicles. Use extra caution.",
-            "response": "Execute",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "NPWSGX"
-                ],
-                "WMOidentifier": [
-                    "WWUS76 KSGX 122016"
-                ],
-                "NWSheadline": [
-                    "WIND ADVISORY REMAINS IN EFFECT FROM NOON TO 8 PM PDT THURSDAY"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.CON.KSGX.WI.Y.0009.250313T1900Z-250314T0300Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-14T03:00:00+00:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4e7ccd5e41e65429becff3073c04df9b5bed46d7.002.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4e7ccd5e41e65429becff3073c04df9b5bed46d7.002.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.4e7ccd5e41e65429becff3073c04df9b5bed46d7.002.1",
-            "areaDesc": "San Diego County Deserts",
-            "geocode": {
-                "SAME": [
-                    "006073"
-                ],
-                "UGC": [
-                    "CAZ062"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/CAZ062"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.97378a871d2f659342642093e356aba571cdbf67.002.1",
-                    "identifier": "urn:oid:2.49.0.1.840.0.97378a871d2f659342642093e356aba571cdbf67.002.1",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-12T02:16:00-07:00"
-                }
-            ],
-            "sent": "2025-03-12T13:16:00-07:00",
-            "effective": "2025-03-12T13:16:00-07:00",
-            "onset": "2025-03-12T19:00:00-07:00",
-            "expires": "2025-03-12T22:15:00-07:00",
-            "ends": "2025-03-13T23:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "Wind Advisory",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS San Diego CA",
-            "headline": "Wind Advisory issued March 12 at 1:16PM PDT until March 13 at 11:00PM PDT by NWS San Diego CA",
-            "description": "* WHAT...West winds 20 to 30 mph with gusts 45 to 55 mph expected.\n\n* WHERE...San Diego County Deserts.\n\n* WHEN...From 7 PM this evening to 11 PM PDT Thursday.\n\n* IMPACTS...Gusty winds will blow around unsecured objects. Tree\nlimbs could be blown down and a few power outages may result.",
-            "instruction": "Winds this strong can make driving difficult, especially for high\nprofile vehicles. Use extra caution.",
-            "response": "Execute",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "NPWSGX"
-                ],
-                "WMOidentifier": [
-                    "WWUS76 KSGX 122016"
-                ],
-                "NWSheadline": [
-                    "WIND ADVISORY REMAINS IN EFFECT FROM 7 PM THIS EVENING TO 11 PM PDT THURSDAY"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.CON.KSGX.WI.Y.0009.250313T0200Z-250314T0600Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-14T06:00:00+00:00"
-                ],
-                "expiredReferences": [
-                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.16e10f6bf679764f3a9d01ef3c2ed2e940360693.002.1,2025-03-11T21:52:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.c240084b2a6294da28851de3f8f1fba5bc038018.002.1,2025-03-11T13:26:00-07:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4e7ccd5e41e65429becff3073c04df9b5bed46d7.003.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4e7ccd5e41e65429becff3073c04df9b5bed46d7.003.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.4e7ccd5e41e65429becff3073c04df9b5bed46d7.003.1",
-            "areaDesc": "San Gorgonio Pass Near Banning",
-            "geocode": {
-                "SAME": [
-                    "006065"
-                ],
-                "UGC": [
-                    "CAZ065"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/CAZ065"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.97378a871d2f659342642093e356aba571cdbf67.004.1",
-                    "identifier": "urn:oid:2.49.0.1.840.0.97378a871d2f659342642093e356aba571cdbf67.004.1",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-12T02:16:00-07:00"
-                }
-            ],
-            "sent": "2025-03-12T13:16:00-07:00",
-            "effective": "2025-03-12T13:16:00-07:00",
-            "onset": "2025-03-12T19:00:00-07:00",
-            "expires": "2025-03-12T22:15:00-07:00",
-            "ends": "2025-03-14T05:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "Wind Advisory",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS San Diego CA",
-            "headline": "Wind Advisory issued March 12 at 1:16PM PDT until March 14 at 5:00AM PDT by NWS San Diego CA",
-            "description": "* WHAT...West winds 25 to 35 mph with gusts 50 to 60 mph expected.\n\n* WHERE...San Gorgonio Pass near Banning.\n\n* WHEN...From 7 PM this evening to 5 AM PDT Friday.\n\n* IMPACTS...Gusty winds will blow around unsecured objects. Tree\nlimbs could be blown down and a few power outages may result.",
-            "instruction": "Winds this strong can make driving difficult, especially for high\nprofile vehicles. Use extra caution.",
-            "response": "Execute",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "NPWSGX"
-                ],
-                "WMOidentifier": [
-                    "WWUS76 KSGX 122016"
-                ],
-                "NWSheadline": [
-                    "WIND ADVISORY REMAINS IN EFFECT FROM 7 PM THIS EVENING TO 5 AM PDT FRIDAY"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.CON.KSGX.WI.Y.0009.250313T0200Z-250314T1200Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-14T12:00:00+00:00"
-                ],
-                "expiredReferences": [
-                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.16e10f6bf679764f3a9d01ef3c2ed2e940360693.003.1,2025-03-11T21:52:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.c240084b2a6294da28851de3f8f1fba5bc038018.003.1,2025-03-11T13:26:00-07:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4e7ccd5e41e65429becff3073c04df9b5bed46d7.001.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4e7ccd5e41e65429becff3073c04df9b5bed46d7.001.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.4e7ccd5e41e65429becff3073c04df9b5bed46d7.001.1",
-            "areaDesc": "Apple and Lucerne Valleys",
-            "geocode": {
-                "SAME": [
-                    "006071"
-                ],
-                "UGC": [
-                    "CAZ060"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/CAZ060"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.97378a871d2f659342642093e356aba571cdbf67.003.1",
-                    "identifier": "urn:oid:2.49.0.1.840.0.97378a871d2f659342642093e356aba571cdbf67.003.1",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-12T02:16:00-07:00"
-                }
-            ],
-            "sent": "2025-03-12T13:16:00-07:00",
-            "effective": "2025-03-12T13:16:00-07:00",
-            "onset": "2025-03-12T17:00:00-07:00",
-            "expires": "2025-03-12T22:15:00-07:00",
-            "ends": "2025-03-14T05:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "Wind Advisory",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS San Diego CA",
-            "headline": "Wind Advisory issued March 12 at 1:16PM PDT until March 14 at 5:00AM PDT by NWS San Diego CA",
-            "description": "* WHAT...Southwest winds 25 to 35 mph with gusts 45 to 55 mph\nexpected.\n\n* WHERE...Apple and Lucerne Valleys.\n\n* WHEN...From 5 PM this afternoon to 5 AM PDT Friday.\n\n* IMPACTS...Gusty winds will blow around unsecured objects. Tree\nlimbs could be blown down and a few power outages may result.",
-            "instruction": "Winds this strong can make driving difficult, especially for high\nprofile vehicles. Use extra caution.",
-            "response": "Execute",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "NPWSGX"
-                ],
-                "WMOidentifier": [
-                    "WWUS76 KSGX 122016"
-                ],
-                "NWSheadline": [
-                    "WIND ADVISORY REMAINS IN EFFECT FROM 5 PM THIS AFTERNOON TO 5 AM PDT FRIDAY"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.CON.KSGX.WI.Y.0009.250313T0000Z-250314T1200Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-14T12:00:00+00:00"
-                ],
-                "expiredReferences": [
-                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.16e10f6bf679764f3a9d01ef3c2ed2e940360693.001.1,2025-03-11T21:52:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.c240084b2a6294da28851de3f8f1fba5bc038018.001.1,2025-03-11T13:26:00-07:00"
-                ]
-            }
-        }
-    },
-    {
         "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.889d3158d777458fcc3be8399e27bcd406051794.001.1",
         "type": "Feature",
         "geometry": null,
@@ -27012,164 +26967,6 @@
         }
     },
     {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ae90d574843d9eb71f83cdcf1cf2c75552126855.004.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ae90d574843d9eb71f83cdcf1cf2c75552126855.004.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.ae90d574843d9eb71f83cdcf1cf2c75552126855.004.1",
-            "areaDesc": "San Luis Obispo County Beaches; San Luis Obispo County Inland Central Coast; Southern Salinas Valley; Santa Barbara County Central Coast Beaches; Santa Barbara County Inland Central Coast; Santa Ynez Valley",
-            "geocode": {
-                "SAME": [
-                    "006079",
-                    "006083"
-                ],
-                "UGC": [
-                    "CAZ340",
-                    "CAZ341",
-                    "CAZ343",
-                    "CAZ346",
-                    "CAZ347",
-                    "CAZ348"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/CAZ340",
-                "https://api.weather.gov/zones/forecast/CAZ341",
-                "https://api.weather.gov/zones/forecast/CAZ343",
-                "https://api.weather.gov/zones/forecast/CAZ346",
-                "https://api.weather.gov/zones/forecast/CAZ347",
-                "https://api.weather.gov/zones/forecast/CAZ348"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.95720aea24711fa5c2fa95ba735bfb0da53b6e36.004.1",
-                    "identifier": "urn:oid:2.49.0.1.840.0.95720aea24711fa5c2fa95ba735bfb0da53b6e36.004.1",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-12T00:27:00-07:00"
-                }
-            ],
-            "sent": "2025-03-12T12:22:00-07:00",
-            "effective": "2025-03-12T12:22:00-07:00",
-            "onset": "2025-03-12T12:22:00-07:00",
-            "expires": "2025-03-12T22:00:00-07:00",
-            "ends": "2025-03-12T22:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "Wind Advisory",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Los Angeles/Oxnard CA",
-            "headline": "Wind Advisory issued March 12 at 12:22PM PDT until March 12 at 10:00PM PDT by NWS Los Angeles/Oxnard CA",
-            "description": "* WHAT...South winds 20 to 30 mph with gusts up to 45 mph.\n\n* WHERE...San Luis Obispo County Beaches, San Luis Obispo County\nInland Central Coast, Santa Barbara County Central Coast Beaches,\nSanta Barbara County Inland Central Coast, Santa Ynez Valley, and\nSouthern Salinas Valley.\n\n* WHEN...Until 10 PM PDT this evening.\n\n* IMPACTS...Gusty winds will blow around unsecured objects. Tree\nlimbs could be blown down and a few power outages may result.",
-            "instruction": "Winds this strong can make driving difficult, especially for high\nprofile vehicles. Use extra caution.",
-            "response": "Execute",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "NPWLOX"
-                ],
-                "WMOidentifier": [
-                    "WWUS76 KLOX 121922"
-                ],
-                "NWSheadline": [
-                    "WIND ADVISORY REMAINS IN EFFECT UNTIL 10 PM PDT THIS EVENING"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.CON.KLOX.WI.Y.0030.000000T0000Z-250313T0500Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-13T05:00:00+00:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ae90d574843d9eb71f83cdcf1cf2c75552126855.003.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ae90d574843d9eb71f83cdcf1cf2c75552126855.003.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.ae90d574843d9eb71f83cdcf1cf2c75552126855.003.1",
-            "areaDesc": "Cuyama Valley; Santa Lucia Mountains; Santa Barbara County Southwestern Coast; Santa Ynez Mountains Western Range",
-            "geocode": {
-                "SAME": [
-                    "006083",
-                    "006079"
-                ],
-                "UGC": [
-                    "CAZ038",
-                    "CAZ342",
-                    "CAZ349",
-                    "CAZ351"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/CAZ038",
-                "https://api.weather.gov/zones/forecast/CAZ342",
-                "https://api.weather.gov/zones/forecast/CAZ349",
-                "https://api.weather.gov/zones/forecast/CAZ351"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.95720aea24711fa5c2fa95ba735bfb0da53b6e36.003.1",
-                    "identifier": "urn:oid:2.49.0.1.840.0.95720aea24711fa5c2fa95ba735bfb0da53b6e36.003.1",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-12T00:27:00-07:00"
-                }
-            ],
-            "sent": "2025-03-12T12:22:00-07:00",
-            "effective": "2025-03-12T12:22:00-07:00",
-            "onset": "2025-03-12T12:22:00-07:00",
-            "expires": "2025-03-12T22:00:00-07:00",
-            "ends": "2025-03-12T22:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "Wind Advisory",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Los Angeles/Oxnard CA",
-            "headline": "Wind Advisory issued March 12 at 12:22PM PDT until March 12 at 10:00PM PDT by NWS Los Angeles/Oxnard CA",
-            "description": "* WHAT...South winds 25 to 35 mph with gusts up to 50 mph.\n\n* WHERE...Cuyama Valley, Santa Barbara County Southwestern Coast,\nSanta Lucia Mountains, and Santa Ynez Mountains Western Range.\n\n* WHEN...Until 10 PM PDT this evening.\n\n* IMPACTS...Gusty winds will blow around unsecured objects. Tree\nlimbs could be blown down and a few power outages may result.",
-            "instruction": "Winds this strong can make driving difficult, especially for high\nprofile vehicles. Use extra caution.",
-            "response": "Execute",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "NPWLOX"
-                ],
-                "WMOidentifier": [
-                    "WWUS76 KLOX 121922"
-                ],
-                "NWSheadline": [
-                    "WIND ADVISORY REMAINS IN EFFECT UNTIL 10 PM PDT THIS EVENING"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.CON.KLOX.WI.Y.0030.000000T0000Z-250313T0500Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-13T05:00:00+00:00"
-                ]
-            }
-        }
-    },
-    {
         "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ae90d574843d9eb71f83cdcf1cf2c75552126855.002.1",
         "type": "Feature",
         "geometry": null,
@@ -28852,76 +28649,6 @@
                 ],
                 "expiredReferences": [
                     "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d16cbfd2739344934c8f66967bbead30fb819d8e.001.1,2025-03-12T02:59:00+10:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.74ca68a8c2ee4e168bde803f6b05c8df65129ddc.001.1,2025-03-11T15:55:00+10:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.6920e4e5284bcc4ad236dc0330b531aaa04dc798.001.1,2025-03-11T04:06:00+10:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f54aaba397ed2999278c8756b2238de0e84b8520.001.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f54aaba397ed2999278c8756b2238de0e84b8520.001.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.f54aaba397ed2999278c8756b2238de0e84b8520.001.1",
-            "areaDesc": "Majuro Coastal Waters",
-            "geocode": {
-                "SAME": [
-                    "065181"
-                ],
-                "UGC": [
-                    "PMZ181"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/PMZ181"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8c272dbf5a28f4d0329939e0e990dbb21c5e4358.001.1",
-                    "identifier": "urn:oid:2.49.0.1.840.0.8c272dbf5a28f4d0329939e0e990dbb21c5e4358.001.1",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-12T22:47:00+10:00"
-                }
-            ],
-            "sent": "2025-03-13T03:03:00+10:00",
-            "effective": "2025-03-13T03:03:00+10:00",
-            "onset": "2025-03-13T03:03:00+10:00",
-            "expires": "2025-03-13T15:00:00+10:00",
-            "ends": "2025-03-13T15:00:00+10:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Minor",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "Small Craft Advisory",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Tiyan GU",
-            "headline": "Small Craft Advisory issued March 13 at 3:03AM ChST until March 13 at 3:00PM ChST by NWS Tiyan GU",
-            "description": "* WHAT...East winds 15 to 20 kt with frequent gusts to 25 kt and\nseas 8 to 10 feet.\n\n* WHERE...Majuro Coastal Waters.\n\n* WHEN...Until 3 PM ChST this afternoon.\n\n* IMPACTS...Conditions will be hazardous to small craft.",
-            "instruction": "Inexperienced mariners, especially those operating smaller\nvessels, should avoid boating in hazardous conditions.",
-            "response": "Avoid",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "MWWPQ1"
-                ],
-                "WMOidentifier": [
-                    "WHGM71 PGUM 121703"
-                ],
-                "NWSheadline": [
-                    "SMALL CRAFT ADVISORY REMAINS IN EFFECT UNTIL 3 PM CHST THIS AFTERNOON"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.CON.PGUM.SC.Y.0023.000000T0000Z-250313T0500Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-13T05:00:00+00:00"
                 ]
             }
         }
