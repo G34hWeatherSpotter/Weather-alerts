@@ -1,5 +1,957 @@
 [
     {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5822b57fc36b1b863092a3e3c3b4bb3e868ce255.001.1",
+        "type": "Feature",
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -117.59,
+                        33.38
+                    ],
+                    [
+                        -117.55,
+                        33.370000000000005
+                    ],
+                    [
+                        -117.5,
+                        33.330000000000005
+                    ],
+                    [
+                        -117.41,
+                        33.21000000000001
+                    ],
+                    [
+                        -117.36,
+                        33.17000000000001
+                    ],
+                    [
+                        -117.35,
+                        33.17000000000001
+                    ],
+                    [
+                        -117.36,
+                        33.15999990000001
+                    ],
+                    [
+                        -117.32,
+                        33.11000000000001
+                    ],
+                    [
+                        -117.28999999999999,
+                        33.03000000000001
+                    ],
+                    [
+                        -117.42999999999999,
+                        32.77000000000001
+                    ],
+                    [
+                        -117.91999999999999,
+                        33.02000000000001
+                    ],
+                    [
+                        -117.77999999999999,
+                        33.32000000000001
+                    ],
+                    [
+                        -117.71999999999998,
+                        33.35000000000001
+                    ],
+                    [
+                        -117.72999999999999,
+                        33.38000000000001
+                    ],
+                    [
+                        -117.6,
+                        33.40000000000001
+                    ],
+                    [
+                        -117.59,
+                        33.38
+                    ]
+                ]
+            ]
+        },
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5822b57fc36b1b863092a3e3c3b4bb3e868ce255.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.5822b57fc36b1b863092a3e3c3b4bb3e868ce255.001.1",
+            "areaDesc": "Coastal Waters from San Mateo Point to the Mexican Border and out to 30 nm",
+            "geocode": {
+                "SAME": [
+                    "057750"
+                ],
+                "UGC": [
+                    "PZZ750"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/PZZ750"
+            ],
+            "references": [],
+            "sent": "2025-03-13T10:07:00-07:00",
+            "effective": "2025-03-13T10:07:00-07:00",
+            "onset": "2025-03-13T10:07:00-07:00",
+            "expires": "2025-03-13T10:45:00-07:00",
+            "ends": "2025-03-13T10:45:00-07:00",
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Severe",
+            "certainty": "Likely",
+            "urgency": "Immediate",
+            "event": "Special Marine Warning",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS San Diego CA",
+            "headline": "Special Marine Warning issued March 13 at 10:07AM PDT until March 13 at 10:45AM PDT by NWS San Diego CA",
+            "description": "SMWSGX\n\nThe National Weather Service in San Diego has issued a\n\n* Special Marine Warning for...\nCoastal Waters from San Mateo Point to the Mexican Border and out\nto 30 nm...\n\n* Until 1045 AM PDT.\n\n* At 1006 AM PDT, a severe thunderstorm capable of producing\nwaterspouts was located 14 nm south of Dana Point, moving southeast\nat 35 knots.\n\nHAZARD...Waterspouts and wind gusts 34 knots or greater.\n\nSOURCE...Radar.\n\nIMPACT...Waterspouts can easily overturn boats and create locally\nhazardous seas. Small craft could be damaged in briefly\nhigher winds and suddenly higher waves.\n\n* The severe thunderstorm will remain over mainly open waters.",
+            "instruction": "Move to safe harbor until hazardous weather passes.",
+            "response": "Avoid",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "SMWSGX"
+                ],
+                "WMOidentifier": [
+                    "WHUS56 KSGX 131707"
+                ],
+                "eventMotionDescription": [
+                    "2025-03-13T17:06:00-00:00...storm...292DEG...35KT...33.22,-117.76"
+                ],
+                "waterspoutDetection": [
+                    "POSSIBLE"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "EAS-ORG": [
+                    "WXR"
+                ],
+                "VTEC": [
+                    "/O.NEW.KSGX.MA.W.0013.250313T1707Z-250313T1745Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-13T17:45:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-35532",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-35532",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0-KEEPALIVE-35532",
+            "areaDesc": "Montgomery",
+            "geocode": {
+                "SAME": [
+                    "024031"
+                ],
+                "UGC": [
+                    "MDC031"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/county/MDC031"
+            ],
+            "references": [],
+            "sent": "2025-03-13T17:05:41+00:00",
+            "effective": "2025-03-13T17:05:41+00:00",
+            "onset": null,
+            "expires": "2025-03-13T17:15:41+00:00",
+            "ends": null,
+            "status": "Test",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Unknown",
+            "certainty": "Unknown",
+            "urgency": "Unknown",
+            "event": "Test Message",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS",
+            "headline": null,
+            "description": "Monitoring message only. Please disregard.",
+            "instruction": "Monitoring message only. Please disregard.",
+            "response": "None",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "KEPWBC"
+                ],
+                "WMOidentifier": [
+                    "NZUS91 KWBC 131705"
+                ],
+                "BLOCKCHANNEL": [
+                    "CMAS",
+                    "EAS",
+                    "NWEM"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.da9f6882c741db29e7a69ae84ccf63e174e9370a.002.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.da9f6882c741db29e7a69ae84ccf63e174e9370a.002.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.da9f6882c741db29e7a69ae84ccf63e174e9370a.002.1",
+            "areaDesc": "San Luis Obispo County Mountains",
+            "geocode": {
+                "SAME": [
+                    "006079"
+                ],
+                "UGC": [
+                    "CAZ345"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/CAZ345"
+            ],
+            "references": [],
+            "sent": "2025-03-13T10:04:00-07:00",
+            "effective": "2025-03-13T10:04:00-07:00",
+            "onset": "2025-03-13T10:04:00-07:00",
+            "expires": "2025-03-13T17:00:00-07:00",
+            "ends": "2025-03-13T17:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Winter Weather Advisory",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Los Angeles/Oxnard CA",
+            "headline": "Winter Weather Advisory issued March 13 at 10:04AM PDT until March 13 at 5:00PM PDT by NWS Los Angeles/Oxnard CA",
+            "description": "* WHAT...Accumulating snowfall expected. Additional accumulation up\nto 2 inches possible above 3000 feet. Winds gusting as high as 45\nmph.\n\n* WHERE...San Luis Obispo County Mountains.\n\n* WHEN...Until 5 PM PDT this afternoon.\n\n* IMPACTS...Plan on slippery road conditions.",
+            "instruction": "Slow down and use caution while traveling. The latest road\nconditions for the state you are calling from can be obtained by\ncalling 5 1 1.",
+            "response": "Execute",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "WSWLOX"
+                ],
+                "WMOidentifier": [
+                    "WWUS46 KLOX 131704"
+                ],
+                "NWSheadline": [
+                    "WINTER WEATHER ADVISORY NOW IN EFFECT UNTIL 5 PM PDT THIS AFTERNOON"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.EXT.KLOX.WW.Y.0004.000000T0000Z-250314T0000Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-14T00:00:00+00:00"
+                ],
+                "expiredReferences": [
+                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.0c13900c9f7f5af5b92af7727cb5746d0d248788.002.1,2025-03-13T02:03:00-07:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.da9f6882c741db29e7a69ae84ccf63e174e9370a.001.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.da9f6882c741db29e7a69ae84ccf63e174e9370a.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.da9f6882c741db29e7a69ae84ccf63e174e9370a.001.1",
+            "areaDesc": "Santa Barbara County Interior Mountains; Southern Ventura County Mountains; Northern Ventura County Mountains; Interstate 5 Corridor; Western San Gabriel Mountains and Highway 14 Corridor; Eastern San Gabriel Mountains; Western Antelope Valley Foothills; Eastern Antelope Valley Foothills",
+            "geocode": {
+                "SAME": [
+                    "006083",
+                    "006111",
+                    "006037"
+                ],
+                "UGC": [
+                    "CAZ353",
+                    "CAZ376",
+                    "CAZ377",
+                    "CAZ378",
+                    "CAZ379",
+                    "CAZ380",
+                    "CAZ381",
+                    "CAZ382"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/CAZ353",
+                "https://api.weather.gov/zones/forecast/CAZ376",
+                "https://api.weather.gov/zones/forecast/CAZ377",
+                "https://api.weather.gov/zones/forecast/CAZ378",
+                "https://api.weather.gov/zones/forecast/CAZ379",
+                "https://api.weather.gov/zones/forecast/CAZ380",
+                "https://api.weather.gov/zones/forecast/CAZ381",
+                "https://api.weather.gov/zones/forecast/CAZ382"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3ddcb021ad2a051bcca25be03e6c2b74e361dcd9.001.2",
+                    "identifier": "urn:oid:2.49.0.1.840.0.3ddcb021ad2a051bcca25be03e6c2b74e361dcd9.001.2",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-11T12:32:00-07:00"
+                },
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8eadbf3b36b7c1838a77d040f197f998bd972870.001.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.8eadbf3b36b7c1838a77d040f197f998bd972870.001.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T02:50:00-07:00"
+                }
+            ],
+            "sent": "2025-03-13T10:04:00-07:00",
+            "effective": "2025-03-13T10:04:00-07:00",
+            "onset": "2025-03-13T10:04:00-07:00",
+            "expires": "2025-03-13T17:00:00-07:00",
+            "ends": "2025-03-15T05:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Severe",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Winter Storm Warning",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Los Angeles/Oxnard CA",
+            "headline": "Winter Storm Warning issued March 13 at 10:04AM PDT until March 15 at 5:00AM PDT by NWS Los Angeles/Oxnard CA",
+            "description": "* WHAT...Heavy snow. Additional snow accumulations up to 6 inches.\nWinds gusting as high as 50 mph.\n\n* WHERE...The mountains of Los Angeles, Ventura, and Santa Barbara\nCounties.\n\n* WHEN...Until 5 AM PDT Saturday.\n\n* IMPACTS...Plan on slippery road conditions. The hazardous\nconditions could impact the Thursday evening and Friday morning\ncommutes. Gusty winds could bring down tree branches.\n\n* ADDITIONAL DETAILS...A second, and much weaker system will move\ninto the mountains Friday into Friday night generating much\nlighter accumulations.",
+            "instruction": "If you must travel, keep an extra flashlight, food, and water in\nyour vehicle in case of an emergency. The latest road conditions for\nthe state you are calling from can be obtained by calling 5 1 1.",
+            "response": "Prepare",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "WSWLOX"
+                ],
+                "WMOidentifier": [
+                    "WWUS46 KLOX 131704"
+                ],
+                "NWSheadline": [
+                    "WINTER STORM WARNING REMAINS IN EFFECT UNTIL 5 AM PDT SATURDAY"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "EAS-ORG": [
+                    "WXR"
+                ],
+                "VTEC": [
+                    "/O.CON.KLOX.WS.W.0003.000000T0000Z-250315T1200Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-15T12:00:00+00:00"
+                ],
+                "expiredReferences": [
+                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.0c13900c9f7f5af5b92af7727cb5746d0d248788.001.1,2025-03-13T02:03:00-07:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0f111c0bbe0c015f3b5f57a651a9687571a4fd4a.001.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0f111c0bbe0c015f3b5f57a651a9687571a4fd4a.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.0f111c0bbe0c015f3b5f57a651a9687571a4fd4a.001.1",
+            "areaDesc": "Guam; Rota; Tinian; Saipan",
+            "geocode": {
+                "SAME": [
+                    "066010",
+                    "069100",
+                    "069120",
+                    "069110"
+                ],
+                "UGC": [
+                    "GUZ001",
+                    "MPZ001",
+                    "MPZ002",
+                    "MPZ003"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/GUZ001",
+                "https://api.weather.gov/zones/forecast/MPZ001",
+                "https://api.weather.gov/zones/forecast/MPZ002",
+                "https://api.weather.gov/zones/forecast/MPZ003"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b2f7c4d09abf645b9dc1fe87ef80ee910d7d0841.001.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.b2f7c4d09abf645b9dc1fe87ef80ee910d7d0841.001.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-13T16:09:00+10:00"
+                }
+            ],
+            "sent": "2025-03-14T03:01:00+10:00",
+            "effective": "2025-03-14T03:01:00+10:00",
+            "onset": "2025-03-14T03:01:00+10:00",
+            "expires": "2025-03-14T19:00:00+10:00",
+            "ends": "2025-03-15T16:00:00+10:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Minor",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "High Surf Advisory",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Tiyan GU",
+            "headline": "High Surf Advisory issued March 14 at 3:01AM ChST until March 15 at 4:00PM ChST by NWS Tiyan GU",
+            "description": "* WHAT...For the High Surf Advisory, large breaking waves of 8 to\n11 feet in the surf zone. For the High Rip Current Risk, dangerous\nrip currents.\n\n* WHERE...For the High Surf Advisory, north facing reefs of the\nMarianas. For the High Rip Risk, north and east facing reefs.\n\n* WHEN...For the High Surf Advisory, until 4 PM ChST Saturday.\nFor the High Rip Current Risk, through Saturday afternoon.\n\n* IMPACTS...Dangerous swimming and surfing conditions and\nlocalized beach erosion. Rip currents can sweep even the best\nswimmers away from shore into deeper water.\n\n* ADDITIONAL DETAILS...A long-period north-northeast swell, in\ncombination with the northeast trade swell, is generating hazardous\nsurf along north facing reefs and a high risk of rip currents along\nnorth and east facing reefs. Surf is expected to fall below\nhazardous levels of 9 feet on Saturday, as the swell energy\ndissipates and seas decrease.",
+            "instruction": "Inexperienced swimmers should remain out of the water due to\ndangerous surf conditions.\n\nIf caught in a rip current, relax and float. Don't swim against\nthe current. If able, swim in a direction following the\nshoreline. If unable to escape, face the shore and call or wave\nfor help.",
+            "response": "Avoid",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "CFWGUM"
+                ],
+                "WMOidentifier": [
+                    "WHMY40 PGUM 131701"
+                ],
+                "NWSheadline": [
+                    "HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 4 PM CHST SATURDAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH SATURDAY AFTERNOON"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.CON.PGUM.SU.Y.0022.000000T0000Z-250315T0600Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-15T06:00:00+00:00"
+                ],
+                "expiredReferences": [
+                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.73dc058ce3ef6229e626013623e97d48bff01687.001.1,2025-03-13T03:30:00+10:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d663724cafb8aada7f69db085b8f795152aaa5c2.001.1,2025-03-12T15:58:00+10:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d16cbfd2739344934c8f66967bbead30fb819d8e.001.1,2025-03-12T02:59:00+10:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.74ca68a8c2ee4e168bde803f6b05c8df65129ddc.001.1,2025-03-11T15:55:00+10:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.6920e4e5284bcc4ad236dc0330b531aaa04dc798.001.1,2025-03-11T04:06:00+10:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0f111c0bbe0c015f3b5f57a651a9687571a4fd4a.001.2",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0f111c0bbe0c015f3b5f57a651a9687571a4fd4a.001.2",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.0f111c0bbe0c015f3b5f57a651a9687571a4fd4a.001.2",
+            "areaDesc": "Guam; Rota; Tinian; Saipan",
+            "geocode": {
+                "SAME": [
+                    "066010",
+                    "069100",
+                    "069120",
+                    "069110"
+                ],
+                "UGC": [
+                    "GUZ001",
+                    "MPZ001",
+                    "MPZ002",
+                    "MPZ003"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/GUZ001",
+                "https://api.weather.gov/zones/forecast/MPZ001",
+                "https://api.weather.gov/zones/forecast/MPZ002",
+                "https://api.weather.gov/zones/forecast/MPZ003"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b2f7c4d09abf645b9dc1fe87ef80ee910d7d0841.001.2",
+                    "identifier": "urn:oid:2.49.0.1.840.0.b2f7c4d09abf645b9dc1fe87ef80ee910d7d0841.001.2",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-13T16:09:00+10:00"
+                }
+            ],
+            "sent": "2025-03-14T03:01:00+10:00",
+            "effective": "2025-03-14T03:01:00+10:00",
+            "onset": "2025-03-14T03:01:00+10:00",
+            "expires": "2025-03-14T19:00:00+10:00",
+            "ends": "2025-03-15T16:00:00+10:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Rip Current Statement",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Tiyan GU",
+            "headline": "Rip Current Statement issued March 14 at 3:01AM ChST until March 15 at 4:00PM ChST by NWS Tiyan GU",
+            "description": "* WHAT...For the High Surf Advisory, large breaking waves of 8 to\n11 feet in the surf zone. For the High Rip Current Risk, dangerous\nrip currents.\n\n* WHERE...For the High Surf Advisory, north facing reefs of the\nMarianas. For the High Rip Risk, north and east facing reefs.\n\n* WHEN...For the High Surf Advisory, until 4 PM ChST Saturday.\nFor the High Rip Current Risk, through Saturday afternoon.\n\n* IMPACTS...Dangerous swimming and surfing conditions and\nlocalized beach erosion. Rip currents can sweep even the best\nswimmers away from shore into deeper water.\n\n* ADDITIONAL DETAILS...A long-period north-northeast swell, in\ncombination with the northeast trade swell, is generating hazardous\nsurf along north facing reefs and a high risk of rip currents along\nnorth and east facing reefs. Surf is expected to fall below\nhazardous levels of 9 feet on Saturday, as the swell energy\ndissipates and seas decrease.",
+            "instruction": "Inexperienced swimmers should remain out of the water due to\ndangerous surf conditions.\n\nIf caught in a rip current, relax and float. Don't swim against\nthe current. If able, swim in a direction following the\nshoreline. If unable to escape, face the shore and call or wave\nfor help.",
+            "response": "Avoid",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "CFWGUM"
+                ],
+                "WMOidentifier": [
+                    "WHMY40 PGUM 131701"
+                ],
+                "NWSheadline": [
+                    "HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 4 PM CHST SATURDAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH SATURDAY AFTERNOON"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.CON.PGUM.RP.S.0009.000000T0000Z-250315T0600Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-15T06:00:00+00:00"
+                ],
+                "expiredReferences": [
+                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.73dc058ce3ef6229e626013623e97d48bff01687.001.2,2025-03-13T03:30:00+10:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d663724cafb8aada7f69db085b8f795152aaa5c2.001.2,2025-03-12T15:58:00+10:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d16cbfd2739344934c8f66967bbead30fb819d8e.001.2,2025-03-12T02:59:00+10:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.74ca68a8c2ee4e168bde803f6b05c8df65129ddc.001.2,2025-03-11T15:55:00+10:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.6920e4e5284bcc4ad236dc0330b531aaa04dc798.001.2,2025-03-11T04:06:00+10:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c9d1e0fc577049b0ae81fbdc1e98c795da08b890.001.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c9d1e0fc577049b0ae81fbdc1e98c795da08b890.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.c9d1e0fc577049b0ae81fbdc1e98c795da08b890.001.1",
+            "areaDesc": "Northern Humboldt Coast; Southwestern Humboldt; Southern Humboldt Interior",
+            "geocode": {
+                "SAME": [
+                    "006023"
+                ],
+                "UGC": [
+                    "CAZ103",
+                    "CAZ104",
+                    "CAZ106"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/CAZ103",
+                "https://api.weather.gov/zones/forecast/CAZ104",
+                "https://api.weather.gov/zones/forecast/CAZ106"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ed2cb624ffdf8eb04cef939edd7129a124f71be0.001.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.ed2cb624ffdf8eb04cef939edd7129a124f71be0.001.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-13T02:03:00-07:00"
+                }
+            ],
+            "sent": "2025-03-13T10:01:00-07:00",
+            "effective": "2025-03-13T10:01:00-07:00",
+            "onset": "2025-03-13T23:00:00-07:00",
+            "expires": "2025-03-13T18:15:00-07:00",
+            "ends": "2025-03-14T11:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Wind Advisory",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Eureka CA",
+            "headline": "Wind Advisory issued March 13 at 10:01AM PDT until March 14 at 11:00AM PDT by NWS Eureka CA",
+            "description": "* WHAT...Southeast winds 20 to 30 mph with gusts up to 55 mph\nexpected.\n\n* WHERE...Humboldt Coast, and Southern Humboldt Interior.\n\n* WHEN...From 11 PM this evening to 11 AM PDT Friday.\n\n* IMPACTS...Wind gusts will be particularly strong along windward\nridges, southern facing slopes, and exposed coastal headlands.\nGusty winds will blow around unsecured objects. Tree limbs could\nbe blown down and a few power outages may result.",
+            "instruction": "Winds this strong can make driving difficult, especially for high\nprofile vehicles. Use extra caution.\n\nSecure outdoor objects.",
+            "response": "Execute",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "NPWEKA"
+                ],
+                "WMOidentifier": [
+                    "WWUS76 KEKA 131701"
+                ],
+                "NWSheadline": [
+                    "WIND ADVISORY REMAINS IN EFFECT FROM 11 PM THIS EVENING TO 11 AM PDT FRIDAY"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.CON.KEKA.WI.Y.0012.250314T0600Z-250314T1800Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-14T18:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.60d60e3f8808641acca0a7e5cbd80466be075575.001.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.60d60e3f8808641acca0a7e5cbd80466be075575.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.60d60e3f8808641acca0a7e5cbd80466be075575.001.1",
+            "areaDesc": "Northern High Plains; Eastern Glacier, Western Toole, and Central Pondera; Eastern Toole and Liberty; Southern High Plains; Eastern Pondera and Eastern Teton; Western and Central Chouteau County; Cascade County below 5000ft; Gates of the Mountains; Little Belt and Highwood Mountains; Helena Valley; Big Belt, Bridger and Castle Mountains; Meagher County Valleys; Elkhorn and Boulder Mountains; Canyon Ferry Area; Missouri Headwaters",
+            "geocode": {
+                "SAME": [
+                    "030035",
+                    "030073",
+                    "030101",
+                    "030051",
+                    "030049",
+                    "030099",
+                    "030015",
+                    "030013",
+                    "030059",
+                    "030045",
+                    "030007",
+                    "030031",
+                    "030043",
+                    "030057"
+                ],
+                "UGC": [
+                    "MTZ302",
+                    "MTZ303",
+                    "MTZ304",
+                    "MTZ308",
+                    "MTZ309",
+                    "MTZ310",
+                    "MTZ312",
+                    "MTZ316",
+                    "MTZ317",
+                    "MTZ319",
+                    "MTZ320",
+                    "MTZ321",
+                    "MTZ322",
+                    "MTZ323",
+                    "MTZ324"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/MTZ302",
+                "https://api.weather.gov/zones/forecast/MTZ303",
+                "https://api.weather.gov/zones/forecast/MTZ304",
+                "https://api.weather.gov/zones/forecast/MTZ308",
+                "https://api.weather.gov/zones/forecast/MTZ309",
+                "https://api.weather.gov/zones/forecast/MTZ310",
+                "https://api.weather.gov/zones/forecast/MTZ312",
+                "https://api.weather.gov/zones/forecast/MTZ316",
+                "https://api.weather.gov/zones/forecast/MTZ317",
+                "https://api.weather.gov/zones/forecast/MTZ319",
+                "https://api.weather.gov/zones/forecast/MTZ320",
+                "https://api.weather.gov/zones/forecast/MTZ321",
+                "https://api.weather.gov/zones/forecast/MTZ322",
+                "https://api.weather.gov/zones/forecast/MTZ323",
+                "https://api.weather.gov/zones/forecast/MTZ324"
+            ],
+            "references": [],
+            "sent": "2025-03-13T11:00:00-06:00",
+            "effective": "2025-03-13T11:00:00-06:00",
+            "onset": "2025-03-13T11:00:00-06:00",
+            "expires": "2025-03-13T13:00:00-06:00",
+            "ends": null,
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Observed",
+            "urgency": "Expected",
+            "event": "Special Weather Statement",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Great Falls MT",
+            "headline": "Special Weather Statement issued March 13 at 11:00AM MDT by NWS Great Falls MT",
+            "description": "A cold front moving west from the Continental Divide is resulting\nin gusts between 45 and 55 mph along with scattered rain and snow\nshowers. Those traveling should be prepared for these gusty winds\nand precipitation chances as the cold front continues eastward\nacross the region late this morning and early afternoon.",
+            "instruction": null,
+            "response": "Execute",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "SPSTFX"
+                ],
+                "WMOidentifier": [
+                    "WWUS85 KTFX 131700"
+                ],
+                "NWSheadline": [
+                    "Cold Front Bringing Gusty Winds"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "EAS-ORG": [
+                    "WXR"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e2ebdbd4e72bcc48918aec225fa56a9954fda8a2.001.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e2ebdbd4e72bcc48918aec225fa56a9954fda8a2.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.e2ebdbd4e72bcc48918aec225fa56a9954fda8a2.001.1",
+            "areaDesc": "Ashe; Alleghany; Surry; Stokes; Rockingham; Caswell; Watauga; Wilkes; Yadkin",
+            "geocode": {
+                "SAME": [
+                    "037009",
+                    "037005",
+                    "037171",
+                    "037169",
+                    "037157",
+                    "037033",
+                    "037189",
+                    "037193",
+                    "037197"
+                ],
+                "UGC": [
+                    "NCZ001",
+                    "NCZ002",
+                    "NCZ003",
+                    "NCZ004",
+                    "NCZ005",
+                    "NCZ006",
+                    "NCZ018",
+                    "NCZ019",
+                    "NCZ020"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/NCZ001",
+                "https://api.weather.gov/zones/forecast/NCZ002",
+                "https://api.weather.gov/zones/forecast/NCZ003",
+                "https://api.weather.gov/zones/forecast/NCZ004",
+                "https://api.weather.gov/zones/forecast/NCZ005",
+                "https://api.weather.gov/zones/forecast/NCZ006",
+                "https://api.weather.gov/zones/forecast/NCZ018",
+                "https://api.weather.gov/zones/forecast/NCZ019",
+                "https://api.weather.gov/zones/forecast/NCZ020"
+            ],
+            "references": [],
+            "sent": "2025-03-13T13:00:00-04:00",
+            "effective": "2025-03-13T13:00:00-04:00",
+            "onset": "2025-03-13T13:00:00-04:00",
+            "expires": "2025-03-13T20:00:00-04:00",
+            "ends": null,
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Observed",
+            "urgency": "Expected",
+            "event": "Special Weather Statement",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Blacksburg VA",
+            "headline": "Special Weather Statement issued March 13 at 1:00PM EDT by NWS Blacksburg VA",
+            "description": "Humidity levels this afternoon will drop into the 20 to 30\npercent range. Despite light winds, grass, leaf litter and brush\ncontinue to be very dry. This will lead to an elevated threat for\nrapid fire spread.\n\nPlease refer to your local burn permitting authorities on whether\nyou may burn outdoors. If you do burn, use extreme caution since\nfires can increasingly escalate under these conditions",
+            "instruction": null,
+            "response": "Execute",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "SPSRNK"
+                ],
+                "WMOidentifier": [
+                    "WWUS81 KRNK 131700"
+                ],
+                "NWSheadline": [
+                    "INCREASED FIRE DANGER TODAY"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "EAS-ORG": [
+                    "WXR"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7b1f14dc702bf2ca15cd39587ca7dbeeac351a21.001.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7b1f14dc702bf2ca15cd39587ca7dbeeac351a21.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.7b1f14dc702bf2ca15cd39587ca7dbeeac351a21.001.1",
+            "areaDesc": "Ashe; Alleghany; Surry; Stokes; Rockingham; Caswell; Watauga; Wilkes; Yadkin",
+            "geocode": {
+                "SAME": [
+                    "037009",
+                    "037005",
+                    "037171",
+                    "037169",
+                    "037157",
+                    "037033",
+                    "037189",
+                    "037193",
+                    "037197"
+                ],
+                "UGC": [
+                    "NCZ001",
+                    "NCZ002",
+                    "NCZ003",
+                    "NCZ004",
+                    "NCZ005",
+                    "NCZ006",
+                    "NCZ018",
+                    "NCZ019",
+                    "NCZ020"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/NCZ001",
+                "https://api.weather.gov/zones/forecast/NCZ002",
+                "https://api.weather.gov/zones/forecast/NCZ003",
+                "https://api.weather.gov/zones/forecast/NCZ004",
+                "https://api.weather.gov/zones/forecast/NCZ005",
+                "https://api.weather.gov/zones/forecast/NCZ006",
+                "https://api.weather.gov/zones/forecast/NCZ018",
+                "https://api.weather.gov/zones/forecast/NCZ019",
+                "https://api.weather.gov/zones/forecast/NCZ020"
+            ],
+            "references": [],
+            "sent": "2025-03-13T12:59:00-04:00",
+            "effective": "2025-03-13T12:59:00-04:00",
+            "onset": "2025-03-13T12:59:00-04:00",
+            "expires": "2025-03-13T20:00:00-04:00",
+            "ends": null,
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Observed",
+            "urgency": "Expected",
+            "event": "Special Weather Statement",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Blacksburg VA",
+            "headline": "Special Weather Statement issued March 13 at 12:59PM EDT by NWS Blacksburg VA",
+            "description": "Humidity levels Thursday will drop into the 25 to 30 percent\nrange. Despite light winds, grass, leaf litter and brush continue\nto be very dry. This will lead to an elevated threat for rapid\nfire spread.\n\nPlease refer to your local burn permitting authorities on whether\nyou may burn outdoors. If you do burn, use extreme caution since\nfires can increasingly escalate under these conditions",
+            "instruction": null,
+            "response": "Execute",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "SPSRNK"
+                ],
+                "WMOidentifier": [
+                    "WWUS81 KRNK 131659"
+                ],
+                "NWSheadline": [
+                    "INCREASED FIRE DANGER TODAY"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "EAS-ORG": [
+                    "WXR"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.60a3b0e6c9e86f1b75b5fbe3caad4d9d740b8e9d.001.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.60a3b0e6c9e86f1b75b5fbe3caad4d9d740b8e9d.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.60a3b0e6c9e86f1b75b5fbe3caad4d9d740b8e9d.001.1",
+            "areaDesc": "Gregory; Jerauld; Brule; Aurora; Charles Mix; Douglas",
+            "geocode": {
+                "SAME": [
+                    "046053",
+                    "046073",
+                    "046015",
+                    "046003",
+                    "046023",
+                    "046043"
+                ],
+                "UGC": [
+                    "SDZ050",
+                    "SDZ052",
+                    "SDZ057",
+                    "SDZ058",
+                    "SDZ063",
+                    "SDZ064"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/SDZ050",
+                "https://api.weather.gov/zones/forecast/SDZ052",
+                "https://api.weather.gov/zones/forecast/SDZ057",
+                "https://api.weather.gov/zones/forecast/SDZ058",
+                "https://api.weather.gov/zones/forecast/SDZ063",
+                "https://api.weather.gov/zones/forecast/SDZ064"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.45ad1f30177ed83d5e629e50740fb37ed9f5429d.001.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.45ad1f30177ed83d5e629e50740fb37ed9f5429d.001.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-13T03:30:00-05:00"
+                }
+            ],
+            "sent": "2025-03-13T11:55:00-05:00",
+            "effective": "2025-03-13T11:55:00-05:00",
+            "onset": "2025-03-14T22:00:00-05:00",
+            "expires": "2025-03-13T23:00:00-05:00",
+            "ends": "2025-03-15T13:00:00-05:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Severe",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "event": "High Wind Watch",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Sioux Falls SD",
+            "headline": "High Wind Watch issued March 13 at 11:55AM CDT until March 15 at 1:00PM CDT by NWS Sioux Falls SD",
+            "description": "* WHAT...Northwest winds 30 to 40 mph with gusts up to 60 mph\npossible.\n\n* WHERE...Portions of central and south central South Dakota.\n\n* WHEN...From Friday evening through Saturday afternoon.\n\n* IMPACTS...Damaging winds could blow down trees and power lines.\nWidespread power outages are possible. Travel could be difficult,\nespecially for high profile vehicles.\n\n* ADDITIONAL DETAILS...Rain is expected to change to snow Friday\nnight and early Saturday. Regardless of snowfall amounts, strong\nwinds and falling snow will create reduced visibility. Blowing\nsnow is likely after snow ends.",
+            "instruction": "Monitor the latest forecasts and warnings for updates.",
+            "response": "Prepare",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "NPWFSD"
+                ],
+                "WMOidentifier": [
+                    "WWUS73 KFSD 131655"
+                ],
+                "NWSheadline": [
+                    "HIGH WIND WATCH REMAINS IN EFFECT FROM FRIDAY EVENING THROUGH SATURDAY AFTERNOON"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "EAS-ORG": [
+                    "WXR"
+                ],
+                "VTEC": [
+                    "/O.CON.KFSD.HW.A.0001.250315T0300Z-250315T1800Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-15T18:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
         "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4891c437af7367d3b5b23963858366c8883cc4a9.001.1",
         "type": "Feature",
         "geometry": null,
@@ -325,130 +1277,6 @@
                 ],
                 "expiredReferences": [
                     "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.24502abce02c9943e87f8d7dd5439199fb95cd18.001.1,2025-03-12T14:31:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b50f36216add1f7c9f7e710ec1eafa15f89b5db8.001.2,2025-03-12T02:30:00-07:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f150e37b5c675c6bee2bc888f37d748036f06910.001.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f150e37b5c675c6bee2bc888f37d748036f06910.001.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.f150e37b5c675c6bee2bc888f37d748036f06910.001.1",
-            "areaDesc": "Anchorage",
-            "geocode": {
-                "SAME": [
-                    "002020"
-                ],
-                "UGC": [
-                    "AKZ102"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/AKZ102"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e296771c557463c0901a8a71ca870e15732de38f.001.1",
-                    "identifier": "urn:oid:2.49.0.1.840.0.e296771c557463c0901a8a71ca870e15732de38f.001.1",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-13T04:44:00-08:00"
-                }
-            ],
-            "sent": "2025-03-13T08:53:00-08:00",
-            "effective": "2025-03-13T08:53:00-08:00",
-            "onset": "2025-03-13T08:53:00-08:00",
-            "expires": "2025-03-13T10:00:00-08:00",
-            "ends": "2025-03-13T09:00:00-08:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "Winter Weather Advisory",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Anchorage AK",
-            "headline": "Winter Weather Advisory issued March 13 at 8:53AM AKDT until March 13 at 9:00AM AKDT by NWS Anchorage AK",
-            "description": "Heavy snow showers have lifted out of the area, though additional\nlight snow is possible through through this evening. Snow will\ncontinue to be easily lifted by vehicles, which may create\nhazardous driving conditions through later this morning.",
-            "instruction": null,
-            "response": "Execute",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "WSWAER"
-                ],
-                "WMOidentifier": [
-                    "WWAK41 PAFC 131653"
-                ],
-                "NWSheadline": [
-                    "WINTER WEATHER ADVISORY WILL EXPIRE AT 9 AM AKDT THIS MORNING"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.EXP.PAFC.WW.Y.0026.000000T0000Z-250313T1700Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-13T17:00:00+00:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-35780",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-35780",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0-KEEPALIVE-35780",
-            "areaDesc": "Montgomery",
-            "geocode": {
-                "SAME": [
-                    "024031"
-                ],
-                "UGC": [
-                    "MDC031"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/county/MDC031"
-            ],
-            "references": [],
-            "sent": "2025-03-13T16:45:41+00:00",
-            "effective": "2025-03-13T16:45:41+00:00",
-            "onset": null,
-            "expires": "2025-03-13T16:55:41+00:00",
-            "ends": null,
-            "status": "Test",
-            "messageType": "Alert",
-            "category": "Met",
-            "severity": "Unknown",
-            "certainty": "Unknown",
-            "urgency": "Unknown",
-            "event": "Test Message",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS",
-            "headline": null,
-            "description": "Monitoring message only. Please disregard.",
-            "instruction": "Monitoring message only. Please disregard.",
-            "response": "None",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "KEPWBC"
-                ],
-                "WMOidentifier": [
-                    "NZUS91 KWBC 131645"
-                ],
-                "BLOCKCHANNEL": [
-                    "CMAS",
-                    "EAS",
-                    "NWEM"
                 ]
             }
         }
@@ -2403,72 +3231,6 @@
                 ],
                 "expiredReferences": [
                     "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.1a4338f152e3ede21518421e39d30ab92f6cf5d9.002.1,2025-03-12T20:49:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.a16a617d71bb25e9c96106e55b2270f1a56435d5.002.2,2025-03-12T12:50:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.c24178a309f395ecdbb8f831dd5752a3f3744d95.002.1,2025-03-12T13:50:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.4594f655f37b1fa9e4e26e0b9d61814547e5ee91.001.1,2025-03-12T12:12:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.969d6419aea4eac962bb02c06a733f6ff50e4c86.001.1,2025-03-12T01:31:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.6d660a7e6047a6feb2588b685ef6c5325a71c647.001.1,2025-03-11T13:55:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.45c819cddb9cee30172bd2ce71f494bda99fd875.001.1,2025-03-11T03:21:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d05a9ba4accb18ef75e82b868d3c215aa9feee85.001.1,2025-03-11T01:11:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.dc7eb3d24d1b5aa733e94ea7506d94b23426399d.001.1,2025-03-10T21:00:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.997dcd7d650627069c52c855ffb9bd94d85818e9.001.2,2025-03-10T10:47:00-07:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.885bbcf3999f2861437a973d9552b83478ef3bc4.003.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.885bbcf3999f2861437a973d9552b83478ef3bc4.003.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.885bbcf3999f2861437a973d9552b83478ef3bc4.003.1",
-            "areaDesc": "Jackson County",
-            "geocode": {
-                "SAME": [
-                    "041029"
-                ],
-                "UGC": [
-                    "ORZ026"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/ORZ026"
-            ],
-            "references": [],
-            "sent": "2025-03-13T09:20:00-07:00",
-            "effective": "2025-03-13T09:20:00-07:00",
-            "onset": "2025-03-13T09:20:00-07:00",
-            "expires": "2025-03-13T09:36:04-07:00",
-            "ends": "2025-03-13T10:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Alert",
-            "category": "Met",
-            "severity": "Minor",
-            "certainty": "Observed",
-            "urgency": "Past",
-            "event": "Winter Weather Advisory",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Medford OR",
-            "headline": "The Winter Weather Advisory has been cancelled.",
-            "description": "The Winter Weather Advisory has been cancelled and is no longer in effect.",
-            "instruction": null,
-            "response": "AllClear",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "WSWMFR"
-                ],
-                "WMOidentifier": [
-                    "WWUS46 KMFR 131620"
-                ],
-                "NWSheadline": [
-                    "WINTER WEATHER ADVISORY IS CANCELLED"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.CAN.KMFR.WW.Y.0011.000000T0000Z-250313T1700Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-13T17:00:00+00:00"
-                ],
-                "expiredReferences": [
-                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.1a4338f152e3ede21518421e39d30ab92f6cf5d9.005.1,2025-03-12T20:49:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.a16a617d71bb25e9c96106e55b2270f1a56435d5.003.1,2025-03-12T12:50:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.c24178a309f395ecdbb8f831dd5752a3f3744d95.005.1,2025-03-12T13:50:00-07:00"
                 ]
             }
         }
@@ -22946,231 +23708,6 @@
         }
     },
     {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0c13900c9f7f5af5b92af7727cb5746d0d248788.002.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0c13900c9f7f5af5b92af7727cb5746d0d248788.002.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.0c13900c9f7f5af5b92af7727cb5746d0d248788.002.1",
-            "areaDesc": "San Luis Obispo County Mountains",
-            "geocode": {
-                "SAME": [
-                    "006079"
-                ],
-                "UGC": [
-                    "CAZ345"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/CAZ345"
-            ],
-            "references": [],
-            "sent": "2025-03-13T02:03:00-07:00",
-            "effective": "2025-03-13T02:03:00-07:00",
-            "onset": "2025-03-13T10:00:00-07:00",
-            "expires": "2025-03-13T10:00:00-07:00",
-            "ends": "2025-03-14T10:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Alert",
-            "category": "Met",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "Winter Weather Advisory",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Los Angeles/Oxnard CA",
-            "headline": "Winter Weather Advisory issued March 13 at 2:03AM PDT until March 14 at 10:00AM PDT by NWS Los Angeles/Oxnard CA",
-            "description": "* WHAT...Accumulating snowfall expected. Total snow accumulations 2\nto 5 inches. Winds gusting as high as 45 mph.\n\n* WHERE...San Luis Obispo County Mountains.\n\n* WHEN...From 10 AM this morning to 10 AM PDT Friday.\n\n* IMPACTS...Plan on slippery road conditions. The hazardous\nconditions could impact the Thursday evening and Friday morning\ncommutes. Gusty winds could bring down tree branches.",
-            "instruction": "Slow down and use caution while traveling. The latest road\nconditions for the state you are calling from can be obtained by\ncalling 5 1 1.",
-            "response": "Execute",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "WSWLOX"
-                ],
-                "WMOidentifier": [
-                    "WWUS46 KLOX 130903"
-                ],
-                "NWSheadline": [
-                    "WINTER WEATHER ADVISORY IN EFFECT FROM 10 AM THIS MORNING TO 10 AM PDT FRIDAY"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.NEW.KLOX.WW.Y.0004.250313T1700Z-250314T1700Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-14T17:00:00+00:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0c13900c9f7f5af5b92af7727cb5746d0d248788.001.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0c13900c9f7f5af5b92af7727cb5746d0d248788.001.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.0c13900c9f7f5af5b92af7727cb5746d0d248788.001.1",
-            "areaDesc": "Santa Barbara County Interior Mountains; Southern Ventura County Mountains; Northern Ventura County Mountains; Interstate 5 Corridor; Western San Gabriel Mountains and Highway 14 Corridor; Eastern San Gabriel Mountains; Western Antelope Valley Foothills; Eastern Antelope Valley Foothills",
-            "geocode": {
-                "SAME": [
-                    "006083",
-                    "006111",
-                    "006037"
-                ],
-                "UGC": [
-                    "CAZ353",
-                    "CAZ376",
-                    "CAZ377",
-                    "CAZ378",
-                    "CAZ379",
-                    "CAZ380",
-                    "CAZ381",
-                    "CAZ382"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/CAZ353",
-                "https://api.weather.gov/zones/forecast/CAZ376",
-                "https://api.weather.gov/zones/forecast/CAZ377",
-                "https://api.weather.gov/zones/forecast/CAZ378",
-                "https://api.weather.gov/zones/forecast/CAZ379",
-                "https://api.weather.gov/zones/forecast/CAZ380",
-                "https://api.weather.gov/zones/forecast/CAZ381",
-                "https://api.weather.gov/zones/forecast/CAZ382"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3ddcb021ad2a051bcca25be03e6c2b74e361dcd9.001.2",
-                    "identifier": "urn:oid:2.49.0.1.840.0.3ddcb021ad2a051bcca25be03e6c2b74e361dcd9.001.2",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-11T12:32:00-07:00"
-                },
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8eadbf3b36b7c1838a77d040f197f998bd972870.001.1",
-                    "identifier": "urn:oid:2.49.0.1.840.0.8eadbf3b36b7c1838a77d040f197f998bd972870.001.1",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-12T02:50:00-07:00"
-                }
-            ],
-            "sent": "2025-03-13T02:03:00-07:00",
-            "effective": "2025-03-13T02:03:00-07:00",
-            "onset": "2025-03-13T02:03:00-07:00",
-            "expires": "2025-03-13T10:00:00-07:00",
-            "ends": "2025-03-15T05:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Severe",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "Winter Storm Warning",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Los Angeles/Oxnard CA",
-            "headline": "Winter Storm Warning issued March 13 at 2:03AM PDT until March 15 at 5:00AM PDT by NWS Los Angeles/Oxnard CA",
-            "description": "* WHAT...Heavy snow possible with 12 to 24 inches possible above\n6500-7000 feet, 6-12 inches 5500-7000, 1-5 inches 4000-5500 feet,\nand up to an inch as low as 3000 feet. Winds could gust as high as\n50 mph.\n\n* WHERE...A portion of southwest California.\n\n* WHEN...Until 5 AM PDT Saturday.\n\n* IMPACTS...Travel could be very difficult. The hazardous conditions\ncould impact the Thursday morning and evening commutes. Gusty\nwinds could bring down tree branches.\n\n* ADDITIONAL DETAILS...The heaviest snow is expected to be tonight\ninto Thursday morning. A second, and much weaker system will move\ninto the mountains Friday into Friday night generating much\nlighter accumulations.",
-            "instruction": "If you must travel, keep an extra flashlight, food, and water in\nyour vehicle in case of an emergency. The latest road conditions for\nthe state you are calling from can be obtained by calling 5 1 1.",
-            "response": "Prepare",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "WSWLOX"
-                ],
-                "WMOidentifier": [
-                    "WWUS46 KLOX 130903"
-                ],
-                "NWSheadline": [
-                    "WINTER STORM WARNING REMAINS IN EFFECT UNTIL 5 AM PDT SATURDAY"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "EAS-ORG": [
-                    "WXR"
-                ],
-                "VTEC": [
-                    "/O.CON.KLOX.WS.W.0003.000000T0000Z-250315T1200Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-15T12:00:00+00:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ed2cb624ffdf8eb04cef939edd7129a124f71be0.001.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ed2cb624ffdf8eb04cef939edd7129a124f71be0.001.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.ed2cb624ffdf8eb04cef939edd7129a124f71be0.001.1",
-            "areaDesc": "Northern Humboldt Coast; Southwestern Humboldt; Southern Humboldt Interior",
-            "geocode": {
-                "SAME": [
-                    "006023"
-                ],
-                "UGC": [
-                    "CAZ103",
-                    "CAZ104",
-                    "CAZ106"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/CAZ103",
-                "https://api.weather.gov/zones/forecast/CAZ104",
-                "https://api.weather.gov/zones/forecast/CAZ106"
-            ],
-            "references": [],
-            "sent": "2025-03-13T02:03:00-07:00",
-            "effective": "2025-03-13T02:03:00-07:00",
-            "onset": "2025-03-13T23:00:00-07:00",
-            "expires": "2025-03-13T10:15:00-07:00",
-            "ends": "2025-03-14T11:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Alert",
-            "category": "Met",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "Wind Advisory",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Eureka CA",
-            "headline": "Wind Advisory issued March 13 at 2:03AM PDT until March 14 at 11:00AM PDT by NWS Eureka CA",
-            "description": "* WHAT...Southeast winds 20 to 30 mph with gusts up to 55 mph\nexpected.\n\n* WHERE...Humboldt Coast, and Southern Humboldt Interior.\n\n* WHEN...From 11 PM this evening to 11 AM PDT Friday. Peak gusts\nexpected in the early morning.\n\n* IMPACTS...Wind gusts will be particularly strong along windward\nridges, southern facing slopes, and exposed coastal headlands.\nGusty winds will blow around unsecured objects. Tree limbs could\nbe blown down and a few power outages may result.",
-            "instruction": "Winds this strong can make driving difficult, especially for high\nprofile vehicles. Use extra caution.\n\nSecure outdoor objects.",
-            "response": "Execute",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "NPWEKA"
-                ],
-                "WMOidentifier": [
-                    "WWUS76 KEKA 130903"
-                ],
-                "NWSheadline": [
-                    "WIND ADVISORY IN EFFECT FROM 11 PM THIS EVENING TO 11 AM PDT FRIDAY"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.NEW.KEKA.WI.Y.0012.250314T0600Z-250314T1800Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-14T18:00:00+00:00"
-                ]
-            }
-        }
-    },
-    {
         "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e3c94479003eab46bf492eba175f81f0b17764cf.003.2",
         "type": "Feature",
         "geometry": null,
@@ -27598,87 +28135,6 @@
                 ],
                 "expiredReferences": [
                     "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.9e8a739e62efddaea61a09db9918bcd61fdd075e.002.1,2025-03-12T01:12:00-07:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.45ad1f30177ed83d5e629e50740fb37ed9f5429d.001.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.45ad1f30177ed83d5e629e50740fb37ed9f5429d.001.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.45ad1f30177ed83d5e629e50740fb37ed9f5429d.001.1",
-            "areaDesc": "Gregory; Jerauld; Brule; Aurora; Charles Mix; Douglas",
-            "geocode": {
-                "SAME": [
-                    "046053",
-                    "046073",
-                    "046015",
-                    "046003",
-                    "046023",
-                    "046043"
-                ],
-                "UGC": [
-                    "SDZ050",
-                    "SDZ052",
-                    "SDZ057",
-                    "SDZ058",
-                    "SDZ063",
-                    "SDZ064"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/SDZ050",
-                "https://api.weather.gov/zones/forecast/SDZ052",
-                "https://api.weather.gov/zones/forecast/SDZ057",
-                "https://api.weather.gov/zones/forecast/SDZ058",
-                "https://api.weather.gov/zones/forecast/SDZ063",
-                "https://api.weather.gov/zones/forecast/SDZ064"
-            ],
-            "references": [],
-            "sent": "2025-03-13T03:30:00-05:00",
-            "effective": "2025-03-13T03:30:00-05:00",
-            "onset": "2025-03-14T22:00:00-05:00",
-            "expires": "2025-03-13T12:00:00-05:00",
-            "ends": "2025-03-15T13:00:00-05:00",
-            "status": "Actual",
-            "messageType": "Alert",
-            "category": "Met",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "event": "High Wind Watch",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Sioux Falls SD",
-            "headline": "High Wind Watch issued March 13 at 3:30AM CDT until March 15 at 1:00PM CDT by NWS Sioux Falls SD",
-            "description": "* WHAT...Northwest winds 30 to 40 mph with gusts up to 60 mph\npossible.\n\n* WHERE...Portions of central and south central South Dakota.\n\n* WHEN...From Friday evening through Saturday afternoon.\n\n* IMPACTS...Damaging winds could blow down trees and power lines.\nWidespread power outages are possible. Travel could be difficult,\nespecially for high profile vehicles.\n\n* ADDITIONAL DETAILS...Rain is expected to change to snow Friday\nnight and early Saturday. Regardless of snowfall amounts, strong\nwinds and falling snow will create reduced visibility. Blowing\nsnow is likely after snow ends.",
-            "instruction": "Monitor the latest forecasts and warnings for updates.",
-            "response": "Prepare",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "NPWFSD"
-                ],
-                "WMOidentifier": [
-                    "WWUS73 KFSD 130830"
-                ],
-                "NWSheadline": [
-                    "HIGH WIND WATCH IN EFFECT FROM FRIDAY EVENING THROUGH SATURDAY AFTERNOON"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "EAS-ORG": [
-                    "WXR"
-                ],
-                "VTEC": [
-                    "/O.NEW.KFSD.HW.A.0001.250315T0300Z-250315T1800Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-15T18:00:00+00:00"
                 ]
             }
         }
@@ -33652,170 +34108,6 @@
                 ],
                 "eventEndingTime": [
                     "2025-03-15T06:00:00+00:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b2f7c4d09abf645b9dc1fe87ef80ee910d7d0841.001.2",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b2f7c4d09abf645b9dc1fe87ef80ee910d7d0841.001.2",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.b2f7c4d09abf645b9dc1fe87ef80ee910d7d0841.001.2",
-            "areaDesc": "Guam; Rota; Tinian; Saipan",
-            "geocode": {
-                "SAME": [
-                    "066010",
-                    "069100",
-                    "069120",
-                    "069110"
-                ],
-                "UGC": [
-                    "GUZ001",
-                    "MPZ001",
-                    "MPZ002",
-                    "MPZ003"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/GUZ001",
-                "https://api.weather.gov/zones/forecast/MPZ001",
-                "https://api.weather.gov/zones/forecast/MPZ002",
-                "https://api.weather.gov/zones/forecast/MPZ003"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.73dc058ce3ef6229e626013623e97d48bff01687.001.2",
-                    "identifier": "urn:oid:2.49.0.1.840.0.73dc058ce3ef6229e626013623e97d48bff01687.001.2",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-13T03:30:00+10:00"
-                }
-            ],
-            "sent": "2025-03-13T16:09:00+10:00",
-            "effective": "2025-03-13T16:09:00+10:00",
-            "onset": "2025-03-13T16:09:00+10:00",
-            "expires": "2025-03-14T06:15:00+10:00",
-            "ends": "2025-03-15T16:00:00+10:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "Rip Current Statement",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Tiyan GU",
-            "headline": "Rip Current Statement issued March 13 at 4:09PM ChST until March 15 at 4:00PM ChST by NWS Tiyan GU",
-            "description": "* WHAT...Large breaking waves of 8 to 11 feet and dangerous rip\ncurrents.\n\n* WHERE...For the High Surf Advisory, north facing reefs of the\nMarianas. For the High Rip Risk, north and east facing reefs.\n\n* WHEN...Until 4 PM ChST Saturday.\n\n* IMPACTS...Dangerous swimming and surfing conditions and localized\nbeach erosion. Rip currents can sweep even the best swimmers away\nfrom shore into deeper water.\n\n* ADDITIONAL DETAILS...A long-period north-northeast swell, in\ncombination with the northeast trade swell, is generating hazardous\nsurf along north facing reefs and a high risk of rip currents along\nnorth and east facing reefs. Surf is expected to fall below\nhazardous levels of 9 feet on Saturday, as the swell energy\ndissipates and seas decrease.",
-            "instruction": "Inexperienced swimmers should remain out of the water due to\ndangerous surf conditions.\n\nIf caught in a rip current, relax and float. Don't swim against\nthe current. If able, swim in a direction following the\nshoreline. If unable to escape, face the shore and call or wave\nfor help.",
-            "response": "Avoid",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "CFWGUM"
-                ],
-                "WMOidentifier": [
-                    "WHMY40 PGUM 130609"
-                ],
-                "NWSheadline": [
-                    "HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 4 PM CHST SATURDAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH SATURDAY AFTERNOON"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.CON.PGUM.RP.S.0009.000000T0000Z-250315T0600Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-15T06:00:00+00:00"
-                ],
-                "expiredReferences": [
-                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d663724cafb8aada7f69db085b8f795152aaa5c2.001.2,2025-03-12T15:58:00+10:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d16cbfd2739344934c8f66967bbead30fb819d8e.001.2,2025-03-12T02:59:00+10:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.74ca68a8c2ee4e168bde803f6b05c8df65129ddc.001.2,2025-03-11T15:55:00+10:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.6920e4e5284bcc4ad236dc0330b531aaa04dc798.001.2,2025-03-11T04:06:00+10:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b2f7c4d09abf645b9dc1fe87ef80ee910d7d0841.001.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b2f7c4d09abf645b9dc1fe87ef80ee910d7d0841.001.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.b2f7c4d09abf645b9dc1fe87ef80ee910d7d0841.001.1",
-            "areaDesc": "Guam; Rota; Tinian; Saipan",
-            "geocode": {
-                "SAME": [
-                    "066010",
-                    "069100",
-                    "069120",
-                    "069110"
-                ],
-                "UGC": [
-                    "GUZ001",
-                    "MPZ001",
-                    "MPZ002",
-                    "MPZ003"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/GUZ001",
-                "https://api.weather.gov/zones/forecast/MPZ001",
-                "https://api.weather.gov/zones/forecast/MPZ002",
-                "https://api.weather.gov/zones/forecast/MPZ003"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.73dc058ce3ef6229e626013623e97d48bff01687.001.1",
-                    "identifier": "urn:oid:2.49.0.1.840.0.73dc058ce3ef6229e626013623e97d48bff01687.001.1",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-13T03:30:00+10:00"
-                }
-            ],
-            "sent": "2025-03-13T16:09:00+10:00",
-            "effective": "2025-03-13T16:09:00+10:00",
-            "onset": "2025-03-13T16:09:00+10:00",
-            "expires": "2025-03-14T06:15:00+10:00",
-            "ends": "2025-03-15T16:00:00+10:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Minor",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "High Surf Advisory",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Tiyan GU",
-            "headline": "High Surf Advisory issued March 13 at 4:09PM ChST until March 15 at 4:00PM ChST by NWS Tiyan GU",
-            "description": "* WHAT...Large breaking waves of 8 to 11 feet and dangerous rip\ncurrents.\n\n* WHERE...For the High Surf Advisory, north facing reefs of the\nMarianas. For the High Rip Risk, north and east facing reefs.\n\n* WHEN...Until 4 PM ChST Saturday.\n\n* IMPACTS...Dangerous swimming and surfing conditions and localized\nbeach erosion. Rip currents can sweep even the best swimmers away\nfrom shore into deeper water.\n\n* ADDITIONAL DETAILS...A long-period north-northeast swell, in\ncombination with the northeast trade swell, is generating hazardous\nsurf along north facing reefs and a high risk of rip currents along\nnorth and east facing reefs. Surf is expected to fall below\nhazardous levels of 9 feet on Saturday, as the swell energy\ndissipates and seas decrease.",
-            "instruction": "Inexperienced swimmers should remain out of the water due to\ndangerous surf conditions.\n\nIf caught in a rip current, relax and float. Don't swim against\nthe current. If able, swim in a direction following the\nshoreline. If unable to escape, face the shore and call or wave\nfor help.",
-            "response": "Avoid",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "CFWGUM"
-                ],
-                "WMOidentifier": [
-                    "WHMY40 PGUM 130609"
-                ],
-                "NWSheadline": [
-                    "HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 4 PM CHST SATURDAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH SATURDAY AFTERNOON"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.CON.PGUM.SU.Y.0022.000000T0000Z-250315T0600Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-15T06:00:00+00:00"
-                ],
-                "expiredReferences": [
-                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d663724cafb8aada7f69db085b8f795152aaa5c2.001.1,2025-03-12T15:58:00+10:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d16cbfd2739344934c8f66967bbead30fb819d8e.001.1,2025-03-12T02:59:00+10:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.74ca68a8c2ee4e168bde803f6b05c8df65129ddc.001.1,2025-03-11T15:55:00+10:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.6920e4e5284bcc4ad236dc0330b531aaa04dc798.001.1,2025-03-11T04:06:00+10:00"
                 ]
             }
         }
