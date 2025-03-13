@@ -1,12 +1,12 @@
 [
     {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-39014",
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-30378",
         "type": "Feature",
         "geometry": null,
         "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-39014",
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-30378",
             "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0-KEEPALIVE-39014",
+            "id": "urn:oid:2.49.0.1.840.0-KEEPALIVE-30378",
             "areaDesc": "Montgomery",
             "geocode": {
                 "SAME": [
@@ -20,10 +20,10 @@
                 "https://api.weather.gov/zones/county/MDC031"
             ],
             "references": [],
-            "sent": "2025-03-13T12:59:09+00:00",
-            "effective": "2025-03-13T12:59:09+00:00",
+            "sent": "2025-03-13T13:29:09+00:00",
+            "effective": "2025-03-13T13:29:09+00:00",
             "onset": null,
-            "expires": "2025-03-13T13:09:09+00:00",
+            "expires": "2025-03-13T13:39:09+00:00",
             "ends": null,
             "status": "Test",
             "messageType": "Alert",
@@ -43,7 +43,7 @@
                     "KEPWBC"
                 ],
                 "WMOidentifier": [
-                    "NZUS91 KWBC 131259"
+                    "NZUS91 KWBC 131329"
                 ],
                 "BLOCKCHANNEL": [
                     "CMAS",
@@ -54,63 +54,446 @@
         }
     },
     {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e0c7059f6a2f2cad10e3dc65d04e84f6a3b70c19.001.1",
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.23f1ce8ca78c53de93ec414b7502169fa38e7523.001.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.23f1ce8ca78c53de93ec414b7502169fa38e7523.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.23f1ce8ca78c53de93ec414b7502169fa38e7523.001.1",
+            "areaDesc": "Wayne; Brantley; Inland Glynn; Inland Camden",
+            "geocode": {
+                "SAME": [
+                    "013305",
+                    "013025",
+                    "013127",
+                    "013039"
+                ],
+                "UGC": [
+                    "GAZ136",
+                    "GAZ152",
+                    "GAZ153",
+                    "GAZ165"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/GAZ136",
+                "https://api.weather.gov/zones/forecast/GAZ152",
+                "https://api.weather.gov/zones/forecast/GAZ153",
+                "https://api.weather.gov/zones/forecast/GAZ165"
+            ],
+            "references": [],
+            "sent": "2025-03-13T09:29:00-04:00",
+            "effective": "2025-03-13T09:29:00-04:00",
+            "onset": "2025-03-13T09:29:00-04:00",
+            "expires": "2025-03-13T10:45:00-04:00",
+            "ends": null,
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Observed",
+            "urgency": "Expected",
+            "event": "Special Weather Statement",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Jacksonville FL",
+            "headline": "Special Weather Statement issued March 13 at 9:29AM EDT by NWS Jacksonville FL",
+            "description": "Patchy dense fog will lift through 1030 AM. Due to the patchy\nnature of the fog, visibilities may change quickly while driving.",
+            "instruction": null,
+            "response": "Execute",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "SPSJAX"
+                ],
+                "WMOidentifier": [
+                    "WWUS82 KJAX 131329"
+                ],
+                "NWSheadline": [
+                    "CAUTION DRIVING DUE TO PATCHY DENSE FOG"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "EAS-ORG": [
+                    "WXR"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.620b32400d909b374b256f71231f8d95b007a612.001.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.620b32400d909b374b256f71231f8d95b007a612.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.620b32400d909b374b256f71231f8d95b007a612.001.1",
+            "areaDesc": "Dade; Walker; Catoosa; Sequatchie; Marion; Hamilton",
+            "geocode": {
+                "SAME": [
+                    "013083",
+                    "013295",
+                    "013047",
+                    "047153",
+                    "047115",
+                    "047065"
+                ],
+                "UGC": [
+                    "GAZ001",
+                    "GAZ002",
+                    "GAZ003",
+                    "TNZ081",
+                    "TNZ098",
+                    "TNZ099"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/GAZ001",
+                "https://api.weather.gov/zones/forecast/GAZ002",
+                "https://api.weather.gov/zones/forecast/GAZ003",
+                "https://api.weather.gov/zones/forecast/TNZ081",
+                "https://api.weather.gov/zones/forecast/TNZ098",
+                "https://api.weather.gov/zones/forecast/TNZ099"
+            ],
+            "references": [],
+            "sent": "2025-03-13T09:22:00-04:00",
+            "effective": "2025-03-13T09:22:00-04:00",
+            "onset": "2025-03-13T09:22:00-04:00",
+            "expires": "2025-03-14T00:00:00-04:00",
+            "ends": null,
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Unknown",
+            "certainty": "Unknown",
+            "urgency": "Unknown",
+            "event": "Air Quality Alert",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Morristown TN",
+            "headline": "Air Quality Alert issued March 13 at 9:22AM EDT by NWS Morristown TN",
+            "description": "The Tennessee Department of Environment and Conservation has issued a\nCode Orange Health Advisory for the Chattanooga area...IN EFFECT UNTIL\nMIDNIGHT EDT TONIGHT.\n\nA Code Orange Air Quality Alert for particulate matter means ground\nlevel particulate matter concentrations within the region may approach\nor exceed unhealthy  levels for some people. The general public is not\nlikely to be affected. Active children and adults, and people with a\nrespiratory disease such as Asthma, should limit prolonged outdoor\nexertion. For additional information...visit the Tennessee Department\nof Environment and Conservation site at https://www.tn.gov/environment.",
+            "instruction": null,
+            "response": "Monitor",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "AQAMRX"
+                ],
+                "WMOidentifier": [
+                    "AEUS74 KMRX 131322"
+                ],
+                "NWSheadline": [
+                    "AIR QUALITY ALERT IN EFFECT UNTIL MIDNIGHT EDT TONIGHT"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f78c43a09edea318853fbb0f25644d9313902f15.001.1",
         "type": "Feature",
         "geometry": {
             "type": "Polygon",
             "coordinates": [
                 [
                     [
-                        -87.65,
+                        -87.64,
+                        34.07
+                    ],
+                    [
+                        -87.64,
                         33.92
                     ],
                     [
-                        -87.95,
+                        -87.74,
+                        33.9099999
+                    ],
+                    [
+                        -87.80999999999999,
                         33.92
                     ],
                     [
-                        -87.95,
-                        33.9
+                        -87.85,
+                        34.02
                     ],
                     [
-                        -88.06,
-                        34.089999999999996
-                    ],
-                    [
-                        -87.78,
-                        34.199999999999996
-                    ],
-                    [
-                        -87.65,
-                        33.92
+                        -87.64,
+                        34.07
                     ]
                 ]
             ]
         },
         "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e0c7059f6a2f2cad10e3dc65d04e84f6a3b70c19.001.1",
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f78c43a09edea318853fbb0f25644d9313902f15.001.1",
             "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.e0c7059f6a2f2cad10e3dc65d04e84f6a3b70c19.001.1",
-            "areaDesc": "Marion; Lamar",
+            "id": "urn:oid:2.49.0.1.840.0.f78c43a09edea318853fbb0f25644d9313902f15.001.1",
+            "areaDesc": "Marion, AL",
             "geocode": {
                 "SAME": [
-                    "001093",
-                    "001075"
+                    "001093"
                 ],
                 "UGC": [
-                    "ALZ011",
-                    "ALZ012"
+                    "ALC093"
                 ]
             },
             "affectedZones": [
-                "https://api.weather.gov/zones/forecast/ALZ011",
-                "https://api.weather.gov/zones/forecast/ALZ012"
+                "https://api.weather.gov/zones/county/ALC093"
             ],
             "references": [],
-            "sent": "2025-03-13T07:59:00-05:00",
-            "effective": "2025-03-13T07:59:00-05:00",
-            "onset": "2025-03-13T07:59:00-05:00",
-            "expires": "2025-03-13T08:30:00-05:00",
+            "sent": "2025-03-13T08:22:00-05:00",
+            "effective": "2025-03-13T08:22:00-05:00",
+            "onset": "2025-03-13T08:22:00-05:00",
+            "expires": "2025-03-13T08:45:00-05:00",
+            "ends": "2025-03-13T08:45:00-05:00",
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Severe",
+            "certainty": "Observed",
+            "urgency": "Immediate",
+            "event": "Severe Thunderstorm Warning",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Birmingham AL",
+            "headline": "Severe Thunderstorm Warning issued March 13 at 8:22AM CDT until March 13 at 8:45AM CDT by NWS Birmingham AL",
+            "description": "SVRBMX\n\nThe National Weather Service in Birmingham has issued a\n\n* Severe Thunderstorm Warning for...\nSoutheastern Marion County in northwestern Alabama...\n\n* Until 845 AM CDT.\n\n* At 822 AM CDT, a severe thunderstorm was located over Winfield,\nmoving east at 25 mph.\n\nHAZARD...Quarter size hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Damage to vehicles is expected.\n\n* Locations impacted include...\nBrilliant, Tucker, Texas, Winfield, and Glen Allen.",
+            "instruction": "For your protection move to an interior room on the lowest floor of a\nbuilding.",
+            "response": "Shelter",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "SVRBMX"
+                ],
+                "WMOidentifier": [
+                    "WUUS54 KBMX 131322"
+                ],
+                "eventMotionDescription": [
+                    "2025-03-13T13:22:00-00:00...storm...271DEG...20KT...33.95,-87.77"
+                ],
+                "windThreat": [
+                    "RADAR INDICATED"
+                ],
+                "maxWindGust": [
+                    "Up to 50 MPH"
+                ],
+                "hailThreat": [
+                    "RADAR INDICATED"
+                ],
+                "maxHailSize": [
+                    "1.00"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "EAS-ORG": [
+                    "WXR"
+                ],
+                "VTEC": [
+                    "/O.NEW.KBMX.SV.W.0040.250313T1322Z-250313T1345Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-13T13:45:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1a7a44ee2dc2fc7652ea5802d89413c5745e77f8.001.1",
+        "type": "Feature",
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -116.52,
+                        32.59
+                    ],
+                    [
+                        -116.85,
+                        32.56
+                    ],
+                    [
+                        -117.07,
+                        33.43
+                    ],
+                    [
+                        -116.88,
+                        33.42
+                    ],
+                    [
+                        -116.72,
+                        33.120000000000005
+                    ],
+                    [
+                        -116.52,
+                        32.59
+                    ]
+                ]
+            ]
+        },
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1a7a44ee2dc2fc7652ea5802d89413c5745e77f8.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.1a7a44ee2dc2fc7652ea5802d89413c5745e77f8.001.1",
+            "areaDesc": "San Diego, CA",
+            "geocode": {
+                "SAME": [
+                    "006073"
+                ],
+                "UGC": [
+                    "CAC073"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/county/CAC073"
+            ],
+            "references": [],
+            "sent": "2025-03-13T06:19:00-07:00",
+            "effective": "2025-03-13T06:19:00-07:00",
+            "onset": "2025-03-13T06:19:00-07:00",
+            "expires": "2025-03-13T08:30:00-07:00",
+            "ends": "2025-03-13T08:17:00-07:00",
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Minor",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Flood Advisory",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS San Diego CA",
+            "headline": "Flood Advisory issued March 13 at 6:19AM PDT until March 13 at 8:17AM PDT by NWS San Diego CA",
+            "description": "* WHAT...Flooding caused by excessive rainfall is expected.\n\n* WHERE...A portion of Southwest California, including the following\ncounty, San Diego. From the Riverside/San Diego County line south\nto the Mexican border from Valley Center east in north county and\nLakeside east in south San Diego County.\n\n* WHEN...Until 817 AM PDT.\n\n* IMPACTS...Minor flooding in low-lying and poor drainage areas.\n\n* ADDITIONAL DETAILS...\n- At 617 AM PDT, Doppler radar indicated heavy rain. Minor\nflooding is ongoing or expected to begin shortly in the\nadvisory area. Between 0.25 and 0.5 inches of rain have\nfallen.\n- Additional rainfall amounts of 0.5 to 1 inch are expected\nover the area. This additional rain will result in minor\nflooding. Rainfall rates of 0.30 to 0.60 inches per hour are\nexpected.\n- Some locations that will experience flooding include...\nEl Cajon, Poway, Ramona, Alpine, Valley Center, Fallbrook,\nEscondido, San Diego Country Estates, Hwy 78 Between Ramona\nAnd Santa Ysabel and Lakeside.\n- https://www.weather.gov/safety/flood",
+            "instruction": "Turn around, don't drown when encountering flooded roads. Most flood\ndeaths occur in vehicles.",
+            "response": "Avoid",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "FLSSGX"
+                ],
+                "WMOidentifier": [
+                    "WGUS86 KSGX 131319"
+                ],
+                "NWSheadline": [
+                    "FLOOD ADVISORY IN EFFECT UNTIL 817 AM PDT THIS MORNING"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.NEW.KSGX.FA.Y.0015.250313T1319Z-250313T1517Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-13T15:17:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5c1a7ecad3a16e4b14f1da8cbada3d070547cf64.001.1",
+        "type": "Feature",
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.5699999,
+                        33.26
+                    ],
+                    [
+                        -87.12,
+                        33.29
+                    ],
+                    [
+                        -87.09,
+                        33.29
+                    ],
+                    [
+                        -87.09,
+                        33.28
+                    ],
+                    [
+                        -87.0699999,
+                        33.28
+                    ],
+                    [
+                        -87.0699999,
+                        33.25
+                    ],
+                    [
+                        -87.1,
+                        33.22
+                    ],
+                    [
+                        -87.11999999999999,
+                        33.22
+                    ],
+                    [
+                        -87.11999999999999,
+                        33.24
+                    ],
+                    [
+                        -87.13999999999999,
+                        33.24
+                    ],
+                    [
+                        -87.19999999999999,
+                        33.190000000000005
+                    ],
+                    [
+                        -87.19999999999999,
+                        33.13
+                    ],
+                    [
+                        -87.27999999999999,
+                        33.13
+                    ],
+                    [
+                        -87.30999999999999,
+                        33.09
+                    ],
+                    [
+                        -87.31999989999998,
+                        33.040000000000006
+                    ],
+                    [
+                        -87.58999999999999,
+                        33.080000000000005
+                    ],
+                    [
+                        -87.5699999,
+                        33.26
+                    ]
+                ]
+            ]
+        },
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5c1a7ecad3a16e4b14f1da8cbada3d070547cf64.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.5c1a7ecad3a16e4b14f1da8cbada3d070547cf64.001.1",
+            "areaDesc": "Tuscaloosa",
+            "geocode": {
+                "SAME": [
+                    "001125"
+                ],
+                "UGC": [
+                    "ALZ023"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/ALZ023"
+            ],
+            "references": [],
+            "sent": "2025-03-13T08:15:00-05:00",
+            "effective": "2025-03-13T08:15:00-05:00",
+            "onset": "2025-03-13T08:15:00-05:00",
+            "expires": "2025-03-13T09:00:00-05:00",
             "ends": null,
             "status": "Actual",
             "messageType": "Alert",
@@ -121,8 +504,8 @@
             "event": "Special Weather Statement",
             "sender": "w-nws.webmaster@noaa.gov",
             "senderName": "NWS Birmingham AL",
-            "headline": "Special Weather Statement issued March 13 at 7:59AM CDT by NWS Birmingham AL",
-            "description": "At 759 AM CDT, Doppler radar was tracking a cluster of strong\nthunderstorms over Guin, or 8 miles northwest of Winfield, moving\neast at 20 mph.\n\nHAZARD...Pea size hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Minor hail damage to vegetation is possible.\n\nLocations impacted include...\nTucker, Winfield, Pearces Mill, Brinn, Twin, Brilliant, Guin, Gu-\nWin, Texas, Marion County Public Lake, Piney Grove, Pikeville, Glen\nAllen, and Hamilton.",
+            "headline": "Special Weather Statement issued March 13 at 8:15AM CDT by NWS Birmingham AL",
+            "description": "At 815 AM CDT, Doppler radar was tracking a strong thunderstorm over\nMcFarland Mall, or over Tuscaloosa, moving east at 30 mph.\n\nHAZARD...Half inch hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Minor hail damage to vegetation is possible.\n\nLocations impacted include...\nTannehill Ironworks State Park, Englewood, Cottondale, Little Sandy,\nMaxwell, Brookwood, Peterson, Vance, Holt, McFarland Mall, Caffee\nJunction, Shelton State Community College, Tuscaloosa Amphitheater,\nBryant Denny Stadium, Lake Wildwood, University Mall, Fleetwood,\nBucksville, Deerlick Creek Campgrounds, and Camp Horne B.S.A..",
             "instruction": "If outdoors, consider seeking shelter inside a building.",
             "response": "Execute",
             "parameters": {
@@ -130,19 +513,19 @@
                     "SPSBMX"
                 ],
                 "WMOidentifier": [
-                    "WWUS84 KBMX 131259"
+                    "WWUS84 KBMX 131315"
                 ],
                 "NWSheadline": [
-                    "STRONG THUNDERSTORMS WILL IMPACT SOUTHEASTERN MARION AND NORTHEASTERN LAMAR COUNTIES THROUGH 830 AM CDT"
+                    "A STRONG THUNDERSTORM WILL IMPACT SOUTHEASTERN TUSCALOOSA COUNTY THROUGH 900 AM CDT"
                 ],
                 "eventMotionDescription": [
-                    "2025-03-13T12:59:00-00:00...storm...253DEG...19KT...33.99,-87.93"
+                    "2025-03-13T13:15:00-00:00...storm...274DEG...25KT...33.17,-87.49"
                 ],
                 "maxWindGust": [
                     "Up to 30 MPH"
                 ],
                 "maxHailSize": [
-                    "0.25"
+                    "0.50"
                 ],
                 "BLOCKCHANNEL": [
                     "EAS",
@@ -151,6 +534,631 @@
                 ],
                 "EAS-ORG": [
                     "WXR"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.83382037f3796ece0dd2035753413b8383720f36.001.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.83382037f3796ece0dd2035753413b8383720f36.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.83382037f3796ece0dd2035753413b8383720f36.001.1",
+            "areaDesc": "Fannin; Lamar; Hunt; Delta; Hopkins; Kaufman; Van Zandt; Rains; Henderson; Navarro; Freestone; Anderson; Falls; Limestone; Leon; Milam; Robertson",
+            "geocode": {
+                "SAME": [
+                    "048147",
+                    "048277",
+                    "048231",
+                    "048119",
+                    "048223",
+                    "048257",
+                    "048467",
+                    "048379",
+                    "048213",
+                    "048349",
+                    "048161",
+                    "048001",
+                    "048145",
+                    "048293",
+                    "048289",
+                    "048331",
+                    "048395"
+                ],
+                "UGC": [
+                    "TXZ094",
+                    "TXZ095",
+                    "TXZ105",
+                    "TXZ106",
+                    "TXZ107",
+                    "TXZ121",
+                    "TXZ122",
+                    "TXZ123",
+                    "TXZ135",
+                    "TXZ146",
+                    "TXZ147",
+                    "TXZ148",
+                    "TXZ160",
+                    "TXZ161",
+                    "TXZ162",
+                    "TXZ174",
+                    "TXZ175"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/fire/TXZ094",
+                "https://api.weather.gov/zones/fire/TXZ095",
+                "https://api.weather.gov/zones/fire/TXZ105",
+                "https://api.weather.gov/zones/fire/TXZ106",
+                "https://api.weather.gov/zones/fire/TXZ107",
+                "https://api.weather.gov/zones/fire/TXZ121",
+                "https://api.weather.gov/zones/fire/TXZ122",
+                "https://api.weather.gov/zones/fire/TXZ123",
+                "https://api.weather.gov/zones/fire/TXZ135",
+                "https://api.weather.gov/zones/fire/TXZ146",
+                "https://api.weather.gov/zones/fire/TXZ147",
+                "https://api.weather.gov/zones/fire/TXZ148",
+                "https://api.weather.gov/zones/fire/TXZ160",
+                "https://api.weather.gov/zones/fire/TXZ161",
+                "https://api.weather.gov/zones/fire/TXZ162",
+                "https://api.weather.gov/zones/fire/TXZ174",
+                "https://api.weather.gov/zones/fire/TXZ175"
+            ],
+            "references": [],
+            "sent": "2025-03-13T08:14:00-05:00",
+            "effective": "2025-03-13T08:14:00-05:00",
+            "onset": "2025-03-14T07:00:00-05:00",
+            "expires": "2025-03-13T19:00:00-05:00",
+            "ends": "2025-03-14T19:00:00-05:00",
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Severe",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "event": "Fire Weather Watch",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Fort Worth TX",
+            "headline": "Fire Weather Watch issued March 13 at 8:14AM CDT until March 14 at 7:00PM CDT by NWS Fort Worth TX",
+            "description": "The National Weather Service in Fort Worth has issued a Fire\nWeather Watch for very strong wind gusts up to 50 mph and low\nrelative humidity, which is in effect from Friday morning through\nFriday evening.\n\n* AFFECTED AREA...All areas east of the I-35 corridor in eastern\nNorth and Central Texas.\n\n* TIMING...From 7 AM to 7 PM CDT Friday\n\n* WINDS...Southwest 20 to 30 mph with gusts up to 55 mph.\n\n* RELATIVE HUMIDITY...As low as 14 percent.\n\n* TEMPERATURES...77 to 89 degrees.\n\n* IMPACTS...Rapid spread of wildfires is possible due to very\nstrong southwesterly winds and low relative humidity values.",
+            "instruction": "A Fire Weather Watch means that critical fire weather conditions\nare forecast to occur. Listen for later forecasts and possible\nRed Flag Warnings.",
+            "response": "Prepare",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "RFWFWD"
+                ],
+                "WMOidentifier": [
+                    "WWUS84 KFWD 131314"
+                ],
+                "NWSheadline": [
+                    "FIRE WEATHER WATCH IN EFFECT FROM FRIDAY MORNING THROUGH FRIDAY EVENING FOR VERY STRONG WIND GUSTS UP TO 50 MPH AND LOW RELATIVE HUMIDITY FOR EASTERN NORTH AND CENTRAL TEXAS"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.EXA.KFWD.FW.A.0002.250314T1200Z-250315T0000Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-15T00:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.83382037f3796ece0dd2035753413b8383720f36.002.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.83382037f3796ece0dd2035753413b8383720f36.002.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.83382037f3796ece0dd2035753413b8383720f36.002.1",
+            "areaDesc": "Montague; Cooke; Grayson; Young; Jack; Wise; Denton; Collin; Stephens; Palo Pinto; Parker; Tarrant; Dallas; Rockwall; Eastland; Erath; Hood; Somervell; Johnson; Ellis; Comanche; Mills; Hamilton; Bosque; Hill; Lampasas; Coryell; Bell; McLennan",
+            "geocode": {
+                "SAME": [
+                    "048337",
+                    "048097",
+                    "048181",
+                    "048503",
+                    "048237",
+                    "048497",
+                    "048121",
+                    "048085",
+                    "048429",
+                    "048363",
+                    "048367",
+                    "048439",
+                    "048113",
+                    "048397",
+                    "048133",
+                    "048143",
+                    "048221",
+                    "048425",
+                    "048251",
+                    "048139",
+                    "048093",
+                    "048333",
+                    "048193",
+                    "048035",
+                    "048217",
+                    "048281",
+                    "048099",
+                    "048027",
+                    "048309"
+                ],
+                "UGC": [
+                    "TXZ091",
+                    "TXZ092",
+                    "TXZ093",
+                    "TXZ100",
+                    "TXZ101",
+                    "TXZ102",
+                    "TXZ103",
+                    "TXZ104",
+                    "TXZ115",
+                    "TXZ116",
+                    "TXZ117",
+                    "TXZ118",
+                    "TXZ119",
+                    "TXZ120",
+                    "TXZ129",
+                    "TXZ130",
+                    "TXZ131",
+                    "TXZ132",
+                    "TXZ133",
+                    "TXZ134",
+                    "TXZ141",
+                    "TXZ142",
+                    "TXZ143",
+                    "TXZ144",
+                    "TXZ145",
+                    "TXZ156",
+                    "TXZ157",
+                    "TXZ158",
+                    "TXZ159"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/fire/TXZ091",
+                "https://api.weather.gov/zones/fire/TXZ092",
+                "https://api.weather.gov/zones/fire/TXZ093",
+                "https://api.weather.gov/zones/fire/TXZ100",
+                "https://api.weather.gov/zones/fire/TXZ101",
+                "https://api.weather.gov/zones/fire/TXZ102",
+                "https://api.weather.gov/zones/fire/TXZ103",
+                "https://api.weather.gov/zones/fire/TXZ104",
+                "https://api.weather.gov/zones/fire/TXZ115",
+                "https://api.weather.gov/zones/fire/TXZ116",
+                "https://api.weather.gov/zones/fire/TXZ117",
+                "https://api.weather.gov/zones/fire/TXZ118",
+                "https://api.weather.gov/zones/fire/TXZ119",
+                "https://api.weather.gov/zones/fire/TXZ120",
+                "https://api.weather.gov/zones/fire/TXZ129",
+                "https://api.weather.gov/zones/fire/TXZ130",
+                "https://api.weather.gov/zones/fire/TXZ131",
+                "https://api.weather.gov/zones/fire/TXZ132",
+                "https://api.weather.gov/zones/fire/TXZ133",
+                "https://api.weather.gov/zones/fire/TXZ134",
+                "https://api.weather.gov/zones/fire/TXZ141",
+                "https://api.weather.gov/zones/fire/TXZ142",
+                "https://api.weather.gov/zones/fire/TXZ143",
+                "https://api.weather.gov/zones/fire/TXZ144",
+                "https://api.weather.gov/zones/fire/TXZ145",
+                "https://api.weather.gov/zones/fire/TXZ156",
+                "https://api.weather.gov/zones/fire/TXZ157",
+                "https://api.weather.gov/zones/fire/TXZ158",
+                "https://api.weather.gov/zones/fire/TXZ159"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.bd4eef5b072d152aef3dd07535cf4a8323b1b2e6.001.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.bd4eef5b072d152aef3dd07535cf4a8323b1b2e6.001.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-13T05:34:00-05:00"
+                }
+            ],
+            "sent": "2025-03-13T08:14:00-05:00",
+            "effective": "2025-03-13T08:14:00-05:00",
+            "onset": "2025-03-14T07:00:00-05:00",
+            "expires": "2025-03-13T19:00:00-05:00",
+            "ends": "2025-03-14T19:00:00-05:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Severe",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "event": "Fire Weather Watch",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Fort Worth TX",
+            "headline": "Fire Weather Watch issued March 13 at 8:14AM CDT until March 14 at 7:00PM CDT by NWS Fort Worth TX",
+            "description": "* AFFECTED AREA...All areas along and west of the I-35 corridor,\nas well as Grayson, Collin, and Rockwall counties\n\n* TIMING...From 7 AM to 7 PM CDT Friday\n\n* WINDS...Southwest 25 to 40 mph with gusts up to 65 mph.\n\n* RELATIVE HUMIDITY...As low as 11 percent.\n\n* TEMPERATURES...73 to 86 degrees.\n\n* IMPACTS...Rapid spread of wildfires is possible due to very\nstrong southwesterly winds and low relative humidity values.",
+            "instruction": "A Fire Weather Watch means that critical fire weather conditions\nare forecast to occur. Listen for later forecasts and possible\nRed Flag Warnings.",
+            "response": "Prepare",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "RFWFWD"
+                ],
+                "WMOidentifier": [
+                    "WWUS84 KFWD 131314"
+                ],
+                "NWSheadline": [
+                    "FIRE WEATHER WATCH REMAINS IN EFFECT FROM FRIDAY MORNING THROUGH FRIDAY EVENING FOR VERY STRONG WINDS WITH GUSTS UP TO 65 MPH AND LOW RELATIVE HUMIDITY VALUES FOR NORTH AND CENTRAL TEXAS"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.CON.KFWD.FW.A.0002.250314T1200Z-250315T0000Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-15T00:00:00+00:00"
+                ],
+                "expiredReferences": [
+                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.948d478efc44e0805fc600434ec6351ec250cbd2.001.1,2025-03-12T22:40:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.05c9799b297cb7428a8286cccafcfcb89b21902d.002.1,2025-03-12T14:10:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.05c9799b297cb7428a8286cccafcfcb89b21902d.001.1,2025-03-12T14:10:00-05:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.aea8700af3811bbd232c5e5fb9bd9e711f547609.001.1",
+        "type": "Feature",
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -82.2099999,
+                        30.41
+                    ],
+                    [
+                        -82.0699999,
+                        30.38
+                    ],
+                    [
+                        -82.03999999999999,
+                        30.619999999999997
+                    ],
+                    [
+                        -81.97999999999999,
+                        30.619999999999997
+                    ],
+                    [
+                        -82.02999999999999,
+                        30.339999999999996
+                    ],
+                    [
+                        -82.19999999999999,
+                        30.349999999999998
+                    ],
+                    [
+                        -82.2099999,
+                        30.41
+                    ]
+                ]
+            ]
+        },
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.aea8700af3811bbd232c5e5fb9bd9e711f547609.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.aea8700af3811bbd232c5e5fb9bd9e711f547609.001.1",
+            "areaDesc": "Baker, FL; Nassau, FL; Charlton, GA",
+            "geocode": {
+                "SAME": [
+                    "012003",
+                    "012089",
+                    "013049"
+                ],
+                "UGC": [
+                    "FLC003",
+                    "FLC089",
+                    "GAC049"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/county/FLC003",
+                "https://api.weather.gov/zones/county/FLC089",
+                "https://api.weather.gov/zones/county/GAC049"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fdbbc3e11725a8f7c457151f76431dccdb7b4212.001.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.fdbbc3e11725a8f7c457151f76431dccdb7b4212.001.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T09:46:00-04:00"
+                },
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6c571546a6290949f3089164b3dee162ab3d534a.001.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.6c571546a6290949f3089164b3dee162ab3d534a.001.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T14:47:00-04:00"
+                },
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a3e6cf91b994b7c8d049e4269e8bc7bcafc93f83.001.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.a3e6cf91b994b7c8d049e4269e8bc7bcafc93f83.001.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T20:43:00-04:00"
+                }
+            ],
+            "sent": "2025-03-13T09:08:00-04:00",
+            "effective": "2025-03-13T09:08:00-04:00",
+            "onset": "2025-03-13T09:08:00-04:00",
+            "expires": "2025-03-14T09:15:00-04:00",
+            "ends": "2025-03-16T00:00:00-04:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Severe",
+            "certainty": "Observed",
+            "urgency": "Immediate",
+            "event": "Flood Warning",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Jacksonville FL",
+            "headline": "Flood Warning issued March 13 at 9:08AM EDT until March 16 at 12:00AM EDT by NWS Jacksonville FL",
+            "description": "...The Flood Warning is extended for the following rivers in\nFlorida...Georgia...\n\nSt Mary's River At Macclenny affecting Baker, Charlton and Nassau\nCounties.\n\nAdditional information is available at\nhttps://water.weather.gov/wfo/JAX\n\n* WHAT...Minor flooding is occurring and minor flooding is forecast.\n\n* WHERE...St Mary's River at Macclenny.\n\n* WHEN...Until early Sunday morning.\n\n* IMPACTS...At 12.0 feet, Minor flooding of low lying areas and\ntimber lands including some properties along St. Mary's River\nBluff Road and the Cypress Landing Resort on the Georgia side.\nAt 14.0 feet, Flooding of bottomlands along the river and some\nlower access roads including the lower half of St. Mary's River\nBluff Road which cuts off 15 to 20 homes on the Georgia side.\nAt 15.0 feet, Flooding begins to impact the lower end of Steel\nBridge Road on the Florida side and cuts off access to the river\ngage as well as access to several homes.\n\n* ADDITIONAL DETAILS...\n- At 8:45 AM EDT Thursday the stage was 13.7 feet.\n- Forecast...The river is expected to fall below flood stage\nSaturday evening and continue falling to 11.6 feet Sunday\nmorning.\n- Flood stage is 12.0 feet.\n- http://www.weather.gov/safety/flood",
+            "instruction": null,
+            "response": "Avoid",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "FLSJAX"
+                ],
+                "WMOidentifier": [
+                    "WGUS82 KJAX 131308"
+                ],
+                "NWSheadline": [
+                    "FLOOD WARNING NOW IN EFFECT UNTIL EARLY SUNDAY MORNING"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "EAS-ORG": [
+                    "WXR"
+                ],
+                "VTEC": [
+                    "/O.EXT.KJAX.FL.W.0006.000000T0000Z-250316T0400Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-16T04:00:00+00:00"
+                ],
+                "expiredReferences": [
+                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.8373fadf7c957ca9b0726682940161239d037227.001.1,2025-03-11T21:26:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.7893f9127b4a198d258aabec67259b0585c5c227.001.1,2025-03-11T08:33:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.ac58b7d14914dd776ca228d452caec8dcd4261cf.001.1,2025-03-10T21:12:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.fc760891d1b40528e6909b0b16d471a630333918.001.1,2025-03-10T09:12:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.4d30b6bc49e4a57e63d98f0e9f708c1dd3e0b84c.001.1,2025-03-09T21:14:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.ff466122e0565e1d957422458806b79e9d2326c2.001.1,2025-03-09T09:27:00-04:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.194720d208954f49389943ce7c047e170d6deaff.001.1",
+        "type": "Feature",
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -83.69,
+                        30.47
+                    ],
+                    [
+                        -83.77,
+                        30.31
+                    ],
+                    [
+                        -83.9599999,
+                        30.09
+                    ],
+                    [
+                        -84.04,
+                        30.13
+                    ],
+                    [
+                        -83.88000000000001,
+                        30.32
+                    ],
+                    [
+                        -83.78000000000002,
+                        30.47
+                    ],
+                    [
+                        -83.69,
+                        30.47
+                    ]
+                ]
+            ]
+        },
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.194720d208954f49389943ce7c047e170d6deaff.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.194720d208954f49389943ce7c047e170d6deaff.001.1",
+            "areaDesc": "Jefferson, FL; Madison, FL; Taylor, FL",
+            "geocode": {
+                "SAME": [
+                    "012065",
+                    "012079",
+                    "012123"
+                ],
+                "UGC": [
+                    "FLC065",
+                    "FLC079",
+                    "FLC123"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/county/FLC065",
+                "https://api.weather.gov/zones/county/FLC079",
+                "https://api.weather.gov/zones/county/FLC123"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.04930cb3f8d9b943bb60ff7529adb9e28a927741.001.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.04930cb3f8d9b943bb60ff7529adb9e28a927741.001.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T21:09:00-04:00"
+                }
+            ],
+            "sent": "2025-03-13T09:08:00-04:00",
+            "effective": "2025-03-13T09:08:00-04:00",
+            "onset": "2025-03-13T09:08:00-04:00",
+            "expires": "2025-03-14T03:15:00-04:00",
+            "ends": "2025-03-16T20:00:00-04:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Severe",
+            "certainty": "Observed",
+            "urgency": "Immediate",
+            "event": "Flood Warning",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Tallahassee FL",
+            "headline": "Flood Warning issued March 13 at 9:08AM EDT until March 16 at 8:00PM EDT by NWS Tallahassee FL",
+            "description": "...The Flood Warning continues for the following rivers in Florida...\n\nAucilla River at Lamont (US 27) affecting Madison, Taylor and\nJefferson Counties.\n\n* WHAT...Minor flooding is occurring and minor flooding is forecast.\n\n* WHERE...Aucilla River at Lamont (US 27).\n\n* WHEN...Until Sunday evening.\n\n* IMPACTS...At 53.0 feet, Minor lowland flooding begins.\n\n* ADDITIONAL DETAILS...\n- At 8:45 AM EDT Thursday the stage was 53.6 feet.\n- Recent Activity...The maximum river stage in the 24 hours\nending at 8:45 AM EDT Thursday was 53.7 feet.\n- Forecast...The river is expected to fall below flood stage\nSunday morning and continue falling to 52.5 feet Tuesday\nmorning.\n- Flood stage is 53.0 feet.\n- Flood History...This crest compares to a previous crest of\n53.5 feet on 12/09/2018.\n- http://www.weather.gov/safety/flood",
+            "instruction": "Motorists should not attempt to drive around barricades or drive\ncars through flooded areas.\n\nCaution is urged when walking near riverbanks.\n\nAdditional information is available at www.weather.gov.\n\nThe next statement will be issued late tonight at 315 AM EDT.",
+            "response": "Avoid",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "FLSTAE"
+                ],
+                "WMOidentifier": [
+                    "WGUS82 KTAE 131308"
+                ],
+                "NWSheadline": [
+                    "FLOOD WARNING REMAINS IN EFFECT UNTIL SUNDAY EVENING"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "EAS-ORG": [
+                    "WXR"
+                ],
+                "VTEC": [
+                    "/O.CON.KTAE.FL.W.0003.000000T0000Z-250317T0000Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-17T00:00:00+00:00"
+                ],
+                "expiredReferences": [
+                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.838f57ebaa0425d574944ec66c73a9a1eb9a04c8.001.1,2025-03-12T09:56:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.e5eaef499596667593054435cbb7a17e589d0b35.001.1,2025-03-11T21:23:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.4d1c490230c6fa17bbb052fb0856b1061e4584e8.001.1,2025-03-11T08:30:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.9bf75f7720470db5c9a04d027fd824d63a3f3350.001.1,2025-03-10T21:29:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.06276e8e9f7740713f97b82b552213aa82c7d7a3.001.1,2025-03-10T10:19:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.604cf8fc1e8b93eb4e3d876700642e5b524abc9d.001.1,2025-03-09T21:06:00-04:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0e8f2ed31bb065515de5774d393b20edc2fd93ea.001.1",
+        "type": "Feature",
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -84.13,
+                        30.3
+                    ],
+                    [
+                        -84.13,
+                        30.240000000000002
+                    ],
+                    [
+                        -84.19,
+                        30.130000000000003
+                    ],
+                    [
+                        -84.23,
+                        30.140000000000004
+                    ],
+                    [
+                        -84.17,
+                        30.240000000000006
+                    ],
+                    [
+                        -84.17,
+                        30.300000000000004
+                    ],
+                    [
+                        -84.13,
+                        30.3
+                    ]
+                ]
+            ]
+        },
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0e8f2ed31bb065515de5774d393b20edc2fd93ea.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.0e8f2ed31bb065515de5774d393b20edc2fd93ea.001.1",
+            "areaDesc": "Leon, FL; Wakulla, FL",
+            "geocode": {
+                "SAME": [
+                    "012073",
+                    "012129"
+                ],
+                "UGC": [
+                    "FLC073",
+                    "FLC129"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/county/FLC073",
+                "https://api.weather.gov/zones/county/FLC129"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.974e9bde6f477dfa1fab901ba2ae0dbf10ef4928.001.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.974e9bde6f477dfa1fab901ba2ae0dbf10ef4928.001.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T21:11:00-04:00"
+                }
+            ],
+            "sent": "2025-03-13T09:06:00-04:00",
+            "effective": "2025-03-13T09:06:00-04:00",
+            "onset": "2025-03-13T09:06:00-04:00",
+            "expires": "2025-03-14T03:15:00-04:00",
+            "ends": "2025-03-14T08:00:00-04:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Severe",
+            "certainty": "Observed",
+            "urgency": "Immediate",
+            "event": "Flood Warning",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Tallahassee FL",
+            "headline": "Flood Warning issued March 13 at 9:06AM EDT until March 14 at 8:00AM EDT by NWS Tallahassee FL",
+            "description": "...The Flood Warning continues for the following rivers in Florida...\n\nSt. Marks River near Newport On Old Magnolia Rd affecting Leon\nand Wakulla Counties.\n\n* WHAT...Minor flooding is occurring and minor flooding is forecast.\n\n* WHERE...St. Marks River near Newport On Old Magnolia Rd.\n\n* WHEN...Until tomorrow morning.\n\n* IMPACTS...At 8.0 feet, Water begins to flood yards of some\nresidences of homes near Old Magnolia Road in Wakulla County.\n\n* ADDITIONAL DETAILS...\n- At 8:00 AM EDT Thursday the stage was 8.1 feet.\n- Recent Activity...The maximum river stage in the 24 hours\nending at 8:00 AM EDT Thursday was 8.2 feet.\n- Forecast...The river is expected to fall below flood stage\nthis evening and continue falling to 7.1 feet Tuesday\nmorning.\n- Flood stage is 8.0 feet.\n- Flood History...This crest compares to a previous crest of\n8.1 feet on 06/07/2017.\n- http://www.weather.gov/safety/flood",
+            "instruction": "Motorists should not attempt to drive around barricades or drive\ncars through flooded areas.\n\nCaution is urged when walking near riverbanks.\n\nAdditional information is available at www.weather.gov.\n\nThe next statement will be issued late tonight at 315 AM EDT.",
+            "response": "Avoid",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "FLSTAE"
+                ],
+                "WMOidentifier": [
+                    "WGUS82 KTAE 131306"
+                ],
+                "NWSheadline": [
+                    "FLOOD WARNING REMAINS IN EFFECT UNTIL TOMORROW MORNING"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "EAS-ORG": [
+                    "WXR"
+                ],
+                "VTEC": [
+                    "/O.CON.KTAE.FL.W.0005.000000T0000Z-250314T1200Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-14T12:00:00+00:00"
+                ],
+                "expiredReferences": [
+                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b066b680ed8f707227dfffa1c1c55be931ebe054.001.1,2025-03-12T09:58:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d3648e33b12b55373c0c2a4dc6ba28cdc94a1e3d.001.1,2025-03-12T07:31:00-04:00"
                 ]
             }
         }
@@ -806,155 +1814,6 @@
         }
     },
     {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cab8e0b31eca2ecd2e38a4d63927c50ac2033862.001.1",
-        "type": "Feature",
-        "geometry": {
-            "type": "Polygon",
-            "coordinates": [
-                [
-                    [
-                        -117.14,
-                        32.6
-                    ],
-                    [
-                        -117.11,
-                        32.59
-                    ],
-                    [
-                        -117.1,
-                        32.6
-                    ],
-                    [
-                        -117.13,
-                        32.6599999
-                    ],
-                    [
-                        -117.14999999999999,
-                        32.650000000000006
-                    ],
-                    [
-                        -117.13999999999999,
-                        32.620000000000005
-                    ],
-                    [
-                        -117.14999999999999,
-                        32.64000000000001
-                    ],
-                    [
-                        -117.16999999999999,
-                        32.67000000000001
-                    ],
-                    [
-                        -117.16999999999999,
-                        32.68000000000001
-                    ],
-                    [
-                        -117.14999999999999,
-                        32.65999990000001
-                    ],
-                    [
-                        -117.13,
-                        32.67000000000001
-                    ],
-                    [
-                        -117.16,
-                        32.70000000000001
-                    ],
-                    [
-                        -117.17,
-                        32.69000000000001
-                    ],
-                    [
-                        -117.06,
-                        33.140000000000015
-                    ],
-                    [
-                        -116.71000000000001,
-                        33.100000000000016
-                    ],
-                    [
-                        -116.81,
-                        32.56000000000002
-                    ],
-                    [
-                        -117.12,
-                        32.54000000000001
-                    ],
-                    [
-                        -117.14,
-                        32.6
-                    ]
-                ]
-            ]
-        },
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cab8e0b31eca2ecd2e38a4d63927c50ac2033862.001.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.cab8e0b31eca2ecd2e38a4d63927c50ac2033862.001.1",
-            "areaDesc": "San Diego County Coastal Areas; San Diego County Inland Valleys",
-            "geocode": {
-                "SAME": [
-                    "006073"
-                ],
-                "UGC": [
-                    "CAZ043",
-                    "CAZ050"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/CAZ043",
-                "https://api.weather.gov/zones/forecast/CAZ050"
-            ],
-            "references": [],
-            "sent": "2025-03-13T05:44:00-07:00",
-            "effective": "2025-03-13T05:44:00-07:00",
-            "onset": "2025-03-13T05:44:00-07:00",
-            "expires": "2025-03-13T06:30:00-07:00",
-            "ends": null,
-            "status": "Actual",
-            "messageType": "Alert",
-            "category": "Met",
-            "severity": "Moderate",
-            "certainty": "Observed",
-            "urgency": "Expected",
-            "event": "Special Weather Statement",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS San Diego CA",
-            "headline": "Special Weather Statement issued March 13 at 5:44AM PDT by NWS San Diego CA",
-            "description": "At 544 AM PDT, Doppler radar was tracking gusty showers along a line\nextending from San Pasqual to near Imperial Beach. Movement was east\nat 20 mph.\n\nHAZARD...Wind gusts of 40 to 55 mph and pea size hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Gusty winds could knock down tree limbs and blow around\nunsecured objects. Minor hail damage to vegetation is\npossible.\n\nLocations impacted include...\nChula Vista, El Cajon, National City, La Mesa, Poway, Imperial Beach,\nRamona, Coronado, Alpine, Mission Valley, North Park, Tierrasanta,\nDowntown San Diego, Hillcrest, Escondido, Santee, Lemon Grove, Rancho\nSan Diego, College East, and Serra Mesa.",
-            "instruction": "If outdoors, consider seeking shelter inside a building.",
-            "response": "Execute",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "SPSSGX"
-                ],
-                "WMOidentifier": [
-                    "WWUS86 KSGX 131244"
-                ],
-                "NWSheadline": [
-                    "GUSTY SHOWERS WILL IMPACT SOUTH CENTRAL SAN DIEGO COUNTY THROUGH 630 AM PDT"
-                ],
-                "eventMotionDescription": [
-                    "2025-03-13T12:44:00-00:00...storm...263DEG...19KT...33.08,-117.0 32.52,-117.14"
-                ],
-                "maxWindGust": [
-                    "55 MPH"
-                ],
-                "maxHailSize": [
-                    "0.25"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "EAS-ORG": [
-                    "WXR"
-                ]
-            }
-        }
-    },
-    {
         "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e296771c557463c0901a8a71ca870e15732de38f.001.1",
         "type": "Feature",
         "geometry": null,
@@ -1432,161 +2291,6 @@
                 ],
                 "eventEndingTime": [
                     "2025-03-13T13:57:00+00:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9115247ae91f80f75a70b9b35df31726c96c2857.001.1",
-        "type": "Feature",
-        "geometry": {
-            "type": "Polygon",
-            "coordinates": [
-                [
-                    [
-                        -117.11,
-                        32.59
-                    ],
-                    [
-                        -117.16,
-                        32.690000000000005
-                    ],
-                    [
-                        -117.21,
-                        32.720000000000006
-                    ],
-                    [
-                        -117.21,
-                        32.71000000000001
-                    ],
-                    [
-                        -117.22999999999999,
-                        32.690000000000005
-                    ],
-                    [
-                        -117.16999999999999,
-                        32.68000000000001
-                    ],
-                    [
-                        -117.13999999999999,
-                        32.620000000000005
-                    ],
-                    [
-                        -117.12999999999998,
-                        32.56
-                    ],
-                    [
-                        -117.10999999999999,
-                        32.550000000000004
-                    ],
-                    [
-                        -117.12999999999998,
-                        32.540000000000006
-                    ],
-                    [
-                        -117.33999999999997,
-                        32.53000000000001
-                    ],
-                    [
-                        -117.39999999999998,
-                        32.70000000000001
-                    ],
-                    [
-                        -117.25999999999998,
-                        32.79000000000001
-                    ],
-                    [
-                        -117.24999999999997,
-                        32.670000000000016
-                    ],
-                    [
-                        -117.22999999999998,
-                        32.72000000000001
-                    ],
-                    [
-                        -117.22999999999998,
-                        32.72999990000001
-                    ],
-                    [
-                        -117.17999999999998,
-                        32.72999990000001
-                    ],
-                    [
-                        -117.12999999999998,
-                        32.68000000000001
-                    ],
-                    [
-                        -117.09999999999998,
-                        32.60000000000001
-                    ],
-                    [
-                        -117.11,
-                        32.59
-                    ]
-                ]
-            ]
-        },
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9115247ae91f80f75a70b9b35df31726c96c2857.001.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.9115247ae91f80f75a70b9b35df31726c96c2857.001.1",
-            "areaDesc": "Coastal Waters from San Mateo Point to the Mexican Border and out to 30 nm",
-            "geocode": {
-                "SAME": [
-                    "057750"
-                ],
-                "UGC": [
-                    "PZZ750"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/PZZ750"
-            ],
-            "references": [],
-            "sent": "2025-03-13T05:31:00-07:00",
-            "effective": "2025-03-13T05:31:00-07:00",
-            "onset": "2025-03-13T05:31:00-07:00",
-            "expires": "2025-03-13T06:15:00-07:00",
-            "ends": "2025-03-13T06:15:00-07:00",
-            "status": "Actual",
-            "messageType": "Alert",
-            "category": "Met",
-            "severity": "Severe",
-            "certainty": "Likely",
-            "urgency": "Immediate",
-            "event": "Special Marine Warning",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS San Diego CA",
-            "headline": "Special Marine Warning issued March 13 at 5:31AM PDT until March 13 at 6:15AM PDT by NWS San Diego CA",
-            "description": "SMWSGX\n\nThe National Weather Service in San Diego has issued a\n\n* Special Marine Warning for...\nCoastal Waters from San Mateo Point to the Mexican Border and out\nto 30 nm...\n\n* Until 615 AM PDT.\n\n* At 530 AM PDT, a front capable of producing waterspouts was located\nnear Point Loma, moving east at 30 knots.\n\nHAZARD...Waterspouts and wind gusts 30 to 40 knots.\n\nSOURCE...Radar.\n\nIMPACT...Waterspouts can create locally hazardous seas. Small\ncraft could be damaged in briefly higher winds and\nsuddenly higher waves.\n\n* The front will remain over mainly open waters.",
-            "instruction": "Move to safe harbor until hazardous weather passes.",
-            "response": "Avoid",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "SMWSGX"
-                ],
-                "WMOidentifier": [
-                    "WHUS56 KSGX 131231"
-                ],
-                "eventMotionDescription": [
-                    "2025-03-13T12:30:00-00:00...storm...253DEG...32KT...32.64,-117.29"
-                ],
-                "waterspoutDetection": [
-                    "POSSIBLE"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "EAS-ORG": [
-                    "WXR"
-                ],
-                "VTEC": [
-                    "/O.NEW.KSGX.MA.W.0012.250313T1231Z-250313T1315Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-13T13:15:00+00:00"
                 ]
             }
         }
@@ -4622,149 +5326,6 @@
         }
     },
     {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9510d2008b4387ea3ab12492172e2cd089a15ed.001.1",
-        "type": "Feature",
-        "geometry": {
-            "type": "Polygon",
-            "coordinates": [
-                [
-                    [
-                        -91.36,
-                        35.05
-                    ],
-                    [
-                        -91.38,
-                        35.05
-                    ],
-                    [
-                        -91.44,
-                        35.099999999999994
-                    ],
-                    [
-                        -91.44,
-                        35.10999999999999
-                    ],
-                    [
-                        -91.44,
-                        35.11999999999999
-                    ],
-                    [
-                        -91.45,
-                        35.13999999999999
-                    ],
-                    [
-                        -91.43,
-                        35.13999999999999
-                    ],
-                    [
-                        -91.44000000000001,
-                        35.14999999999999
-                    ],
-                    [
-                        -91.43,
-                        35.15999989999999
-                    ],
-                    [
-                        -91.15,
-                        34.999999999999986
-                    ],
-                    [
-                        -91.15,
-                        34.90999989999999
-                    ],
-                    [
-                        -91.12,
-                        34.90999989999999
-                    ],
-                    [
-                        -91.12,
-                        34.86999999999999
-                    ],
-                    [
-                        -91.10000000000001,
-                        34.86999999999999
-                    ],
-                    [
-                        -91.10000000000001,
-                        34.73999999999999
-                    ],
-                    [
-                        -91.36000000000001,
-                        35.039999999999985
-                    ],
-                    [
-                        -91.36,
-                        35.05
-                    ]
-                ]
-            ]
-        },
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9510d2008b4387ea3ab12492172e2cd089a15ed.001.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.d9510d2008b4387ea3ab12492172e2cd089a15ed.001.1",
-            "areaDesc": "Monroe, AR; Woodruff, AR",
-            "geocode": {
-                "SAME": [
-                    "005095",
-                    "005147"
-                ],
-                "UGC": [
-                    "ARC095",
-                    "ARC147"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/county/ARC095",
-                "https://api.weather.gov/zones/county/ARC147"
-            ],
-            "references": [],
-            "sent": "2025-03-13T06:36:00-05:00",
-            "effective": "2025-03-13T06:36:00-05:00",
-            "onset": "2025-03-13T06:36:00-05:00",
-            "expires": "2025-03-13T08:30:00-05:00",
-            "ends": "2025-03-13T08:30:00-05:00",
-            "status": "Actual",
-            "messageType": "Alert",
-            "category": "Met",
-            "severity": "Severe",
-            "certainty": "Likely",
-            "urgency": "Immediate",
-            "event": "Flash Flood Warning",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Little Rock AR",
-            "headline": "Flash Flood Warning issued March 13 at 6:36AM CDT until March 13 at 8:30AM CDT by NWS Little Rock AR",
-            "description": "FFWLZK\n\nThe National Weather Service in Little Rock has issued a\n\n* Flash Flood Warning for...\nNorth Central Monroe County in eastern Arkansas...\nSouthwestern Woodruff County in eastern Arkansas...\n\n* Until 830 AM CDT.\n\n* At 636 AM CDT, Doppler radar indicated thunderstorms producing\nheavy rain across the warned area. Between 1 and 3 inches of rain\nhave fallen. Flash flooding is ongoing or expected to begin\nshortly.\n\nHAZARD...Flash flooding caused by thunderstorms.\n\nSOURCE...Radar.\n\nIMPACT...Flash flooding of small creeks and streams, urban\nareas, highways, streets and underpasses as well as\nother poor drainage and low-lying areas.\n\n* Some locations that will experience flash flooding include...\nBrinkley...                        Alfrey...\nCotton Plant...                    Fargo...\nZent...                            Dixie...\nMcClelland...",
-            "instruction": "Turn around, don't drown when encountering flooded roads. Most flood\ndeaths occur in vehicles.",
-            "response": "Avoid",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "FFWLZK"
-                ],
-                "WMOidentifier": [
-                    "WGUS54 KLZK 131136"
-                ],
-                "flashFloodDetection": [
-                    "RADAR INDICATED"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "EAS-ORG": [
-                    "WXR"
-                ],
-                "VTEC": [
-                    "/O.NEW.KLZK.FF.W.0012.250313T1136Z-250313T1330Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-13T13:30:00+00:00"
-                ]
-            }
-        }
-    },
-    {
         "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.20d5a096a101b3521bbbb10ee5177b1ef0aac651.006.1",
         "type": "Feature",
         "geometry": null,
@@ -5274,154 +5835,6 @@
                 ],
                 "expiredReferences": [
                     "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.ed05da2c0b0630deae3d52564ab758e82dda9b70.001.2,2025-03-12T12:42:00-05:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.59588641aba476308eb9e306508e05fdbbe970a0.001.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.59588641aba476308eb9e306508e05fdbbe970a0.001.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.59588641aba476308eb9e306508e05fdbbe970a0.001.1",
-            "areaDesc": "Suwannee; Baker; Union; Bradford; Gilchrist; Eastern Hamilton; Eastern Alachua; Eastern Putnam; Western Hamilton; Western Alachua; Western Putnam; Central Marion; Northern Columbia; Western Marion; Southeastern Columbia; Southwestern Columbia; Coffee; Jeff Davis; Bacon; Appling; Wayne; Atkinson; Pierce; Brantley; Inland Glynn; Echols; Clinch; Inland Camden; Northern Ware; Northeastern Charlton; Southern Ware; Western Charlton",
-            "geocode": {
-                "SAME": [
-                    "012121",
-                    "012003",
-                    "012125",
-                    "012007",
-                    "012041",
-                    "012047",
-                    "012001",
-                    "012107",
-                    "012083",
-                    "012023",
-                    "013069",
-                    "013161",
-                    "013005",
-                    "013001",
-                    "013305",
-                    "013003",
-                    "013229",
-                    "013025",
-                    "013127",
-                    "013101",
-                    "013065",
-                    "013039",
-                    "013299",
-                    "013049"
-                ],
-                "UGC": [
-                    "FLZ021",
-                    "FLZ023",
-                    "FLZ030",
-                    "FLZ031",
-                    "FLZ035",
-                    "FLZ120",
-                    "FLZ136",
-                    "FLZ137",
-                    "FLZ220",
-                    "FLZ236",
-                    "FLZ237",
-                    "FLZ240",
-                    "FLZ322",
-                    "FLZ340",
-                    "FLZ422",
-                    "FLZ522",
-                    "GAZ132",
-                    "GAZ133",
-                    "GAZ134",
-                    "GAZ135",
-                    "GAZ136",
-                    "GAZ149",
-                    "GAZ151",
-                    "GAZ152",
-                    "GAZ153",
-                    "GAZ162",
-                    "GAZ163",
-                    "GAZ165",
-                    "GAZ250",
-                    "GAZ264",
-                    "GAZ350",
-                    "GAZ364"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/FLZ021",
-                "https://api.weather.gov/zones/forecast/FLZ023",
-                "https://api.weather.gov/zones/forecast/FLZ030",
-                "https://api.weather.gov/zones/forecast/FLZ031",
-                "https://api.weather.gov/zones/forecast/FLZ035",
-                "https://api.weather.gov/zones/forecast/FLZ120",
-                "https://api.weather.gov/zones/forecast/FLZ136",
-                "https://api.weather.gov/zones/forecast/FLZ137",
-                "https://api.weather.gov/zones/forecast/FLZ220",
-                "https://api.weather.gov/zones/forecast/FLZ236",
-                "https://api.weather.gov/zones/forecast/FLZ237",
-                "https://api.weather.gov/zones/forecast/FLZ240",
-                "https://api.weather.gov/zones/forecast/FLZ322",
-                "https://api.weather.gov/zones/forecast/FLZ340",
-                "https://api.weather.gov/zones/forecast/FLZ422",
-                "https://api.weather.gov/zones/forecast/FLZ522",
-                "https://api.weather.gov/zones/forecast/GAZ132",
-                "https://api.weather.gov/zones/forecast/GAZ133",
-                "https://api.weather.gov/zones/forecast/GAZ134",
-                "https://api.weather.gov/zones/forecast/GAZ135",
-                "https://api.weather.gov/zones/forecast/GAZ136",
-                "https://api.weather.gov/zones/forecast/GAZ149",
-                "https://api.weather.gov/zones/forecast/GAZ151",
-                "https://api.weather.gov/zones/forecast/GAZ152",
-                "https://api.weather.gov/zones/forecast/GAZ153",
-                "https://api.weather.gov/zones/forecast/GAZ162",
-                "https://api.weather.gov/zones/forecast/GAZ163",
-                "https://api.weather.gov/zones/forecast/GAZ165",
-                "https://api.weather.gov/zones/forecast/GAZ250",
-                "https://api.weather.gov/zones/forecast/GAZ264",
-                "https://api.weather.gov/zones/forecast/GAZ350",
-                "https://api.weather.gov/zones/forecast/GAZ364"
-            ],
-            "references": [],
-            "sent": "2025-03-13T07:17:00-04:00",
-            "effective": "2025-03-13T07:17:00-04:00",
-            "onset": "2025-03-13T07:17:00-04:00",
-            "expires": "2025-03-13T10:00:00-04:00",
-            "ends": "2025-03-13T10:00:00-04:00",
-            "status": "Actual",
-            "messageType": "Alert",
-            "category": "Met",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "Dense Fog Advisory",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Jacksonville FL",
-            "headline": "Dense Fog Advisory issued March 13 at 7:17AM EDT until March 13 at 10:00AM EDT by NWS Jacksonville FL",
-            "description": "* WHAT...Visibility one quarter mile or less in dense fog.\n\n* WHERE...Portions of northeast and northern Florida and southeast\nGeorgia.\n\n* WHEN...Until 10 AM EDT this morning.\n\n* IMPACTS...Low visibility could make driving conditions hazardous.",
-            "instruction": "If driving, slow down, use your headlights, and leave plenty of\ndistance ahead of you.",
-            "response": "Execute",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "NPWJAX"
-                ],
-                "WMOidentifier": [
-                    "WWUS72 KJAX 131117"
-                ],
-                "NWSheadline": [
-                    "DENSE FOG ADVISORY IN EFFECT UNTIL 10 AM EDT THIS MORNING"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.NEW.KJAX.FG.Y.0014.250313T1117Z-250313T1400Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-13T14:00:00+00:00"
                 ]
             }
         }
@@ -7072,163 +7485,6 @@
                 ],
                 "eventEndingTime": [
                     "2025-03-15T00:00:00+00:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.bd4eef5b072d152aef3dd07535cf4a8323b1b2e6.001.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.bd4eef5b072d152aef3dd07535cf4a8323b1b2e6.001.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.bd4eef5b072d152aef3dd07535cf4a8323b1b2e6.001.1",
-            "areaDesc": "Montague; Cooke; Grayson; Young; Jack; Wise; Denton; Collin; Stephens; Palo Pinto; Parker; Tarrant; Dallas; Rockwall; Eastland; Erath; Hood; Somervell; Johnson; Ellis; Comanche; Mills; Hamilton; Bosque; Hill; Lampasas; Coryell; Bell; McLennan",
-            "geocode": {
-                "SAME": [
-                    "048337",
-                    "048097",
-                    "048181",
-                    "048503",
-                    "048237",
-                    "048497",
-                    "048121",
-                    "048085",
-                    "048429",
-                    "048363",
-                    "048367",
-                    "048439",
-                    "048113",
-                    "048397",
-                    "048133",
-                    "048143",
-                    "048221",
-                    "048425",
-                    "048251",
-                    "048139",
-                    "048093",
-                    "048333",
-                    "048193",
-                    "048035",
-                    "048217",
-                    "048281",
-                    "048099",
-                    "048027",
-                    "048309"
-                ],
-                "UGC": [
-                    "TXZ091",
-                    "TXZ092",
-                    "TXZ093",
-                    "TXZ100",
-                    "TXZ101",
-                    "TXZ102",
-                    "TXZ103",
-                    "TXZ104",
-                    "TXZ115",
-                    "TXZ116",
-                    "TXZ117",
-                    "TXZ118",
-                    "TXZ119",
-                    "TXZ120",
-                    "TXZ129",
-                    "TXZ130",
-                    "TXZ131",
-                    "TXZ132",
-                    "TXZ133",
-                    "TXZ134",
-                    "TXZ141",
-                    "TXZ142",
-                    "TXZ143",
-                    "TXZ144",
-                    "TXZ145",
-                    "TXZ156",
-                    "TXZ157",
-                    "TXZ158",
-                    "TXZ159"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/fire/TXZ091",
-                "https://api.weather.gov/zones/fire/TXZ092",
-                "https://api.weather.gov/zones/fire/TXZ093",
-                "https://api.weather.gov/zones/fire/TXZ100",
-                "https://api.weather.gov/zones/fire/TXZ101",
-                "https://api.weather.gov/zones/fire/TXZ102",
-                "https://api.weather.gov/zones/fire/TXZ103",
-                "https://api.weather.gov/zones/fire/TXZ104",
-                "https://api.weather.gov/zones/fire/TXZ115",
-                "https://api.weather.gov/zones/fire/TXZ116",
-                "https://api.weather.gov/zones/fire/TXZ117",
-                "https://api.weather.gov/zones/fire/TXZ118",
-                "https://api.weather.gov/zones/fire/TXZ119",
-                "https://api.weather.gov/zones/fire/TXZ120",
-                "https://api.weather.gov/zones/fire/TXZ129",
-                "https://api.weather.gov/zones/fire/TXZ130",
-                "https://api.weather.gov/zones/fire/TXZ131",
-                "https://api.weather.gov/zones/fire/TXZ132",
-                "https://api.weather.gov/zones/fire/TXZ133",
-                "https://api.weather.gov/zones/fire/TXZ134",
-                "https://api.weather.gov/zones/fire/TXZ141",
-                "https://api.weather.gov/zones/fire/TXZ142",
-                "https://api.weather.gov/zones/fire/TXZ143",
-                "https://api.weather.gov/zones/fire/TXZ144",
-                "https://api.weather.gov/zones/fire/TXZ145",
-                "https://api.weather.gov/zones/fire/TXZ156",
-                "https://api.weather.gov/zones/fire/TXZ157",
-                "https://api.weather.gov/zones/fire/TXZ158",
-                "https://api.weather.gov/zones/fire/TXZ159"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.948d478efc44e0805fc600434ec6351ec250cbd2.001.1",
-                    "identifier": "urn:oid:2.49.0.1.840.0.948d478efc44e0805fc600434ec6351ec250cbd2.001.1",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-12T22:40:00-05:00"
-                }
-            ],
-            "sent": "2025-03-13T05:34:00-05:00",
-            "effective": "2025-03-13T05:34:00-05:00",
-            "onset": "2025-03-14T07:00:00-05:00",
-            "expires": "2025-03-13T14:00:00-05:00",
-            "ends": "2025-03-14T19:00:00-05:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "event": "Fire Weather Watch",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Fort Worth TX",
-            "headline": "Fire Weather Watch issued March 13 at 5:34AM CDT until March 14 at 7:00PM CDT by NWS Fort Worth TX",
-            "description": "* AFFECTED AREA...All areas along and west of the I-35 corridor,\nas well as Grayson, Collin, and Rockwall counties\n\n* TIMING...From 7 AM to 7 PM CDT Friday\n\n* WINDS...Southwest 25 to 35 mph with gusts up to 60 mph.\n\n* RELATIVE HUMIDITY...As low as 11 percent.\n\n* TEMPERATURES...73 to 86 degrees.\n\n* IMPACTS...Rapid spread of wildfires is possible due to very\nstrong southwesterly winds and low relative humidity values.",
-            "instruction": "A Fire Weather Watch means that critical fire weather conditions\nare forecast to occur. Listen for later forecasts and possible\nRed Flag Warnings.",
-            "response": "Prepare",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "RFWFWD"
-                ],
-                "WMOidentifier": [
-                    "WWUS84 KFWD 131034"
-                ],
-                "NWSheadline": [
-                    "FIRE WEATHER WATCH REMAINS IN EFFECT FROM FRIDAY MORNING THROUGH FRIDAY EVENING FOR VERY STRONG WIND WITH GUSTS UP TO 60 MPH AND LOW RELATIVE HUMIDITY VALUES FOR NORTH AND CENTRAL TEXAS"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.CON.KFWD.FW.A.0002.250314T1200Z-250315T0000Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-15T00:00:00+00:00"
-                ],
-                "expiredReferences": [
-                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.05c9799b297cb7428a8286cccafcfcb89b21902d.002.1,2025-03-12T14:10:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.05c9799b297cb7428a8286cccafcfcb89b21902d.001.1,2025-03-12T14:10:00-05:00"
                 ]
             }
         }
@@ -32933,145 +33189,6 @@
         }
     },
     {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.da2547f6dce7fd8ab70fb7cc79244d301e91c29f.001.2",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.da2547f6dce7fd8ab70fb7cc79244d301e91c29f.001.2",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.da2547f6dce7fd8ab70fb7cc79244d301e91c29f.001.2",
-            "areaDesc": "Kohala; Big Island South; Big Island Southeast; Big Island North",
-            "geocode": {
-                "SAME": [
-                    "015001"
-                ],
-                "UGC": [
-                    "HIZ026",
-                    "HIZ051",
-                    "HIZ052",
-                    "HIZ054"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/HIZ026",
-                "https://api.weather.gov/zones/forecast/HIZ051",
-                "https://api.weather.gov/zones/forecast/HIZ052",
-                "https://api.weather.gov/zones/forecast/HIZ054"
-            ],
-            "references": [],
-            "sent": "2025-03-12T17:35:00-10:00",
-            "effective": "2025-03-12T17:35:00-10:00",
-            "onset": "2025-03-12T18:00:00-10:00",
-            "expires": "2025-03-13T06:00:00-10:00",
-            "ends": "2025-03-13T06:00:00-10:00",
-            "status": "Actual",
-            "messageType": "Alert",
-            "category": "Met",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "Wind Advisory",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Honolulu HI",
-            "headline": "Wind Advisory issued March 12 at 5:35PM HST until March 13 at 6:00AM HST by NWS Honolulu HI",
-            "description": "* WHAT...East winds 20 to 30 mph with gusts up to 50 mph expected.\n\n* WHERE...Areas of Upolu Point, South Point, Waikoloa and Kamuela.\n\n* WHEN...Until 6 AM HST Thursday.\n\n* IMPACTS...Winds this strong can tear off shingles, knock down tree\nbranches, blow away tents and awnings and make it difficult to\nsteer, especially for drivers of high profile vehicles.",
-            "instruction": "Watch out for falling tree branches when walking or driving. Make\nsure tents and awnings are secure or take them down. Be prepared for\npower outages.\n\nUse extra caution when driving, especially if operating a high\nprofile vehicle. Secure outdoor objects.\n\nSecure trash cans, lawn furniture, and other loose outdoor objects\nthat can be easily blown around by strong winds.",
-            "response": "Execute",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "NPWHFO"
-                ],
-                "WMOidentifier": [
-                    "WWHW70 PHFO 130335"
-                ],
-                "NWSheadline": [
-                    "WIND ADVISORY IN EFFECT UNTIL 6 AM HST THURSDAY"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.NEW.PHFO.WI.Y.0007.250313T0400Z-250313T1600Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-13T16:00:00+00:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.da2547f6dce7fd8ab70fb7cc79244d301e91c29f.003.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.da2547f6dce7fd8ab70fb7cc79244d301e91c29f.003.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.da2547f6dce7fd8ab70fb7cc79244d301e91c29f.003.1",
-            "areaDesc": "Big Island Interior",
-            "geocode": {
-                "SAME": [
-                    "015001"
-                ],
-                "UGC": [
-                    "HIZ027"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/HIZ027"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d1ea8ed8525c2bbaf6f6135e20d99ce71e929062.001.1",
-                    "identifier": "urn:oid:2.49.0.1.840.0.d1ea8ed8525c2bbaf6f6135e20d99ce71e929062.001.1",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-12T15:09:00-10:00"
-                }
-            ],
-            "sent": "2025-03-12T17:35:00-10:00",
-            "effective": "2025-03-12T17:35:00-10:00",
-            "onset": "2025-03-12T18:00:00-10:00",
-            "expires": "2025-03-13T06:00:00-10:00",
-            "ends": "2025-03-13T06:00:00-10:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "Wind Advisory",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Honolulu HI",
-            "headline": "Wind Advisory issued March 12 at 5:35PM HST until March 13 at 6:00AM HST by NWS Honolulu HI",
-            "description": "* WHAT...East winds 20 to 30 mph with gusts up to 50 mph expected.\n\n* WHERE...The saddle area of the Big Island.\n\n* WHEN...Until 6 AM HST Thursday.\n\n* IMPACTS...Winds this strong can tear off shingles, knock down tree\nbranches, blow away tents and awnings and make it difficult to\nsteer, especially for drivers of high profile vehicles.",
-            "instruction": "Watch out for falling tree branches when walking or driving. Make\nsure tents and awnings are secure or take them down. Be prepared for\npower outages.\n\nUse extra caution when driving, especially if operating a high\nprofile vehicle. Secure outdoor objects.\n\nSecure trash cans, lawn furniture, and other loose outdoor objects\nthat can be easily blown around by strong winds.",
-            "response": "Execute",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "NPWHFO"
-                ],
-                "WMOidentifier": [
-                    "WWHW70 PHFO 130335"
-                ],
-                "NWSheadline": [
-                    "WIND ADVISORY REMAINS IN EFFECT UNTIL 6 AM HST THURSDAY"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.CON.PHFO.WI.Y.0006.250313T0400Z-250313T1600Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-13T16:00:00+00:00"
-                ]
-            }
-        }
-    },
-    {
         "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c5a5e370404c4eea84c1e8b8d3978f8e3f3a9c5e.001.1",
         "type": "Feature",
         "geometry": null,
@@ -34356,235 +34473,6 @@
         }
     },
     {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.974e9bde6f477dfa1fab901ba2ae0dbf10ef4928.001.1",
-        "type": "Feature",
-        "geometry": {
-            "type": "Polygon",
-            "coordinates": [
-                [
-                    [
-                        -84.13,
-                        30.3
-                    ],
-                    [
-                        -84.13,
-                        30.240000000000002
-                    ],
-                    [
-                        -84.19,
-                        30.130000000000003
-                    ],
-                    [
-                        -84.23,
-                        30.140000000000004
-                    ],
-                    [
-                        -84.17,
-                        30.240000000000006
-                    ],
-                    [
-                        -84.17,
-                        30.300000000000004
-                    ],
-                    [
-                        -84.13,
-                        30.3
-                    ]
-                ]
-            ]
-        },
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.974e9bde6f477dfa1fab901ba2ae0dbf10ef4928.001.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.974e9bde6f477dfa1fab901ba2ae0dbf10ef4928.001.1",
-            "areaDesc": "Leon, FL; Wakulla, FL",
-            "geocode": {
-                "SAME": [
-                    "012073",
-                    "012129"
-                ],
-                "UGC": [
-                    "FLC073",
-                    "FLC129"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/county/FLC073",
-                "https://api.weather.gov/zones/county/FLC129"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b066b680ed8f707227dfffa1c1c55be931ebe054.001.1",
-                    "identifier": "urn:oid:2.49.0.1.840.0.b066b680ed8f707227dfffa1c1c55be931ebe054.001.1",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-12T09:58:00-04:00"
-                }
-            ],
-            "sent": "2025-03-12T21:11:00-04:00",
-            "effective": "2025-03-12T21:11:00-04:00",
-            "onset": "2025-03-12T21:11:00-04:00",
-            "expires": "2025-03-13T15:15:00-04:00",
-            "ends": "2025-03-14T08:00:00-04:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Severe",
-            "certainty": "Observed",
-            "urgency": "Immediate",
-            "event": "Flood Warning",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Tallahassee FL",
-            "headline": "Flood Warning issued March 12 at 9:11PM EDT until March 14 at 8:00AM EDT by NWS Tallahassee FL",
-            "description": "...The Flood Warning is extended for the following rivers in\nFlorida...\n\nSt. Marks River near Newport On Old Magnolia Rd affecting Wakulla\nand Leon Counties.\n\n* WHAT...Minor flooding is occurring and minor flooding is forecast.\n\n* WHERE...St. Marks River near Newport On Old Magnolia Rd.\n\n* WHEN...Until Friday morning.\n\n* IMPACTS...At 8.0 feet, Water begins to flood yards of some\nresidences of homes near Old Magnolia Road in Wakulla County.\n\n* ADDITIONAL DETAILS...\n- At 8:00 PM EDT Wednesday the stage was 8.2 feet.\n- Recent Activity...The maximum river stage in the 24 hours\nending at 8:00 PM EDT Wednesday was 8.2 feet.\n- Forecast...The river is expected to crest near 8.2 feet just\nafter midnight tonight. It will then fall below flood stage\ntomorrow evening.\n- Flood stage is 8.0 feet.\n- Flood History...This crest compares to a previous crest of\n8.2 feet on 01/05/2021.\n- http://www.weather.gov/safety/flood",
-            "instruction": "Motorists should not attempt to drive around barricades or drive\ncars through flooded areas.\n\nCaution is urged when walking near riverbanks.\n\nAdditional information is available at www.weather.gov.\n\nThe next statement will be issued by Thursday afternoon at 315 PM\nEDT.",
-            "response": "Avoid",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "FLSTAE"
-                ],
-                "WMOidentifier": [
-                    "WGUS82 KTAE 130111"
-                ],
-                "NWSheadline": [
-                    "FLOOD WARNING NOW IN EFFECT UNTIL FRIDAY MORNING"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "EAS-ORG": [
-                    "WXR"
-                ],
-                "VTEC": [
-                    "/O.EXT.KTAE.FL.W.0005.000000T0000Z-250314T1200Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-14T12:00:00+00:00"
-                ],
-                "expiredReferences": [
-                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d3648e33b12b55373c0c2a4dc6ba28cdc94a1e3d.001.1,2025-03-12T07:31:00-04:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.04930cb3f8d9b943bb60ff7529adb9e28a927741.001.1",
-        "type": "Feature",
-        "geometry": {
-            "type": "Polygon",
-            "coordinates": [
-                [
-                    [
-                        -83.69,
-                        30.47
-                    ],
-                    [
-                        -83.77,
-                        30.31
-                    ],
-                    [
-                        -83.9599999,
-                        30.09
-                    ],
-                    [
-                        -84.04,
-                        30.13
-                    ],
-                    [
-                        -83.88000000000001,
-                        30.32
-                    ],
-                    [
-                        -83.78000000000002,
-                        30.47
-                    ],
-                    [
-                        -83.69,
-                        30.47
-                    ]
-                ]
-            ]
-        },
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.04930cb3f8d9b943bb60ff7529adb9e28a927741.001.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.04930cb3f8d9b943bb60ff7529adb9e28a927741.001.1",
-            "areaDesc": "Jefferson, FL; Madison, FL; Taylor, FL",
-            "geocode": {
-                "SAME": [
-                    "012065",
-                    "012079",
-                    "012123"
-                ],
-                "UGC": [
-                    "FLC065",
-                    "FLC079",
-                    "FLC123"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/county/FLC065",
-                "https://api.weather.gov/zones/county/FLC079",
-                "https://api.weather.gov/zones/county/FLC123"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.838f57ebaa0425d574944ec66c73a9a1eb9a04c8.001.1",
-                    "identifier": "urn:oid:2.49.0.1.840.0.838f57ebaa0425d574944ec66c73a9a1eb9a04c8.001.1",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-12T09:56:00-04:00"
-                }
-            ],
-            "sent": "2025-03-12T21:09:00-04:00",
-            "effective": "2025-03-12T21:09:00-04:00",
-            "onset": "2025-03-12T21:09:00-04:00",
-            "expires": "2025-03-13T15:15:00-04:00",
-            "ends": "2025-03-16T20:00:00-04:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Severe",
-            "certainty": "Observed",
-            "urgency": "Immediate",
-            "event": "Flood Warning",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Tallahassee FL",
-            "headline": "Flood Warning issued March 12 at 9:09PM EDT until March 16 at 8:00PM EDT by NWS Tallahassee FL",
-            "description": "...The Flood Warning is extended for the following rivers in\nFlorida...\n\nAucilla River at Lamont (US 27) affecting Taylor, Jefferson and\nMadison Counties.\n\n* WHAT...Minor flooding is occurring and minor flooding is forecast.\n\n* WHERE...Aucilla River at Lamont (US 27).\n\n* WHEN...Until Sunday evening.\n\n* IMPACTS...At 53.0 feet, Minor lowland flooding begins.\n\n* ADDITIONAL DETAILS...\n- At 8:45 PM EDT Wednesday the stage was 53.7 feet.\n- Recent Activity...The maximum river stage in the 24 hours\nending at 8:45 PM EDT Wednesday was 53.7 feet.\n- Forecast...The river is expected to fall below flood stage\nSunday morning and continue falling to 52.6 feet Monday\nevening.\n- Flood stage is 53.0 feet.\n- Flood History...This crest compares to a previous crest of\n53.8 feet on 04/07/2016.\n- http://www.weather.gov/safety/flood",
-            "instruction": "Motorists should not attempt to drive around barricades or drive\ncars through flooded areas.\n\nCaution is urged when walking near riverbanks.\n\nAdditional information is available at www.weather.gov.\n\nThe next statement will be issued by Thursday afternoon at 315 PM\nEDT.",
-            "response": "Avoid",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "FLSTAE"
-                ],
-                "WMOidentifier": [
-                    "WGUS82 KTAE 130109"
-                ],
-                "NWSheadline": [
-                    "FLOOD WARNING NOW IN EFFECT UNTIL SUNDAY EVENING"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "EAS-ORG": [
-                    "WXR"
-                ],
-                "VTEC": [
-                    "/O.EXT.KTAE.FL.W.0003.000000T0000Z-250317T0000Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-17T00:00:00+00:00"
-                ],
-                "expiredReferences": [
-                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.e5eaef499596667593054435cbb7a17e589d0b35.001.1,2025-03-11T21:23:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.4d1c490230c6fa17bbb052fb0856b1061e4584e8.001.1,2025-03-11T08:30:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.9bf75f7720470db5c9a04d027fd824d63a3f3350.001.1,2025-03-10T21:29:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.06276e8e9f7740713f97b82b552213aa82c7d7a3.001.1,2025-03-10T10:19:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.604cf8fc1e8b93eb4e3d876700642e5b524abc9d.001.1,2025-03-09T21:06:00-04:00"
-                ]
-            }
-        }
-    },
-    {
         "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ae5c34e3f1562817612970205cb270b816f86f97.001.1",
         "type": "Feature",
         "geometry": {
@@ -35026,134 +34914,6 @@
                 ],
                 "expiredReferences": [
                     "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.769dee10eb88061b05a7008d49421940a42684dc.001.1,2025-03-11T19:35:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.02e42c287af0834c814c6a1aa4885843e35032f8.002.1,2025-03-11T10:16:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.045eb2ba5ce97f55e732560a2b62f9caa038c04e.003.1,2025-03-10T19:51:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.f63bb87322ccb9cba0b68374288567a46b430da5.003.1,2025-03-10T10:10:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.cb3dc315eb9b33296a0f7b962568b3dfe9dbe89e.003.1,2025-03-09T20:10:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.50b7b2c7fdbf82eababab8eb52058100c38fb0f2.003.1,2025-03-09T09:52:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.85d06a40bbbd95422d462ba063c9d3b6a1a2a73b.002.1,2025-03-08T20:16:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.df9bb11d75a5a04ccdab3767b224b0ec8302d812.001.1,2025-03-08T09:24:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.2eaf81d0f05e5294ce2a30f144db86f9310d1a78.001.1,2025-03-07T21:39:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.6d4bb7ee0ac47ceb34c87a27082bd699dc4ae91f.003.1,2025-03-07T10:11:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.13f0131b896710658ee49f7ba1a330b830ddfd2c.001.1,2025-03-06T22:04:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.dfeb8a476224ec76a7632f9571f8a75de34b2839.001.1,2025-03-06T10:54:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.58647aadbc59ebf29044ee1ec47022a4c918d71a.001.1,2025-03-05T20:56:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.f34fa3f750e2dde9dcb871bf4eb3ab576bc49053.003.1,2025-03-05T10:04:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.52ceb7f664e30fd9e5c1145a6d7823ed9acaa261.004.1,2025-03-04T20:10:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.e9cb949a474f48af9be6b17b9aa1214f4495ef63.002.1,2025-03-04T09:51:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d84b06ad9c022f13c302b30225fa65e7642dca15.005.1,2025-03-03T19:40:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b6e22871d93c638ba647ae5b8f69e76a53bde693.002.1,2025-03-03T10:39:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.936352e6c1e75b631e6f85751b833582bd08fdd3.004.1,2025-03-02T18:36:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d5a33102fd08baa335bd391279261692a8f8eb3b.001.1,2025-03-02T12:22:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.fa5d1c7d044061038e2a1f32f8c2e95fd96c674b.004.1,2025-03-01T18:43:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.fbfc13c52806bb45b733ff005b2215c807a351f9.004.1,2025-03-01T08:20:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.21ab3f35a79cb5a4fc439dd7707fe86f09b9742a.004.1,2025-02-28T18:44:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.832dbf9f334644c8bc47fe51ffa7204264bfc592.005.1,2025-02-28T09:39:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.9e7f70df6b32f2ab3d875bacbd037b1cfc0df817.006.1,2025-02-27T18:53:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.169e1f0a5dbd31663388b00328ac8b1234e8ea72.007.1,2025-02-27T09:56:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b1141a62a964a5c584adf2e01e4eb44669788216.001.1,2025-02-26T18:46:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b745df6f0eb39e98d1ed6e5e3814f440f3c90b94.004.1,2025-02-26T10:05:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.2a9a564c7a001cdb5d98ed6ba7b5d90802110025.001.1,2025-02-25T20:38:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.842d7afd048ebe6f74f479849e28bbee67d7c59c.004.1,2025-02-25T11:48:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d218f5ae8a179279b182dfd564bf45b10ff37cb9.001.1,2025-02-24T20:57:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.f0e91f258f0a03812be83817c3ad57b8746c404f.002.1,2025-02-24T10:22:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b3f4c3bc733e3399af9ef314a729d52feafc2cfb.001.1,2025-02-23T20:01:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.2ff87386a6f2995e4902bd73c00b5e245ce802f3.001.1,2025-02-23T09:22:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.191122eeb5ece86b9ff5c6abeee8b3489868135a.001.1,2025-02-22T19:43:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.fa1f2471e700de4c1dafc484e8ab6b0fb73f7fbf.001.1,2025-02-22T10:18:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.0d9b653c8bcd928f9eb0389f5e20ae2eb6b78b46.001.1,2025-02-21T18:43:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.e513951ba1e656826789da35f193e3b052e47c99.001.1,2025-02-21T10:02:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.91f2673efb2ad56d0f265206cce6b15ffd8aa55d.001.1,2025-02-20T19:03:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.04838ccd0459e75cd5bec6de673c3c516eb0b2c1.001.1,2025-02-20T11:02:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.ae0ea8b55d2e68705d3fdc68f6e3f6f26bff49ee.001.1,2025-02-19T19:18:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.c49524ae339e7df2f01f5baaf7561d63cf6fcb30.004.1,2025-02-19T12:12:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.0971ebe29674f98a3188dab6eb871eaea4c81db8.001.1,2025-02-18T19:19:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.673601e8c2d3d3551e8624e1919ceaf9d5f0281d.001.1,2025-02-18T11:45:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.63b08d279824703d147e4bb9920ce000b1bc091f.001.1,2025-02-17T19:29:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.6e9b5744b6189a7a7209620b196ded2bd09fbf8f.002.1,2025-02-17T09:37:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.cd87299565e177526f67935af4bce4b354e46fdd.001.1,2025-02-16T19:54:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.ded9a478a77e073ec35d68ff56f436faa04b3fff.001.1,2025-02-16T09:01:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.a071a292f980173027f8ce806542f4a29b93e93a.001.1,2025-02-15T21:55:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.712dd62b0ca59a08fa9c7cf235d0ac075b3f3aba.003.1,2025-02-15T09:35:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.bb1f37acbc00a069fb9a315a5e47c09e0eb7b553.001.1,2025-02-15T09:27:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.2e6bc2fcd813787f2f71d67667689694977b6bbb.001.1,2025-02-14T20:21:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.8ff4a922b3b738603df634afe531e6c844d41ec3.001.1,2025-02-14T10:29:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.4a78b81ec1b67126bc0bb7e80271d6b1bc0e7ade.001.1,2025-02-13T19:27:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b379cef14e00f3ca6fecf63bf6197b2733cf9b7d.004.1,2025-02-13T11:07:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.605f2de7e4afef71b5d4cad6ea953a0584c15de9.001.1,2025-02-12T21:04:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d782e9fa09a9c984e546601f03feb98980ff1d7e.001.1,2025-02-12T11:17:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d885ba9b9ca3623d37754f2fc5363c0e90ca82fe.001.1,2025-02-11T20:03:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.002bc344b9ac0ebdf89fa0ea2aa54f4206973e35.003.1,2025-02-11T11:27:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.2a6f292fbcfa08bf2a600c1d6415de02660ed6d8.001.1,2025-02-10T21:14:00-06:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a3e6cf91b994b7c8d049e4269e8bc7bcafc93f83.001.1",
-        "type": "Feature",
-        "geometry": {
-            "type": "Polygon",
-            "coordinates": [
-                [
-                    [
-                        -82.2099999,
-                        30.41
-                    ],
-                    [
-                        -82.0699999,
-                        30.38
-                    ],
-                    [
-                        -82.03999999999999,
-                        30.619999999999997
-                    ],
-                    [
-                        -81.97999999999999,
-                        30.619999999999997
-                    ],
-                    [
-                        -82.02999999999999,
-                        30.339999999999996
-                    ],
-                    [
-                        -82.19999999999999,
-                        30.349999999999998
-                    ],
-                    [
-                        -82.2099999,
-                        30.41
-                    ]
-                ]
-            ]
-        },
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a3e6cf91b994b7c8d049e4269e8bc7bcafc93f83.001.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.a3e6cf91b994b7c8d049e4269e8bc7bcafc93f83.001.1",
-            "areaDesc": "Baker, FL; Nassau, FL; Charlton, GA",
-            "geocode": {
-                "SAME": [
-                    "012003",
-                    "012089",
-                    "013049"
-                ],
-                "UGC": [
-                    "FLC003",
-                    "FLC089",
-                    "GAC049"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/county/FLC003",
-                "https://api.weather.gov/zones/county/FLC089",
-                "https://api.weather.gov/zones/county/GAC049"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8373fadf7c957ca9b0726682940161239d037227.001.1",
-                    "identifier": "urn:oid:2.49.0.1.840.0.8373fadf7c957ca9b0726682940161239d037227.001.1",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-11T21:26:00-04:00"
-                },
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fdbbc3e11725a8f7c457151f76431dccdb7b4212.001.1",
-                    "identifier": "urn:oid:2.49.0.1.840.0.fdbbc3e11725a8f7c457151f76431dccdb7b4212.001.1",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-12T09:46:00-04:00"
-                },
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6c571546a6290949f3089164b3dee162ab3d534a.001.1",
-                    "identifier": "urn:oid:2.49.0.1.840.0.6c571546a6290949f3089164b3dee162ab3d534a.001.1",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-12T14:47:00-04:00"
-                }
-            ],
-            "sent": "2025-03-12T20:43:00-04:00",
-            "effective": "2025-03-12T20:43:00-04:00",
-            "onset": "2025-03-12T20:43:00-04:00",
-            "expires": "2025-03-13T20:45:00-04:00",
-            "ends": "2025-03-15T23:00:00-04:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Severe",
-            "certainty": "Observed",
-            "urgency": "Immediate",
-            "event": "Flood Warning",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Jacksonville FL",
-            "headline": "Flood Warning issued March 12 at 8:43PM EDT until March 15 at 11:00PM EDT by NWS Jacksonville FL",
-            "description": "...The Flood Warning continues for the following rivers in Florida...\nGeorgia...\n\nSt Mary's River At Macclenny affecting Baker, Nassau and Charlton\nCounties.\n\nAdditional information is available at\nhttps://water.weather.gov/wfo/JAX\n\n* WHAT...Minor flooding is occurring and minor flooding is forecast.\n\n* WHERE...St Mary's River at Macclenny.\n\n* WHEN...Until late Saturday evening.\n\n* IMPACTS...At 12.0 feet, Minor flooding of low lying areas and\ntimber lands including some properties along St. Mary's River\nBluff Road and the Cypress Landing Resort on the Georgia side.\nAt 14.0 feet, Flooding of bottomlands along the river and some\nlower access roads including the lower half of St. Mary's River\nBluff Road which cuts off 15 to 20 homes on the Georgia side.\nAt 15.0 feet, Flooding begins to impact the lower end of Steel\nBridge Road on the Florida side and cuts off access to the river\ngage as well as access to several homes.\n\n* ADDITIONAL DETAILS...\n- At 7:45 PM EDT Wednesday the stage was 13.7 feet.\n- Forecast...The river is expected to rise to a crest of 13.7\nfeet just after midnight tonight. It will then fall below\nflood stage Saturday afternoon.\n- Flood stage is 12.0 feet.\n- http://www.weather.gov/safety/flood",
-            "instruction": null,
-            "response": "Avoid",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "FLSJAX"
-                ],
-                "WMOidentifier": [
-                    "WGUS82 KJAX 130043"
-                ],
-                "NWSheadline": [
-                    "FLOOD WARNING NOW IN EFFECT UNTIL LATE SATURDAY EVENING"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "EAS-ORG": [
-                    "WXR"
-                ],
-                "VTEC": [
-                    "/O.EXT.KJAX.FL.W.0006.000000T0000Z-250316T0300Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-16T03:00:00+00:00"
-                ],
-                "expiredReferences": [
-                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.7893f9127b4a198d258aabec67259b0585c5c227.001.1,2025-03-11T08:33:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.ac58b7d14914dd776ca228d452caec8dcd4261cf.001.1,2025-03-10T21:12:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.fc760891d1b40528e6909b0b16d471a630333918.001.1,2025-03-10T09:12:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.4d30b6bc49e4a57e63d98f0e9f708c1dd3e0b84c.001.1,2025-03-09T21:14:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.ff466122e0565e1d957422458806b79e9d2326c2.001.1,2025-03-09T09:27:00-04:00"
                 ]
             }
         }
