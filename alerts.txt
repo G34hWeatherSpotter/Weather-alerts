@@ -1,12 +1,12 @@
 [
     {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-54883",
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-47106",
         "type": "Feature",
         "geometry": null,
         "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-54883",
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-47106",
             "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0-KEEPALIVE-54883",
+            "id": "urn:oid:2.49.0.1.840.0-KEEPALIVE-47106",
             "areaDesc": "Montgomery",
             "geocode": {
                 "SAME": [
@@ -20,10 +20,10 @@
                 "https://api.weather.gov/zones/county/MDC031"
             ],
             "references": [],
-            "sent": "2025-03-13T07:39:09+00:00",
-            "effective": "2025-03-13T07:39:09+00:00",
+            "sent": "2025-03-13T07:49:09+00:00",
+            "effective": "2025-03-13T07:49:09+00:00",
             "onset": null,
-            "expires": "2025-03-13T07:49:09+00:00",
+            "expires": "2025-03-13T07:59:09+00:00",
             "ends": null,
             "status": "Test",
             "messageType": "Alert",
@@ -43,12 +43,1221 @@
                     "KEPWBC"
                 ],
                 "WMOidentifier": [
-                    "NZUS91 KWBC 130739"
+                    "NZUS91 KWBC 130749"
                 ],
                 "BLOCKCHANNEL": [
                     "CMAS",
                     "EAS",
                     "NWEM"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8d926c099b37c09f3b4f3359fee115c880adcd05.001.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8d926c099b37c09f3b4f3359fee115c880adcd05.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.8d926c099b37c09f3b4f3359fee115c880adcd05.001.1",
+            "areaDesc": "Custer County Plains; Pine Ridge Area; Haakon County Area; Badlands Area; Bennett County Area; Mellette and Todd Counties; Tripp County",
+            "geocode": {
+                "SAME": [
+                    "046033",
+                    "046102",
+                    "046103",
+                    "046047",
+                    "046055",
+                    "046071",
+                    "046095",
+                    "046137",
+                    "046007",
+                    "046121",
+                    "046123"
+                ],
+                "UGC": [
+                    "SDZ325",
+                    "SDZ326",
+                    "SDZ331",
+                    "SDZ332",
+                    "SDZ333",
+                    "SDZ334",
+                    "SDZ335"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/fire/SDZ325",
+                "https://api.weather.gov/zones/fire/SDZ326",
+                "https://api.weather.gov/zones/fire/SDZ331",
+                "https://api.weather.gov/zones/fire/SDZ332",
+                "https://api.weather.gov/zones/fire/SDZ333",
+                "https://api.weather.gov/zones/fire/SDZ334",
+                "https://api.weather.gov/zones/fire/SDZ335"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2496225aaddc369d8cfe170c4f9545d7eae2ffae.001.2",
+                    "identifier": "urn:oid:2.49.0.1.840.0.2496225aaddc369d8cfe170c4f9545d7eae2ffae.001.2",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T13:32:00-06:00"
+                },
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.644116d9ee67169ad287fcbf1dcdfaddfaef4bb7.001.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.644116d9ee67169ad287fcbf1dcdfaddfaef4bb7.001.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T20:52:00-06:00"
+                }
+            ],
+            "sent": "2025-03-13T01:49:00-06:00",
+            "effective": "2025-03-13T01:49:00-06:00",
+            "onset": "2025-03-13T12:00:00-06:00",
+            "expires": "2025-03-13T17:00:00-06:00",
+            "ends": "2025-03-13T20:00:00-06:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Severe",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Red Flag Warning",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Rapid City SD",
+            "headline": "Red Flag Warning issued March 13 at 1:49AM MDT until March 13 at 8:00PM MDT by NWS Rapid City SD",
+            "description": "...CRITICAL FIRE WEATHER CONDITIONS TODAY...\n\n.Warm temperatures, dry fuels, and gusty southwest winds will\ncreate critical fire weather conditions today over southwest\nthrough central South Dakota.\n\n* AFFECTED AREA...Fire Weather Zones 325 Custer County Plains,\n326 Pine Ridge Area, 331 Haakon County Area, 332 Badlands\nArea, 333 Bennett County Area, 334 Mellette and Todd Counties\nand 335 Tripp County.\n\n* WINDS...Southwest 15 to 25 mph with gusts up to 40 mph.\n\n* RELATIVE HUMIDITY...As low as 15 percent.\n\n* IMPACTS...The combination of gusty winds and low relative\nhumidity will produce critical fire weather conditions.",
+            "instruction": "A Red Flag Warning means that critical fire weather conditions\nare either occurring now, or will shortly. A combination of\nstrong winds, low relative humidity, and warm temperatures can\ncontribute to extreme fire behavior.",
+            "response": "Prepare",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "RFWUNR"
+                ],
+                "WMOidentifier": [
+                    "WWUS83 KUNR 130749"
+                ],
+                "NWSheadline": [
+                    "RED FLAG WARNING REMAINS IN EFFECT FROM NOON MDT /1 PM CDT/ TODAY TO 8 PM MDT /9 PM CDT/ THIS EVENING FOR GUSTY WINDS AND LOW RELATIVE HUMIDITY FOR FIRE WEATHER ZONES 325, 326, 331, 332, 333, 334, AND 335"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.CON.KUNR.FW.W.0003.250313T1800Z-250314T0200Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-14T02:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.60a89a9826ad75419b32fec757acf7f7b1e94794.001.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.60a89a9826ad75419b32fec757acf7f7b1e94794.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.60a89a9826ad75419b32fec757acf7f7b1e94794.001.1",
+            "areaDesc": "Southern Salinas Valley/Arroyo Seco and Lake San Antonio; Santa Lucia Mountains and Los Padres National Forest; Mountains Of San Benito County And Interior Monterey County Including Pinnacles National Park",
+            "geocode": {
+                "SAME": [
+                    "006053",
+                    "006069"
+                ],
+                "UGC": [
+                    "CAZ516",
+                    "CAZ517",
+                    "CAZ518"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/CAZ516",
+                "https://api.weather.gov/zones/forecast/CAZ517",
+                "https://api.weather.gov/zones/forecast/CAZ518"
+            ],
+            "references": [],
+            "sent": "2025-03-13T00:48:00-07:00",
+            "effective": "2025-03-13T00:48:00-07:00",
+            "onset": "2025-03-13T23:00:00-07:00",
+            "expires": "2025-03-13T15:00:00-07:00",
+            "ends": "2025-03-14T09:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Minor",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Frost Advisory",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS San Francisco CA",
+            "headline": "Frost Advisory issued March 13 at 12:48AM PDT until March 14 at 9:00AM PDT by NWS San Francisco CA",
+            "description": "* WHAT...Temperatures as low as 32 will result in frost formation.\n\n* WHERE...Interior Monterey County and the Santa Lucia Range, Most\nof San Benito County and the Cholame Hills in Southeast Monterey\nCounty, and Southern Salinas Valley/Arroyo Seco and Lake San\nAntonio.\n\n* WHEN...From 11 PM this evening to 9 AM PDT Friday.\n\n* IMPACTS...Cold conditions will be hazardous to sensitive\npopulations such as unhoused individuals. Cold conditions can lead\nto hypothermia with prolonged exposure.",
+            "instruction": "Take steps now to protect tender plants from the cold.",
+            "response": "Prepare",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "NPWMTR"
+                ],
+                "WMOidentifier": [
+                    "WWUS76 KMTR 130748"
+                ],
+                "NWSheadline": [
+                    "FROST ADVISORY IN EFFECT FROM 11 PM THIS EVENING TO 9 AM PDT FRIDAY"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.NEW.KMTR.FR.Y.0029.250314T0600Z-250314T1600Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-14T16:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b7b9e28687e0aafaa690650b59572505ebc3c7e4.002.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b7b9e28687e0aafaa690650b59572505ebc3c7e4.002.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.b7b9e28687e0aafaa690650b59572505ebc3c7e4.002.1",
+            "areaDesc": "Pryor/Northern Bighorn Mountains; Northeast Bighorn Mountains",
+            "geocode": {
+                "SAME": [
+                    "030003",
+                    "030009",
+                    "056033"
+                ],
+                "UGC": [
+                    "MTZ171",
+                    "WYZ198"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/MTZ171",
+                "https://api.weather.gov/zones/forecast/WYZ198"
+            ],
+            "references": [],
+            "sent": "2025-03-13T01:47:00-06:00",
+            "effective": "2025-03-13T01:47:00-06:00",
+            "onset": "2025-03-13T21:00:00-06:00",
+            "expires": "2025-03-14T02:00:00-06:00",
+            "ends": "2025-03-14T12:00:00-06:00",
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Winter Weather Advisory",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Billings MT",
+            "headline": "Winter Weather Advisory issued March 13 at 1:47AM MDT until March 14 at 12:00PM MDT by NWS Billings MT",
+            "description": "* WHAT...Snow expected. Total snow accumulations between 4 and 8\ninches. Northwest winds gusting up to 45 mph.\n\n* WHERE...In Montana, Pryor/Northern Bighorn Mountains. In Wyoming,\nNortheast Bighorn Mountains.\n\n* WHEN...From 9 PM this evening to noon MDT Friday.\n\n* IMPACTS...Travel on US-14 through Burgess Junction will become\ndifficult due to snow and poor visibility. Outdoor recreation in\nthe high country will be impacted by wintry conditions.\n\n* ADDITIONAL DETAILS...Snow will taper off by late Friday morning.",
+            "instruction": "Slow down and use caution while traveling. For the latest road\nconditions, call 5 1 1.",
+            "response": "Execute",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "WSWBYZ"
+                ],
+                "WMOidentifier": [
+                    "WWUS45 KBYZ 130747"
+                ],
+                "NWSheadline": [
+                    "WINTER WEATHER ADVISORY IN EFFECT FROM 9 PM THIS EVENING TO NOON MDT FRIDAY"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.NEW.KBYZ.WW.Y.0019.250314T0300Z-250314T1800Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-14T18:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b7b9e28687e0aafaa690650b59572505ebc3c7e4.003.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b7b9e28687e0aafaa690650b59572505ebc3c7e4.003.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.b7b9e28687e0aafaa690650b59572505ebc3c7e4.003.1",
+            "areaDesc": "Southern Big Horn; Bighorn Canyon; Sheridan Foothills",
+            "geocode": {
+                "SAME": [
+                    "030003",
+                    "030009",
+                    "056033"
+                ],
+                "UGC": [
+                    "MTZ138",
+                    "MTZ169",
+                    "WYZ199"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/MTZ138",
+                "https://api.weather.gov/zones/forecast/MTZ169",
+                "https://api.weather.gov/zones/forecast/WYZ199"
+            ],
+            "references": [],
+            "sent": "2025-03-13T01:47:00-06:00",
+            "effective": "2025-03-13T01:47:00-06:00",
+            "onset": "2025-03-14T00:00:00-06:00",
+            "expires": "2025-03-14T02:00:00-06:00",
+            "ends": "2025-03-14T12:00:00-06:00",
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Winter Weather Advisory",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Billings MT",
+            "headline": "Winter Weather Advisory issued March 13 at 1:47AM MDT until March 14 at 12:00PM MDT by NWS Billings MT",
+            "description": "* WHAT...A period of wet snow expected. Total snow accumulations\nbetween 1 and 3 inches, greatest near the mountains and over the\nhigher hills. Northwest winds gusting up to 45 mph.\n\n* WHERE...In Montana, Bighorn Canyon and Southern Big Horn. In\nWyoming, Sheridan Foothills.\n\n* WHEN...From midnight tonight to noon MDT Friday.\n\n* IMPACTS...Travelers should be prepared for areas of poor\nvisibility, brisk northwest winds and some slushy roads. This\nincludes I-90 from Lodge Grass to Sheridan and Piney Creek. Expect\nimpacts to the Friday morning commute.\n\n* ADDITIONAL DETAILS...Precipitation will begin as rain then change\nover to wet snow late tonight. Snow will taper off by late Friday\nmorning.",
+            "instruction": "Slow down and use caution while traveling. For the latest road\nconditions, call 5 1 1.",
+            "response": "Execute",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "WSWBYZ"
+                ],
+                "WMOidentifier": [
+                    "WWUS45 KBYZ 130747"
+                ],
+                "NWSheadline": [
+                    "WINTER WEATHER ADVISORY IN EFFECT FROM MIDNIGHT TONIGHT TO NOON MDT FRIDAY"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.NEW.KBYZ.WW.Y.0019.250314T0600Z-250314T1800Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-14T18:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b7b9e28687e0aafaa690650b59572505ebc3c7e4.001.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b7b9e28687e0aafaa690650b59572505ebc3c7e4.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.b7b9e28687e0aafaa690650b59572505ebc3c7e4.001.1",
+            "areaDesc": "Red Lodge Foothills; Paradise Valley; Livingston Area; Beartooth Foothills",
+            "geocode": {
+                "SAME": [
+                    "030009",
+                    "030067",
+                    "030095",
+                    "030097"
+                ],
+                "UGC": [
+                    "MTZ056",
+                    "MTZ064",
+                    "MTZ065",
+                    "MTZ066"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/MTZ056",
+                "https://api.weather.gov/zones/forecast/MTZ064",
+                "https://api.weather.gov/zones/forecast/MTZ065",
+                "https://api.weather.gov/zones/forecast/MTZ066"
+            ],
+            "references": [],
+            "sent": "2025-03-13T01:47:00-06:00",
+            "effective": "2025-03-13T01:47:00-06:00",
+            "onset": "2025-03-13T18:00:00-06:00",
+            "expires": "2025-03-14T02:00:00-06:00",
+            "ends": "2025-03-14T09:00:00-06:00",
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Winter Weather Advisory",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Billings MT",
+            "headline": "Winter Weather Advisory issued March 13 at 1:47AM MDT until March 14 at 9:00AM MDT by NWS Billings MT",
+            "description": "* WHAT...A period of wet snow expected. Total snow accumulations\nbetween 1 and 3 inches. North winds gusting up to 30 mph.\n\n* WHERE...Beartooth Foothills, Livingston Area, Paradise Valley, and\nRed Lodge Foothills.\n\n* WHEN...From 6 PM this evening to 9 AM MDT Friday.\n\n* IMPACTS...Travelers should be prepared for areas of poor\nvisibility and some slushy roads. This includes I-90 from\nLivingston through Bozeman Pass, US-89 through the Paradise\nValley, and US-212 from Roberts to Red Lodge.\n\n* ADDITIONAL DETAILS...Precipitation will begin as rain then change\nover to wet snow this evening. Snow will taper off early Friday.",
+            "instruction": "Slow down and use caution while traveling. For the latest road\nconditions, call 5 1 1.",
+            "response": "Execute",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "WSWBYZ"
+                ],
+                "WMOidentifier": [
+                    "WWUS45 KBYZ 130747"
+                ],
+                "NWSheadline": [
+                    "WINTER WEATHER ADVISORY IN EFFECT FROM 6 PM THIS EVENING TO 9 AM MDT FRIDAY"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.NEW.KBYZ.WW.Y.0019.250314T0000Z-250314T1500Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-14T15:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ae12fcff56e781eadeb39a258fb5ccabba466497.001.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ae12fcff56e781eadeb39a258fb5ccabba466497.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.ae12fcff56e781eadeb39a258fb5ccabba466497.001.1",
+            "areaDesc": "Clay; Riley; Pottawatomie; Jackson; Jefferson; Ottawa; Dickinson; Geary; Morris; Wabaunsee; Shawnee; Douglas; Lyon; Osage; Franklin; Coffey; Anderson",
+            "geocode": {
+                "SAME": [
+                    "020027",
+                    "020161",
+                    "020149",
+                    "020085",
+                    "020087",
+                    "020143",
+                    "020041",
+                    "020061",
+                    "020127",
+                    "020197",
+                    "020177",
+                    "020045",
+                    "020111",
+                    "020139",
+                    "020059",
+                    "020031",
+                    "020003"
+                ],
+                "UGC": [
+                    "KSZ021",
+                    "KSZ022",
+                    "KSZ023",
+                    "KSZ024",
+                    "KSZ026",
+                    "KSZ034",
+                    "KSZ035",
+                    "KSZ036",
+                    "KSZ037",
+                    "KSZ038",
+                    "KSZ039",
+                    "KSZ040",
+                    "KSZ054",
+                    "KSZ055",
+                    "KSZ056",
+                    "KSZ058",
+                    "KSZ059"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/fire/KSZ021",
+                "https://api.weather.gov/zones/fire/KSZ022",
+                "https://api.weather.gov/zones/fire/KSZ023",
+                "https://api.weather.gov/zones/fire/KSZ024",
+                "https://api.weather.gov/zones/fire/KSZ026",
+                "https://api.weather.gov/zones/fire/KSZ034",
+                "https://api.weather.gov/zones/fire/KSZ035",
+                "https://api.weather.gov/zones/fire/KSZ036",
+                "https://api.weather.gov/zones/fire/KSZ037",
+                "https://api.weather.gov/zones/fire/KSZ038",
+                "https://api.weather.gov/zones/fire/KSZ039",
+                "https://api.weather.gov/zones/fire/KSZ040",
+                "https://api.weather.gov/zones/fire/KSZ054",
+                "https://api.weather.gov/zones/fire/KSZ055",
+                "https://api.weather.gov/zones/fire/KSZ056",
+                "https://api.weather.gov/zones/fire/KSZ058",
+                "https://api.weather.gov/zones/fire/KSZ059"
+            ],
+            "references": [],
+            "sent": "2025-03-13T02:47:00-05:00",
+            "effective": "2025-03-13T02:47:00-05:00",
+            "onset": "2025-03-14T10:00:00-05:00",
+            "expires": "2025-03-13T15:00:00-05:00",
+            "ends": "2025-03-14T20:00:00-05:00",
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Severe",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "event": "Fire Weather Watch",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Topeka KS",
+            "headline": "Fire Weather Watch issued March 13 at 2:47AM CDT until March 14 at 8:00PM CDT by NWS Topeka KS",
+            "description": "The National Weather Service in Topeka has issued a Fire Weather\nWatch for PORTIONS OF CENTRAL AND EAST CENTRAL KANSAS, which is\nin effect from Friday morning through Friday evening.\n\n* TIMING...From Friday morning through Friday evening.\n\n* WINDS...South 30 to 40 mph with gusts up to 55 mph.\n\n* RELATIVE HUMIDITY...As low as 18 percent.\n\n* TEMPERATURES...Up to 73.\n\n* IMPACTS...Any fire that develops will catch and spread\nquickly. Outdoor burning is not recommended.",
+            "instruction": "A Fire Weather Watch means that critical fire weather conditions\nare forecast to occur. Listen for later forecasts and possible\nRed Flag Warnings.",
+            "response": "Prepare",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "RFWTOP"
+                ],
+                "WMOidentifier": [
+                    "WWUS83 KTOP 130747"
+                ],
+                "NWSheadline": [
+                    "FIRE WEATHER WATCH IN EFFECT FROM FRIDAY MORNING THROUGH FRIDAY EVENING FOR VERY GUSTY WINDS, LOW RELATIVE HUMIDITY AND DRY FUELS FOR PORTIONS OF CENTRAL AND EAST CENTRAL KANSAS"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.NEW.KTOP.FW.A.0002.250314T1500Z-250315T0100Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-15T01:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2a89d2becafa73d40ca50e0336974eda1a496712.001.1",
+        "type": "Feature",
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -119.25,
+                        34.36
+                    ],
+                    [
+                        -118.9,
+                        34.37
+                    ],
+                    [
+                        -118.67,
+                        34.239999999999995
+                    ],
+                    [
+                        -118.67,
+                        34.169999999999995
+                    ],
+                    [
+                        -118.79,
+                        34.169999999999995
+                    ],
+                    [
+                        -118.94000000000001,
+                        34.07999999999999
+                    ],
+                    [
+                        -118.95000000000002,
+                        34.04999999999999
+                    ],
+                    [
+                        -118.93000000000002,
+                        34.04999999999999
+                    ],
+                    [
+                        -119.04000000000002,
+                        33.99999999999999
+                    ],
+                    [
+                        -119.11000000000001,
+                        34.029999999999994
+                    ],
+                    [
+                        -119.29000000000002,
+                        34.229999899999996
+                    ],
+                    [
+                        -119.32000000000002,
+                        34.3
+                    ],
+                    [
+                        -119.25,
+                        34.36
+                    ]
+                ]
+            ]
+        },
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2a89d2becafa73d40ca50e0336974eda1a496712.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.2a89d2becafa73d40ca50e0336974eda1a496712.001.1",
+            "areaDesc": "Ventura, CA",
+            "geocode": {
+                "SAME": [
+                    "006111"
+                ],
+                "UGC": [
+                    "CAC111"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/county/CAC111"
+            ],
+            "references": [],
+            "sent": "2025-03-13T00:47:00-07:00",
+            "effective": "2025-03-13T00:47:00-07:00",
+            "onset": "2025-03-13T00:47:00-07:00",
+            "expires": "2025-03-13T02:15:00-07:00",
+            "ends": "2025-03-13T02:15:00-07:00",
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Severe",
+            "certainty": "Likely",
+            "urgency": "Immediate",
+            "event": "Flash Flood Warning",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Los Angeles/Oxnard CA",
+            "headline": "Flash Flood Warning issued March 13 at 12:47AM PDT until March 13 at 2:15AM PDT by NWS Los Angeles/Oxnard CA",
+            "description": "FFWLOX\n\nThe National Weather Service in Los Angeles/Oxnard has issued a\n\n* Flash Flood Warning for...\nSouthern Ventura County...\n\n* Until 215 AM PDT.\n\n* At 1247 AM PDT, Doppler radar and automated rain gauges indicated\nthunderstorms producing heavy rain across the warned area. Flash\nflooding is ongoing or expected to begin shortly.\n\nHAZARD...Flash flooding caused by thunderstorms.\n\nSOURCE...Radar and automated gauges.\n\nIMPACT...Flash flooding of small creeks and streams, urban\nareas, highways, streets and underpasses as well as\nother poor drainage and low-lying areas.\n\n* Some locations that will experience flash flooding include...\nOxnard, Thousand Oaks, Simi Valley, Ventura, Camarillo, Moorpark,\nSanta Paula, Port Hueneme, Newbury Park, Point Mugu State Park,\nPoint Mugu, Ventura Harbor, Oak Park, Somis, Naval Base Ventura\nCounty, El Rio and Silver Strand Beach.",
+            "instruction": "Turn around, don't drown when encountering flooded roads. Most flood\ndeaths occur in vehicles.\n\nIn hilly terrain there are hundreds of low water crossings which are\npotentially dangerous in heavy rain. Do not attempt to cross flooded\nroads. Find an alternate route.\n\nA Flash Flood Warning for a recent burn area means that flooding and\ndebris flows are imminent or occurring. Residents living in or\nimmediately downstream should take immediate precautions to protect\nlife and property. Quickly move away from the burn area only if it\nis safe to do so, otherwise shelter in place and move to a second\nstory or the highest location in your home to stay out of the path\nof fast-moving water and debris flows.",
+            "response": "Avoid",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "FFWLOX"
+                ],
+                "WMOidentifier": [
+                    "WGUS56 KLOX 130747"
+                ],
+                "flashFloodDetection": [
+                    "RADAR AND GAUGE INDICATED"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "EAS-ORG": [
+                    "WXR"
+                ],
+                "VTEC": [
+                    "/O.NEW.KLOX.FF.W.0009.250313T0747Z-250313T0915Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-13T09:15:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d5450ab500caf6e4a28e9416f58ec673fa2a8cde.001.1",
+        "type": "Feature",
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -119.19,
+                        34.14
+                    ],
+                    [
+                        -119.24,
+                        34.17
+                    ],
+                    [
+                        -119.25999999999999,
+                        34.260000000000005
+                    ],
+                    [
+                        -119.21999999999998,
+                        34.34
+                    ],
+                    [
+                        -119.13999999999999,
+                        34.300000000000004
+                    ],
+                    [
+                        -119.09999999999998,
+                        34.21
+                    ],
+                    [
+                        -119.19,
+                        34.14
+                    ]
+                ]
+            ]
+        },
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d5450ab500caf6e4a28e9416f58ec673fa2a8cde.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.d5450ab500caf6e4a28e9416f58ec673fa2a8cde.001.1",
+            "areaDesc": "Ventura, CA",
+            "geocode": {
+                "SAME": [
+                    "006111"
+                ],
+                "UGC": [
+                    "CAC111"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/county/CAC111"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b7e84b678544af7d1d5264f444a07cc7333081ff.001.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.b7e84b678544af7d1d5264f444a07cc7333081ff.001.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-13T00:29:00-07:00"
+                }
+            ],
+            "sent": "2025-03-13T00:46:00-07:00",
+            "effective": "2025-03-13T00:46:00-07:00",
+            "onset": "2025-03-13T00:46:00-07:00",
+            "expires": "2025-03-13T01:00:00-07:00",
+            "ends": "2025-03-13T01:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Severe",
+            "certainty": "Observed",
+            "urgency": "Immediate",
+            "event": "Severe Thunderstorm Warning",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Los Angeles/Oxnard CA",
+            "headline": "Severe Thunderstorm Warning issued March 13 at 12:46AM PDT until March 13 at 1:00AM PDT by NWS Los Angeles/Oxnard CA",
+            "description": "At 1244 AM PDT, severe thunderstorms were located along a line\nextending from near Ventura to Port Hueneme, moving east at 20 mph.\n\nHAZARD...60 mph wind gusts.\n\nSOURCE...Radar indicated.\n\nIMPACT...Expect damage to roofs, siding, and trees.\n\nLocations impacted include...\nVentura...\nPort Hueneme...\nOxnard...\nEl Rio...\nand Silver Strand Beach.",
+            "instruction": "Remain alert for a possible tornado! Tornadoes can develop quickly\nfrom severe thunderstorms. If you spot a tornado go at once into a\nsmall central room in a sturdy structure.\n\nFor your protection move to an interior room on the lowest floor of a\nbuilding.\n\nTorrential rainfall is occurring with these storms, and may lead to\nflash flooding. Do not drive your vehicle through flooded roadways.",
+            "response": "Shelter",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "SVSLOX"
+                ],
+                "WMOidentifier": [
+                    "WWUS56 KLOX 130746"
+                ],
+                "NWSheadline": [
+                    "A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 100 AM PDT FOR SOUTHWESTERN VENTURA COUNTY"
+                ],
+                "eventMotionDescription": [
+                    "2025-03-13T07:44:00-00:00...storm...266DEG...18KT...34.32,-119.18 34.15,-119.18"
+                ],
+                "windThreat": [
+                    "RADAR INDICATED"
+                ],
+                "maxWindGust": [
+                    "60 MPH"
+                ],
+                "hailThreat": [
+                    "RADAR INDICATED"
+                ],
+                "maxHailSize": [
+                    "Up to .75"
+                ],
+                "tornadoDetection": [
+                    "POSSIBLE"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "EAS-ORG": [
+                    "WXR"
+                ],
+                "VTEC": [
+                    "/O.CON.KLOX.SV.W.0004.000000T0000Z-250313T0800Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-13T08:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.86821692c06e3e0c3aba0b88ce73b61b7cfc6202.001.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.86821692c06e3e0c3aba0b88ce73b61b7cfc6202.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.86821692c06e3e0c3aba0b88ce73b61b7cfc6202.001.1",
+            "areaDesc": "Rapid City; Custer Co Plains; Pennington Co Plains; Western Fall River; Northern Oglala Lakota; Sturgis/Piedmont Foothills; Southern Meade Co Plains; Hermosa Foothills",
+            "geocode": {
+                "SAME": [
+                    "046103",
+                    "046033",
+                    "046047",
+                    "046102",
+                    "046093"
+                ],
+                "UGC": [
+                    "SDZ026",
+                    "SDZ030",
+                    "SDZ031",
+                    "SDZ041",
+                    "SDZ042",
+                    "SDZ072",
+                    "SDZ073",
+                    "SDZ074"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/SDZ026",
+                "https://api.weather.gov/zones/forecast/SDZ030",
+                "https://api.weather.gov/zones/forecast/SDZ031",
+                "https://api.weather.gov/zones/forecast/SDZ041",
+                "https://api.weather.gov/zones/forecast/SDZ042",
+                "https://api.weather.gov/zones/forecast/SDZ072",
+                "https://api.weather.gov/zones/forecast/SDZ073",
+                "https://api.weather.gov/zones/forecast/SDZ074"
+            ],
+            "references": [],
+            "sent": "2025-03-13T01:46:00-06:00",
+            "effective": "2025-03-13T01:46:00-06:00",
+            "onset": "2025-03-14T09:00:00-06:00",
+            "expires": "2025-03-13T17:00:00-06:00",
+            "ends": "2025-03-15T09:00:00-06:00",
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Severe",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "event": "High Wind Watch",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Rapid City SD",
+            "headline": "High Wind Watch issued March 13 at 1:46AM MDT until March 15 at 9:00AM MDT by NWS Rapid City SD",
+            "description": "* WHAT...Northwest winds 35 to 45 mph with gusts up to 70 mph\npossible.\n\n* WHERE...Oglala Lakota County, including portions of the Pine Ridge\nReservation, Rapid City, Custer Co Plains, Pennington Co Plains,\nWestern Fall River, Sturgis/Piedmont Foothills, Southern Meade Co\nPlains, and Hermosa Foothills.\n\n* WHEN...From Friday morning through Saturday morning.\n\n* IMPACTS...The high winds may damage roofs, small outbuildings, and\nsigns. Power outages are possible. Travel could be difficult,\nespecially for high profile vehicles.",
+            "instruction": "Monitor the latest forecasts and warnings for updates.",
+            "response": "Prepare",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "NPWUNR"
+                ],
+                "WMOidentifier": [
+                    "WWUS73 KUNR 130746"
+                ],
+                "NWSheadline": [
+                    "HIGH WIND WATCH IN EFFECT FROM FRIDAY MORNING THROUGH SATURDAY MORNING"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "EAS-ORG": [
+                    "WXR"
+                ],
+                "VTEC": [
+                    "/O.NEW.KUNR.HW.A.0003.250314T1500Z-250315T1500Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-15T15:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.86821692c06e3e0c3aba0b88ce73b61b7cfc6202.002.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.86821692c06e3e0c3aba0b88ce73b61b7cfc6202.002.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.86821692c06e3e0c3aba0b88ce73b61b7cfc6202.002.1",
+            "areaDesc": "Haakon; Northern Jackson; Bennett; Mellette; Todd; Tripp; Southern Jackson",
+            "geocode": {
+                "SAME": [
+                    "046055",
+                    "046071",
+                    "046007",
+                    "046095",
+                    "046121",
+                    "046123"
+                ],
+                "UGC": [
+                    "SDZ032",
+                    "SDZ043",
+                    "SDZ044",
+                    "SDZ046",
+                    "SDZ047",
+                    "SDZ049",
+                    "SDZ077"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/SDZ032",
+                "https://api.weather.gov/zones/forecast/SDZ043",
+                "https://api.weather.gov/zones/forecast/SDZ044",
+                "https://api.weather.gov/zones/forecast/SDZ046",
+                "https://api.weather.gov/zones/forecast/SDZ047",
+                "https://api.weather.gov/zones/forecast/SDZ049",
+                "https://api.weather.gov/zones/forecast/SDZ077"
+            ],
+            "references": [],
+            "sent": "2025-03-13T01:46:00-06:00",
+            "effective": "2025-03-13T01:46:00-06:00",
+            "onset": "2025-03-14T15:00:00-06:00",
+            "expires": "2025-03-13T17:00:00-06:00",
+            "ends": "2025-03-15T12:00:00-06:00",
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Severe",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "event": "High Wind Watch",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Rapid City SD",
+            "headline": "High Wind Watch issued March 13 at 1:46AM MDT until March 15 at 12:00PM MDT by NWS Rapid City SD",
+            "description": "* WHAT...Northwest winds 30 to 40 mph with gusts up to 65 mph\npossible.\n\n* WHERE...Jackson County, including portions of the Pine Ridge\nReservation, Mellette and Todd Counties, including portions of the\nRosebud Reservation, Haakon, Bennett, Tripp, and Southern Jackson.\n\n* WHEN...From Friday afternoon through Saturday morning.\n\n* IMPACTS...The high winds may damage roofs, small outbuildings, and\nsigns. Power outages are possible. Travel could be difficult,\nespecially for high profile vehicles.",
+            "instruction": "Monitor the latest forecasts and warnings for updates.",
+            "response": "Prepare",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "NPWUNR"
+                ],
+                "WMOidentifier": [
+                    "WWUS73 KUNR 130746"
+                ],
+                "NWSheadline": [
+                    "HIGH WIND WATCH IN EFFECT FROM FRIDAY AFTERNOON THROUGH SATURDAY MORNING"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "EAS-ORG": [
+                    "WXR"
+                ],
+                "VTEC": [
+                    "/O.NEW.KUNR.HW.A.0003.250314T2100Z-250315T1800Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-15T18:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.793f84f8c19060ec2a19b0c6fa3bfce43d95e697.002.2",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.793f84f8c19060ec2a19b0c6fa3bfce43d95e697.002.2",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.793f84f8c19060ec2a19b0c6fa3bfce43d95e697.002.2",
+            "areaDesc": "Wayne; Stanton; Colfax",
+            "geocode": {
+                "SAME": [
+                    "031179",
+                    "031167",
+                    "031037"
+                ],
+                "UGC": [
+                    "NEZ018",
+                    "NEZ032",
+                    "NEZ043"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/fire/NEZ018",
+                "https://api.weather.gov/zones/fire/NEZ032",
+                "https://api.weather.gov/zones/fire/NEZ043"
+            ],
+            "references": [],
+            "sent": "2025-03-13T02:42:00-05:00",
+            "effective": "2025-03-13T02:42:00-05:00",
+            "onset": "2025-03-13T12:00:00-05:00",
+            "expires": "2025-03-13T21:00:00-05:00",
+            "ends": "2025-03-13T21:00:00-05:00",
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Severe",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Red Flag Warning",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Omaha/Valley NE",
+            "headline": "Red Flag Warning issued March 13 at 2:42AM CDT until March 13 at 9:00PM CDT by NWS Omaha/Valley NE",
+            "description": "The National Weather Service in Omaha/Valley has issued a Red\nFlag Warning for wind and low relative humidity, which is in\neffect from noon today to 9 PM CDT this evening. The Fire Weather\nWatch is no longer in effect.\n\n* AFFECTED AREA...Wayne, Stanton, and Colfax Counties.\n\n* TIMING...From noon today to 9 PM CDT this evening.\n\n* WINDS...South 15 to 25 mph with gusts up to 35 mph.\n\n* RELATIVE HUMIDITY...As low as 20 percent.\n\n* IMPACTS...Any fires that develop will likely spread rapidly.\nOutdoor burning is not recommended.",
+            "instruction": "A Red Flag Warning means that critical fire weather conditions\nare either occurring now, or will shortly. A combination of\nstrong winds, low relative humidity and warm temperatures can\ncontribute to extreme fire behavior.",
+            "response": "Prepare",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "RFWOAX"
+                ],
+                "WMOidentifier": [
+                    "WWUS83 KOAX 130742"
+                ],
+                "NWSheadline": [
+                    "RED FLAG WARNING IN EFFECT FROM NOON TODAY TO 9 PM CDT THIS EVENING FOR WIND AND LOW RELATIVE HUMIDITY FOR PORTIONS OF NORTHEAST NEBRASKA"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.EXA.KOAX.FW.W.0004.250313T1700Z-250314T0200Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-14T02:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.793f84f8c19060ec2a19b0c6fa3bfce43d95e697.003.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.793f84f8c19060ec2a19b0c6fa3bfce43d95e697.003.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.793f84f8c19060ec2a19b0c6fa3bfce43d95e697.003.1",
+            "areaDesc": "Knox; Cedar; Antelope; Pierce; Boone; Madison; Platte",
+            "geocode": {
+                "SAME": [
+                    "031107",
+                    "031027",
+                    "031003",
+                    "031139",
+                    "031011",
+                    "031119",
+                    "031141"
+                ],
+                "UGC": [
+                    "NEZ011",
+                    "NEZ012",
+                    "NEZ016",
+                    "NEZ017",
+                    "NEZ030",
+                    "NEZ031",
+                    "NEZ042"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/fire/NEZ011",
+                "https://api.weather.gov/zones/fire/NEZ012",
+                "https://api.weather.gov/zones/fire/NEZ016",
+                "https://api.weather.gov/zones/fire/NEZ017",
+                "https://api.weather.gov/zones/fire/NEZ030",
+                "https://api.weather.gov/zones/fire/NEZ031",
+                "https://api.weather.gov/zones/fire/NEZ042"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.22c317ccf51b35ff2837fcaa8d435b18780e9032.001.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.22c317ccf51b35ff2837fcaa8d435b18780e9032.001.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T20:58:00-05:00"
+                }
+            ],
+            "sent": "2025-03-13T02:42:00-05:00",
+            "effective": "2025-03-13T02:42:00-05:00",
+            "onset": "2025-03-13T12:00:00-05:00",
+            "expires": "2025-03-13T21:00:00-05:00",
+            "ends": "2025-03-13T21:00:00-05:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Severe",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Red Flag Warning",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Omaha/Valley NE",
+            "headline": "Red Flag Warning issued March 13 at 2:42AM CDT until March 13 at 9:00PM CDT by NWS Omaha/Valley NE",
+            "description": "* AFFECTED AREA...Knox, Cedar, Antelope, Pierce, Boone, Madison,\nand Platte Counties.\n\n* TIMING...From noon today to 9 PM CDT this evening.\n\n* WINDS...South 15 to 25 mph with gusts up to 35 mph.\n\n* RELATIVE HUMIDITY...As low as 17 percent.\n\n* IMPACTS...Any fires that develop will likely spread rapidly.\nOutdoor burning is not recommended.",
+            "instruction": "A Red Flag Warning means that critical fire weather conditions\nare either occurring now, or will shortly. A combination of\nstrong winds, low relative humidity and warm temperatures can\ncontribute to extreme fire behavior.",
+            "response": "Prepare",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "RFWOAX"
+                ],
+                "WMOidentifier": [
+                    "WWUS83 KOAX 130742"
+                ],
+                "NWSheadline": [
+                    "RED FLAG WARNING REMAINS IN EFFECT FROM NOON TODAY TO 9 PM CDT THIS EVENING FOR WIND AND LOW RELATIVE HUMIDITY FOR PORTIONS OF NORTHEAST NEBRASKA"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.CON.KOAX.FW.W.0004.250313T1700Z-250314T0200Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-14T02:00:00+00:00"
+                ],
+                "expiredReferences": [
+                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d6f9d20db02591763b9d9a17c42a2440d1f4590a.001.2,2025-03-12T13:50:00-05:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9151d72342c80ac9b5efc02d6135ba1334cf7172.001.1",
+        "type": "Feature",
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -119.7,
+                        36.94
+                    ],
+                    [
+                        -119.67,
+                        36.949999999999996
+                    ],
+                    [
+                        -119.67,
+                        36.919999999999995
+                    ],
+                    [
+                        -119.66,
+                        36.909999899999995
+                    ],
+                    [
+                        -119.6,
+                        36.9
+                    ],
+                    [
+                        -119.5,
+                        36.83
+                    ],
+                    [
+                        -119.52,
+                        36.82
+                    ],
+                    [
+                        -119.52,
+                        36.77
+                    ],
+                    [
+                        -119.63,
+                        36.690000000000005
+                    ],
+                    [
+                        -119.71,
+                        36.6599999
+                    ],
+                    [
+                        -119.86999999999999,
+                        36.690000000000005
+                    ],
+                    [
+                        -119.97999999999999,
+                        36.790000000000006
+                    ],
+                    [
+                        -119.96,
+                        36.830000000000005
+                    ],
+                    [
+                        -119.92999999999999,
+                        36.85000000000001
+                    ],
+                    [
+                        -119.82,
+                        36.85000000000001
+                    ],
+                    [
+                        -119.71,
+                        37.00000000000001
+                    ],
+                    [
+                        -119.67999999999999,
+                        36.970000000000006
+                    ],
+                    [
+                        -119.7,
+                        36.94
+                    ]
+                ]
+            ]
+        },
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9151d72342c80ac9b5efc02d6135ba1334cf7172.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.9151d72342c80ac9b5efc02d6135ba1334cf7172.001.1",
+            "areaDesc": "Fresno, CA",
+            "geocode": {
+                "SAME": [
+                    "006019"
+                ],
+                "UGC": [
+                    "CAC019"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/county/CAC019"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.19716133f24ab935dc773b4a8a3fa5e724118bc3.001.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.19716133f24ab935dc773b4a8a3fa5e724118bc3.001.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-12T21:47:00-07:00"
+                }
+            ],
+            "sent": "2025-03-13T00:41:00-07:00",
+            "effective": "2025-03-13T00:41:00-07:00",
+            "onset": "2025-03-13T00:41:00-07:00",
+            "expires": "2025-03-13T02:45:00-07:00",
+            "ends": "2025-03-13T02:45:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Minor",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Flood Advisory",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Hanford CA",
+            "headline": "Flood Advisory issued March 13 at 12:41AM PDT until March 13 at 2:45AM PDT by NWS Hanford CA",
+            "description": "* WHAT...Urban and small stream flooding caused by excessive\nrainfall continues.\n\n* WHERE...A portion of central California, including the following\ncounty, Fresno.\n\n* WHEN...Until 245 AM PDT.\n\n* IMPACTS...Minor flooding in low-lying and poor drainage areas.\nPonding of water in urban or other areas is occurring or is\nimminent.\n\n* ADDITIONAL DETAILS...\n- At 1241 AM PDT, Doppler radar indicated heavy rain. This will\ncause urban and small stream flooding. Between 0.5 and 1 inch\nof rain has fallen.\n- Additional rainfall amounts of 0.2 to 1 inch are expected\nover the area. This additional rain will result in minor\nflooding.\n- Some locations that will experience flooding include...\nFresno, Clovis, Calwa and Friant.\n- http://www.weather.gov/safety/flood",
+            "instruction": "Turn around, don't drown when encountering flooded roads. Most flood\ndeaths occur in vehicles.\n\nBe especially cautious at night when it is harder to recognize the\ndangers of flooding.\n\nBe aware of your surroundings and do not drive on flooded roads.\n\nPlease report observed flooding to local emergency services or law\nenforcement and request they pass this information to the National\nWeather Service when you can do so safely.",
+            "response": "Avoid",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "FLSHNX"
+                ],
+                "WMOidentifier": [
+                    "WGUS86 KHNX 130741"
+                ],
+                "NWSheadline": [
+                    "FLOOD ADVISORY NOW IN EFFECT UNTIL 245 AM PDT EARLY THIS MORNING"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.EXT.KHNX.FA.Y.0017.000000T0000Z-250313T0945Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-13T09:45:00+00:00"
                 ]
             }
         }
@@ -1034,137 +2243,6 @@
                 ],
                 "expiredReferences": [
                     "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.30d603dba75c5edc86a68f5b7634a027dcb4e637.003.1,2025-03-12T03:26:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d81d270e82d24cb2d0515bdb8881bf60d69b0a4b.003.1,2025-03-11T19:06:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.f73e8023317ff7ef143d29187d21296eb18efcf6.001.1,2025-03-11T15:15:00-04:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b7e84b678544af7d1d5264f444a07cc7333081ff.001.1",
-        "type": "Feature",
-        "geometry": {
-            "type": "Polygon",
-            "coordinates": [
-                [
-                    [
-                        -119.19,
-                        34.14
-                    ],
-                    [
-                        -119.24,
-                        34.17
-                    ],
-                    [
-                        -119.27,
-                        34.2299999
-                    ],
-                    [
-                        -119.27,
-                        34.260000000000005
-                    ],
-                    [
-                        -119.28999999999999,
-                        34.27
-                    ],
-                    [
-                        -119.30999999999999,
-                        34.27
-                    ],
-                    [
-                        -119.32,
-                        34.28
-                    ],
-                    [
-                        -119.25,
-                        34.35
-                    ],
-                    [
-                        -119.14,
-                        34.300000000000004
-                    ],
-                    [
-                        -119.1,
-                        34.21
-                    ],
-                    [
-                        -119.19,
-                        34.14
-                    ]
-                ]
-            ]
-        },
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b7e84b678544af7d1d5264f444a07cc7333081ff.001.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.b7e84b678544af7d1d5264f444a07cc7333081ff.001.1",
-            "areaDesc": "Ventura, CA",
-            "geocode": {
-                "SAME": [
-                    "006111"
-                ],
-                "UGC": [
-                    "CAC111"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/county/CAC111"
-            ],
-            "references": [],
-            "sent": "2025-03-13T00:29:00-07:00",
-            "effective": "2025-03-13T00:29:00-07:00",
-            "onset": "2025-03-13T00:29:00-07:00",
-            "expires": "2025-03-13T01:00:00-07:00",
-            "ends": "2025-03-13T01:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Alert",
-            "category": "Met",
-            "severity": "Severe",
-            "certainty": "Observed",
-            "urgency": "Immediate",
-            "event": "Severe Thunderstorm Warning",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Los Angeles/Oxnard CA",
-            "headline": "Severe Thunderstorm Warning issued March 13 at 12:29AM PDT until March 13 at 1:00AM PDT by NWS Los Angeles/Oxnard CA",
-            "description": "SVRLOX\n\nThe National Weather Service in OXNARD has issued a\n\n* Severe Thunderstorm Warning for...\nSouthwestern Ventura County in southwestern California...\n\n* Until 100 AM PDT.\n\n* At 1229 AM PDT, a severe thunderstorm was located over Ventura\nHarbor, or over Ventura, moving northeast at 30 mph.\n\nHAZARD...60 mph wind gusts.\n\nSOURCE...Radar indicated.\n\nIMPACT...Expect damage to roofs, siding, and trees.\n\n* Locations impacted include...\nVentura...\nPort Hueneme...\nOxnard...\nVentura Harbor...\nEl Rio...\nand Silver Strand Beach.",
-            "instruction": "Remain alert for a possible tornado! Tornadoes can develop quickly\nfrom severe thunderstorms. If you spot a tornado go at once into the\nbasement or small central room in a sturdy structure.\n\nFor your protection move to an interior room on the lowest floor of a\nbuilding.\n\nTorrential rainfall is occurring with this storm, and may lead to\nflash flooding. Do not drive your vehicle through flooded roadways.",
-            "response": "Shelter",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "SVRLOX"
-                ],
-                "WMOidentifier": [
-                    "WUUS56 KLOX 130729"
-                ],
-                "eventMotionDescription": [
-                    "2025-03-13T07:29:00-00:00...storm...236DEG...27KT...34.25,-119.26"
-                ],
-                "windThreat": [
-                    "RADAR INDICATED"
-                ],
-                "maxWindGust": [
-                    "60 MPH"
-                ],
-                "hailThreat": [
-                    "RADAR INDICATED"
-                ],
-                "maxHailSize": [
-                    "Up to .75"
-                ],
-                "tornadoDetection": [
-                    "POSSIBLE"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "EAS-ORG": [
-                    "WXR"
-                ],
-                "VTEC": [
-                    "/O.NEW.KLOX.SV.W.0004.250313T0729Z-250313T0800Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-13T08:00:00+00:00"
                 ]
             }
         }
@@ -7919,147 +8997,6 @@
         }
     },
     {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.19716133f24ab935dc773b4a8a3fa5e724118bc3.001.1",
-        "type": "Feature",
-        "geometry": {
-            "type": "Polygon",
-            "coordinates": [
-                [
-                    [
-                        -119.7,
-                        36.94
-                    ],
-                    [
-                        -119.67,
-                        36.949999999999996
-                    ],
-                    [
-                        -119.67,
-                        36.919999999999995
-                    ],
-                    [
-                        -119.66,
-                        36.909999899999995
-                    ],
-                    [
-                        -119.6,
-                        36.9
-                    ],
-                    [
-                        -119.5,
-                        36.83
-                    ],
-                    [
-                        -119.52,
-                        36.82
-                    ],
-                    [
-                        -119.52,
-                        36.77
-                    ],
-                    [
-                        -119.63,
-                        36.690000000000005
-                    ],
-                    [
-                        -119.71,
-                        36.6599999
-                    ],
-                    [
-                        -119.86999999999999,
-                        36.690000000000005
-                    ],
-                    [
-                        -119.97999999999999,
-                        36.790000000000006
-                    ],
-                    [
-                        -119.96,
-                        36.830000000000005
-                    ],
-                    [
-                        -119.92999999999999,
-                        36.85000000000001
-                    ],
-                    [
-                        -119.82,
-                        36.85000000000001
-                    ],
-                    [
-                        -119.71,
-                        37.00000000000001
-                    ],
-                    [
-                        -119.67999999999999,
-                        36.970000000000006
-                    ],
-                    [
-                        -119.7,
-                        36.94
-                    ]
-                ]
-            ]
-        },
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.19716133f24ab935dc773b4a8a3fa5e724118bc3.001.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.19716133f24ab935dc773b4a8a3fa5e724118bc3.001.1",
-            "areaDesc": "Fresno, CA",
-            "geocode": {
-                "SAME": [
-                    "006019"
-                ],
-                "UGC": [
-                    "CAC019"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/county/CAC019"
-            ],
-            "references": [],
-            "sent": "2025-03-12T21:47:00-07:00",
-            "effective": "2025-03-12T21:47:00-07:00",
-            "onset": "2025-03-12T21:47:00-07:00",
-            "expires": "2025-03-13T00:45:00-07:00",
-            "ends": "2025-03-13T00:45:00-07:00",
-            "status": "Actual",
-            "messageType": "Alert",
-            "category": "Met",
-            "severity": "Minor",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "Flood Advisory",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Hanford CA",
-            "headline": "Flood Advisory issued March 12 at 9:47PM PDT until March 13 at 12:45AM PDT by NWS Hanford CA",
-            "description": "* WHAT...Urban and small stream flooding caused by excessive\nrainfall is expected.\n\n* WHERE...A portion of central California, including the following\ncounty, Fresno.\n\n* WHEN...Until 1245 AM PDT.\n\n* IMPACTS...Minor flooding in low-lying and poor drainage areas.\nPonding of water in urban or other areas is occurring or is\nimminent.\n\n* ADDITIONAL DETAILS...\n- At 946 PM PDT, Doppler radar indicated heavy rain due to\nthunderstorms. This will cause urban and small stream\nflooding. Between 0.3 and 0.7 inches of rain have fallen.\n- Additional rainfall amounts up to 0.5 inches are expected\nover the area. This additional rain will result in minor\nflooding.\n- Some locations that will experience flooding include...\nFresno, Clovis, Calwa and Friant.\n- http://www.weather.gov/safety/flood",
-            "instruction": "Turn around, don't drown when encountering flooded roads. Most flood\ndeaths occur in vehicles.\n\nBe especially cautious at night when it is harder to recognize the\ndangers of flooding.\n\nBe aware of your surroundings and do not drive on flooded roads.\n\nPlease report observed flooding to local emergency services or law\nenforcement and request they pass this information to the National\nWeather Service when you can do so safely.",
-            "response": "Avoid",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "FLSHNX"
-                ],
-                "WMOidentifier": [
-                    "WGUS86 KHNX 130447"
-                ],
-                "NWSheadline": [
-                    "FLOOD ADVISORY IN EFFECT UNTIL 1245 AM PDT THURSDAY"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.NEW.KHNX.FA.Y.0017.250313T0447Z-250313T0745Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-13T07:45:00+00:00"
-                ]
-            }
-        }
-    },
-    {
         "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.61ea09d3a6cca947209a925cacfe024f719f3ed8.001.1",
         "type": "Feature",
         "geometry": null,
@@ -14695,98 +15632,6 @@
         }
     },
     {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.644116d9ee67169ad287fcbf1dcdfaddfaef4bb7.001.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.644116d9ee67169ad287fcbf1dcdfaddfaef4bb7.001.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.644116d9ee67169ad287fcbf1dcdfaddfaef4bb7.001.1",
-            "areaDesc": "Custer County Plains; Pine Ridge Area; Haakon County Area; Badlands Area; Bennett County Area; Mellette and Todd Counties; Tripp County",
-            "geocode": {
-                "SAME": [
-                    "046033",
-                    "046102",
-                    "046103",
-                    "046047",
-                    "046055",
-                    "046071",
-                    "046095",
-                    "046137",
-                    "046007",
-                    "046121",
-                    "046123"
-                ],
-                "UGC": [
-                    "SDZ325",
-                    "SDZ326",
-                    "SDZ331",
-                    "SDZ332",
-                    "SDZ333",
-                    "SDZ334",
-                    "SDZ335"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/fire/SDZ325",
-                "https://api.weather.gov/zones/fire/SDZ326",
-                "https://api.weather.gov/zones/fire/SDZ331",
-                "https://api.weather.gov/zones/fire/SDZ332",
-                "https://api.weather.gov/zones/fire/SDZ333",
-                "https://api.weather.gov/zones/fire/SDZ334",
-                "https://api.weather.gov/zones/fire/SDZ335"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2496225aaddc369d8cfe170c4f9545d7eae2ffae.001.2",
-                    "identifier": "urn:oid:2.49.0.1.840.0.2496225aaddc369d8cfe170c4f9545d7eae2ffae.001.2",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-12T13:32:00-06:00"
-                }
-            ],
-            "sent": "2025-03-12T20:52:00-06:00",
-            "effective": "2025-03-12T20:52:00-06:00",
-            "onset": "2025-03-13T12:00:00-06:00",
-            "expires": "2025-03-13T12:00:00-06:00",
-            "ends": "2025-03-13T20:00:00-06:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Severe",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "Red Flag Warning",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Rapid City SD",
-            "headline": "Red Flag Warning issued March 12 at 8:52PM MDT until March 13 at 8:00PM MDT by NWS Rapid City SD",
-            "description": "...RED FLAG WARNING IN EFFECT FROM NOON MDT /1 PM CDT/ TO 8 PM\nMDT /9 PM CDT/ THURSDAY FOR GUSTY WINDS AND LOW RELATIVE HUMIDITY\nFOR FIRE WEATHER ZONES 325, 326, 331, 332, 333, 334, AND 335...\n\n.Warm temperatures, dry fuels, and gusty southwest winds will\ncreate critical fire weather conditions Thursday over southwest\nthrough central South Dakota.\n\n* AFFECTED AREA...Fire Weather Zones 325 Custer County Plains,\n326 Pine Ridge Area, 331 Haakon County Area, 332 Badlands\nArea, 333 Bennett County Area, 334 Mellette and Todd Counties\nand 335 Tripp County.\n\n* WINDS...Southwest 15 to 25 mph with gusts from 30 to 40 mph.\n\n* RELATIVE HUMIDITY...As low as 15 percent.\n\n* IMPACTS...The combination of gusty winds and low relative\nhumidity would produce critical fire weather conditions.",
-            "instruction": "A Red Flag Warning means that critical fire weather conditions\nare either occurring now, or will shortly. A combination of\nstrong winds, low relative humidity, and warm temperatures can\ncontribute to extreme fire behavior.",
-            "response": "Prepare",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "RFWUNR"
-                ],
-                "WMOidentifier": [
-                    "WWUS83 KUNR 130252"
-                ],
-                "NWSheadline": [
-                    "RED FLAG WARNING REMAINS IN EFFECT FROM NOON MDT /1 PM CDT/ TO 8 PM MDT /9 PM CDT/ THURSDAY FOR GUSTY WINDS AND LOW RELATIVE HUMIDITY FOR FIRE WEATHER ZONES 325, 326, 331, 332, 333, 334, AND 335"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.CON.KUNR.FW.W.0003.250313T1800Z-250314T0200Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-14T02:00:00+00:00"
-                ]
-            }
-        }
-    },
-    {
         "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3457cfb3bf9506d27db0faa2b32fe974fd18d870.003.2",
         "type": "Feature",
         "geometry": null,
@@ -16649,176 +17494,6 @@
                 ],
                 "expiredReferences": [
                     "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.fafef562b95c6db46a215eb25122273f83e6b1ce.001.1,2025-03-12T06:22:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.16c2accd0e144fe2ed5c24c51edfedb472999743.001.1,2025-03-12T01:42:00-06:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.22c317ccf51b35ff2837fcaa8d435b18780e9032.001.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.22c317ccf51b35ff2837fcaa8d435b18780e9032.001.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.22c317ccf51b35ff2837fcaa8d435b18780e9032.001.1",
-            "areaDesc": "Knox; Cedar; Antelope; Pierce; Boone; Madison; Platte",
-            "geocode": {
-                "SAME": [
-                    "031107",
-                    "031027",
-                    "031003",
-                    "031139",
-                    "031011",
-                    "031119",
-                    "031141"
-                ],
-                "UGC": [
-                    "NEZ011",
-                    "NEZ012",
-                    "NEZ016",
-                    "NEZ017",
-                    "NEZ030",
-                    "NEZ031",
-                    "NEZ042"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/fire/NEZ011",
-                "https://api.weather.gov/zones/fire/NEZ012",
-                "https://api.weather.gov/zones/fire/NEZ016",
-                "https://api.weather.gov/zones/fire/NEZ017",
-                "https://api.weather.gov/zones/fire/NEZ030",
-                "https://api.weather.gov/zones/fire/NEZ031",
-                "https://api.weather.gov/zones/fire/NEZ042"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d6f9d20db02591763b9d9a17c42a2440d1f4590a.001.2",
-                    "identifier": "urn:oid:2.49.0.1.840.0.d6f9d20db02591763b9d9a17c42a2440d1f4590a.001.2",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-12T13:50:00-05:00"
-                }
-            ],
-            "sent": "2025-03-12T20:58:00-05:00",
-            "effective": "2025-03-12T20:58:00-05:00",
-            "onset": "2025-03-13T12:00:00-05:00",
-            "expires": "2025-03-13T05:00:00-05:00",
-            "ends": "2025-03-13T21:00:00-05:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Severe",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "Red Flag Warning",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Omaha/Valley NE",
-            "headline": "Red Flag Warning issued March 12 at 8:58PM CDT until March 13 at 9:00PM CDT by NWS Omaha/Valley NE",
-            "description": "* AFFECTED AREA...Knox, Cedar, Antelope, Pierce, Boone, Madison,\nand Platte Counties.\n\n* TIMING...From noon to 9 PM CDT Thursday.\n\n* WINDS...South 15 to 25 mph with gusts up to 35 mph.\n\n* RELATIVE HUMIDITY...As low as 20 percent.\n\n* IMPACTS...Any fires that develop will likely spread rapidly.\nOutdoor burning is not recommended.",
-            "instruction": "A Red Flag Warning means that critical fire weather conditions\nare either occurring now, or will shortly. A combination of\nstrong winds, low relative humidity and warm temperatures can\ncontribute to extreme fire behavior.",
-            "response": "Prepare",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "RFWOAX"
-                ],
-                "WMOidentifier": [
-                    "WWUS83 KOAX 130158"
-                ],
-                "NWSheadline": [
-                    "RED FLAG WARNING REMAINS IN EFFECT FROM NOON TO 9 PM CDT THURSDAY FOR WIND AND LOW RELATIVE HUMIDITY FOR NORTHEAST NEBRASKA"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.CON.KOAX.FW.W.0004.250313T1700Z-250314T0200Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-14T02:00:00+00:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.22c317ccf51b35ff2837fcaa8d435b18780e9032.002.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.22c317ccf51b35ff2837fcaa8d435b18780e9032.002.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.22c317ccf51b35ff2837fcaa8d435b18780e9032.002.1",
-            "areaDesc": "Wayne; Stanton; Cuming; Colfax",
-            "geocode": {
-                "SAME": [
-                    "031179",
-                    "031167",
-                    "031039",
-                    "031037"
-                ],
-                "UGC": [
-                    "NEZ018",
-                    "NEZ032",
-                    "NEZ033",
-                    "NEZ043"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/fire/NEZ018",
-                "https://api.weather.gov/zones/fire/NEZ032",
-                "https://api.weather.gov/zones/fire/NEZ033",
-                "https://api.weather.gov/zones/fire/NEZ043"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d6f9d20db02591763b9d9a17c42a2440d1f4590a.002.1",
-                    "identifier": "urn:oid:2.49.0.1.840.0.d6f9d20db02591763b9d9a17c42a2440d1f4590a.002.1",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-12T13:50:00-05:00"
-                }
-            ],
-            "sent": "2025-03-12T20:58:00-05:00",
-            "effective": "2025-03-12T20:58:00-05:00",
-            "onset": "2025-03-13T12:00:00-05:00",
-            "expires": "2025-03-13T05:00:00-05:00",
-            "ends": "2025-03-13T21:00:00-05:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "event": "Fire Weather Watch",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Omaha/Valley NE",
-            "headline": "Fire Weather Watch issued March 12 at 8:58PM CDT until March 13 at 9:00PM CDT by NWS Omaha/Valley NE",
-            "description": "* AFFECTED AREA...Wayne, Stanton, Cuming, and Colfax Counties.\n\n* TIMING...From Thursday afternoon through Thursday evening.\n\n* WINDS...South 15 to 25 mph with gusts up to 30 mph.\n\n* RELATIVE HUMIDITY...As low as 25 percent.\n\n* IMPACTS...Any fires that develop will likely spread rapidly.\nOutdoor burning is not recommended.",
-            "instruction": "A Fire Weather Watch means that critical fire weather conditions\nare forecast to occur. Listen for later forecasts and possible\nRed Flag Warnings.",
-            "response": "Prepare",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "RFWOAX"
-                ],
-                "WMOidentifier": [
-                    "WWUS83 KOAX 130158"
-                ],
-                "NWSheadline": [
-                    "FIRE WEATHER WATCH REMAINS IN EFFECT FROM THURSDAY AFTERNOON THROUGH THURSDAY EVENING FOR WIND AND LOW RELATIVE HUMIDITY FOR NORTHEAST NEBRASKA"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.CON.KOAX.FW.A.0003.250313T1700Z-250314T0200Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-14T02:00:00+00:00"
-                ],
-                "expiredReferences": [
-                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.1623e5dedb8c5505bc1154c1e9314a90dbd7c130.001.1,2025-03-12T11:35:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.1eca3dc9c156eae88a006672fa8c1c4667037eb3.001.1,2025-03-12T02:53:00-05:00"
                 ]
             }
         }
