@@ -1,5 +1,1176 @@
 [
     {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e2b67023d5943121954e9f3ee8914f3de62e61c9.001.1",
+        "type": "Feature",
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -86.39,
+                        30.73
+                    ],
+                    [
+                        -86.16,
+                        30.830000000000002
+                    ],
+                    [
+                        -86.16,
+                        30.560000000000002
+                    ],
+                    [
+                        -86.39,
+                        30.590000000000003
+                    ],
+                    [
+                        -86.39,
+                        30.73
+                    ]
+                ]
+            ]
+        },
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e2b67023d5943121954e9f3ee8914f3de62e61c9.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.e2b67023d5943121954e9f3ee8914f3de62e61c9.001.1",
+            "areaDesc": "North Walton; Central Walton",
+            "geocode": {
+                "SAME": [
+                    "012131"
+                ],
+                "UGC": [
+                    "FLZ007",
+                    "FLZ008"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/FLZ007",
+                "https://api.weather.gov/zones/forecast/FLZ008"
+            ],
+            "references": [],
+            "sent": "2025-03-13T12:30:00-05:00",
+            "effective": "2025-03-13T12:30:00-05:00",
+            "onset": "2025-03-13T12:30:00-05:00",
+            "expires": "2025-03-13T13:15:00-05:00",
+            "ends": null,
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Observed",
+            "urgency": "Expected",
+            "event": "Special Weather Statement",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Tallahassee FL",
+            "headline": "Special Weather Statement issued March 13 at 12:30PM CDT by NWS Tallahassee FL",
+            "description": "At 1229 PM CDT, Doppler radar was tracking a strong thunderstorm near\nEglin Air Force Base, or 12 miles northeast of Niceville, moving east\nat 10 mph.\n\nHAZARD...Wind gusts up to 40 mph and penny size hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Gusty winds could knock down tree limbs and blow around\nunsecured objects. Minor hail damage to vegetation is\npossible.\n\nLocations impacted include...\nOakwood Hills, Pleasant Ridge, Eglin Air Force Base, Alpine Heights,\nNew Home, Mossy Head, and De Funiak Springs.",
+            "instruction": "If outdoors, consider seeking shelter inside a building.\n\nThis storm may intensify, so be certain to monitor local radio\nstations and available television stations for additional information\nand possible warnings from the National Weather Service.",
+            "response": "Execute",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "SPSTAE"
+                ],
+                "WMOidentifier": [
+                    "WWUS82 KTAE 131730"
+                ],
+                "NWSheadline": [
+                    "A STRONG THUNDERSTORM WILL IMPACT WEST CENTRAL WALTON COUNTY THROUGH 115 PM CDT"
+                ],
+                "eventMotionDescription": [
+                    "2025-03-13T17:29:00-00:00...storm...273DEG...10KT...30.65,-86.34"
+                ],
+                "maxWindGust": [
+                    "40 MPH"
+                ],
+                "maxHailSize": [
+                    "0.75"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "EAS-ORG": [
+                    "WXR"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.26653758f5bad9ffd39912d88930ce1a813a82ba.001.2",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.26653758f5bad9ffd39912d88930ce1a813a82ba.001.2",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.26653758f5bad9ffd39912d88930ce1a813a82ba.001.2",
+            "areaDesc": "Northern Trinity; Southern Trinity",
+            "geocode": {
+                "SAME": [
+                    "006105"
+                ],
+                "UGC": [
+                    "CAZ107",
+                    "CAZ108"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/CAZ107",
+                "https://api.weather.gov/zones/forecast/CAZ108"
+            ],
+            "references": [],
+            "sent": "2025-03-13T10:30:00-07:00",
+            "effective": "2025-03-13T10:30:00-07:00",
+            "onset": "2025-03-14T03:00:00-07:00",
+            "expires": "2025-03-13T18:30:00-07:00",
+            "ends": "2025-03-14T17:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Severe",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Winter Storm Warning",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Eureka CA",
+            "headline": "Winter Storm Warning issued March 13 at 10:30AM PDT until March 14 at 5:00PM PDT by NWS Eureka CA",
+            "description": "* WHAT...For the Winter Weather Advisory, snow. Additional snow\naccumulations up to one inch. For the Winter Storm Warning, heavy\nsnow expected. Total snow accumulations between 4 and 11 inches.\nWinds gusting as high as 35 mph.\n\n* WHERE...Trinity County.\n\n* WHEN...For the Winter Weather Advisory, until 5 PM PDT this\nafternoon. For the Winter Storm Warning, from 3 AM to 5 PM PDT\nFriday.\n\n* IMPACTS...Travel could be very difficult. Roads, and especially\nbridges and overpasses, will likely become slick and hazardous.",
+            "instruction": "If you must travel, keep an extra flashlight, food, and water in\nyour vehicle in case of an emergency. The latest road conditions for\nthe state you are calling from can be obtained by calling 5 1 1.\n\nSlow down and use caution while traveling. The latest road\nconditions for the state you are calling from can be obtained by\ncalling 5 1 1.\n\nPersons are urged to stay indoors until conditions improve. If you\nmust go outside, dress in layers. Several layers of clothes will\nkeep you warmer than a single heavy coat. Cover exposed skin to\nreduce your risk of frostbite or hypothermia. Gloves, a scarf, and a\nhat will keep you from losing your body heat.\n\nBe prepared for slippery roads. Slow down and use caution while\ndriving. If you are going outside, watch your first few steps taken\non stairs, sidewalks, and driveways. These surfaces could be icy and\nslippery, increasing your risk of a fall and injury.",
+            "response": "Prepare",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "WSWEKA"
+                ],
+                "WMOidentifier": [
+                    "WWUS46 KEKA 131730"
+                ],
+                "NWSheadline": [
+                    "WINTER STORM WARNING IN EFFECT FROM 3 AM TO 5 PM PDT FRIDAY... ...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 PM PDT THIS AFTERNOON"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "EAS-ORG": [
+                    "WXR"
+                ],
+                "VTEC": [
+                    "/O.NEW.KEKA.WS.W.0007.250314T1000Z-250315T0000Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-15T00:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.26653758f5bad9ffd39912d88930ce1a813a82ba.001.3",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.26653758f5bad9ffd39912d88930ce1a813a82ba.001.3",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.26653758f5bad9ffd39912d88930ce1a813a82ba.001.3",
+            "areaDesc": "Northern Trinity; Southern Trinity",
+            "geocode": {
+                "SAME": [
+                    "006105"
+                ],
+                "UGC": [
+                    "CAZ107",
+                    "CAZ108"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/CAZ107",
+                "https://api.weather.gov/zones/forecast/CAZ108"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4db6a2f25f64a8dfa0238382db1ec8794ec02f9a.002.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.4db6a2f25f64a8dfa0238382db1ec8794ec02f9a.002.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-13T03:33:00-07:00"
+                },
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6df314a19f650a260fbc918d19c845f52a11e4f6.005.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.6df314a19f650a260fbc918d19c845f52a11e4f6.005.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-13T08:35:43-07:00"
+                },
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.697b739a723390129fa80fded23145d3ef2512ec.003.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.697b739a723390129fa80fded23145d3ef2512ec.003.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-13T09:22:00-07:00"
+                }
+            ],
+            "sent": "2025-03-13T10:30:00-07:00",
+            "effective": "2025-03-13T10:30:00-07:00",
+            "onset": "2025-03-13T10:30:00-07:00",
+            "expires": "2025-03-13T18:30:00-07:00",
+            "ends": "2025-03-13T17:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Winter Weather Advisory",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Eureka CA",
+            "headline": "Winter Weather Advisory issued March 13 at 10:30AM PDT until March 13 at 5:00PM PDT by NWS Eureka CA",
+            "description": "* WHAT...For the Winter Weather Advisory, snow. Additional snow\naccumulations up to one inch. For the Winter Storm Warning, heavy\nsnow expected. Total snow accumulations between 4 and 11 inches.\nWinds gusting as high as 35 mph.\n\n* WHERE...Trinity County.\n\n* WHEN...For the Winter Weather Advisory, until 5 PM PDT this\nafternoon. For the Winter Storm Warning, from 3 AM to 5 PM PDT\nFriday.\n\n* IMPACTS...Travel could be very difficult. Roads, and especially\nbridges and overpasses, will likely become slick and hazardous.",
+            "instruction": "If you must travel, keep an extra flashlight, food, and water in\nyour vehicle in case of an emergency. The latest road conditions for\nthe state you are calling from can be obtained by calling 5 1 1.\n\nSlow down and use caution while traveling. The latest road\nconditions for the state you are calling from can be obtained by\ncalling 5 1 1.\n\nPersons are urged to stay indoors until conditions improve. If you\nmust go outside, dress in layers. Several layers of clothes will\nkeep you warmer than a single heavy coat. Cover exposed skin to\nreduce your risk of frostbite or hypothermia. Gloves, a scarf, and a\nhat will keep you from losing your body heat.\n\nBe prepared for slippery roads. Slow down and use caution while\ndriving. If you are going outside, watch your first few steps taken\non stairs, sidewalks, and driveways. These surfaces could be icy and\nslippery, increasing your risk of a fall and injury.",
+            "response": "Execute",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "WSWEKA"
+                ],
+                "WMOidentifier": [
+                    "WWUS46 KEKA 131730"
+                ],
+                "NWSheadline": [
+                    "WINTER STORM WARNING IN EFFECT FROM 3 AM TO 5 PM PDT FRIDAY... ...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 PM PDT THIS AFTERNOON"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.CON.KEKA.WW.Y.0005.000000T0000Z-250314T0000Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-14T00:00:00+00:00"
+                ],
+                "expiredReferences": [
+                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.3457cfb3bf9506d27db0faa2b32fe974fd18d870.001.2,2025-03-12T19:47:00-07:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.26653758f5bad9ffd39912d88930ce1a813a82ba.002.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.26653758f5bad9ffd39912d88930ce1a813a82ba.002.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.26653758f5bad9ffd39912d88930ce1a813a82ba.002.1",
+            "areaDesc": "Del Norte Interior; Northern Humboldt Interior",
+            "geocode": {
+                "SAME": [
+                    "006015",
+                    "006023"
+                ],
+                "UGC": [
+                    "CAZ102",
+                    "CAZ105"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/CAZ102",
+                "https://api.weather.gov/zones/forecast/CAZ105"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4db6a2f25f64a8dfa0238382db1ec8794ec02f9a.001.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.4db6a2f25f64a8dfa0238382db1ec8794ec02f9a.001.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-13T03:33:00-07:00"
+                },
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6df314a19f650a260fbc918d19c845f52a11e4f6.004.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.6df314a19f650a260fbc918d19c845f52a11e4f6.004.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-13T08:35:43-07:00"
+                },
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.697b739a723390129fa80fded23145d3ef2512ec.002.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.697b739a723390129fa80fded23145d3ef2512ec.002.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-13T09:22:00-07:00"
+                }
+            ],
+            "sent": "2025-03-13T10:30:00-07:00",
+            "effective": "2025-03-13T10:30:00-07:00",
+            "onset": "2025-03-13T10:30:00-07:00",
+            "expires": "2025-03-13T18:30:00-07:00",
+            "ends": "2025-03-13T17:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Winter Weather Advisory",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Eureka CA",
+            "headline": "Winter Weather Advisory issued March 13 at 10:30AM PDT until March 13 at 5:00PM PDT by NWS Eureka CA",
+            "description": "* WHAT...For the Winter Weather Advisory ABOVE 2000 FEET, snow.\nAdditional snow accumulations up to one inch. For the Winter Storm\nWatch ABOVE 2500 FEET, heavy snow possible. Total snow\naccumulations up to 5 inches possible. Winds could gust as high as\n50 mph.\n\n* WHERE...Del Norte Interior and Northern Humboldt Interior.\n\n* WHEN...For the Winter Weather Advisory, until 5 PM PDT this\nafternoon. For the Winter Storm Watch, from this evening through\nFriday evening.\n\n* IMPACTS...Travel could be very difficult. Tire chains may be\nnecessary if travelling through mountain passes. Gusty winds could\nbring down tree branches.",
+            "instruction": "Slow down and use caution while traveling. The latest road\nconditions for the state you are calling from can be obtained by\ncalling 5 1 1.\n\nMonitor the latest forecasts for updates on this situation.",
+            "response": "Execute",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "WSWEKA"
+                ],
+                "WMOidentifier": [
+                    "WWUS46 KEKA 131730"
+                ],
+                "NWSheadline": [
+                    "WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 PM PDT THIS AFTERNOON ABOVE 2000 FEET... ...WINTER STORM WATCH REMAINS IN EFFECT FROM THIS EVENING THROUGH FRIDAY EVENING ABOVE 2500 FEET"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.CON.KEKA.WW.Y.0005.000000T0000Z-250314T0000Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-14T00:00:00+00:00"
+                ],
+                "expiredReferences": [
+                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.3457cfb3bf9506d27db0faa2b32fe974fd18d870.002.1,2025-03-12T19:47:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.222195e9fd9219f07df2c8f1d8809b302422f03f.005.2,2025-03-12T13:40:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.43e0f8cd33b8897ff0af5b20067b6ee574415667.002.1,2025-03-12T12:07:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.20c9c29894afc5d520900bfc448015164378f6d1.002.1,2025-03-12T04:11:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.7bea102a8e52276b079d26776905602fa7ca7daa.002.1,2025-03-11T21:00:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.84c70862516081e2a2633be8de522fb80a5c61ff.002.2,2025-03-11T13:02:00-07:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.26653758f5bad9ffd39912d88930ce1a813a82ba.002.2",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.26653758f5bad9ffd39912d88930ce1a813a82ba.002.2",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.26653758f5bad9ffd39912d88930ce1a813a82ba.002.2",
+            "areaDesc": "Del Norte Interior; Northern Humboldt Interior",
+            "geocode": {
+                "SAME": [
+                    "006015",
+                    "006023"
+                ],
+                "UGC": [
+                    "CAZ102",
+                    "CAZ105"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/CAZ102",
+                "https://api.weather.gov/zones/forecast/CAZ105"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4db6a2f25f64a8dfa0238382db1ec8794ec02f9a.001.2",
+                    "identifier": "urn:oid:2.49.0.1.840.0.4db6a2f25f64a8dfa0238382db1ec8794ec02f9a.001.2",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-13T03:33:00-07:00"
+                },
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6df314a19f650a260fbc918d19c845f52a11e4f6.004.2",
+                    "identifier": "urn:oid:2.49.0.1.840.0.6df314a19f650a260fbc918d19c845f52a11e4f6.004.2",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-13T08:35:43-07:00"
+                },
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.697b739a723390129fa80fded23145d3ef2512ec.002.2",
+                    "identifier": "urn:oid:2.49.0.1.840.0.697b739a723390129fa80fded23145d3ef2512ec.002.2",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-13T09:22:00-07:00"
+                }
+            ],
+            "sent": "2025-03-13T10:30:00-07:00",
+            "effective": "2025-03-13T10:30:00-07:00",
+            "onset": "2025-03-13T23:00:00-07:00",
+            "expires": "2025-03-13T18:30:00-07:00",
+            "ends": "2025-03-14T23:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Severe",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "event": "Winter Storm Watch",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Eureka CA",
+            "headline": "Winter Storm Watch issued March 13 at 10:30AM PDT until March 14 at 11:00PM PDT by NWS Eureka CA",
+            "description": "* WHAT...For the Winter Weather Advisory ABOVE 2000 FEET, snow.\nAdditional snow accumulations up to one inch. For the Winter Storm\nWatch ABOVE 2500 FEET, heavy snow possible. Total snow\naccumulations up to 5 inches possible. Winds could gust as high as\n50 mph.\n\n* WHERE...Del Norte Interior and Northern Humboldt Interior.\n\n* WHEN...For the Winter Weather Advisory, until 5 PM PDT this\nafternoon. For the Winter Storm Watch, from this evening through\nFriday evening.\n\n* IMPACTS...Travel could be very difficult. Tire chains may be\nnecessary if travelling through mountain passes. Gusty winds could\nbring down tree branches.",
+            "instruction": "Slow down and use caution while traveling. The latest road\nconditions for the state you are calling from can be obtained by\ncalling 5 1 1.\n\nMonitor the latest forecasts for updates on this situation.",
+            "response": "Prepare",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "WSWEKA"
+                ],
+                "WMOidentifier": [
+                    "WWUS46 KEKA 131730"
+                ],
+                "NWSheadline": [
+                    "WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 PM PDT THIS AFTERNOON ABOVE 2000 FEET... ...WINTER STORM WATCH REMAINS IN EFFECT FROM THIS EVENING THROUGH FRIDAY EVENING ABOVE 2500 FEET"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "EAS-ORG": [
+                    "WXR"
+                ],
+                "VTEC": [
+                    "/O.CON.KEKA.WS.A.0006.250314T0600Z-250315T0600Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-15T06:00:00+00:00"
+                ],
+                "expiredReferences": [
+                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.3457cfb3bf9506d27db0faa2b32fe974fd18d870.002.2,2025-03-12T19:47:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.222195e9fd9219f07df2c8f1d8809b302422f03f.005.1,2025-03-12T13:40:00-07:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.26653758f5bad9ffd39912d88930ce1a813a82ba.004.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.26653758f5bad9ffd39912d88930ce1a813a82ba.004.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.26653758f5bad9ffd39912d88930ce1a813a82ba.004.1",
+            "areaDesc": "Northwestern Mendocino Interior; Southern Lake County",
+            "geocode": {
+                "SAME": [
+                    "006045",
+                    "006033"
+                ],
+                "UGC": [
+                    "CAZ110",
+                    "CAZ115"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/CAZ110",
+                "https://api.weather.gov/zones/forecast/CAZ115"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4db6a2f25f64a8dfa0238382db1ec8794ec02f9a.003.2",
+                    "identifier": "urn:oid:2.49.0.1.840.0.4db6a2f25f64a8dfa0238382db1ec8794ec02f9a.003.2",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-13T03:33:00-07:00"
+                },
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6df314a19f650a260fbc918d19c845f52a11e4f6.001.2",
+                    "identifier": "urn:oid:2.49.0.1.840.0.6df314a19f650a260fbc918d19c845f52a11e4f6.001.2",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-13T08:35:43-07:00"
+                },
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.697b739a723390129fa80fded23145d3ef2512ec.005.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.697b739a723390129fa80fded23145d3ef2512ec.005.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-13T09:22:00-07:00"
+                }
+            ],
+            "sent": "2025-03-13T10:30:00-07:00",
+            "effective": "2025-03-13T10:30:00-07:00",
+            "onset": "2025-03-14T05:00:00-07:00",
+            "expires": "2025-03-13T18:30:00-07:00",
+            "ends": "2025-03-14T13:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Severe",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "event": "Winter Storm Watch",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Eureka CA",
+            "headline": "Winter Storm Watch issued March 13 at 10:30AM PDT until March 14 at 1:00PM PDT by NWS Eureka CA",
+            "description": "* WHAT...Heavy wet snow possible. Total snow accumulations up to 4\ninches possible. Winds could gust as high as 45 mph.\n\n* WHERE...Northwestern Mendocino Interior and Southern Lake.\n\n* WHEN...From late tonight through Friday afternoon.\n\n* IMPACTS...Plan on slippery road conditions. The hazardous\nconditions could impact the Friday morning commute. Gusty winds\ncould bring down tree branches.",
+            "instruction": "Monitor the latest forecasts for updates on this situation.",
+            "response": "Prepare",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "WSWEKA"
+                ],
+                "WMOidentifier": [
+                    "WWUS46 KEKA 131730"
+                ],
+                "NWSheadline": [
+                    "WINTER STORM WATCH REMAINS IN EFFECT FROM LATE TONIGHT THROUGH FRIDAY AFTERNOON"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "EAS-ORG": [
+                    "WXR"
+                ],
+                "VTEC": [
+                    "/O.CON.KEKA.WS.A.0006.250314T1200Z-250314T2000Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-14T20:00:00+00:00"
+                ],
+                "expiredReferences": [
+                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.3457cfb3bf9506d27db0faa2b32fe974fd18d870.003.2,2025-03-12T19:47:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.222195e9fd9219f07df2c8f1d8809b302422f03f.002.1,2025-03-12T13:40:00-07:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.26653758f5bad9ffd39912d88930ce1a813a82ba.003.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.26653758f5bad9ffd39912d88930ce1a813a82ba.003.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.26653758f5bad9ffd39912d88930ce1a813a82ba.003.1",
+            "areaDesc": "Northeastern Mendocino Interior; Northern Lake County",
+            "geocode": {
+                "SAME": [
+                    "006045",
+                    "006033"
+                ],
+                "UGC": [
+                    "CAZ111",
+                    "CAZ114"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/CAZ111",
+                "https://api.weather.gov/zones/forecast/CAZ114"
+            ],
+            "references": [
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4db6a2f25f64a8dfa0238382db1ec8794ec02f9a.004.2",
+                    "identifier": "urn:oid:2.49.0.1.840.0.4db6a2f25f64a8dfa0238382db1ec8794ec02f9a.004.2",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-13T03:33:00-07:00"
+                },
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6df314a19f650a260fbc918d19c845f52a11e4f6.002.2",
+                    "identifier": "urn:oid:2.49.0.1.840.0.6df314a19f650a260fbc918d19c845f52a11e4f6.002.2",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-13T08:35:43-07:00"
+                },
+                {
+                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.697b739a723390129fa80fded23145d3ef2512ec.004.1",
+                    "identifier": "urn:oid:2.49.0.1.840.0.697b739a723390129fa80fded23145d3ef2512ec.004.1",
+                    "sender": "w-nws.webmaster@noaa.gov",
+                    "sent": "2025-03-13T09:22:00-07:00"
+                }
+            ],
+            "sent": "2025-03-13T10:30:00-07:00",
+            "effective": "2025-03-13T10:30:00-07:00",
+            "onset": "2025-03-13T23:00:00-07:00",
+            "expires": "2025-03-13T18:30:00-07:00",
+            "ends": "2025-03-14T23:00:00-07:00",
+            "status": "Actual",
+            "messageType": "Update",
+            "category": "Met",
+            "severity": "Severe",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "event": "Winter Storm Watch",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Eureka CA",
+            "headline": "Winter Storm Watch issued March 13 at 10:30AM PDT until March 14 at 11:00PM PDT by NWS Eureka CA",
+            "description": "* WHAT...Heavy snow possible. Total snow accumulations up to 6\ninches possible. Winds could gust as high as 45 mph.\n\n* WHERE...Northeastern Mendocino Interior and Northern Lake.\n\n* WHEN...From this evening through Friday evening.\n\n* IMPACTS...Travel could be very difficult. Gusty winds could bring\ndown tree branches.",
+            "instruction": "Monitor the latest forecasts for updates on this situation.",
+            "response": "Prepare",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "WSWEKA"
+                ],
+                "WMOidentifier": [
+                    "WWUS46 KEKA 131730"
+                ],
+                "NWSheadline": [
+                    "WINTER STORM WATCH REMAINS IN EFFECT FROM THIS EVENING THROUGH FRIDAY EVENING"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "EAS-ORG": [
+                    "WXR"
+                ],
+                "VTEC": [
+                    "/O.CON.KEKA.WS.A.0006.250314T0600Z-250315T0600Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-15T06:00:00+00:00"
+                ],
+                "expiredReferences": [
+                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.3457cfb3bf9506d27db0faa2b32fe974fd18d870.004.2,2025-03-12T19:47:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.222195e9fd9219f07df2c8f1d8809b302422f03f.003.1,2025-03-12T13:40:00-07:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ca23fb32f3743cf5675dce7d38b03e86ec42d421.001.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ca23fb32f3743cf5675dce7d38b03e86ec42d421.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.ca23fb32f3743cf5675dce7d38b03e86ec42d421.001.1",
+            "areaDesc": "Bourbon; Crawford; Cherokee; Benton; Morgan; Miller; Maries; Vernon; St. Clair; Hickory; Camden; Pulaski; Phelps; Barton; Cedar; Polk; Dallas; Laclede; Texas; Jasper; Dade; Greene; Webster; Wright; Newton; Lawrence; Christian; Douglas; Howell; McDonald; Barry; Stone; Taney; Ozark",
+            "geocode": {
+                "SAME": [
+                    "020011",
+                    "020037",
+                    "020021",
+                    "029015",
+                    "029141",
+                    "029131",
+                    "029125",
+                    "029217",
+                    "029185",
+                    "029085",
+                    "029029",
+                    "029169",
+                    "029161",
+                    "029011",
+                    "029039",
+                    "029167",
+                    "029059",
+                    "029105",
+                    "029215",
+                    "029097",
+                    "029057",
+                    "029077",
+                    "029225",
+                    "029229",
+                    "029145",
+                    "029109",
+                    "029043",
+                    "029067",
+                    "029091",
+                    "029119",
+                    "029009",
+                    "029209",
+                    "029213",
+                    "029153"
+                ],
+                "UGC": [
+                    "KSZ073",
+                    "KSZ097",
+                    "KSZ101",
+                    "MOZ055",
+                    "MOZ056",
+                    "MOZ057",
+                    "MOZ058",
+                    "MOZ066",
+                    "MOZ067",
+                    "MOZ068",
+                    "MOZ069",
+                    "MOZ070",
+                    "MOZ071",
+                    "MOZ077",
+                    "MOZ078",
+                    "MOZ079",
+                    "MOZ080",
+                    "MOZ081",
+                    "MOZ082",
+                    "MOZ088",
+                    "MOZ089",
+                    "MOZ090",
+                    "MOZ091",
+                    "MOZ092",
+                    "MOZ093",
+                    "MOZ094",
+                    "MOZ095",
+                    "MOZ096",
+                    "MOZ097",
+                    "MOZ101",
+                    "MOZ102",
+                    "MOZ103",
+                    "MOZ104",
+                    "MOZ105"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/fire/KSZ073",
+                "https://api.weather.gov/zones/fire/KSZ097",
+                "https://api.weather.gov/zones/fire/KSZ101",
+                "https://api.weather.gov/zones/fire/MOZ055",
+                "https://api.weather.gov/zones/fire/MOZ056",
+                "https://api.weather.gov/zones/fire/MOZ057",
+                "https://api.weather.gov/zones/fire/MOZ058",
+                "https://api.weather.gov/zones/fire/MOZ066",
+                "https://api.weather.gov/zones/fire/MOZ067",
+                "https://api.weather.gov/zones/fire/MOZ068",
+                "https://api.weather.gov/zones/fire/MOZ069",
+                "https://api.weather.gov/zones/fire/MOZ070",
+                "https://api.weather.gov/zones/fire/MOZ071",
+                "https://api.weather.gov/zones/fire/MOZ077",
+                "https://api.weather.gov/zones/fire/MOZ078",
+                "https://api.weather.gov/zones/fire/MOZ079",
+                "https://api.weather.gov/zones/fire/MOZ080",
+                "https://api.weather.gov/zones/fire/MOZ081",
+                "https://api.weather.gov/zones/fire/MOZ082",
+                "https://api.weather.gov/zones/fire/MOZ088",
+                "https://api.weather.gov/zones/fire/MOZ089",
+                "https://api.weather.gov/zones/fire/MOZ090",
+                "https://api.weather.gov/zones/fire/MOZ091",
+                "https://api.weather.gov/zones/fire/MOZ092",
+                "https://api.weather.gov/zones/fire/MOZ093",
+                "https://api.weather.gov/zones/fire/MOZ094",
+                "https://api.weather.gov/zones/fire/MOZ095",
+                "https://api.weather.gov/zones/fire/MOZ096",
+                "https://api.weather.gov/zones/fire/MOZ097",
+                "https://api.weather.gov/zones/fire/MOZ101",
+                "https://api.weather.gov/zones/fire/MOZ102",
+                "https://api.weather.gov/zones/fire/MOZ103",
+                "https://api.weather.gov/zones/fire/MOZ104",
+                "https://api.weather.gov/zones/fire/MOZ105"
+            ],
+            "references": [],
+            "sent": "2025-03-13T12:28:00-05:00",
+            "effective": "2025-03-13T12:28:00-05:00",
+            "onset": "2025-03-14T10:00:00-05:00",
+            "expires": "2025-03-13T12:43:42-05:00",
+            "ends": "2025-03-15T01:00:00-05:00",
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Severe",
+            "certainty": "Observed",
+            "urgency": "Past",
+            "event": "Fire Weather Watch",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Springfield MO",
+            "headline": "The Fire Weather Watch has been replaced. Please see the latest information from NWS Springfield MO on this developing situation.",
+            "description": "The Fire Weather Watch has been replaced. Please see the latest information from NWS Springfield MO on this developing situation.",
+            "instruction": "A Red Flag Warning means that critical fire weather conditions\nare either occurring now, or will shortly. A combination of\nstrong winds, low relative humidity, and warm temperatures can\ncontribute to extreme fire behavior.",
+            "response": "Monitor",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "RFWSGF"
+                ],
+                "WMOidentifier": [
+                    "WWUS83 KSGF 131728"
+                ],
+                "NWSheadline": [
+                    "RED FLAG WARNING IN EFFECT FROM FRIDAY MORNING THROUGH LATE FRIDAY NIGHT FOR VERY STRONG WINDS AND DRY CONDITIONS FOR PORTIONS OF SOUTHEAST KANSAS AND SOUTHWEST MISSOURI"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.UPG.KSGF.FW.A.0001.250314T1500Z-250315T0600Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-15T06:00:00+00:00"
+                ],
+                "expiredReferences": [
+                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.ef18c3870cdf414a4676e90783826ab6a466d470.001.1,2025-03-13T01:46:51-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.4dcf0a876bc51c0acef2a1c6060fed64e4e450bb.001.1,2025-03-13T01:41:00-05:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ca23fb32f3743cf5675dce7d38b03e86ec42d421.001.2",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ca23fb32f3743cf5675dce7d38b03e86ec42d421.001.2",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.ca23fb32f3743cf5675dce7d38b03e86ec42d421.001.2",
+            "areaDesc": "Bourbon; Crawford; Cherokee; Benton; Morgan; Miller; Maries; Vernon; St. Clair; Hickory; Camden; Pulaski; Phelps; Barton; Cedar; Polk; Dallas; Laclede; Texas; Jasper; Dade; Greene; Webster; Wright; Newton; Lawrence; Christian; Douglas; Howell; McDonald; Barry; Stone; Taney; Ozark",
+            "geocode": {
+                "SAME": [
+                    "020011",
+                    "020037",
+                    "020021",
+                    "029015",
+                    "029141",
+                    "029131",
+                    "029125",
+                    "029217",
+                    "029185",
+                    "029085",
+                    "029029",
+                    "029169",
+                    "029161",
+                    "029011",
+                    "029039",
+                    "029167",
+                    "029059",
+                    "029105",
+                    "029215",
+                    "029097",
+                    "029057",
+                    "029077",
+                    "029225",
+                    "029229",
+                    "029145",
+                    "029109",
+                    "029043",
+                    "029067",
+                    "029091",
+                    "029119",
+                    "029009",
+                    "029209",
+                    "029213",
+                    "029153"
+                ],
+                "UGC": [
+                    "KSZ073",
+                    "KSZ097",
+                    "KSZ101",
+                    "MOZ055",
+                    "MOZ056",
+                    "MOZ057",
+                    "MOZ058",
+                    "MOZ066",
+                    "MOZ067",
+                    "MOZ068",
+                    "MOZ069",
+                    "MOZ070",
+                    "MOZ071",
+                    "MOZ077",
+                    "MOZ078",
+                    "MOZ079",
+                    "MOZ080",
+                    "MOZ081",
+                    "MOZ082",
+                    "MOZ088",
+                    "MOZ089",
+                    "MOZ090",
+                    "MOZ091",
+                    "MOZ092",
+                    "MOZ093",
+                    "MOZ094",
+                    "MOZ095",
+                    "MOZ096",
+                    "MOZ097",
+                    "MOZ101",
+                    "MOZ102",
+                    "MOZ103",
+                    "MOZ104",
+                    "MOZ105"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/fire/KSZ073",
+                "https://api.weather.gov/zones/fire/KSZ097",
+                "https://api.weather.gov/zones/fire/KSZ101",
+                "https://api.weather.gov/zones/fire/MOZ055",
+                "https://api.weather.gov/zones/fire/MOZ056",
+                "https://api.weather.gov/zones/fire/MOZ057",
+                "https://api.weather.gov/zones/fire/MOZ058",
+                "https://api.weather.gov/zones/fire/MOZ066",
+                "https://api.weather.gov/zones/fire/MOZ067",
+                "https://api.weather.gov/zones/fire/MOZ068",
+                "https://api.weather.gov/zones/fire/MOZ069",
+                "https://api.weather.gov/zones/fire/MOZ070",
+                "https://api.weather.gov/zones/fire/MOZ071",
+                "https://api.weather.gov/zones/fire/MOZ077",
+                "https://api.weather.gov/zones/fire/MOZ078",
+                "https://api.weather.gov/zones/fire/MOZ079",
+                "https://api.weather.gov/zones/fire/MOZ080",
+                "https://api.weather.gov/zones/fire/MOZ081",
+                "https://api.weather.gov/zones/fire/MOZ082",
+                "https://api.weather.gov/zones/fire/MOZ088",
+                "https://api.weather.gov/zones/fire/MOZ089",
+                "https://api.weather.gov/zones/fire/MOZ090",
+                "https://api.weather.gov/zones/fire/MOZ091",
+                "https://api.weather.gov/zones/fire/MOZ092",
+                "https://api.weather.gov/zones/fire/MOZ093",
+                "https://api.weather.gov/zones/fire/MOZ094",
+                "https://api.weather.gov/zones/fire/MOZ095",
+                "https://api.weather.gov/zones/fire/MOZ096",
+                "https://api.weather.gov/zones/fire/MOZ097",
+                "https://api.weather.gov/zones/fire/MOZ101",
+                "https://api.weather.gov/zones/fire/MOZ102",
+                "https://api.weather.gov/zones/fire/MOZ103",
+                "https://api.weather.gov/zones/fire/MOZ104",
+                "https://api.weather.gov/zones/fire/MOZ105"
+            ],
+            "references": [],
+            "sent": "2025-03-13T12:28:00-05:00",
+            "effective": "2025-03-13T12:28:00-05:00",
+            "onset": "2025-03-14T10:00:00-05:00",
+            "expires": "2025-03-13T20:30:00-05:00",
+            "ends": "2025-03-15T01:00:00-05:00",
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Severe",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Red Flag Warning",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Springfield MO",
+            "headline": "Red Flag Warning issued March 13 at 12:28PM CDT until March 15 at 1:00AM CDT by NWS Springfield MO",
+            "description": "The National Weather Service in Springfield has issued a Red Flag\nWarning, which is in effect from 10 AM Friday to 1 AM CDT\nSaturday. The Fire Weather Watch is no longer in effect.\n\n* AFFECTED AREA...Fire Weather Zone 055 Benton, Fire Weather\nZone 056 Morgan, Fire Weather Zone 057 Miller, Fire Weather\nZone 058 Maries, Fire Weather Zone 066 Vernon, Fire Weather\nZone 067 St. Clair, Fire Weather Zone 068 Hickory, Fire\nWeather Zone 069 Camden, Fire Weather Zone 070 Pulaski, Fire\nWeather Zone 071 Phelps, Fire Weather Zone 073 Bourbon, Fire\nWeather Zone 077 Barton, Fire Weather Zone 078 Cedar, Fire\nWeather Zone 079 Polk, Fire Weather Zone 080 Dallas, Fire\nWeather Zone 081 Laclede, Fire Weather Zone 082 Texas, Fire\nWeather Zone 088 Jasper, Fire Weather Zone 089 Dade, Fire\nWeather Zone 090 Greene, Fire Weather Zone 091 Webster, Fire\nWeather Zone 092 Wright, Fire Weather Zone 093 Newton, Fire\nWeather Zone 094 Lawrence, Fire Weather Zone 095 Christian,\nFire Weather Zone 096 Douglas, Fire Weather Zone 097 Crawford,\nFire Weather Zone 097 Howell, Fire Weather Zone 101 Cherokee,\nFire Weather Zone 101 McDonald, Fire Weather Zone 102 Barry,\nFire Weather Zone 103 Stone, Fire Weather Zone 104 Taney and\nFire Weather Zone 105 Ozark.\n\n* TIMING...From 10 AM Friday to 1 AM CDT Saturday.\n\n* WINDS...South 25 to 35 mph with gusts of 45 to 60 mph.\n\n* RELATIVE HUMIDITY...As low as 15 to 25 percent.\n\n* TEMPERATURES...Up to 82.\n\n* LIGHTNING...Isolated to scattered thunderstorms are possible,\nespecially further east, on Friday evening.\n\n* IMPACTS...Any fire that develops will catch and spread\nquickly. Outdoor burning is not recommended.",
+            "instruction": "A Red Flag Warning means that critical fire weather conditions\nare either occurring now, or will shortly. A combination of\nstrong winds, low relative humidity, and warm temperatures can\ncontribute to extreme fire behavior.",
+            "response": "Prepare",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "RFWSGF"
+                ],
+                "WMOidentifier": [
+                    "WWUS83 KSGF 131728"
+                ],
+                "NWSheadline": [
+                    "RED FLAG WARNING IN EFFECT FROM FRIDAY MORNING THROUGH LATE FRIDAY NIGHT FOR VERY STRONG WINDS AND DRY CONDITIONS FOR PORTIONS OF SOUTHEAST KANSAS AND SOUTHWEST MISSOURI"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.NEW.KSGF.FW.W.0005.250314T1500Z-250315T0600Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-15T06:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-57932",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-57932",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0-KEEPALIVE-57932",
+            "areaDesc": "Montgomery",
+            "geocode": {
+                "SAME": [
+                    "024031"
+                ],
+                "UGC": [
+                    "MDC031"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/county/MDC031"
+            ],
+            "references": [],
+            "sent": "2025-03-13T17:25:41+00:00",
+            "effective": "2025-03-13T17:25:41+00:00",
+            "onset": null,
+            "expires": "2025-03-13T17:35:41+00:00",
+            "ends": null,
+            "status": "Test",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Unknown",
+            "certainty": "Unknown",
+            "urgency": "Unknown",
+            "event": "Test Message",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS",
+            "headline": null,
+            "description": "Monitoring message only. Please disregard.",
+            "instruction": "Monitoring message only. Please disregard.",
+            "response": "None",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "KEPWBC"
+                ],
+                "WMOidentifier": [
+                    "NZUS91 KWBC 131725"
+                ],
+                "BLOCKCHANNEL": [
+                    "CMAS",
+                    "EAS",
+                    "NWEM"
+                ]
+            }
+        }
+    },
+    {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.461c5dea2e0ac5b7fa843cd4b1b51f7ca0b516c5.001.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.461c5dea2e0ac5b7fa843cd4b1b51f7ca0b516c5.001.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.461c5dea2e0ac5b7fa843cd4b1b51f7ca0b516c5.001.1",
+            "areaDesc": "Carroll; Warren; Tippecanoe; Clinton; Howard; Fountain; Montgomery; Boone; Tipton; Hamilton; Madison; Delaware; Randolph; Vermillion; Parke; Putnam; Hendricks; Marion; Hancock; Henry; Vigo; Clay; Owen; Morgan; Johnson; Shelby; Rush; Sullivan; Greene; Monroe; Brown; Bartholomew; Decatur; Knox; Daviess; Martin; Lawrence; Jackson; Jennings",
+            "geocode": {
+                "SAME": [
+                    "018015",
+                    "018171",
+                    "018157",
+                    "018023",
+                    "018067",
+                    "018045",
+                    "018107",
+                    "018011",
+                    "018159",
+                    "018057",
+                    "018095",
+                    "018035",
+                    "018135",
+                    "018165",
+                    "018121",
+                    "018133",
+                    "018063",
+                    "018097",
+                    "018059",
+                    "018065",
+                    "018167",
+                    "018021",
+                    "018119",
+                    "018109",
+                    "018081",
+                    "018145",
+                    "018139",
+                    "018153",
+                    "018055",
+                    "018105",
+                    "018013",
+                    "018005",
+                    "018031",
+                    "018083",
+                    "018027",
+                    "018101",
+                    "018093",
+                    "018071",
+                    "018079"
+                ],
+                "UGC": [
+                    "INZ021",
+                    "INZ028",
+                    "INZ029",
+                    "INZ030",
+                    "INZ031",
+                    "INZ035",
+                    "INZ036",
+                    "INZ037",
+                    "INZ038",
+                    "INZ039",
+                    "INZ040",
+                    "INZ041",
+                    "INZ042",
+                    "INZ043",
+                    "INZ044",
+                    "INZ045",
+                    "INZ046",
+                    "INZ047",
+                    "INZ048",
+                    "INZ049",
+                    "INZ051",
+                    "INZ052",
+                    "INZ053",
+                    "INZ054",
+                    "INZ055",
+                    "INZ056",
+                    "INZ057",
+                    "INZ060",
+                    "INZ061",
+                    "INZ062",
+                    "INZ063",
+                    "INZ064",
+                    "INZ065",
+                    "INZ067",
+                    "INZ068",
+                    "INZ069",
+                    "INZ070",
+                    "INZ071",
+                    "INZ072"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/forecast/INZ021",
+                "https://api.weather.gov/zones/forecast/INZ028",
+                "https://api.weather.gov/zones/forecast/INZ029",
+                "https://api.weather.gov/zones/forecast/INZ030",
+                "https://api.weather.gov/zones/forecast/INZ031",
+                "https://api.weather.gov/zones/forecast/INZ035",
+                "https://api.weather.gov/zones/forecast/INZ036",
+                "https://api.weather.gov/zones/forecast/INZ037",
+                "https://api.weather.gov/zones/forecast/INZ038",
+                "https://api.weather.gov/zones/forecast/INZ039",
+                "https://api.weather.gov/zones/forecast/INZ040",
+                "https://api.weather.gov/zones/forecast/INZ041",
+                "https://api.weather.gov/zones/forecast/INZ042",
+                "https://api.weather.gov/zones/forecast/INZ043",
+                "https://api.weather.gov/zones/forecast/INZ044",
+                "https://api.weather.gov/zones/forecast/INZ045",
+                "https://api.weather.gov/zones/forecast/INZ046",
+                "https://api.weather.gov/zones/forecast/INZ047",
+                "https://api.weather.gov/zones/forecast/INZ048",
+                "https://api.weather.gov/zones/forecast/INZ049",
+                "https://api.weather.gov/zones/forecast/INZ051",
+                "https://api.weather.gov/zones/forecast/INZ052",
+                "https://api.weather.gov/zones/forecast/INZ053",
+                "https://api.weather.gov/zones/forecast/INZ054",
+                "https://api.weather.gov/zones/forecast/INZ055",
+                "https://api.weather.gov/zones/forecast/INZ056",
+                "https://api.weather.gov/zones/forecast/INZ057",
+                "https://api.weather.gov/zones/forecast/INZ060",
+                "https://api.weather.gov/zones/forecast/INZ061",
+                "https://api.weather.gov/zones/forecast/INZ062",
+                "https://api.weather.gov/zones/forecast/INZ063",
+                "https://api.weather.gov/zones/forecast/INZ064",
+                "https://api.weather.gov/zones/forecast/INZ065",
+                "https://api.weather.gov/zones/forecast/INZ067",
+                "https://api.weather.gov/zones/forecast/INZ068",
+                "https://api.weather.gov/zones/forecast/INZ069",
+                "https://api.weather.gov/zones/forecast/INZ070",
+                "https://api.weather.gov/zones/forecast/INZ071",
+                "https://api.weather.gov/zones/forecast/INZ072"
+            ],
+            "references": [],
+            "sent": "2025-03-13T13:23:00-04:00",
+            "effective": "2025-03-13T13:23:00-04:00",
+            "onset": "2025-03-14T17:00:00-04:00",
+            "expires": "2025-03-13T22:15:00-04:00",
+            "ends": "2025-03-15T16:00:00-04:00",
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "event": "Wind Advisory",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Indianapolis IN",
+            "headline": "Wind Advisory issued March 13 at 1:23PM EDT until March 15 at 4:00PM EDT by NWS Indianapolis IN",
+            "description": "* WHAT...South winds 20 to 30 mph with gusts of 45 to 55 mph\nexpected.\n\n* WHERE...Portions of central, east central, north central, south\ncentral, southeast, southwest, and west central Indiana.\n\n* WHEN...From 5 PM Friday to 4 PM EDT Saturday.\n\n* IMPACTS...Gusty winds will blow around unsecured objects. Tree\nlimbs could be blown down and a few power outages may result.\n\n* ADDITIONAL DETAILS...Higher gusts possible within showers and\nthunderstorms overnight Friday into early Saturday.\n\nThere may be a low fire weather risk late Friday afternoon and\nevening with increasing winds and relative humidity values falling\nbelow 30 percent.",
+            "instruction": "Winds this strong can make driving difficult, especially for high\nprofile vehicles. Use extra caution.\n\nSecure outdoor objects.",
+            "response": "Execute",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "NPWIND"
+                ],
+                "WMOidentifier": [
+                    "WWUS73 KIND 131723"
+                ],
+                "NWSheadline": [
+                    "WIND ADVISORY IN EFFECT FROM 5 PM FRIDAY TO 4 PM EDT SATURDAY"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "VTEC": [
+                    "/O.NEW.KIND.WI.Y.0003.250314T2100Z-250315T2000Z/"
+                ],
+                "eventEndingTime": [
+                    "2025-03-15T20:00:00+00:00"
+                ]
+            }
+        }
+    },
+    {
         "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5822b57fc36b1b863092a3e3c3b4bb3e868ce255.001.1",
         "type": "Feature",
         "geometry": {
@@ -134,60 +1305,6 @@
                 ],
                 "eventEndingTime": [
                     "2025-03-13T17:45:00+00:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-35532",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-35532",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0-KEEPALIVE-35532",
-            "areaDesc": "Montgomery",
-            "geocode": {
-                "SAME": [
-                    "024031"
-                ],
-                "UGC": [
-                    "MDC031"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/county/MDC031"
-            ],
-            "references": [],
-            "sent": "2025-03-13T17:05:41+00:00",
-            "effective": "2025-03-13T17:05:41+00:00",
-            "onset": null,
-            "expires": "2025-03-13T17:15:41+00:00",
-            "ends": null,
-            "status": "Test",
-            "messageType": "Alert",
-            "category": "Met",
-            "severity": "Unknown",
-            "certainty": "Unknown",
-            "urgency": "Unknown",
-            "event": "Test Message",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS",
-            "headline": null,
-            "description": "Monitoring message only. Please disregard.",
-            "instruction": "Monitoring message only. Please disregard.",
-            "response": "None",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "KEPWBC"
-                ],
-                "WMOidentifier": [
-                    "NZUS91 KWBC 131705"
-                ],
-                "BLOCKCHANNEL": [
-                    "CMAS",
-                    "EAS",
-                    "NWEM"
                 ]
             }
         }
@@ -2448,508 +3565,6 @@
                 ],
                 "expiredReferences": [
                     "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.cca169f32f29fadc037e3abaf118ea8d4880c22e.002.1,2025-03-13T03:25:00-05:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.697b739a723390129fa80fded23145d3ef2512ec.002.2",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.697b739a723390129fa80fded23145d3ef2512ec.002.2",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.697b739a723390129fa80fded23145d3ef2512ec.002.2",
-            "areaDesc": "Del Norte Interior; Northern Humboldt Interior",
-            "geocode": {
-                "SAME": [
-                    "006015",
-                    "006023"
-                ],
-                "UGC": [
-                    "CAZ102",
-                    "CAZ105"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/CAZ102",
-                "https://api.weather.gov/zones/forecast/CAZ105"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4db6a2f25f64a8dfa0238382db1ec8794ec02f9a.001.2",
-                    "identifier": "urn:oid:2.49.0.1.840.0.4db6a2f25f64a8dfa0238382db1ec8794ec02f9a.001.2",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-13T03:33:00-07:00"
-                },
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6df314a19f650a260fbc918d19c845f52a11e4f6.004.2",
-                    "identifier": "urn:oid:2.49.0.1.840.0.6df314a19f650a260fbc918d19c845f52a11e4f6.004.2",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-13T08:35:43-07:00"
-                }
-            ],
-            "sent": "2025-03-13T09:22:00-07:00",
-            "effective": "2025-03-13T09:22:00-07:00",
-            "onset": "2025-03-13T23:00:00-07:00",
-            "expires": "2025-03-13T17:30:00-07:00",
-            "ends": "2025-03-14T23:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "event": "Winter Storm Watch",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Eureka CA",
-            "headline": "Winter Storm Watch issued March 13 at 9:22AM PDT until March 14 at 11:00PM PDT by NWS Eureka CA",
-            "description": "* WHAT...For the Winter Weather Advisory ABOVE 2000 FEET, snow.\nAdditional snow accumulations up to one inch. For the Winter Storm\nWatch ABOVE 2500 FEET, heavy snow possible. Total snow\naccumulations up to 4 inches possible. Winds could gust as high as\n50 mph.\n\n* WHERE...Del Norte Interior and Northern Humboldt Interior.\n\n* WHEN...For the Winter Weather Advisory, until 5 PM PDT this\nafternoon. For the Winter Storm Watch, from this evening through\nFriday evening.\n\n* IMPACTS...Travel could be very difficult. Tire chains may be\nnecessary if travelling through mountain passes. Gusty winds could\nbring down tree branches.",
-            "instruction": "Slow down and use caution while traveling. The latest road\nconditions for the state you are calling from can be obtained by\ncalling 5 1 1.\n\nMonitor the latest forecasts for updates on this situation.",
-            "response": "Prepare",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "WSWEKA"
-                ],
-                "WMOidentifier": [
-                    "WWUS46 KEKA 131622"
-                ],
-                "NWSheadline": [
-                    "WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 PM PDT THIS AFTERNOON ABOVE 2000 FEET... ...WINTER STORM WATCH REMAINS IN EFFECT FROM THIS EVENING THROUGH FRIDAY EVENING ABOVE 2500 FEET"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "EAS-ORG": [
-                    "WXR"
-                ],
-                "VTEC": [
-                    "/O.CON.KEKA.WS.A.0006.250314T0600Z-250315T0600Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-15T06:00:00+00:00"
-                ],
-                "expiredReferences": [
-                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.3457cfb3bf9506d27db0faa2b32fe974fd18d870.002.2,2025-03-12T19:47:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.222195e9fd9219f07df2c8f1d8809b302422f03f.005.1,2025-03-12T13:40:00-07:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.697b739a723390129fa80fded23145d3ef2512ec.005.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.697b739a723390129fa80fded23145d3ef2512ec.005.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.697b739a723390129fa80fded23145d3ef2512ec.005.1",
-            "areaDesc": "Northwestern Mendocino Interior; Southern Lake County",
-            "geocode": {
-                "SAME": [
-                    "006045",
-                    "006033"
-                ],
-                "UGC": [
-                    "CAZ110",
-                    "CAZ115"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/CAZ110",
-                "https://api.weather.gov/zones/forecast/CAZ115"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4db6a2f25f64a8dfa0238382db1ec8794ec02f9a.003.2",
-                    "identifier": "urn:oid:2.49.0.1.840.0.4db6a2f25f64a8dfa0238382db1ec8794ec02f9a.003.2",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-13T03:33:00-07:00"
-                },
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6df314a19f650a260fbc918d19c845f52a11e4f6.001.2",
-                    "identifier": "urn:oid:2.49.0.1.840.0.6df314a19f650a260fbc918d19c845f52a11e4f6.001.2",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-13T08:35:43-07:00"
-                }
-            ],
-            "sent": "2025-03-13T09:22:00-07:00",
-            "effective": "2025-03-13T09:22:00-07:00",
-            "onset": "2025-03-14T05:00:00-07:00",
-            "expires": "2025-03-13T17:30:00-07:00",
-            "ends": "2025-03-14T13:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "event": "Winter Storm Watch",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Eureka CA",
-            "headline": "Winter Storm Watch issued March 13 at 9:22AM PDT until March 14 at 1:00PM PDT by NWS Eureka CA",
-            "description": "* WHAT...Heavy wet snow possible. Total snow accumulations 2 to 5\ninches possible. Winds could gust as high as 45 mph.\n\n* WHERE...Northwestern Mendocino Interior and Southern Lake.\n\n* WHEN...From late tonight through Friday afternoon.\n\n* IMPACTS...Plan on slippery road conditions. The hazardous\nconditions could impact the Friday morning commute. Gusty winds\ncould bring down tree branches.",
-            "instruction": "Monitor the latest forecasts for updates on this situation.",
-            "response": "Prepare",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "WSWEKA"
-                ],
-                "WMOidentifier": [
-                    "WWUS46 KEKA 131622"
-                ],
-                "NWSheadline": [
-                    "WINTER STORM WATCH REMAINS IN EFFECT FROM LATE TONIGHT THROUGH FRIDAY AFTERNOON"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "EAS-ORG": [
-                    "WXR"
-                ],
-                "VTEC": [
-                    "/O.CON.KEKA.WS.A.0006.250314T1200Z-250314T2000Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-14T20:00:00+00:00"
-                ],
-                "expiredReferences": [
-                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.3457cfb3bf9506d27db0faa2b32fe974fd18d870.003.2,2025-03-12T19:47:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.222195e9fd9219f07df2c8f1d8809b302422f03f.002.1,2025-03-12T13:40:00-07:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.697b739a723390129fa80fded23145d3ef2512ec.004.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.697b739a723390129fa80fded23145d3ef2512ec.004.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.697b739a723390129fa80fded23145d3ef2512ec.004.1",
-            "areaDesc": "Northeastern Mendocino Interior; Northern Lake County",
-            "geocode": {
-                "SAME": [
-                    "006045",
-                    "006033"
-                ],
-                "UGC": [
-                    "CAZ111",
-                    "CAZ114"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/CAZ111",
-                "https://api.weather.gov/zones/forecast/CAZ114"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4db6a2f25f64a8dfa0238382db1ec8794ec02f9a.004.2",
-                    "identifier": "urn:oid:2.49.0.1.840.0.4db6a2f25f64a8dfa0238382db1ec8794ec02f9a.004.2",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-13T03:33:00-07:00"
-                },
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6df314a19f650a260fbc918d19c845f52a11e4f6.002.2",
-                    "identifier": "urn:oid:2.49.0.1.840.0.6df314a19f650a260fbc918d19c845f52a11e4f6.002.2",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-13T08:35:43-07:00"
-                }
-            ],
-            "sent": "2025-03-13T09:22:00-07:00",
-            "effective": "2025-03-13T09:22:00-07:00",
-            "onset": "2025-03-13T23:00:00-07:00",
-            "expires": "2025-03-13T17:30:00-07:00",
-            "ends": "2025-03-14T23:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "event": "Winter Storm Watch",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Eureka CA",
-            "headline": "Winter Storm Watch issued March 13 at 9:22AM PDT until March 14 at 11:00PM PDT by NWS Eureka CA",
-            "description": "* WHAT...Heavy snow possible. Total snow accumulations 2 to 5 inches\npossible. Winds could gust as high as 45 mph.\n\n* WHERE...Northeastern Mendocino Interior and Northern Lake.\n\n* WHEN...From this evening through Friday evening.\n\n* IMPACTS...Travel could be very difficult. Gusty winds could bring\ndown tree branches.",
-            "instruction": "Monitor the latest forecasts for updates on this situation.",
-            "response": "Prepare",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "WSWEKA"
-                ],
-                "WMOidentifier": [
-                    "WWUS46 KEKA 131622"
-                ],
-                "NWSheadline": [
-                    "WINTER STORM WATCH REMAINS IN EFFECT FROM THIS EVENING THROUGH FRIDAY EVENING"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "EAS-ORG": [
-                    "WXR"
-                ],
-                "VTEC": [
-                    "/O.CON.KEKA.WS.A.0006.250314T0600Z-250315T0600Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-15T06:00:00+00:00"
-                ],
-                "expiredReferences": [
-                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.3457cfb3bf9506d27db0faa2b32fe974fd18d870.004.2,2025-03-12T19:47:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.222195e9fd9219f07df2c8f1d8809b302422f03f.003.1,2025-03-12T13:40:00-07:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.697b739a723390129fa80fded23145d3ef2512ec.003.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.697b739a723390129fa80fded23145d3ef2512ec.003.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.697b739a723390129fa80fded23145d3ef2512ec.003.1",
-            "areaDesc": "Northern Trinity; Southern Trinity",
-            "geocode": {
-                "SAME": [
-                    "006105"
-                ],
-                "UGC": [
-                    "CAZ107",
-                    "CAZ108"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/CAZ107",
-                "https://api.weather.gov/zones/forecast/CAZ108"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4db6a2f25f64a8dfa0238382db1ec8794ec02f9a.002.1",
-                    "identifier": "urn:oid:2.49.0.1.840.0.4db6a2f25f64a8dfa0238382db1ec8794ec02f9a.002.1",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-13T03:33:00-07:00"
-                },
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6df314a19f650a260fbc918d19c845f52a11e4f6.005.1",
-                    "identifier": "urn:oid:2.49.0.1.840.0.6df314a19f650a260fbc918d19c845f52a11e4f6.005.1",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-13T08:35:43-07:00"
-                }
-            ],
-            "sent": "2025-03-13T09:22:00-07:00",
-            "effective": "2025-03-13T09:22:00-07:00",
-            "onset": "2025-03-13T09:22:00-07:00",
-            "expires": "2025-03-13T17:30:00-07:00",
-            "ends": "2025-03-13T17:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "Winter Weather Advisory",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Eureka CA",
-            "headline": "Winter Weather Advisory issued March 13 at 9:22AM PDT until March 13 at 5:00PM PDT by NWS Eureka CA",
-            "description": "* WHAT...For the Winter Weather Advisory, snow. Additional snow\naccumulations up to one inch. For the Winter Storm Watch, heavy\nsnow possible. Total snow accumulations between 1 and 9 inches\npossible. Winds could gust as high as 35 mph.\n\n* WHERE...Trinity County.\n\n* WHEN...For the Winter Weather Advisory, until 5 PM PDT this\nafternoon. For the Winter Storm Watch, from late tonight through\nFriday evening.\n\n* IMPACTS...Roads, and especially bridges and overpasses, will\nlikely become slick and hazardous. Travel could be very difficult.\n\n* ADDITIONAL DETAILS...Snow levels are expected to fall to 1500 feet\nby this morning with 1 to 3 inches of accumulations expected.",
-            "instruction": "Slow down and use caution while traveling. The latest road\nconditions for the state you are calling from can be obtained by\ncalling 5 1 1.\n\nPersons are urged to stay indoors until conditions improve. If you\nmust go outside, dress in layers. Several layers of clothes will\nkeep you warmer than a single heavy coat. Cover exposed skin to\nreduce your risk of frostbite or hypothermia. Gloves, a scarf, and a\nhat will keep you from losing your body heat.\n\nBe prepared for slippery roads. Slow down and use caution while\ndriving. If you are going outside, watch your first few steps taken\non stairs, sidewalks, and driveways. These surfaces could be icy and\nslippery, increasing your risk of a fall and injury.\n\nMonitor the latest forecasts for updates on this situation.",
-            "response": "Execute",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "WSWEKA"
-                ],
-                "WMOidentifier": [
-                    "WWUS46 KEKA 131622"
-                ],
-                "NWSheadline": [
-                    "WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 PM PDT THIS AFTERNOON... ...WINTER STORM WATCH REMAINS IN EFFECT FROM LATE TONIGHT THROUGH FRIDAY EVENING"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.CON.KEKA.WW.Y.0005.000000T0000Z-250314T0000Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-14T00:00:00+00:00"
-                ],
-                "expiredReferences": [
-                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.3457cfb3bf9506d27db0faa2b32fe974fd18d870.001.2,2025-03-12T19:47:00-07:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.697b739a723390129fa80fded23145d3ef2512ec.003.2",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.697b739a723390129fa80fded23145d3ef2512ec.003.2",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.697b739a723390129fa80fded23145d3ef2512ec.003.2",
-            "areaDesc": "Northern Trinity; Southern Trinity",
-            "geocode": {
-                "SAME": [
-                    "006105"
-                ],
-                "UGC": [
-                    "CAZ107",
-                    "CAZ108"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/CAZ107",
-                "https://api.weather.gov/zones/forecast/CAZ108"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4db6a2f25f64a8dfa0238382db1ec8794ec02f9a.002.2",
-                    "identifier": "urn:oid:2.49.0.1.840.0.4db6a2f25f64a8dfa0238382db1ec8794ec02f9a.002.2",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-13T03:33:00-07:00"
-                },
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6df314a19f650a260fbc918d19c845f52a11e4f6.005.2",
-                    "identifier": "urn:oid:2.49.0.1.840.0.6df314a19f650a260fbc918d19c845f52a11e4f6.005.2",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-13T08:35:43-07:00"
-                }
-            ],
-            "sent": "2025-03-13T09:22:00-07:00",
-            "effective": "2025-03-13T09:22:00-07:00",
-            "onset": "2025-03-14T01:00:00-07:00",
-            "expires": "2025-03-13T17:30:00-07:00",
-            "ends": "2025-03-14T23:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "event": "Winter Storm Watch",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Eureka CA",
-            "headline": "Winter Storm Watch issued March 13 at 9:22AM PDT until March 14 at 11:00PM PDT by NWS Eureka CA",
-            "description": "* WHAT...For the Winter Weather Advisory, snow. Additional snow\naccumulations up to one inch. For the Winter Storm Watch, heavy\nsnow possible. Total snow accumulations between 1 and 9 inches\npossible. Winds could gust as high as 35 mph.\n\n* WHERE...Trinity County.\n\n* WHEN...For the Winter Weather Advisory, until 5 PM PDT this\nafternoon. For the Winter Storm Watch, from late tonight through\nFriday evening.\n\n* IMPACTS...Roads, and especially bridges and overpasses, will\nlikely become slick and hazardous. Travel could be very difficult.\n\n* ADDITIONAL DETAILS...Snow levels are expected to fall to 1500 feet\nby this morning with 1 to 3 inches of accumulations expected.",
-            "instruction": "Slow down and use caution while traveling. The latest road\nconditions for the state you are calling from can be obtained by\ncalling 5 1 1.\n\nPersons are urged to stay indoors until conditions improve. If you\nmust go outside, dress in layers. Several layers of clothes will\nkeep you warmer than a single heavy coat. Cover exposed skin to\nreduce your risk of frostbite or hypothermia. Gloves, a scarf, and a\nhat will keep you from losing your body heat.\n\nBe prepared for slippery roads. Slow down and use caution while\ndriving. If you are going outside, watch your first few steps taken\non stairs, sidewalks, and driveways. These surfaces could be icy and\nslippery, increasing your risk of a fall and injury.\n\nMonitor the latest forecasts for updates on this situation.",
-            "response": "Prepare",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "WSWEKA"
-                ],
-                "WMOidentifier": [
-                    "WWUS46 KEKA 131622"
-                ],
-                "NWSheadline": [
-                    "WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 PM PDT THIS AFTERNOON... ...WINTER STORM WATCH REMAINS IN EFFECT FROM LATE TONIGHT THROUGH FRIDAY EVENING"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "EAS-ORG": [
-                    "WXR"
-                ],
-                "VTEC": [
-                    "/O.CON.KEKA.WS.A.0006.250314T0800Z-250315T0600Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-15T06:00:00+00:00"
-                ],
-                "expiredReferences": [
-                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.3457cfb3bf9506d27db0faa2b32fe974fd18d870.001.3,2025-03-12T19:47:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.222195e9fd9219f07df2c8f1d8809b302422f03f.001.1,2025-03-12T13:40:00-07:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.697b739a723390129fa80fded23145d3ef2512ec.002.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.697b739a723390129fa80fded23145d3ef2512ec.002.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.697b739a723390129fa80fded23145d3ef2512ec.002.1",
-            "areaDesc": "Del Norte Interior; Northern Humboldt Interior",
-            "geocode": {
-                "SAME": [
-                    "006015",
-                    "006023"
-                ],
-                "UGC": [
-                    "CAZ102",
-                    "CAZ105"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/forecast/CAZ102",
-                "https://api.weather.gov/zones/forecast/CAZ105"
-            ],
-            "references": [
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4db6a2f25f64a8dfa0238382db1ec8794ec02f9a.001.1",
-                    "identifier": "urn:oid:2.49.0.1.840.0.4db6a2f25f64a8dfa0238382db1ec8794ec02f9a.001.1",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-13T03:33:00-07:00"
-                },
-                {
-                    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6df314a19f650a260fbc918d19c845f52a11e4f6.004.1",
-                    "identifier": "urn:oid:2.49.0.1.840.0.6df314a19f650a260fbc918d19c845f52a11e4f6.004.1",
-                    "sender": "w-nws.webmaster@noaa.gov",
-                    "sent": "2025-03-13T08:35:43-07:00"
-                }
-            ],
-            "sent": "2025-03-13T09:22:00-07:00",
-            "effective": "2025-03-13T09:22:00-07:00",
-            "onset": "2025-03-13T09:22:00-07:00",
-            "expires": "2025-03-13T17:30:00-07:00",
-            "ends": "2025-03-13T17:00:00-07:00",
-            "status": "Actual",
-            "messageType": "Update",
-            "category": "Met",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "event": "Winter Weather Advisory",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Eureka CA",
-            "headline": "Winter Weather Advisory issued March 13 at 9:22AM PDT until March 13 at 5:00PM PDT by NWS Eureka CA",
-            "description": "* WHAT...For the Winter Weather Advisory ABOVE 2000 FEET, snow.\nAdditional snow accumulations up to one inch. For the Winter Storm\nWatch ABOVE 2500 FEET, heavy snow possible. Total snow\naccumulations up to 4 inches possible. Winds could gust as high as\n50 mph.\n\n* WHERE...Del Norte Interior and Northern Humboldt Interior.\n\n* WHEN...For the Winter Weather Advisory, until 5 PM PDT this\nafternoon. For the Winter Storm Watch, from this evening through\nFriday evening.\n\n* IMPACTS...Travel could be very difficult. Tire chains may be\nnecessary if travelling through mountain passes. Gusty winds could\nbring down tree branches.",
-            "instruction": "Slow down and use caution while traveling. The latest road\nconditions for the state you are calling from can be obtained by\ncalling 5 1 1.\n\nMonitor the latest forecasts for updates on this situation.",
-            "response": "Execute",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "WSWEKA"
-                ],
-                "WMOidentifier": [
-                    "WWUS46 KEKA 131622"
-                ],
-                "NWSheadline": [
-                    "WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 PM PDT THIS AFTERNOON ABOVE 2000 FEET... ...WINTER STORM WATCH REMAINS IN EFFECT FROM THIS EVENING THROUGH FRIDAY EVENING ABOVE 2500 FEET"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.CON.KEKA.WW.Y.0005.000000T0000Z-250314T0000Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-14T00:00:00+00:00"
-                ],
-                "expiredReferences": [
-                    "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.3457cfb3bf9506d27db0faa2b32fe974fd18d870.002.1,2025-03-12T19:47:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.222195e9fd9219f07df2c8f1d8809b302422f03f.005.2,2025-03-12T13:40:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.43e0f8cd33b8897ff0af5b20067b6ee574415667.002.1,2025-03-12T12:07:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.20c9c29894afc5d520900bfc448015164378f6d1.002.1,2025-03-12T04:11:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.7bea102a8e52276b079d26776905602fa7ca7daa.002.1,2025-03-11T21:00:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.84c70862516081e2a2633be8de522fb80a5c61ff.002.2,2025-03-11T13:02:00-07:00"
                 ]
             }
         }
@@ -16973,83 +17588,6 @@
                 ],
                 "eventEndingTime": [
                     "2025-03-15T15:00:00+00:00"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1ccd4ed358d45669336d62144c96ed68aec8ad04.001.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1ccd4ed358d45669336d62144c96ed68aec8ad04.001.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.1ccd4ed358d45669336d62144c96ed68aec8ad04.001.1",
-            "areaDesc": "Pine Ridge/Nebraska National Forest; Box Butte/South Sioux/Niobrara River; Lower North Platte River Basin/Scottsbluff National Monument; Lodgepole Creek/Southern Nebraska Panhandle",
-            "geocode": {
-                "SAME": [
-                    "031045",
-                    "031165",
-                    "031013",
-                    "031123",
-                    "031157",
-                    "031007",
-                    "031033",
-                    "031105",
-                    "056015"
-                ],
-                "UGC": [
-                    "NEZ434",
-                    "NEZ435",
-                    "NEZ436",
-                    "NEZ437"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/fire/NEZ434",
-                "https://api.weather.gov/zones/fire/NEZ435",
-                "https://api.weather.gov/zones/fire/NEZ436",
-                "https://api.weather.gov/zones/fire/NEZ437"
-            ],
-            "references": [],
-            "sent": "2025-03-13T04:53:00-06:00",
-            "effective": "2025-03-13T04:53:00-06:00",
-            "onset": "2025-03-13T12:00:00-06:00",
-            "expires": "2025-03-13T18:00:00-06:00",
-            "ends": "2025-03-13T18:00:00-06:00",
-            "status": "Actual",
-            "messageType": "Alert",
-            "category": "Met",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "event": "Fire Weather Watch",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Cheyenne WY",
-            "headline": "Fire Weather Watch issued March 13 at 4:53AM MDT until March 13 at 6:00PM MDT by NWS Cheyenne WY",
-            "description": "...FIRE WEATHER WATCH IN EFFECT FROM 12 PM TO 6 PM FOR GUSTY WINDS\nAND LOW HUMIDITY FOR THE NEBRASKA PANHANDLE...\n\nThe National Weather Service in Cheyenne has issued a Fire\nWeather Watch, which is in effect from noon MDT today through\n6 PM MDT.\n\n* AFFECTED AREA...Fire weather zones 434, 435, 436, and 437.\n\n* WIND...South to southwest winds 10 to 20 mph with gusts 25 to 30\nmph expected.\n\n* HUMIDITY...Between 12 and 15 percent.\n\n* IMPACTS...any fires that develop will likely spread rapidly.\nOutdoor burning is not recommended.\n\n* ADDITIONAL DETAILS...Enhanced to potentially critical fire\nweather conditions are most likely expected for the eastern-\nmost portions of these zones.",
-            "instruction": "A Fire Weather Watch means that critical fire weather conditions\nare forecast to occur. Listen for later forecasts and possible\nRed Flag Warnings.",
-            "response": "Prepare",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "RFWCYS"
-                ],
-                "WMOidentifier": [
-                    "WWUS85 KCYS 131053"
-                ],
-                "NWSheadline": [
-                    "FIRE WEATHER WATCH IN EFFECT FROM NOON MDT TODAY THROUGH THIS AFTERNOON FOR GUSTY WINDS AND LOW HUMIDITY FOR FIRE WEATHER ZONES 434, 435, 436, AND 437"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.NEW.KCYS.FW.A.0001.250313T1800Z-250314T0000Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-14T00:00:00+00:00"
                 ]
             }
         }
@@ -33729,168 +34267,6 @@
         }
     },
     {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ef18c3870cdf414a4676e90783826ab6a466d470.001.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ef18c3870cdf414a4676e90783826ab6a466d470.001.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.ef18c3870cdf414a4676e90783826ab6a466d470.001.1",
-            "areaDesc": "Bourbon; Crawford; Cherokee; Benton; Morgan; Miller; Maries; Vernon; St. Clair; Hickory; Camden; Pulaski; Phelps; Barton; Cedar; Polk; Dallas; Laclede; Texas; Jasper; Dade; Greene; Webster; Wright; Newton; Lawrence; Christian; Douglas; Howell; McDonald; Barry; Stone; Taney; Ozark",
-            "geocode": {
-                "SAME": [
-                    "020011",
-                    "020037",
-                    "020021",
-                    "029015",
-                    "029141",
-                    "029131",
-                    "029125",
-                    "029217",
-                    "029185",
-                    "029085",
-                    "029029",
-                    "029169",
-                    "029161",
-                    "029011",
-                    "029039",
-                    "029167",
-                    "029059",
-                    "029105",
-                    "029215",
-                    "029097",
-                    "029057",
-                    "029077",
-                    "029225",
-                    "029229",
-                    "029145",
-                    "029109",
-                    "029043",
-                    "029067",
-                    "029091",
-                    "029119",
-                    "029009",
-                    "029209",
-                    "029213",
-                    "029153"
-                ],
-                "UGC": [
-                    "KSZ073",
-                    "KSZ097",
-                    "KSZ101",
-                    "MOZ055",
-                    "MOZ056",
-                    "MOZ057",
-                    "MOZ058",
-                    "MOZ066",
-                    "MOZ067",
-                    "MOZ068",
-                    "MOZ069",
-                    "MOZ070",
-                    "MOZ071",
-                    "MOZ077",
-                    "MOZ078",
-                    "MOZ079",
-                    "MOZ080",
-                    "MOZ081",
-                    "MOZ082",
-                    "MOZ088",
-                    "MOZ089",
-                    "MOZ090",
-                    "MOZ091",
-                    "MOZ092",
-                    "MOZ093",
-                    "MOZ094",
-                    "MOZ095",
-                    "MOZ096",
-                    "MOZ097",
-                    "MOZ101",
-                    "MOZ102",
-                    "MOZ103",
-                    "MOZ104",
-                    "MOZ105"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/fire/KSZ073",
-                "https://api.weather.gov/zones/fire/KSZ097",
-                "https://api.weather.gov/zones/fire/KSZ101",
-                "https://api.weather.gov/zones/fire/MOZ055",
-                "https://api.weather.gov/zones/fire/MOZ056",
-                "https://api.weather.gov/zones/fire/MOZ057",
-                "https://api.weather.gov/zones/fire/MOZ058",
-                "https://api.weather.gov/zones/fire/MOZ066",
-                "https://api.weather.gov/zones/fire/MOZ067",
-                "https://api.weather.gov/zones/fire/MOZ068",
-                "https://api.weather.gov/zones/fire/MOZ069",
-                "https://api.weather.gov/zones/fire/MOZ070",
-                "https://api.weather.gov/zones/fire/MOZ071",
-                "https://api.weather.gov/zones/fire/MOZ077",
-                "https://api.weather.gov/zones/fire/MOZ078",
-                "https://api.weather.gov/zones/fire/MOZ079",
-                "https://api.weather.gov/zones/fire/MOZ080",
-                "https://api.weather.gov/zones/fire/MOZ081",
-                "https://api.weather.gov/zones/fire/MOZ082",
-                "https://api.weather.gov/zones/fire/MOZ088",
-                "https://api.weather.gov/zones/fire/MOZ089",
-                "https://api.weather.gov/zones/fire/MOZ090",
-                "https://api.weather.gov/zones/fire/MOZ091",
-                "https://api.weather.gov/zones/fire/MOZ092",
-                "https://api.weather.gov/zones/fire/MOZ093",
-                "https://api.weather.gov/zones/fire/MOZ094",
-                "https://api.weather.gov/zones/fire/MOZ095",
-                "https://api.weather.gov/zones/fire/MOZ096",
-                "https://api.weather.gov/zones/fire/MOZ097",
-                "https://api.weather.gov/zones/fire/MOZ101",
-                "https://api.weather.gov/zones/fire/MOZ102",
-                "https://api.weather.gov/zones/fire/MOZ103",
-                "https://api.weather.gov/zones/fire/MOZ104",
-                "https://api.weather.gov/zones/fire/MOZ105"
-            ],
-            "references": [],
-            "sent": "2025-03-13T01:46:51-05:00",
-            "effective": "2025-03-13T01:41:00-05:00",
-            "onset": "2025-03-14T10:00:00-05:00",
-            "expires": "2025-03-13T09:45:00-05:00",
-            "ends": "2025-03-15T01:00:00-05:00",
-            "status": "Actual",
-            "messageType": "Alert",
-            "category": "Met",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "event": "Fire Weather Watch",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Springfield MO",
-            "headline": "Fire Weather Watch issued March 13 at 1:41AM CDT until March 15 at 1:00AM CDT by NWS Springfield MO",
-            "description": "The National Weather Service in Springfield has issued a Fire\nWeather Watch, which is in effect from Friday morning through\nlate Friday night.\n\n* AFFECTED AREA...Fire Weather Zone 055 Benton, Fire Weather\nZone 056 Morgan, Fire Weather Zone 057 Miller, Fire Weather\nZone 058 Maries, Fire Weather Zone 066 Vernon, Fire Weather\nZone 067 St. Clair, Fire Weather Zone 068 Hickory, Fire\nWeather Zone 069 Camden, Fire Weather Zone 070 Pulaski, Fire\nWeather Zone 071 Phelps, Fire Weather Zone 073 Bourbon, Fire\nWeather Zone 077 Barton, Fire Weather Zone 078 Cedar, Fire\nWeather Zone 079 Polk, Fire Weather Zone 080 Dallas, Fire\nWeather Zone 081 Laclede, Fire Weather Zone 082 Texas, Fire\nWeather Zone 088 Jasper, Fire Weather Zone 089 Dade, Fire\nWeather Zone 090 Greene, Fire Weather Zone 091 Webster, Fire\nWeather Zone 092 Wright, Fire Weather Zone 093 Newton, Fire\nWeather Zone 094 Lawrence, Fire Weather Zone 095 Christian,\nFire Weather Zone 096 Douglas, Fire Weather Zone 097 Crawford,\nFire Weather Zone 097 Howell, Fire Weather Zone 101 Cherokee,\nFire Weather Zone 101 McDonald, Fire Weather Zone 102 Barry,\nFire Weather Zone 103 Stone, Fire Weather Zone 104 Taney and\nFire Weather Zone 105 Ozark.\n\n* TIMING...From Friday morning through late Friday night.\n\n* WINDS...South 25 to 35 mph with gusts up to 60 mph.\n\n* RELATIVE HUMIDITY...As low as 15-25 percent.\n\n* TEMPERATURES...Up to 78.\n\n* LIGHTNING...Isolated to scattered thunderstorms are possible,\nespecially further east, on Friday evening.\n\n* IMPACTS...Any fire that develops will catch and spread\nquickly. Outdoor burning is not recommended.",
-            "instruction": "A Fire Weather Watch means that critical fire weather conditions\nare forecast to occur. Listen for later forecasts and possible\nRed Flag Warnings.",
-            "response": "Prepare",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "RFWSGF"
-                ],
-                "WMOidentifier": [
-                    "WWUS83 KSGF 130641"
-                ],
-                "NWSheadline": [
-                    "FIRE WEATHER WATCH IN EFFECT FROM FRIDAY MORNING THROUGH LATE FRIDAY NIGHT FOR VERY STRONG WINDS AND DRY CONDITIONS FOR PORTIONS OF SOUTHEAST KANSAS AND SOUTHWEST MISSOURI"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.NEW.KSGF.FW.A.0001.250314T1500Z-250315T0600Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-15T06:00:00+00:00"
-                ]
-            }
-        }
-    },
-    {
         "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5bf520ad1e4f48599ff16cb81d139cccf5338c4f.001.1",
         "type": "Feature",
         "geometry": null,
@@ -33946,168 +34322,6 @@
                 ],
                 "EAS-ORG": [
                     "WXR"
-                ]
-            }
-        }
-    },
-    {
-        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4dcf0a876bc51c0acef2a1c6060fed64e4e450bb.001.1",
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4dcf0a876bc51c0acef2a1c6060fed64e4e450bb.001.1",
-            "@type": "wx:Alert",
-            "id": "urn:oid:2.49.0.1.840.0.4dcf0a876bc51c0acef2a1c6060fed64e4e450bb.001.1",
-            "areaDesc": "Bourbon; Crawford; Cherokee; Benton; Morgan; Miller; Maries; Vernon; St. Clair; Hickory; Camden; Pulaski; Phelps; Barton; Cedar; Polk; Dallas; Laclede; Texas; Jasper; Dade; Greene; Webster; Wright; Newton; Lawrence; Christian; Douglas; Howell; McDonald; Barry; Stone; Taney; Ozark",
-            "geocode": {
-                "SAME": [
-                    "020011",
-                    "020037",
-                    "020021",
-                    "029015",
-                    "029141",
-                    "029131",
-                    "029125",
-                    "029217",
-                    "029185",
-                    "029085",
-                    "029029",
-                    "029169",
-                    "029161",
-                    "029011",
-                    "029039",
-                    "029167",
-                    "029059",
-                    "029105",
-                    "029215",
-                    "029097",
-                    "029057",
-                    "029077",
-                    "029225",
-                    "029229",
-                    "029145",
-                    "029109",
-                    "029043",
-                    "029067",
-                    "029091",
-                    "029119",
-                    "029009",
-                    "029209",
-                    "029213",
-                    "029153"
-                ],
-                "UGC": [
-                    "KSZ073",
-                    "KSZ097",
-                    "KSZ101",
-                    "MOZ055",
-                    "MOZ056",
-                    "MOZ057",
-                    "MOZ058",
-                    "MOZ066",
-                    "MOZ067",
-                    "MOZ068",
-                    "MOZ069",
-                    "MOZ070",
-                    "MOZ071",
-                    "MOZ077",
-                    "MOZ078",
-                    "MOZ079",
-                    "MOZ080",
-                    "MOZ081",
-                    "MOZ082",
-                    "MOZ088",
-                    "MOZ089",
-                    "MOZ090",
-                    "MOZ091",
-                    "MOZ092",
-                    "MOZ093",
-                    "MOZ094",
-                    "MOZ095",
-                    "MOZ096",
-                    "MOZ097",
-                    "MOZ101",
-                    "MOZ102",
-                    "MOZ103",
-                    "MOZ104",
-                    "MOZ105"
-                ]
-            },
-            "affectedZones": [
-                "https://api.weather.gov/zones/fire/KSZ073",
-                "https://api.weather.gov/zones/fire/KSZ097",
-                "https://api.weather.gov/zones/fire/KSZ101",
-                "https://api.weather.gov/zones/fire/MOZ055",
-                "https://api.weather.gov/zones/fire/MOZ056",
-                "https://api.weather.gov/zones/fire/MOZ057",
-                "https://api.weather.gov/zones/fire/MOZ058",
-                "https://api.weather.gov/zones/fire/MOZ066",
-                "https://api.weather.gov/zones/fire/MOZ067",
-                "https://api.weather.gov/zones/fire/MOZ068",
-                "https://api.weather.gov/zones/fire/MOZ069",
-                "https://api.weather.gov/zones/fire/MOZ070",
-                "https://api.weather.gov/zones/fire/MOZ071",
-                "https://api.weather.gov/zones/fire/MOZ077",
-                "https://api.weather.gov/zones/fire/MOZ078",
-                "https://api.weather.gov/zones/fire/MOZ079",
-                "https://api.weather.gov/zones/fire/MOZ080",
-                "https://api.weather.gov/zones/fire/MOZ081",
-                "https://api.weather.gov/zones/fire/MOZ082",
-                "https://api.weather.gov/zones/fire/MOZ088",
-                "https://api.weather.gov/zones/fire/MOZ089",
-                "https://api.weather.gov/zones/fire/MOZ090",
-                "https://api.weather.gov/zones/fire/MOZ091",
-                "https://api.weather.gov/zones/fire/MOZ092",
-                "https://api.weather.gov/zones/fire/MOZ093",
-                "https://api.weather.gov/zones/fire/MOZ094",
-                "https://api.weather.gov/zones/fire/MOZ095",
-                "https://api.weather.gov/zones/fire/MOZ096",
-                "https://api.weather.gov/zones/fire/MOZ097",
-                "https://api.weather.gov/zones/fire/MOZ101",
-                "https://api.weather.gov/zones/fire/MOZ102",
-                "https://api.weather.gov/zones/fire/MOZ103",
-                "https://api.weather.gov/zones/fire/MOZ104",
-                "https://api.weather.gov/zones/fire/MOZ105"
-            ],
-            "references": [],
-            "sent": "2025-03-13T01:41:00-05:00",
-            "effective": "2025-03-13T01:41:00-05:00",
-            "onset": "2025-03-14T10:00:00-05:00",
-            "expires": "2025-03-13T09:45:00-05:00",
-            "ends": "2025-03-15T01:00:00-05:00",
-            "status": "Actual",
-            "messageType": "Alert",
-            "category": "Met",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "event": "Fire Weather Watch",
-            "sender": "w-nws.webmaster@noaa.gov",
-            "senderName": "NWS Springfield MO",
-            "headline": "Fire Weather Watch issued March 13 at 1:41AM CDT until March 15 at 1:00AM CDT by NWS Springfield MO",
-            "description": "The National Weather Service in Springfield has issued a Fire\nWeather Watch, which is in effect from Friday morning through\nlate Friday night.\n\n* AFFECTED AREA...Fire Weather Zone 055 Benton, Fire Weather\nZone 056 Morgan, Fire Weather Zone 057 Miller, Fire Weather\nZone 058 Maries, Fire Weather Zone 066 Vernon, Fire Weather\nZone 067 St. Clair, Fire Weather Zone 068 Hickory, Fire\nWeather Zone 069 Camden, Fire Weather Zone 070 Pulaski, Fire\nWeather Zone 071 Phelps, Fire Weather Zone 073 Bourbon, Fire\nWeather Zone 077 Barton, Fire Weather Zone 078 Cedar, Fire\nWeather Zone 079 Polk, Fire Weather Zone 080 Dallas, Fire\nWeather Zone 081 Laclede, Fire Weather Zone 082 Texas, Fire\nWeather Zone 088 Jasper, Fire Weather Zone 089 Dade, Fire\nWeather Zone 090 Greene, Fire Weather Zone 091 Webster, Fire\nWeather Zone 092 Wright, Fire Weather Zone 093 Newton, Fire\nWeather Zone 094 Lawrence, Fire Weather Zone 095 Christian,\nFire Weather Zone 096 Douglas, Fire Weather Zone 097 Crawford,\nFire Weather Zone 097 Howell, Fire Weather Zone 101 Cherokee,\nFire Weather Zone 101 McDonald, Fire Weather Zone 102 Barry,\nFire Weather Zone 103 Stone, Fire Weather Zone 104 Taney and\nFire Weather Zone 105 Ozark.\n\n* TIMING...From Friday morning through late Friday night.\n\n* WINDS...South 25 to 35 mph with gusts up to 60 mph.\n\n* RELATIVE HUMIDITY...As low as 15-25 percent.\n\n* TEMPERATURES...Up to 78.\n\n* LIGHTNING...Isolated to scattered thunderstorms are possible,\nespecially further east, on Friday evening.\n\n* IMPACTS...Any fire that develops will catch and spread\nquickly. Outdoor burning is not recommended.",
-            "instruction": "A Fire Weather Watch means that critical fire weather conditions\nare forecast to occur. Listen for later forecasts and possible\nRed Flag Warnings.",
-            "response": "Prepare",
-            "parameters": {
-                "AWIPSidentifier": [
-                    "RFWSGF"
-                ],
-                "WMOidentifier": [
-                    "WWUS83 KSGF 130641"
-                ],
-                "NWSheadline": [
-                    "FIRE WEATHER WATCH IN EFFECT FROM FRIDAY MORNING THROUGH LATE FRIDAY NIGHT FOR VERY STRONG WINDS AND DRY CONDITIONS FOR PORTIONS OF SOUTHEAST KANSAS AND SOUTHWEST MISSOURI"
-                ],
-                "BLOCKCHANNEL": [
-                    "EAS",
-                    "NWEM",
-                    "CMAS"
-                ],
-                "VTEC": [
-                    "/O.NEW.KSGF.FW.A.0001.250314T1500Z-250315T0600Z/"
-                ],
-                "eventEndingTime": [
-                    "2025-03-15T06:00:00+00:00"
                 ]
             }
         }
