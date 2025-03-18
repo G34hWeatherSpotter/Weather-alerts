@@ -6,41 +6,53 @@
     <title>Weather Alerts</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(to right, #74ebd5, #ACB6E5);
             color: #333;
             padding: 20px;
         }
         h1 {
             text-align: center;
+            color: #fff;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
         }
         #alerts {
             margin-top: 20px;
         }
         .alert {
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.8);
             border: 1px solid #ddd;
-            padding: 10px;
+            padding: 15px;
             margin-bottom: 10px;
-            border-radius: 5px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .alert-title {
             font-weight: bold;
             color: #d9534f;
+            cursor: pointer;
         }
         .alert.warning {
-            background-color: #ffcc00;
+            background-color: #fff3cd;
+            border-color: #ffeeba;
         }
         .alert.info {
-            background-color: #3399ff;
+            background-color: #d1ecf1;
+            border-color: #bee5eb;
         }
         .alert.success {
-            background-color: #66cc66;
+            background-color: #d4edda;
+            border-color: #c3e6cb;
         }
         .disclaimer {
             text-align: center;
-            color: red;
+            color: #fff;
             margin-top: 10px;
+            font-style: italic;
+        }
+        .alert-content {
+            display: none;
+            padding-top: 10px;
         }
     </style>
 </head>
@@ -75,7 +87,7 @@
                     document.getElementById('alerts').innerHTML = `
                         <div class="alert">
                             <div class="alert-title">Test Alert</div>
-                            <div>This is a sample weather alert.</div>
+                            <div class="alert-content">This is a sample weather alert.</div>
                         </div>
                     `;
                     return;
@@ -87,7 +99,7 @@
                     .map(alert => {
                         const parts = alert.split(':');
                         if (parts.length < 2) {
-                            return `<div class="alert"><div class="alert-title">Unknown Alert</div><div>${alert}</div></div>`;
+                            return `<div class="alert"><div class="alert-title">Unknown Alert</div><div class="alert-content">${alert}</div></div>`;
                         }
                         const alertTitle = parts[0].trim();
                         const alertMessage = parts.slice(1).join(':').trim();
@@ -102,8 +114,8 @@
                         }
                         
                         return `<div class="alert ${alertClass}">
-                            <div class="alert-title">${alertTitle}</div>
-                            <div>${alertMessage}</div>
+                            <div class="alert-title" onclick="toggleAlertContent(this)">${alertTitle}</div>
+                            <div class="alert-content">${alertMessage}</div>
                         </div>`;
                     })
                     .join('');
@@ -114,6 +126,11 @@
                 console.error('Error fetching alerts:', error);
                 document.getElementById('alerts').innerHTML = "<p style='color:red;'>Failed to load alerts. Please try again later.</p>";
             }
+        }
+
+        function toggleAlertContent(element) {
+            const content = element.nextElementSibling;
+            content.style.display = content.style.display === 'none' ? 'block' : 'none';
         }
 
         fetchAlerts();
