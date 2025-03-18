@@ -154,7 +154,7 @@
 
                     return `
                         <div class="alert ${alertClass}" id="alert-${index}">
-                            <div class="alert-title" onclick="toggleAlertContent(${index})">${title}</div>
+                            <div class="alert-title" onclick="toggleAlertContent(${index}, ${encodeURIComponent(JSON.stringify(alert))})">${title}</div>
                             <div class="alert-content" id="alert-content-${index}">
                                 <p><strong>Source:</strong> ${source}</p>
                                 <p><strong>Start:</strong> ${start}</p>
@@ -236,7 +236,7 @@
             });
 
             backupMap.on('load', () => {
-                alerts.forEach((alert, index) => {
+                alerts.forEach((alert) => {
                     const geometry = alert.geometry;
                     if (geometry && geometry.coordinates) {
                         const coordinates = geometry.coordinates[0].map(coord => [coord[0], coord[1]]);
@@ -272,9 +272,10 @@
             });
         }
 
-        function toggleAlertContent(index) {
+        function toggleAlertContent(index, alertData) {
             const content = document.getElementById(`alert-content-${index}`);
-            const alert = JSON.parse(document.querySelector(`#alert-${index} .alert-title`).getAttribute('onclick').match(/\{.+\}/)[0]);
+            const alert = JSON.parse(decodeURIComponent(alertData));
+
             if (content.style.display === 'none' || !content.style.display) {
                 content.style.display = 'block';
                 if (!maps[index]) {
@@ -316,7 +317,7 @@
             });
 
             fullScreenMap.on('load', () => {
-                const geometry = JSON.parse(document.querySelector(`#alert-${index} .alert-title`).getAttribute('onclick').match(/\{.+\}/)[0]).geometry;
+                const geometry = maps[index].getSource(`alert-${index}`)._data.geometry;
                 if (geometry && geometry.coordinates) {
                     const coordinates = geometry.coordinates[0].map(coord => [coord[0], coord[1]]);
                     fullScreenMap.addSource(`alert-${index}`, {
