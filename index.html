@@ -64,63 +64,51 @@
     <script>
         async function fetchAlerts() {
             try {
-                const response = await fetch('https://raw.githubusercontent.com/G34hWeatherSpotter/Weather-alerts/main/alerts.txt', { cache: "no-cache" });
+                const response = await fetch('https://api.weather.gov/alerts/active', { cache: "no-cache" });
 
                 // Check if response is ok
                 if (!response.ok) {
                     throw new Error(`HTTP error! Status: ${response.status}`);
                 }
 
-                // Log the response type to verify
-                console.log('Response type:', response.headers.get('Content-Type'));
+                // Parse the JSON response
+                const data = await response.json();
+                const alerts = data.features;
 
-                // If the response is text (not JSON), proceed
-                const text = await response.text();
-                
-                if (typeof text !== 'string') {
-                    throw new Error('Expected response text, but got something else');
-                }
-
-                const trimmedText = text.trim();
-                
-                if (!trimmedText) {
+                if (!alerts.length) {
                     document.getElementById('alerts').innerHTML = `
                         <div class="alert">
-                            <div class="alert-title">Test Alert</div>
-                            <div class="alert-content">This is a sample weather alert.</div>
+                            <div class="alert-title">No Active Alerts</div>
+                            <div class="alert-content">There are currently no active weather alerts.</div>
                         </div>
                     `;
                     return;
                 }
 
-                const alerts = trimmedText.split('\n')
-                    .map(line => line.trim())
-                    .filter(line => line !== '')
-                    .map(alert => {
-                        const parts = alert.split(':');
-                        if (parts.length < 2) {
-                            return `<div class="alert"><div class="alert-title">Unknown Alert</div><div class="alert-content">${alert}</div></div>`;
-                        }
-                        const alertTitle = parts[0].trim();
-                        const alertMessage = parts.slice(1).join(':').trim();
-                        
-                        let alertClass = '';
-                        if (alertTitle.includes('Warning')) {
-                            alertClass = 'warning';
-                        } else if (alertTitle.includes('Info')) {
-                            alertClass = 'info';
-                        } else if (alertTitle.includes('Success')) {
-                            alertClass = 'success';
-                        }
-                        
-                        return `<div class="alert ${alertClass}">
-                            <div class="alert-title" onclick="toggleAlertContent(this)">${alertTitle}</div>
-                            <div class="alert-content">${alertMessage}</div>
-                        </div>`;
-                    })
-                    .join('');
+                const alertsHTML = alerts.map(alert => {
+                    const properties = alert.properties;
+                    const title = properties.headline || "Unknown Alert";
+                    const description = properties.description || "No description available.";
+                    const severity = properties.severity || "Unknown";
+                    
+                    let alertClass = '';
+                    if (severity.includes('Warning')) {
+                        alertClass = 'warning';
+                    } else if (severity.includes('Watch')) {
+                        alertClass = 'info';
+                    } else if (severity.includes('Advisory')) {
+                        alertClass = 'success';
+                    }
 
-                document.getElementById('alerts').innerHTML = alerts;
+                    return `
+                        <div class="alert ${alertClass}">
+                            <div class="alert-title" onclick="toggleAlertContent(this)">${title}</div>
+                            <div class="alert-content">${description}</div>
+                        </div>
+                    `;
+                }).join('');
+
+                document.getElementById('alerts').innerHTML = alertsHTML;
 
             } catch (error) {
                 console.error('Error fetching alerts:', error);
