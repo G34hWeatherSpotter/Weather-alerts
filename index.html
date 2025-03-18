@@ -58,9 +58,9 @@
         .alert-content p {
             margin: 5px 0;
         }
-        #map {
-            height: 500px;
-            margin-top: 20px;
+        .alert-map {
+            height: 300px;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -68,7 +68,6 @@
     <h1>Live Weather Alerts</h1>
     <p class="disclaimer">Site in beta, You may experience issues/web page freezes</p>
     <div id="alerts">Loading alerts...</div>
-    <div id="map"></div>
 
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js'></script>
     <script>
@@ -91,7 +90,7 @@
                     return;
                 }
 
-                const alertsHTML = alerts.map(alert => {
+                const alertsHTML = alerts.map((alert, index) => {
                     const properties = alert.properties;
                     const title = properties.headline || "Unknown Alert";
                     const description = properties.description || "No description available.";
@@ -110,13 +109,14 @@
                     }
 
                     return `
-                        <div class="alert ${alertClass}">
-                            <div class="alert-title" onclick="toggleAlertContent(this)">${title}</div>
-                            <div class="alert-content">
+                        <div class="alert ${alertClass}" id="alert-${index}">
+                            <div class="alert-title" onclick="toggleAlertContent(${index})">${title}</div>
+                            <div class="alert-content" id="alert-content-${index}">
                                 <p><strong>Source:</strong> ${source}</p>
                                 <p><strong>Start:</strong> ${start}</p>
                                 <p><strong>End:</strong> ${end}</p>
                                 <p>${description}</p>
+                                <div class="alert-map" id="map-${index}"></div>
                             </div>
                         </div>
                     `;
@@ -124,8 +124,10 @@
 
                 document.getElementById('alerts').innerHTML = alertsHTML;
 
-                // Initialize and add alerts to the map
-                initializeMap(alerts);
+                // Initialize maps for each alert
+                alerts.forEach((alert, index) => {
+                    initializeMap(alert, index);
+                });
 
             } catch (error) {
                 console.error('Error fetching alerts:', error);
@@ -133,56 +135,57 @@
             }
         }
 
-        function initializeMap(alerts) {
+        function initializeMap(alert, index) {
             mapboxgl.accessToken = 'pk.eyJ1IjoiZzM0aHl0IiwiYSI6ImNtOGV3MDVhbTA2MDUya3BxeGlyN3BpNzUifQ.SnOykEAe2jdt6JjWPnUSGw'; // Replace with your Mapbox public access token
 
             const map = new mapboxgl.Map({
-                container: 'map',
+                container: `map-${index}`,
                 style: 'mapbox://styles/mapbox/streets-v11',
                 center: [-96, 37.8], // Center of the USA
                 zoom: 4
             });
 
             map.on('load', () => {
-                alerts.forEach(alert => {
-                    const geometry = alert.geometry;
-                    if (geometry && geometry.coordinates) {
-                        const coordinates = geometry.coordinates[0].map(coord => [coord[0], coord[1]]);
-                        map.addSource(`alert-${alert.id}`, {
-                            'type': 'geojson',
-                            'data': {
-                                'type': 'Feature',
-                                'geometry': {
-                                    'type': 'Polygon',
-                                    'coordinates': [coordinates]
-                                }
+                const geometry = alert.geometry;
+                if (geometry && geometry.coordinates) {
+                    const coordinates = geometry.coordinates[0].map(coord => [coord[0], coord[1]]);
+                    map.addSource(`alert-${alert.id}`, {
+                        'type': 'geojson',
+                        'data': {
+                            'type': 'Feature',
+                            'geometry': {
+                                'type': 'Polygon',
+                                'coordinates': [coordinates]
                             }
-                        });
+                        }
+                    });
 
-                        map.addLayer({
-                            'id': `alert-${alert.id}`,
-                            'type': 'fill',
-                            'source': `alert-${alert.id}`,
-                            'layout': {},
-                            'paint': {
-                                'fill-color': '#ff0000',
-                                'fill-opacity': 0.5
-                            }
-                        });
+                    map.addLayer({
+                        'id': `alert-${alert.id}`,
+                        'type': 'fill',
+                        'source': `alert-${alert.id}`,
+                        'layout': {},
+                        'paint': {
+                            'fill-color': '#ff0000',
+                            'fill-opacity': 0.5
+                        }
+                    });
 
-                        // Add popup
-                        new mapboxgl.Popup({ offset: 25 })
-                            .setLngLat(coordinates[0])
-                            .setHTML(`<b>${alert.properties.headline}</b><br>${alert.properties.description}`)
-                            .addTo(map);
-                    }
-                });
+                    // Add popup
+                    new mapboxgl.Popup({ offset: 25 })
+                        .setLngLat(coordinates[0])
+                        .setHTML(`<b>${alert.properties.headline}</b><br>${alert.properties.description}`)
+                        .addTo(map);
+                }
             });
         }
 
-        function toggleAlertContent(element) {
-            const content = element.nextElementSibling;
+        function toggleAlertContent(index) {
+            const content = document.getElementById(`alert-content-${index}`);
             content.style.display = content.style.display === 'none' ? 'block' : 'none';
+            if(content.style.display === 'block') {
+                initializeMap(alerts[index], index);
+            }
         }
 
         fetchAlerts();
