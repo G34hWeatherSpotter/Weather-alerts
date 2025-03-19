@@ -7,43 +7,60 @@
     <style>
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
-            background: #f4f4f4;
+            background: linear-gradient(to right, #74ebd5, #ACB6E5);
             color: #333;
             padding: 20px;
-            margin: 0;
         }
         h1 {
             text-align: center;
-            color: #333;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
         }
         #alerts {
             margin-top: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
         }
         .alert {
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.8);
             border: 1px solid #ddd;
-            padding: 20px;
-            margin: 10px;
+            padding: 15px;
+            margin-bottom: 10px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        .alert:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
         .alert-title {
             font-weight: bold;
             cursor: pointer;
-            color: #d9534f;
-            margin-bottom: 10px;
+        }
+        .alert.alert {
+            background-color: #f8d7da;
+            border-color: #f5c6cb;
+            color: #721c24;
+        }
+        .alert.warning {
+            background-color: #fff3cd;
+            border-color: #ffeeba;
+            color: #856404;
+        }
+        .alert.watch {
+            background-color: #cce5ff;
+            border-color: #b8daff;
+            color: #004085;
+        }
+        .alert.advisory {
+            background-color: #d4edda;
+            border-color: #c3e6cb;
+            color: #155724;
+        }
+        .alert.test {
+            background-color: #e2e3e5;
+            border-color: #d6d8db;
+            color: #383d41;
+        }
+        .disclaimer {
+            text-align: center;
+            color: #fff;
+            margin-top: 10px;
+            font-style: italic;
         }
         .alert-content {
             display: none;
@@ -51,23 +68,12 @@
         }
         .alert-content p {
             margin: 5px 0;
-            font-size: 14px;
-        }
-        .alert-content strong {
-            color: #555;
-        }
-        .disclaimer {
-            text-align: center;
-            color: #666;
-            margin-top: 10px;
-            font-style: italic;
-            font-size: 14px;
         }
     </style>
 </head>
 <body>
     <h1>Live Weather Alerts</h1>
-    <p class="disclaimer">Site in beta. You may experience issues or page freezes.</p>
+    <p class="disclaimer">Site in beta, You may experience issues/web page freezes.</p>
     <div id="alerts">Loading alerts...</div>
 
     <script>
@@ -90,6 +96,23 @@
                     return;
                 }
 
+                const hailSizeDescription = {
+                    "0.25": "pea-sized hail",
+                    "0.50": "marble-sized hail",
+                    "0.75": "dime-sized hail",
+                    "0.88": "nickel-sized hail",
+                    "1.00": "quarter-sized hail",
+                    "1.25": "half dollar-sized hail",
+                    "1.50": "walnut-sized hail",
+                    "1.75": "golf ball-sized hail",
+                    "2.00": "hen egg-sized hail",
+                    "2.50": "tennis ball-sized hail",
+                    "2.75": "baseball-sized hail",
+                    "3.00": "tea cup-sized hail",
+                    "4.00": "grapefruit-sized hail",
+                    "4.50": "softball-sized hail"
+                };
+
                 const alertsHTML = alerts.map((alert, index) => {
                     const properties = alert.properties;
                     const title = properties.headline || "Unknown Alert";
@@ -100,6 +123,8 @@
                     const source = properties.senderName || "Unknown Source";
                     const start = new Date(properties.onset).toLocaleString();
                     const end = new Date(properties.expires).toLocaleString();
+                    const hailSize = properties.parameters.hailSize || "N/A";
+                    const hailDescription = hailSizeDescription[hailSize] || "Unknown size hail";
 
                     let alertClass = '';
                     if (severity.includes('Warning')) {
@@ -124,6 +149,7 @@
                                 <p><strong>Urgency:</strong> ${urgency}</p>
                                 <p>${description}</p>
                                 <p><strong>Actions:</strong> ${actions}</p>
+                                <p><strong>Hail Size:</strong> ${hailSize}" (${hailDescription})</p>
                             </div>
                         </div>
                     `;
