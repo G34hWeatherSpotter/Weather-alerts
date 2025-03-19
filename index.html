@@ -101,6 +101,8 @@
                     const title = properties.headline || "Unknown Alert";
                     const description = properties.description || "No description available.";
                     const severity = properties.severity || "Unknown";
+                    const urgency = properties.urgency || "Unknown";
+                    const actions = properties.instruction || "No actions available.";
                     const source = properties.senderName || "Unknown Source";
                     const start = new Date(properties.onset).toLocaleString();
                     const end = new Date(properties.expires).toLocaleString();
@@ -125,7 +127,9 @@
                                 <p><strong>Source:</strong> ${source}</p>
                                 <p><strong>Start:</strong> ${start}</p>
                                 <p><strong>End:</strong> ${end}</p>
+                                <p><strong>Urgency:</strong> ${urgency}</p>
                                 <p>${description}</p>
+                                <p><strong>Actions:</strong> ${actions}</p>
                             </div>
                         </div>
                     `;
