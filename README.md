@@ -1,3 +1,7 @@
+
+(notice: all of the current changes that arent from github bot are final till offical start of severe weather season with a few bug fixes.)
+
+
 # Weather Alerts
 
 This repository contains the code for Weather Alerts, a project designed to provide timely and accurate weather notifications. The project is primarily written in Python with supplementary HTML for web components.
