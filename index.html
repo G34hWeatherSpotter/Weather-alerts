@@ -123,8 +123,25 @@
                     const source = properties.senderName || "Unknown Source";
                     const start = new Date(properties.onset).toLocaleString();
                     const end = new Date(properties.expires).toLocaleString();
-                    const hailSize = properties.parameters.hailSize || "N/A";
-                    const hailDescription = hailSizeDescription[hailSize] || "Unknown size hail";
+
+                    // --- Hail Size Extraction Logic ---
+                    let hailSize = (properties.parameters && properties.parameters.hailSize) || null;
+                    let hailDescription = "Unknown size hail";
+
+                    if (!hailSize && description) {
+                        // Try to extract hail size from the description using regex (e.g., "hail up to 1.75 inches" or "hail size 1.25 in")
+                        const hailMatch = description.match(/hail(?: (up to|size|as large as|of|to|between|ranging up to|ranging from|possibly up to|may reach|could reach|estimated at|measured at|in excess of|greater than|over|around|around|near|nearing|approaching|approaching up to|approaching or exceeding|over|larger than|smaller than|around|of|to|ranging from|up to))? ?([0-9.]+) ?(inch|inches|in)?/i);
+                        if (hailMatch) {
+                            hailSize = hailMatch[2];
+                        }
+                    }
+
+                    if (hailSize) {
+                        hailDescription = hailSizeDescription[hailSize] || "Unknown size hail";
+                    } else {
+                        hailSize = "N/A";
+                    }
+                    // --- End Hail Size Extraction ---
 
                     let alertClass = '';
                     if (severity.includes('Warning')) {
@@ -149,7 +166,7 @@
                                 <p><strong>Urgency:</strong> ${urgency}</p>
                                 <p>${description}</p>
                                 <p><strong>Actions:</strong> ${actions}</p>
-                                <p><strong>Hail Size:</strong> ${hailSize}" (${hailDescription})</p>
+                                <p><strong>Hail Size:</strong> ${hailSize} (${hailDescription})</p>
                             </div>
                         </div>
                     `;
