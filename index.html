@@ -1,196 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Alerts</title>
-    <style>
-        body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            background: linear-gradient(to right, #74ebd5, #ACB6E5);
-            color: #333;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-            color: #fff;
-            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-        }
-        #alerts {
-            margin-top: 20px;
-        }
-        .alert {
-            background-color: rgba(255, 255, 255, 0.8);
-            border: 1px solid #ddd;
-            padding: 15px;
-            margin-bottom: 10px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .alert-title {
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .alert.alert {
-            background-color: #f8d7da;
-            border-color: #f5c6cb;
-            color: #721c24;
-        }
-        .alert.warning {
-            background-color: #fff3cd;
-            border-color: #ffeeba;
-            color: #856404;
-        }
-        .alert.watch {
-            background-color: #cce5ff;
-            border-color: #b8daff;
-            color: #004085;
-        }
-        .alert.advisory {
-            background-color: #d4edda;
-            border-color: #c3e6cb;
-            color: #155724;
-        }
-        .alert.test {
-            background-color: #e2e3e5;
-            border-color: #d6d8db;
-            color: #383d41;
-        }
-        .disclaimer {
-            text-align: center;
-            color: #fff;
-            margin-top: 10px;
-            font-style: italic;
-        }
-        .alert-content {
-            display: none;
-            padding-top: 10px;
-        }
-        .alert-content p {
-            margin: 5px 0;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Alerts Revamp</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <style>
+    body.dark-mode {
+      background: #18191a;
+      color: #d7dae0;
+    }
+    .card.dark-mode, .list-group-item.dark-mode {
+      background: #242526;
+      color: #d7dae0;
+    }
+    .leaflet-container {
+      height: 400px;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    .alert-legend {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+    .visually-hidden { position: absolute !important; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px); }
+  </style>
 </head>
 <body>
-    <h1>Live Weather Alerts</h1>
-    <p class="disclaimer">Site in beta, You may experience issues/web page freezes.</p>
-    <div id="alerts">Loading alerts...</div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-3">
+    <div class="container">
+      <a class="navbar-brand" href="#">Weather Alerts</a>
+      <button class="btn btn-outline-light ms-auto" id="darkToggle" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </nav>
+  <main class="container">
+    <section class="mb-3">
+      <div class="row align-items-center">
+        <div class="col-md-4 mb-2">
+          <button class="btn btn-secondary w-100" id="locateMe">Show Alerts For My Location</button>
+        </div>
+        <div class="col-md-4 mb-2">
+          <input class="form-control" id="searchBox" placeholder="Search alerts... (e.g. hail, tornado)" aria-label="Search alerts"/>
+        </div>
+        <div class="col-md-4 mb-2">
+          <select class="form-select" id="severityFilter" aria-label="Filter by severity">
+            <option value="">All Severities</option>
+            <option value="Warning">Warning</option>
+            <option value="Watch">Watch</option>
+            <option value="Advisory">Advisory</option>
+          </select>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div id="alert-map" class="mb-3" aria-label="Map of active alerts"></div>
+      <div class="alert-legend">
+        <span class="badge bg-danger">Warning</span>
+        <span class="badge bg-warning text-dark">Watch</span>
+        <span class="badge bg-info text-dark">Advisory</span>
+      </div>
+      <div id="alerts" class="row g-3"></div>
+    </section>
+    <section class="mt-4">
+      <h2>Feedback</h2>
+      <form id="feedbackForm" class="mb-3" autocomplete="off">
+        <label for="feedbackText" class="form-label visually-hidden">Your feedback</label>
+        <textarea class="form-control mb-2" id="feedbackText" placeholder="Your feedback"></textarea>
+        <button type="submit" class="btn btn-primary">Send Feedback</button>
+      </form>
+    </section>
+  </main>
+  <footer class="text-center text-muted py-4">
+    &copy; 2025 Weather Alerts. Powered by <a href="https://weather.gov" target="_blank" rel="noopener">NOAA/NWS</a>.
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    // --- Dark mode toggle ---
+    const darkToggle = document.getElementById('darkToggle');
+    darkToggle.onclick = () => {
+      document.body.classList.toggle('dark-mode');
+      document.querySelectorAll('.card, .list-group-item').forEach(e => e.classList.toggle('dark-mode'));
+    };
 
-    <script>
-        async function fetchAlerts() {
-            try {
-                const response = await fetch('https://api.weather.gov/alerts/active', { cache: "no-cache" });
-                if (!response.ok) {
-                    throw new Error(`HTTP error! Status: ${response.status}`);
-                }
-                const data = await response.json();
-                const alerts = data.features;
+    // --- Alert severity to Bootstrap color/Leaflet marker color ---
+    const severityColor = {
+      'Warning': 'danger',
+      'Watch': 'warning',
+      'Advisory': 'info'
+    };
+    const markerColor = {
+      'Warning': 'red',
+      'Watch': 'orange',
+      'Advisory': 'blue'
+    };
 
-                if (!alerts.length) {
-                    document.getElementById('alerts').innerHTML = `
-                        <div class="alert">
-                            <div class="alert-title">No Active Alerts</div>
-                            <div class="alert-content">There are currently no active weather alerts.</div>
-                        </div>
-                    `;
-                    return;
-                }
+    // --- Map setup ---
+    let map = L.map('alert-map').setView([39.5, -98.35], 4);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+    let markers = [];
 
-                const hailSizeDescription = {
-                    "0.25": "pea-sized hail",
-                    "0.50": "marble-sized hail",
-                    "0.75": "dime-sized hail",
-                    "0.88": "nickel-sized hail",
-                    "1.00": "quarter-sized hail",
-                    "1.25": "half dollar-sized hail",
-                    "1.50": "walnut-sized hail",
-                    "1.75": "golf ball-sized hail",
-                    "2.00": "hen egg-sized hail",
-                    "2.50": "tennis ball-sized hail",
-                    "2.75": "baseball-sized hail",
-                    "3.00": "tea cup-sized hail",
-                    "4.00": "grapefruit-sized hail",
-                    "4.50": "softball-sized hail"
-                };
+    // --- Fetch and display alerts ---
+    let allAlerts = [];
+    let userLocation = null;
 
-                const alertsHTML = alerts.map((alert, index) => {
-                    const properties = alert.properties;
-                    const title = properties.headline || "Unknown Alert";
-                    const description = properties.description || "No description available.";
-                    const severity = properties.severity || "Unknown";
-                    const urgency = properties.urgency || "Unknown";
-                    const actions = properties.instruction || "No actions available.";
-                    const source = properties.senderName || "Unknown Source";
-                    const start = new Date(properties.onset).toLocaleString();
-                    const end = new Date(properties.expires).toLocaleString();
+    async function fetchAlerts() {
+      const resp = await fetch('https://api.weather.gov/alerts/active');
+      const data = await resp.json();
+      allAlerts = data.features;
+      renderAlerts();
+    }
 
-                    // --- Hail Size Extraction Logic ---
-                    let hailSize = (properties.parameters && properties.parameters.hailSize) || null;
-                    let hailDescription = "Unknown size hail";
-
-                    if (!hailSize && description) {
-                        // Try to extract hail size from the description using regex (e.g., "hail up to 1.75 inches" or "hail size 1.25 in")
-                        const hailMatch = description.match(/hail(?: (up to|size|as large as|of|to|between|ranging up to|ranging from|possibly up to|may reach|could reach|estimated at|measured at|in excess of|greater than|over|around|around|near|nearing|approaching|approaching up to|approaching or exceeding|over|larger than|smaller than|around|of|to|ranging from|up to))? ?([0-9.]+) ?(inch|inches|in)?/i);
-                        if (hailMatch) {
-                            hailSize = hailMatch[2];
-                        }
-                    }
-
-                    if (hailSize) {
-                        hailDescription = hailSizeDescription[hailSize] || "Unknown size hail";
-                    } else {
-                        hailSize = "N/A";
-                    }
-                    // --- End Hail Size Extraction ---
-
-                    let alertClass = '';
-                    if (severity.includes('Warning')) {
-                        alertClass = 'warning';
-                    } else if (severity.includes('Watch')) {
-                        alertClass = 'watch';
-                    } else if (severity.includes('Advisory')) {
-                        alertClass = 'advisory';
-                    } else if (severity.includes('Test')) {
-                        alertClass = 'test';
-                    } else {
-                        alertClass = 'alert'; // Default to alert if none of the above
-                    }
-
-                    return `
-                        <div class="alert ${alertClass}" id="alert-${index}">
-                            <div class="alert-title" onclick="toggleAlertContent(${index})">${title}</div>
-                            <div class="alert-content" id="alert-content-${index}">
-                                <p><strong>Source:</strong> ${source}</p>
-                                <p><strong>Start:</strong> ${start}</p>
-                                <p><strong>End:</strong> ${end}</p>
-                                <p><strong>Urgency:</strong> ${urgency}</p>
-                                <p>${description}</p>
-                                <p><strong>Actions:</strong> ${actions}</p>
-                                <p><strong>Hail Size:</strong> ${hailSize} (${hailDescription})</p>
-                            </div>
-                        </div>
-                    `;
-                }).join('');
-
-                document.getElementById('alerts').innerHTML = alertsHTML;
-
-            } catch (error) {
-                console.error('Error fetching alerts:', error);
-                document.getElementById('alerts').innerHTML = "<p style='color:red;'>Failed to load alerts. Please try again later.</p>";
-            }
+    function renderAlerts() {
+      let filtered = allAlerts;
+      // Filter by search
+      const searchVal = document.getElementById('searchBox').value.trim().toLowerCase();
+      if (searchVal) {
+        filtered = filtered.filter(alert =>
+          (alert.properties.headline || '').toLowerCase().includes(searchVal) ||
+          (alert.properties.description || '').toLowerCase().includes(searchVal)
+        );
+      }
+      // Filter by severity
+      const sev = document.getElementById('severityFilter').value;
+      if (sev) filtered = filtered.filter(alert => alert.properties.severity === sev);
+      // Filter by user location if set
+      if (userLocation) {
+        filtered = filtered.filter(alert => {
+          const geos = alert.geometry;
+          if (!geos) return false;
+          // Check if point is within alert polygon (basic check for prototype)
+          if (geos.type === 'Polygon') {
+            const poly = L.polygon(geos.coordinates[0].map(([lon, lat]) => [lat, lon]));
+            return poly.getBounds().contains(userLocation);
+          }
+          if (geos.type === 'Point') {
+            const [lon, lat] = geos.coordinates;
+            return Math.abs(lat - userLocation.lat) < 1 && Math.abs(lon - userLocation.lng) < 1;
+          }
+          return false;
+        });
+      }
+      // Render cards
+      const alertsDiv = document.getElementById('alerts');
+      alertsDiv.innerHTML = '';
+      if (!filtered.length) {
+        alertsDiv.innerHTML = '<div class="col-12"><div class="alert alert-secondary">No alerts found.</div></div>';
+      }
+      filtered.forEach((alert, idx) => {
+        const p = alert.properties;
+        // Hail size extraction
+        let hailSize = (p.parameters && p.parameters.hailSize) || null;
+        let hailDescription = '';
+        if (!hailSize && p.description) {
+          const hailMatch = p.description.match(/hail(?: (up to|size|as large as|of|to|between|ranging up to|ranging from|possibly up to|may reach|could reach|estimated at|measured at|in excess of|greater than|over|around|near|nearing|approaching|approaching up to|approaching or exceeding|over|larger than|smaller than|around|of|to|ranging from|up to))? ?([0-9.]+) ?(inch|inches|in)?/i);
+          if (hailMatch) hailSize = hailMatch[2];
         }
-
-        function toggleAlertContent(index) {
-            const content = document.getElementById(`alert-content-${index}`);
-            if (content.style.display === 'none' || !content.style.display) {
-                content.style.display = 'block';
-            } else {
-                content.style.display = 'none';
-            }
+        if (hailSize) {
+          const hailDescDict = {
+            "0.25": "pea-sized hail",
+            "0.50": "marble-sized hail",
+            "0.75": "dime-sized hail",
+            "0.88": "nickel-sized hail",
+            "1.00": "quarter-sized hail",
+            "1.25": "half dollar-sized hail",
+            "1.50": "walnut-sized hail",
+            "1.75": "golf ball-sized hail",
+            "2.00": "hen egg-sized hail",
+            "2.50": "tennis ball-sized hail",
+            "2.75": "baseball-sized hail",
+            "3.00": "tea cup-sized hail",
+            "4.00": "grapefruit-sized hail",
+            "4.50": "softball-sized hail"
+          };
+          hailDescription = hailDescDict[hailSize] || "Unknown size hail";
         }
+        // Card color
+        const sev = p.severity || 'Advisory';
+        const col = severityColor[sev] || 'secondary';
+        alertsDiv.innerHTML += `
+          <div class="col-md-6 col-lg-4">
+            <div class="card border-${col} h-100">
+              <div class="card-header bg-${col} text-white fw-bold" tabindex="0" aria-label="${sev}">${p.headline || 'Weather Alert'}</div>
+              <div class="card-body">
+                <p class="card-text"><strong>Area:</strong> ${p.areaDesc || 'N/A'}</p>
+                <p class="card-text"><strong>Severity:</strong> <span class="badge bg-${col}">${sev}</span></p>
+                <p class="card-text"><strong>Start:</strong> ${p.onset ? new Date(p.onset).toLocaleString() : "N/A"}</p>
+                <p class="card-text"><strong>End:</strong> ${p.expires ? new Date(p.expires).toLocaleString() : "N/A"}</p>
+                <p class="card-text"><strong>Hail Size:</strong> ${hailSize ? hailSize + ' in (' + hailDescription + ')' : 'N/A'}</p>
+                <details>
+                  <summary>Details</summary>
+                  <div class="small">${p.description || ""}</div>
+                  <div class="mt-2"><strong>Actions:</strong> ${p.instruction || "N/A"}</div>
+                  <div class="mt-2"><a href="${p.web || '#'}" target="_blank" rel="noopener">More info</a></div>
+                </details>
+              </div>
+            </div>
+          </div>
+        `;
+      });
+      // Render map markers
+      markers.forEach(m => map.removeLayer(m));
+      markers = [];
+      filtered.forEach((alert) => {
+        const geo = alert.geometry;
+        if (!geo) return;
+        const sev = alert.properties.severity || 'Advisory';
+        if (geo.type === 'Point') {
+          const [lon, lat] = geo.coordinates;
+          const marker = L.circleMarker([lat, lon], {radius: 8, color: markerColor[sev] || 'gray'}).addTo(map)
+            .bindPopup(`<b>${alert.properties.headline || 'Alert'}</b><br>${alert.properties.areaDesc || ''}`);
+          markers.push(marker);
+        }
+        if (geo.type === 'Polygon') {
+          const latlngs = geo.coordinates[0].map(([lon, lat]) => [lat, lon]);
+          const poly = L.polygon(latlngs, {color: markerColor[sev] || 'gray'}).addTo(map)
+            .bindPopup(`<b>${alert.properties.headline || 'Alert'}</b><br>${alert.properties.areaDesc || ''}`);
+          markers.push(poly);
+        }
+      });
+    }
 
-        fetchAlerts();
-        setInterval(fetchAlerts, 60000); // Refresh every 1 minute
-    </script>
+    // --- Controls ---
+    document.getElementById('searchBox').addEventListener('input', renderAlerts);
+    document.getElementById('severityFilter').addEventListener('change', renderAlerts);
+
+    document.getElementById('locateMe').onclick = () => {
+      if ('geolocation' in navigator) {
+        navigator.geolocation.getCurrentPosition(pos => {
+          userLocation = {lat: pos.coords.latitude, lng: pos.coords.longitude};
+          map.setView([userLocation.lat, userLocation.lng], 8);
+          renderAlerts();
+        }, () => alert('Could not get your location.'));
+      }
+    };
+
+    // --- Feedback ---
+    document.getElementById('feedbackForm').onsubmit = function(e) {
+      e.preventDefault();
+      const txt = document.getElementById('feedbackText').value;
+      if (!txt.trim()) return alert('Please enter feedback.');
+      alert('Thank you for your feedback!');
+      document.getElementById('feedbackText').value = '';
+    };
+
+    // --- Initial load ---
+    fetchAlerts();
+    setInterval(fetchAlerts, 60000); // refresh every min
+  </script>
 </body>
 </html>
