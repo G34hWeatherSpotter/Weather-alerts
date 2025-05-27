@@ -37,19 +37,22 @@
   <main class="container">
     <section class="mb-3">
       <div class="row align-items-center">
-        <div class="col-md-4 mb-2">
+        <div class="col-md-3 mb-2">
           <button class="btn btn-secondary w-100" id="locateMe">Show Alerts For My Location</button>
         </div>
-        <div class="col-md-4 mb-2">
+        <div class="col-md-3 mb-2">
           <input class="form-control" id="searchBox" placeholder="Search alerts... (e.g. hail, tornado)" aria-label="Search alerts"/>
         </div>
-        <div class="col-md-4 mb-2">
+        <div class="col-md-3 mb-2">
           <select class="form-select" id="severityFilter" aria-label="Filter by severity">
             <option value="">All Severities</option>
             <option value="Warning">Warning</option>
             <option value="Watch">Watch</option>
             <option value="Advisory">Advisory</option>
           </select>
+        </div>
+        <div class="col-md-3 mb-2">
+          <button class="btn btn-outline-primary w-100" id="radarToggle">Toggle Radar</button>
         </div>
       </div>
     </section>
@@ -61,14 +64,6 @@
         <span class="badge bg-info text-dark">Advisory</span>
       </div>
       <div id="alerts" class="row g-3"></div>
-    </section>
-    <section class="mt-4">
-      <h2>Feedback</h2>
-      <form id="feedbackForm" class="mb-3" autocomplete="off">
-        <label for="feedbackText" class="form-label visually-hidden">Your feedback</label>
-        <textarea class="form-control mb-2" id="feedbackText" placeholder="Your feedback"></textarea>
-        <button type="submit" class="btn btn-primary">Send Feedback</button>
-      </form>
     </section>
   </main>
   <footer class="text-center text-muted py-4">
@@ -99,17 +94,56 @@
     // --- Map setup ---
     let map = L.map('alert-map').setView([39.5, -98.35], 4);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-    let markers = [];
+
+    // --- NWS Radar Layer Setup and Toggle ---
+    let radarLayer = null;
+    const radarURL = 'https://opengeo.ncep.noaa.gov/geoserver/conus/conus_bref_qcd/ows?';
+
+    function addRadarLayer() {
+      if (!radarLayer) {
+        radarLayer = L.tileLayer.wms(radarURL, {
+          layers: 'conus_bref_qcd',
+          format: 'image/png',
+          transparent: true,
+          opacity: 0.6,
+          attribution: "NOAA/NWS NEXRAD"
+        }).addTo(map);
+      }
+    }
+
+    function removeRadarLayer() {
+      if (radarLayer) {
+        map.removeLayer(radarLayer);
+        radarLayer = null;
+      }
+    }
+
+    let radarEnabled = true; // default ON
+    addRadarLayer();
+
+    document.getElementById('radarToggle').onclick = function() {
+      radarEnabled = !radarEnabled;
+      if (radarEnabled) {
+        addRadarLayer();
+      } else {
+        removeRadarLayer();
+      }
+    };
 
     // --- Fetch and display alerts ---
+    let markers = [];
     let allAlerts = [];
     let userLocation = null;
 
     async function fetchAlerts() {
-      const resp = await fetch('https://api.weather.gov/alerts/active');
-      const data = await resp.json();
-      allAlerts = data.features;
-      renderAlerts();
+      try {
+        const resp = await fetch('https://api.weather.gov/alerts/active');
+        const data = await resp.json();
+        allAlerts = data.features;
+        renderAlerts();
+      } catch (err) {
+        document.getElementById('alerts').innerHTML = '<div class="col-12"><div class="alert alert-danger">Could not load alerts. Please try again later.</div></div>';
+      }
     }
 
     function renderAlerts() {
@@ -207,15 +241,25 @@
         const geo = alert.geometry;
         if (!geo) return;
         const sev = alert.properties.severity || 'Advisory';
+        const color = markerColor[sev] || 'gray';
         if (geo.type === 'Point') {
           const [lon, lat] = geo.coordinates;
-          const marker = L.circleMarker([lat, lon], {radius: 8, color: markerColor[sev] || 'gray'}).addTo(map)
+          const marker = L.circleMarker([lat, lon], {
+            radius: 8,
+            color: color,
+            fillColor: color,
+            fillOpacity: 0.7
+          }).addTo(map)
             .bindPopup(`<b>${alert.properties.headline || 'Alert'}</b><br>${alert.properties.areaDesc || ''}`);
           markers.push(marker);
         }
         if (geo.type === 'Polygon') {
           const latlngs = geo.coordinates[0].map(([lon, lat]) => [lat, lon]);
-          const poly = L.polygon(latlngs, {color: markerColor[sev] || 'gray'}).addTo(map)
+          const poly = L.polygon(latlngs, {
+            color: color,
+            fillColor: color,
+            fillOpacity: 0.3
+          }).addTo(map)
             .bindPopup(`<b>${alert.properties.headline || 'Alert'}</b><br>${alert.properties.areaDesc || ''}`);
           markers.push(poly);
         }
@@ -236,18 +280,14 @@
       }
     };
 
-    // --- Feedback ---
-    document.getElementById('feedbackForm').onsubmit = function(e) {
-      e.preventDefault();
-      const txt = document.getElementById('feedbackText').value;
-      if (!txt.trim()) return alert('Please enter feedback.');
-      alert('Thank you for your feedback!');
-      document.getElementById('feedbackText').value = '';
-    };
-
     // --- Initial load ---
     fetchAlerts();
     setInterval(fetchAlerts, 60000); // refresh every min
   </script>
+  <!--
+    NWS Radar attribution: 
+    Radar mosaic tiles via https://opengeo.ncep.noaa.gov/geoserver/conus/conus_bref_qcd/ows
+    See https://opengeo.ncep.noaa.gov/geoserver/web/ for details.
+  -->
 </body>
 </html>
