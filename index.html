@@ -234,7 +234,8 @@
           </div>
         `;
       });
-      // Render map markers
+
+      // Render map markers and polygons, handling all geometry types robustly
       markers.forEach(m => map.removeLayer(m));
       markers = [];
       filtered.forEach((alert) => {
@@ -242,6 +243,7 @@
         if (!geo) return;
         const sev = alert.properties.severity || 'Advisory';
         const color = markerColor[sev] || 'gray';
+
         if (geo.type === 'Point') {
           const [lon, lat] = geo.coordinates;
           const marker = L.circleMarker([lat, lon], {
@@ -253,8 +255,12 @@
             .bindPopup(`<b>${alert.properties.headline || 'Alert'}</b><br>${alert.properties.areaDesc || ''}`);
           markers.push(marker);
         }
+
         if (geo.type === 'Polygon') {
-          const latlngs = geo.coordinates[0].map(([lon, lat]) => [lat, lon]);
+          // geo.coordinates is [ [ [lng, lat], [lng, lat], ... ] ]
+          const latlngs = geo.coordinates.map(ring =>
+            ring.map(([lon, lat]) => [lat, lon])
+          );
           const poly = L.polygon(latlngs, {
             color: color,
             fillColor: color,
@@ -262,6 +268,22 @@
           }).addTo(map)
             .bindPopup(`<b>${alert.properties.headline || 'Alert'}</b><br>${alert.properties.areaDesc || ''}`);
           markers.push(poly);
+        }
+
+        if (geo.type === 'MultiPolygon') {
+          // geo.coordinates is [ [ [ [lng, lat], ... ] ], ... ]
+          geo.coordinates.forEach(polygon => {
+            const latlngs = polygon.map(ring =>
+              ring.map(([lon, lat]) => [lat, lon])
+            );
+            const poly = L.polygon(latlngs, {
+              color: color,
+              fillColor: color,
+              fillOpacity: 0.3
+            }).addTo(map)
+              .bindPopup(`<b>${alert.properties.headline || 'Alert'}</b><br>${alert.properties.areaDesc || ''}`);
+            markers.push(poly);
+          });
         }
       });
     }
