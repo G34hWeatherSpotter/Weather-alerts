@@ -25,7 +25,7 @@ with open("alerts.txt", "a") as file:
                 expires = alert_properties.get("expires", "Unknown Time")
                 area = ", ".join(alert_properties.get("areaDesc", ["Unknown Area"]))
                 description = alert_properties.get("description", "No description available.")
-                
+
                 # Write alert details to the file
                 file.write(f"ALERT TYPE: {alert_type}\n")
                 file.write(f"Issued: {issued}\n")
@@ -33,7 +33,7 @@ with open("alerts.txt", "a") as file:
                 file.write(f"Area: {area}\n")
                 file.write(f"Description: {description}\n")
                 file.write("#" * 30 + "\n")  # Separator for readability
-                
+
     except requests.exceptions.RequestException as e:
         # If there was an error with the API request, log it
         file.write(f"Error fetching alerts: {e}\n")
