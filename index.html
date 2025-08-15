@@ -25,15 +25,39 @@
       margin-bottom: 1rem;
     }
     .visually-hidden { position: absolute !important; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px); }
+    /* Social links in navbar */
+    .social-links a { color: #fff; margin-left: 0.9rem; text-decoration: none; }
+    .severe-banner { display: none; }
+    .severe-banner.show { display: block; }
   </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-3">
     <div class="container">
       <a class="navbar-brand" href="#">Weather Alerts</a>
-      <button class="btn btn-outline-light ms-auto" id="darkToggle" aria-label="Toggle dark mode">🌙</button>
+      <div class="social-links ms-auto me-3">
+        <!-- Instagram and Link A / Link B -->
+        <a id="igLink" href="https://instagram.com/castrofunkywx" target="_blank" rel="noopener" aria-label="Instagram">@castrofunkywx</a>
+        <a href="#" id="linkA" aria-label="Link A">Link A</a>
+        <a href="#" id="linkB" aria-label="Link B">Link B</a>
+      </div>
+      <button class="btn btn-outline-light ms-2" id="darkToggle" aria-label="Toggle dark mode">🌙</button>
     </div>
   </nav>
+
+  <!-- Severe alerts banner (hidden unless severe alerts present) -->
+  <div id="severeBanner" class="alert alert-danger text-white severe-banner mx-3" role="region" aria-live="polite">
+    <div class="d-flex justify-content-between align-items-start">
+      <div>
+        <strong>Severe Alerts Active:</strong>
+        <ul id="severeList" class="mb-0"></ul>
+      </div>
+      <div>
+        <button id="dismissSevere" class="btn btn-sm btn-light ms-3">Dismiss</button>
+      </div>
+    </div>
+  </div>
+
   <main class="container">
     <section class="mb-3">
       <div class="row align-items-center">
@@ -72,6 +96,17 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script>
+    // --- User-configurable social links (edit as needed) ---
+    const SOCIAL = {
+      instagram: 'https://instagram.com/castrofunkywx',
+      linkA: '#',
+      linkB: '#'
+    };
+    // Apply social links to the header anchors
+    document.getElementById('igLink').href = SOCIAL.instagram;
+    document.getElementById('linkA').href = SOCIAL.linkA;
+    document.getElementById('linkB').href = SOCIAL.linkB;
+
     // --- Dark mode toggle ---
     const darkToggle = document.getElementById('darkToggle');
     darkToggle.onclick = () => {
@@ -135,15 +170,82 @@
     let allAlerts = [];
     let userLocation = null;
 
+    // Tracking previous severe alert IDs so we can highlight new ones
+    let previousSevereIds = new Set();
+
+    // Utility: show/hide the severe banner and populate list
+    const severeBannerEl = document.getElementById('severeBanner');
+    const severeListEl = document.getElementById('severeList');
+    const dismissSevereBtn = document.getElementById('dismissSevere');
+    dismissSevereBtn.onclick = () => {
+      severeBannerEl.classList.remove('show');
+    };
+
+    // Request notification permission on load (silent notifications only)
+    if ('Notification' in window && Notification.permission === 'default') {
+      try {
+        Notification.requestPermission();
+      } catch (e) {
+        // ignore
+      }
+    }
+
     async function fetchAlerts() {
       try {
         const resp = await fetch('https://api.weather.gov/alerts/active');
         const data = await resp.json();
-        allAlerts = data.features;
+        allAlerts = data.features || [];
+        handleSevereAlerts(allAlerts);
         renderAlerts();
       } catch (err) {
         document.getElementById('alerts').innerHTML = '<div class="col-12"><div class="alert alert-danger">Could not load alerts. Please try again later.</div></div>';
       }
+    }
+
+    function handleSevereAlerts(alerts) {
+      // Define what we consider "severe": NWS 'Warning' severity (you can extend)
+      const severe = alerts.filter(a => (a.properties && a.properties.severity) === 'Warning');
+
+      // Update banner list
+      severeListEl.innerHTML = '';
+      if (severe.length > 0) {
+        severe.forEach(a => {
+          const li = document.createElement('li');
+          const headline = a.properties && (a.properties.headline || a.properties.event || 'Severe Alert');
+          const href = (a.properties && a.properties.web) || '#';
+          const link = document.createElement('a');
+          link.href = href;
+          link.target = '_blank';
+          link.rel = 'noopener';
+          link.textContent = headline;
+          li.appendChild(link);
+          severeListEl.appendChild(li);
+        });
+        severeBannerEl.classList.add('show');
+      } else {
+        severeBannerEl.classList.remove('show');
+      }
+
+      // Send silent browser notifications for any newly-seen severe alerts
+      try {
+        if ('Notification' in window && Notification.permission === 'granted') {
+          severe.forEach(a => {
+            const id = a.id || (a.properties && a.properties.id) || JSON.stringify(a.properties || {});
+            if (!previousSevereIds.has(id)) {
+              const title = (a.properties && (a.properties.headline || a.properties.event)) || 'Severe Alert';
+              const body = (a.properties && (a.properties.description || a.properties.instruction)) || '';
+              // Silent notification (no sound)
+              new Notification(title, { body: body, silent: true });
+            }
+          });
+        }
+      } catch (e) {
+        // Notification could throw on some browsers, ignore safely
+        console.warn('Notification error', e);
+      }
+
+      // Update previous severe id set
+      previousSevereIds = new Set(severe.map(a => a.id || (a.properties && a.properties.id) || JSON.stringify(a.properties || {})));
     }
 
     function renderAlerts() {
@@ -182,47 +284,27 @@
       if (!filtered.length) {
         alertsDiv.innerHTML = '<div class="col-12"><div class="alert alert-secondary">No alerts found.</div></div>';
       }
-      filtered.forEach((alert, idx) => {
-        const p = alert.properties;
-        // Hail size extraction
-        let hailSize = (p.parameters && p.parameters.hailSize) || null;
-        let hailDescription = '';
-        if (!hailSize && p.description) {
-          const hailMatch = p.description.match(/hail(?: (up to|size|as large as|of|to|between|ranging up to|ranging from|possibly up to|may reach|could reach|estimated at|measured at|in excess of|greater than|over|around|near|nearing|approaching|approaching up to|approaching or exceeding|over|larger than|smaller than|around|of|to|ranging from|up to))? ?([0-9.]+) ?(inch|inches|in)?/i);
-          if (hailMatch) hailSize = hailMatch[2];
-        }
-        if (hailSize) {
-          const hailDescDict = {
-            "0.25": "pea-sized hail",
-            "0.50": "marble-sized hail",
-            "0.75": "dime-sized hail",
-            "0.88": "nickel-sized hail",
-            "1.00": "quarter-sized hail",
-            "1.25": "half dollar-sized hail",
-            "1.50": "walnut-sized hail",
-            "1.75": "golf ball-sized hail",
-            "2.00": "hen egg-sized hail",
-            "2.50": "tennis ball-sized hail",
-            "2.75": "baseball-sized hail",
-            "3.00": "tea cup-sized hail",
-            "4.00": "grapefruit-sized hail",
-            "4.50": "softball-sized hail"
-          };
-          hailDescription = hailDescDict[hailSize] || "Unknown size hail";
+      filtered.forEach((alert) => {
+        const p = alert.properties || {};
+        // Hail size (use parameters if present)
+        let hailSize = null;
+        if (p.parameters && p.parameters.hailSize) {
+          // often provided as an array or string
+          hailSize = Array.isArray(p.parameters.hailSize) ? p.parameters.hailSize[0] : p.parameters.hailSize;
         }
         // Card color
-        const sev = p.severity || 'Advisory';
-        const col = severityColor[sev] || 'secondary';
+        const sevLabel = p.severity || 'Advisory';
+        const col = severityColor[sevLabel] || 'secondary';
         alertsDiv.innerHTML += `
           <div class="col-md-6 col-lg-4">
             <div class="card border-${col} h-100">
-              <div class="card-header bg-${col} text-white fw-bold" tabindex="0" aria-label="${sev}">${p.headline || 'Weather Alert'}</div>
+              <div class="card-header bg-${col} text-white fw-bold" tabindex="0" aria-label="${sevLabel}">${p.headline || 'Weather Alert'}</div>
               <div class="card-body">
                 <p class="card-text"><strong>Area:</strong> ${p.areaDesc || 'N/A'}</p>
-                <p class="card-text"><strong>Severity:</strong> <span class="badge bg-${col}">${sev}</span></p>
+                <p class="card-text"><strong>Severity:</strong> <span class="badge bg-${col}">${sevLabel}</span></p>
                 <p class="card-text"><strong>Start:</strong> ${p.onset ? new Date(p.onset).toLocaleString() : "N/A"}</p>
                 <p class="card-text"><strong>End:</strong> ${p.expires ? new Date(p.expires).toLocaleString() : "N/A"}</p>
-                <p class="card-text"><strong>Hail Size:</strong> ${hailSize ? hailSize + ' in (' + hailDescription + ')' : 'N/A'}</p>
+                <p class="card-text"><strong>Hail Size:</strong> ${hailSize ? hailSize : 'N/A'}</p>
                 <details>
                   <summary>Details</summary>
                   <div class="small">${p.description || ""}</div>
@@ -241,8 +323,8 @@
       filtered.forEach((alert) => {
         const geo = alert.geometry;
         if (!geo) return;
-        const sev = alert.properties.severity || 'Advisory';
-        const color = markerColor[sev] || 'gray';
+        const sevLabel = alert.properties && alert.properties.severity || 'Advisory';
+        const color = markerColor[sevLabel] || 'gray';
 
         if (geo.type === 'Point') {
           const [lon, lat] = geo.coordinates;
@@ -304,10 +386,11 @@
 
     // --- Initial load ---
     fetchAlerts();
-    setInterval(fetchAlerts, 60000); // refresh every min
+    // refresh every 30s for more timely updates
+    setInterval(fetchAlerts, 30000);
   </script>
   <!--
-    NWS Radar attribution: 
+    NWS Radar attribution:
     Radar mosaic tiles via https://opengeo.ncep.noaa.gov/geoserver/conus/conus_bref_qcd/ows
     See https://opengeo.ncep.noaa.gov/geoserver/web/ for details.
   -->
