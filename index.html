@@ -25,10 +25,56 @@
       margin-bottom: 1rem;
     }
     .visually-hidden { position: absolute !important; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px); }
-    /* Social links in navbar */
     .social-links a { color: #fff; margin-left: 0.9rem; text-decoration: none; }
     .severe-banner { display: none; }
     .severe-banner.show { display: block; }
+    #twitterSidebar {
+      max-width: 350px;
+      min-width: 250px;
+      margin-left: 2rem;
+    }
+    @media (max-width: 992px) {
+      #twitterSidebar { display: none; }
+    }
+    .self-destruct-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 9999;
+      font-size: 1.1rem;
+      border-radius: 50px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 #dc3545; }
+      70% { box-shadow: 0 0 0 10px rgba(220,53,69,0.2); }
+      100% { box-shadow: 0 0 0 0 #dc3545; }
+    }
+    .boom-bg {
+      background: url('https://media.giphy.com/media/oe33xf3B50fsc/giphy.gif') center center / cover no-repeat !important;
+      color: #fff !important;
+    }
+    .boom-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.88);
+      z-index: 99999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      color: #fff;
+      animation: shake 0.8s cubic-bezier(.36,.07,.19,.97) both;
+    }
+    @keyframes shake {
+      10%, 90% { transform: translateX(-1px); }
+      20%, 80% { transform: translateX(2px); }
+      30%, 50%, 70% { transform: translateX(-4px); }
+      40%, 60% { transform: translateX(4px); }
+    }
+    .boom-btn { font-size: 1.1rem; margin-top: 2rem; }
   </style>
 </head>
 <body>
@@ -36,7 +82,6 @@
     <div class="container">
       <a class="navbar-brand" href="#">Weather Alerts</a>
       <div class="social-links ms-auto me-3">
-        <!-- Instagram and Link A / Link B -->
         <a id="igLink" href="https://instagram.com/castrofunkywx" target="_blank" rel="noopener" aria-label="Instagram">@castrofunkywx</a>
         <a href="#" id="linkA" aria-label="Link A">Link A</a>
         <a href="#" id="linkB" aria-label="Link B">Link B</a>
@@ -45,7 +90,6 @@
     </div>
   </nav>
 
-  <!-- Severe alerts banner (hidden unless severe alerts present) -->
   <div id="severeBanner" class="alert alert-danger text-white severe-banner mx-3" role="region" aria-live="polite">
     <div class="d-flex justify-content-between align-items-start">
       <div>
@@ -58,82 +102,93 @@
     </div>
   </div>
 
-  <main class="container">
-    <section class="mb-3">
-      <div class="row align-items-center">
-        <div class="col-md-3 mb-2">
-          <button class="btn btn-secondary w-100" id="locateMe">Show Alerts For My Location</button>
-        </div>
-        <div class="col-md-3 mb-2">
-          <input class="form-control" id="searchBox" placeholder="Search alerts... (e.g. hail, tornado)" aria-label="Search alerts"/>
-        </div>
-        <div class="col-md-3 mb-2">
-          <select class="form-select" id="severityFilter" aria-label="Filter by severity">
-            <option value="">All Severities</option>
-            <option value="Warning">Warning</option>
-            <option value="Watch">Watch</option>
-            <option value="Advisory">Advisory</option>
-          </select>
-        </div>
-        <div class="col-md-3 mb-2">
-          <button class="btn btn-outline-primary w-100" id="radarToggle">Toggle Radar</button>
-        </div>
+  <main class="container-fluid">
+    <div class="row">
+      <div class="col-lg-9">
+        <section class="mb-3">
+          <div class="row align-items-center">
+            <div class="col-md-3 mb-2">
+              <button class="btn btn-secondary w-100" id="locateMe">Show Alerts For My Location</button>
+            </div>
+            <div class="col-md-3 mb-2">
+              <input class="form-control" id="searchBox" placeholder="Search alerts... (e.g. hail, tornado)" aria-label="Search alerts"/>
+            </div>
+            <div class="col-md-3 mb-2">
+              <select class="form-select" id="severityFilter" aria-label="Filter by severity">
+                <option value="">All Severities</option>
+                <option value="Warning">Warning</option>
+                <option value="Watch">Watch</option>
+                <option value="Advisory">Advisory</option>
+              </select>
+            </div>
+            <div class="col-md-3 mb-2">
+              <button class="btn btn-outline-primary w-100" id="radarToggle">Toggle Radar</button>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div id="alert-map" class="mb-3" aria-label="Map of active alerts"></div>
+          <div class="alert-legend">
+            <span class="badge bg-danger">Warning</span>
+            <span class="badge bg-warning text-dark">Watch</span>
+            <span class="badge bg-info text-dark">Advisory</span>
+            <span class="badge bg-success">Hurricane</span>
+          </div>
+          <div id="alerts" class="row g-3"></div>
+        </section>
       </div>
-    </section>
-    <section>
-      <div id="alert-map" class="mb-3" aria-label="Map of active alerts"></div>
-      <div class="alert-legend">
-        <span class="badge bg-danger">Warning</span>
-        <span class="badge bg-warning text-dark">Watch</span>
-        <span class="badge bg-info text-dark">Advisory</span>
-      </div>
-      <div id="alerts" class="row g-3"></div>
-    </section>
+      <aside class="col-lg-3" id="twitterSidebar">
+        <h5 class="mb-2 fw-bold"><span style="color:#1DA1F2;">@NHC_Atlantic</span> Twitter Feed</h5>
+        <a class="twitter-timeline" data-width="300" data-height="600" data-theme="dark" href="https://twitter.com/NHC_Atlantic?ref_src=twsrc%5Etfw">Tweets by NHC_Atlantic</a>
+      </aside>
+    </div>
   </main>
   <footer class="text-center text-muted py-4">
     &copy; 2025 Weather Alerts. Powered by <a href="https://weather.gov" target="_blank" rel="noopener">NOAA/NWS</a>.
   </footer>
+  <button class="btn btn-danger self-destruct-btn" id="boomBtn" title="Self-Destruct">💥 Self-Destruct</button>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   <script>
-    // --- User-configurable social links (edit as needed) ---
+    // Social links config
     const SOCIAL = {
       instagram: 'https://instagram.com/castrofunkywx',
       linkA: '#',
       linkB: '#'
     };
-    // Apply social links to the header anchors
     document.getElementById('igLink').href = SOCIAL.instagram;
     document.getElementById('linkA').href = SOCIAL.linkA;
     document.getElementById('linkB').href = SOCIAL.linkB;
 
-    // --- Dark mode toggle ---
+    // Dark mode toggle
     const darkToggle = document.getElementById('darkToggle');
     darkToggle.onclick = () => {
       document.body.classList.toggle('dark-mode');
       document.querySelectorAll('.card, .list-group-item').forEach(e => e.classList.toggle('dark-mode'));
     };
 
-    // --- Alert severity to Bootstrap color/Leaflet marker color ---
+    // Alert severity colors
     const severityColor = {
       'Warning': 'danger',
       'Watch': 'warning',
-      'Advisory': 'info'
+      'Advisory': 'info',
+      'Hurricane': 'success'
     };
     const markerColor = {
       'Warning': 'red',
       'Watch': 'orange',
-      'Advisory': 'blue'
+      'Advisory': 'blue',
+      'Hurricane': 'green'
     };
 
-    // --- Map setup ---
-    let map = L.map('alert-map').setView([39.5, -98.35], 4);
+    // Map setup
+    let map = L.map('alert-map').setView([29, -75], 4); // shifted east to favor Atlantic
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
-    // --- NWS Radar Layer Setup and Toggle ---
+    // NWS Radar Layer Setup
     let radarLayer = null;
     const radarURL = 'https://opengeo.ncep.noaa.gov/geoserver/conus/conus_bref_qcd/ows?';
-
     function addRadarLayer() {
       if (!radarLayer) {
         radarLayer = L.tileLayer.wms(radarURL, {
@@ -145,35 +200,27 @@
         }).addTo(map);
       }
     }
-
     function removeRadarLayer() {
       if (radarLayer) {
         map.removeLayer(radarLayer);
         radarLayer = null;
       }
     }
-
     let radarEnabled = true; // default ON
     addRadarLayer();
-
     document.getElementById('radarToggle').onclick = function() {
       radarEnabled = !radarEnabled;
-      if (radarEnabled) {
-        addRadarLayer();
-      } else {
-        removeRadarLayer();
-      }
+      if (radarEnabled) { addRadarLayer(); }
+      else { removeRadarLayer(); }
     };
 
-    // --- Fetch and display alerts ---
+    // Alerts logic
     let markers = [];
     let allAlerts = [];
     let userLocation = null;
-
-    // Tracking previous severe alert IDs so we can highlight new ones
     let previousSevereIds = new Set();
 
-    // Utility: show/hide the severe banner and populate list
+    // Severe banner
     const severeBannerEl = document.getElementById('severeBanner');
     const severeListEl = document.getElementById('severeList');
     const dismissSevereBtn = document.getElementById('dismissSevere');
@@ -181,13 +228,9 @@
       severeBannerEl.classList.remove('show');
     };
 
-    // Request notification permission on load (silent notifications only)
+    // Notification permission
     if ('Notification' in window && Notification.permission === 'default') {
-      try {
-        Notification.requestPermission();
-      } catch (e) {
-        // ignore
-      }
+      try { Notification.requestPermission(); } catch (e) {}
     }
 
     async function fetchAlerts() {
@@ -203,10 +246,7 @@
     }
 
     function handleSevereAlerts(alerts) {
-      // Define what we consider "severe": NWS 'Warning' severity (you can extend)
       const severe = alerts.filter(a => (a.properties && a.properties.severity) === 'Warning');
-
-      // Update banner list
       severeListEl.innerHTML = '';
       if (severe.length > 0) {
         severe.forEach(a => {
@@ -214,19 +254,13 @@
           const headline = a.properties && (a.properties.headline || a.properties.event || 'Severe Alert');
           const href = (a.properties && a.properties.web) || '#';
           const link = document.createElement('a');
-          link.href = href;
-          link.target = '_blank';
-          link.rel = 'noopener';
-          link.textContent = headline;
-          li.appendChild(link);
-          severeListEl.appendChild(li);
+          link.href = href; link.target = '_blank'; link.rel = 'noopener'; link.textContent = headline;
+          li.appendChild(link); severeListEl.appendChild(li);
         });
         severeBannerEl.classList.add('show');
-      } else {
-        severeBannerEl.classList.remove('show');
-      }
+      } else { severeBannerEl.classList.remove('show'); }
 
-      // Send silent browser notifications for any newly-seen severe alerts
+      // Silent notification for new severe alerts
       try {
         if ('Notification' in window && Notification.permission === 'granted') {
           severe.forEach(a => {
@@ -234,23 +268,17 @@
             if (!previousSevereIds.has(id)) {
               const title = (a.properties && (a.properties.headline || a.properties.event)) || 'Severe Alert';
               const body = (a.properties && (a.properties.description || a.properties.instruction)) || '';
-              // Silent notification (no sound)
               new Notification(title, { body: body, silent: true });
             }
           });
         }
-      } catch (e) {
-        // Notification could throw on some browsers, ignore safely
-        console.warn('Notification error', e);
-      }
-
-      // Update previous severe id set
+      } catch (e) { console.warn('Notification error', e); }
       previousSevereIds = new Set(severe.map(a => a.id || (a.properties && a.properties.id) || JSON.stringify(a.properties || {})));
     }
 
     function renderAlerts() {
       let filtered = allAlerts;
-      // Filter by search
+      // Search
       const searchVal = document.getElementById('searchBox').value.trim().toLowerCase();
       if (searchVal) {
         filtered = filtered.filter(alert =>
@@ -258,15 +286,14 @@
           (alert.properties.description || '').toLowerCase().includes(searchVal)
         );
       }
-      // Filter by severity
+      // Severity filter
       const sev = document.getElementById('severityFilter').value;
       if (sev) filtered = filtered.filter(alert => alert.properties.severity === sev);
-      // Filter by user location if set
+      // User location filter
       if (userLocation) {
         filtered = filtered.filter(alert => {
           const geos = alert.geometry;
           if (!geos) return false;
-          // Check if point is within alert polygon (basic check for prototype)
           if (geos.type === 'Polygon') {
             const poly = L.polygon(geos.coordinates[0].map(([lon, lat]) => [lat, lon]));
             return poly.getBounds().contains(userLocation);
@@ -286,13 +313,10 @@
       }
       filtered.forEach((alert) => {
         const p = alert.properties || {};
-        // Hail size (use parameters if present)
         let hailSize = null;
         if (p.parameters && p.parameters.hailSize) {
-          // often provided as an array or string
           hailSize = Array.isArray(p.parameters.hailSize) ? p.parameters.hailSize[0] : p.parameters.hailSize;
         }
-        // Card color
         const sevLabel = p.severity || 'Advisory';
         const col = severityColor[sevLabel] || 'secondary';
         alertsDiv.innerHTML += `
@@ -317,63 +341,45 @@
         `;
       });
 
-      // Render map markers and polygons, handling all geometry types robustly
+      // Remove old markers
       markers.forEach(m => map.removeLayer(m));
       markers = [];
+      // Add alert polygons/points
       filtered.forEach((alert) => {
         const geo = alert.geometry;
         if (!geo) return;
         const sevLabel = alert.properties && alert.properties.severity || 'Advisory';
         const color = markerColor[sevLabel] || 'gray';
-
         if (geo.type === 'Point') {
           const [lon, lat] = geo.coordinates;
           const marker = L.circleMarker([lat, lon], {
-            radius: 8,
-            color: color,
-            fillColor: color,
-            fillOpacity: 0.7
+            radius: 8, color: color, fillColor: color, fillOpacity: 0.7
           }).addTo(map)
             .bindPopup(`<b>${alert.properties.headline || 'Alert'}</b><br>${alert.properties.areaDesc || ''}`);
           markers.push(marker);
         }
-
         if (geo.type === 'Polygon') {
-          // geo.coordinates is [ [ [lng, lat], [lng, lat], ... ] ]
-          const latlngs = geo.coordinates.map(ring =>
-            ring.map(([lon, lat]) => [lat, lon])
-          );
-          const poly = L.polygon(latlngs, {
-            color: color,
-            fillColor: color,
-            fillOpacity: 0.3
-          }).addTo(map)
-            .bindPopup(`<b>${alert.properties.headline || 'Alert'}</b><br>${alert.properties.areaDesc || ''}`);
+          const latlngs = geo.coordinates.map(ring => ring.map(([lon, lat]) => [lat, lon]));
+          const poly = L.polygon(latlngs, { color: color, fillColor: color, fillOpacity: 0.3 })
+            .addTo(map).bindPopup(`<b>${alert.properties.headline || 'Alert'}</b><br>${alert.properties.areaDesc || ''}`);
           markers.push(poly);
         }
-
         if (geo.type === 'MultiPolygon') {
-          // geo.coordinates is [ [ [ [lng, lat], ... ] ], ... ]
           geo.coordinates.forEach(polygon => {
-            const latlngs = polygon.map(ring =>
-              ring.map(([lon, lat]) => [lat, lon])
-            );
-            const poly = L.polygon(latlngs, {
-              color: color,
-              fillColor: color,
-              fillOpacity: 0.3
-            }).addTo(map)
-              .bindPopup(`<b>${alert.properties.headline || 'Alert'}</b><br>${alert.properties.areaDesc || ''}`);
+            const latlngs = polygon.map(ring => ring.map(([lon, lat]) => [lat, lon]));
+            const poly = L.polygon(latlngs, { color: color, fillColor: color, fillOpacity: 0.3 })
+              .addTo(map).bindPopup(`<b>${alert.properties.headline || 'Alert'}</b><br>${alert.properties.areaDesc || ''}`);
             markers.push(poly);
           });
         }
       });
+
+      // Hurricane overlays
+      renderHurricaneTracks();
     }
 
-    // --- Controls ---
     document.getElementById('searchBox').addEventListener('input', renderAlerts);
     document.getElementById('severityFilter').addEventListener('change', renderAlerts);
-
     document.getElementById('locateMe').onclick = () => {
       if ('geolocation' in navigator) {
         navigator.geolocation.getCurrentPosition(pos => {
@@ -384,15 +390,101 @@
       }
     };
 
-    // --- Initial load ---
+    // Hurricane tracks (NHC GeoJSON)
+    let hurricaneData = null;
+    async function fetchHurricaneTracks() {
+      // Atlantic basin, active storms
+      try {
+        // NHC GeoJSON (active storms) - always check for updates to endpoints!
+        const url = 'https://www.nhc.noaa.gov/CurrentStorms.json';
+        const resp = await fetch(url);
+        hurricaneData = await resp.json();
+        renderHurricaneTracks();
+      } catch (e) {
+        hurricaneData = null;
+      }
+    }
+    function renderHurricaneTracks() {
+      // Remove previous hurricane markers
+      if (window.hurricaneMarkers) {
+        window.hurricaneMarkers.forEach(m => map.removeLayer(m));
+      }
+      window.hurricaneMarkers = [];
+      if (!hurricaneData || !hurricaneData.activeStorms) return;
+      hurricaneData.activeStorms.forEach(storm => {
+        // Plot forecast cone (polygon)
+        if (storm.forecastCone && storm.forecastCone.coordinates) {
+          // Each cone polygon is a GeoJSON Polygon
+          storm.forecastCone.coordinates.forEach(ring => {
+            const latlngs = ring.map(([lon, lat]) => [lat, lon]);
+            const conePoly = L.polygon(latlngs, {
+              color: 'green',
+              fillColor: 'lime',
+              fillOpacity: 0.15,
+              dashArray: '8'
+            }).addTo(map);
+            window.hurricaneMarkers.push(conePoly);
+          });
+        }
+        // Plot track points (as circles)
+        if (storm.forecastTrack && storm.forecastTrack.coordinates) {
+          storm.forecastTrack.coordinates.forEach(([lon, lat], i) => {
+            const marker = L.circleMarker([lat, lon], {
+              radius: 7,
+              color: 'darkgreen',
+              fillColor: 'green',
+              fillOpacity: 0.7
+            }).addTo(map);
+            let popup = `<b>${storm.stormName || 'Tropical Cyclone'}</b>`;
+            if (storm.stormType) popup += `<br>Type: ${storm.stormType}`;
+            if (storm.stormNumber) popup += `<br>ID: ${storm.stormNumber}`;
+            if (storm.advisoryNumber) popup += `<br>Advisory #${storm.advisoryNumber}`;
+            if (storm.currentLocation) popup += `<br>Location: ${storm.currentLocation}`;
+            if (storm.maxWind) popup += `<br>Max Wind: ${storm.maxWind} mph`;
+            if (storm.forecastTrackTimes && storm.forecastTrackTimes[i]) {
+              popup += `<br>Time: ${storm.forecastTrackTimes[i]}`;
+            }
+            if (storm.publicAdvisory) popup += `<br><a href="${storm.publicAdvisory}" target="_blank">Full Advisory</a>`;
+            marker.bindPopup(popup);
+            window.hurricaneMarkers.push(marker);
+          });
+        }
+      });
+    }
+
+    // Initial load
     fetchAlerts();
-    // refresh every 30s for more timely updates
-    setInterval(fetchAlerts, 30000);
+    fetchHurricaneTracks();
+
+    // Refresh every 60s for alerts & hurricanes
+    setInterval(fetchAlerts, 60000);
+    setInterval(fetchHurricaneTracks, 60000);
+
+    // --- Funny Self-Destruct Button ---
+    document.getElementById('boomBtn').onclick = function() {
+      // Remove main content, show boom animation
+      document.body.classList.add('boom-bg');
+      const overlay = document.createElement('div');
+      overlay.className = 'boom-overlay';
+      overlay.innerHTML = `
+        <div>💥 <b>Self-Destruct Sequence</b> 💥</div>
+        <div style="font-size:1.4rem;margin:1rem 0;">Website destroyed.<br>Refresh page to restore!</div>
+        <button class="btn btn-light boom-btn" onclick="window.location.reload()">Repair (Reload)</button>
+        <div style="font-size:2.5rem;">🔥</div>
+        <audio autoplay>
+          <source src="https://cdn.pixabay.com/audio/2022/10/16/audio_12a8b7d1d3.mp3" type="audio/mpeg">
+        </audio>
+      `;
+      document.body.innerHTML = '';
+      document.body.appendChild(overlay);
+      // Optional: destroy content in localStorage/sessionStorage if you want
+    };
   </script>
   <!--
     NWS Radar attribution:
     Radar mosaic tiles via https://opengeo.ncep.noaa.gov/geoserver/conus/conus_bref_qcd/ows
     See https://opengeo.ncep.noaa.gov/geoserver/web/ for details.
+    Hurricane forecast cone/tracks via NHC: https://www.nhc.noaa.gov/
   -->
 </body>
 </html>
