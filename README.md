@@ -1,6 +1,4 @@
-
-(notice: all of the current changes that arent from github bot are final till offical start of severe weather season with a few bug fixes.)
-
+new updates coming soon:) plan to add hurricane tracks
 
 # Weather Alerts Revamp
 
