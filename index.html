@@ -75,6 +75,9 @@
       40%, 60% { transform: translateX(4px); }
     }
     .boom-btn { font-size: 1.1rem; margin-top: 2rem; }
+
+    /* Simple legend color chips */
+    .chip { display:inline-block; width:18px; height:12px; margin-right:6px; vertical-align:middle; border-radius:2px; }
   </style>
 </head>
 <body>
@@ -122,36 +125,83 @@
               </select>
             </div>
             <div class="col-md-3 mb-2">
-              <button class="btn btn-outline-primary w-100" id="radarToggle">Toggle Radar</button>
+              <div class="d-grid gap-2">
+                <button class="btn btn-outline-primary" id="radarToggle">Toggle Radar</button>
+                <button class="btn btn-outline-secondary mt-1" id="trackToggle">Toggle Tracks</button>
+              </div>
             </div>
           </div>
         </section>
+
         <section>
           <div id="alert-map" class="mb-3" aria-label="Map of active alerts"></div>
           <div class="alert-legend">
             <span class="badge bg-danger">Warning</span>
             <span class="badge bg-warning text-dark">Watch</span>
             <span class="badge bg-info text-dark">Advisory</span>
-            <span class="badge bg-success">Hurricane</span>
+            &nbsp;&nbsp;
+            <span class="chip" style="background:#E31A1C;"></span> <small>Cat1+ / Hurricane (red)</small>
+            &nbsp;&nbsp;
+            <span class="chip" style="background:#FD8D3C;"></span> <small>Tropical Storm (orange)</small>
+            &nbsp;&nbsp;
+            <span class="chip" style="background:#3182bd;"></span> <small>Tropical Depression (blue)</small>
           </div>
+
           <div id="alerts" class="row g-3"></div>
         </section>
       </div>
+
       <aside class="col-lg-3" id="twitterSidebar">
         <h5 class="mb-2 fw-bold"><span style="color:#1DA1F2;">@NHC_Atlantic</span> Twitter Feed</h5>
         <a class="twitter-timeline" data-width="300" data-height="600" data-theme="dark" href="https://twitter.com/NHC_Atlantic?ref_src=twsrc%5Etfw">Tweets by NHC_Atlantic</a>
       </aside>
     </div>
   </main>
+
   <footer class="text-center text-muted py-4">
     &copy; 2025 Weather Alerts. Powered by <a href="https://weather.gov" target="_blank" rel="noopener">NOAA/NWS</a>.
   </footer>
+
   <button class="btn btn-danger self-destruct-btn" id="boomBtn" title="Self-Destruct">💥 Self-Destruct</button>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
   <script>
-    // Social links config
+    // --- Config / palette (plain colors) ---
+    const PLAIN_COLORS = {
+      HURRICANE: '#E31A1C', // Cat1+ red
+      TROPICAL_STORM: '#FD8D3C', // orange
+      DEPRESSION: '#3182bd' // blue
+    };
+
+    // Alert severity plain colors
+    const ALERT_PLAIN = {
+      'Warning': PLAIN_COLORS.HURRICANE,
+      'Watch': PLAIN_COLORS.TROPICAL_STORM,
+      'Advisory': PLAIN_COLORS.DEPRESSION
+    };
+
+    // Helper: color by wind speed (returns hex)
+    function stormColorFromWind(maxWind) {
+      const w = parseInt(maxWind) || 0;
+      if (w >= 74) return PLAIN_COLORS.HURRICANE;
+      if (w >= 39) return PLAIN_COLORS.TROPICAL_STORM;
+      if (w > 0) return PLAIN_COLORS.DEPRESSION;
+      return '#7a4ea6'; // unknown / purple
+    }
+
+    // Utility: pick readable text color for a chip (simple rule)
+    function textColorForChip(hex) {
+      // quick luminance estimate for contrast; return black for bright/orange-like, white otherwise
+      const c = hex.replace('#','');
+      const r = parseInt(c.substring(0,2),16), g = parseInt(c.substring(2,4),16), b = parseInt(c.substring(4,6),16);
+      const luminance = (0.299*r + 0.587*g + 0.114*b);
+      return luminance > 150 ? '#000' : '#fff';
+    }
+
+    // --- Social links config ---
     const SOCIAL = {
       instagram: 'https://instagram.com/castrofunkywx',
       linkA: '#',
@@ -162,31 +212,21 @@
     document.getElementById('linkB').href = SOCIAL.linkB;
 
     // Dark mode toggle
-    const darkToggle = document.getElementById('darkToggle');
-    darkToggle.onclick = () => {
+    document.getElementById('darkToggle').onclick = () => {
       document.body.classList.toggle('dark-mode');
       document.querySelectorAll('.card, .list-group-item').forEach(e => e.classList.toggle('dark-mode'));
     };
 
-    // Alert severity colors
-    const severityColor = {
-      'Warning': 'danger',
-      'Watch': 'warning',
-      'Advisory': 'info',
-      'Hurricane': 'success'
-    };
-    const markerColor = {
-      'Warning': 'red',
-      'Watch': 'orange',
-      'Advisory': 'blue',
-      'Hurricane': 'green'
-    };
-
     // Map setup
-    let map = L.map('alert-map').setView([29, -75], 4); // shifted east to favor Atlantic
+    const map = L.map('alert-map').setView([29, -75], 4);
+
+    // Create a dedicated pane for hurricane overlays so they render above radar tiles
+    map.createPane('hurricanePane');
+    map.getPane('hurricanePane').style.zIndex = 650;
+
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
-    // NWS Radar Layer Setup
+    // Radar WMS layer
     let radarLayer = null;
     const radarURL = 'https://opengeo.ncep.noaa.gov/geoserver/conus/conus_bref_qcd/ows?';
     function addRadarLayer() {
@@ -198,39 +238,40 @@
           opacity: 0.6,
           attribution: "NOAA/NWS NEXRAD"
         }).addTo(map);
+        map.getPane('hurricanePane').style.zIndex = 650;
       }
     }
     function removeRadarLayer() {
-      if (radarLayer) {
-        map.removeLayer(radarLayer);
-        radarLayer = null;
-      }
+      if (radarLayer) { map.removeLayer(radarLayer); radarLayer = null; }
     }
-    let radarEnabled = true; // default ON
+    let radarEnabled = true;
     addRadarLayer();
-    document.getElementById('radarToggle').onclick = function() {
+
+    document.getElementById('radarToggle').onclick = () => {
       radarEnabled = !radarEnabled;
-      if (radarEnabled) { addRadarLayer(); }
-      else { removeRadarLayer(); }
+      if (radarEnabled) addRadarLayer(); else removeRadarLayer();
+    };
+
+    // Hurricane overlay layer group placed into the hurricanePane
+    const hurricaneLayer = L.layerGroup([], { pane: 'hurricanePane' }).addTo(map);
+    let tracksEnabled = true;
+    document.getElementById('trackToggle').onclick = () => {
+      tracksEnabled = !tracksEnabled;
+      if (tracksEnabled) map.addLayer(hurricaneLayer); else map.removeLayer(hurricaneLayer);
     };
 
     // Alerts logic
-    let markers = [];
     let allAlerts = [];
+    let markers = [];
     let userLocation = null;
     let previousSevereIds = new Set();
 
-    // Severe banner
     const severeBannerEl = document.getElementById('severeBanner');
     const severeListEl = document.getElementById('severeList');
-    const dismissSevereBtn = document.getElementById('dismissSevere');
-    dismissSevereBtn.onclick = () => {
-      severeBannerEl.classList.remove('show');
-    };
+    document.getElementById('dismissSevere').onclick = () => severeBannerEl.classList.remove('show');
 
-    // Notification permission
     if ('Notification' in window && Notification.permission === 'default') {
-      try { Notification.requestPermission(); } catch (e) {}
+      try { Notification.requestPermission(); } catch (e) { /* ignore */ }
     }
 
     async function fetchAlerts() {
@@ -240,15 +281,15 @@
         allAlerts = data.features || [];
         handleSevereAlerts(allAlerts);
         renderAlerts();
-      } catch (err) {
-        document.getElementById('alerts').innerHTML = '<div class="col-12"><div class="alert alert-danger">Could not load alerts. Please try again later.</div></div>';
+      } catch (e) {
+        document.getElementById('alerts').innerHTML = '<div class="col-12"><div class="alert alert-danger">Could not load alerts.</div></div>';
       }
     }
 
     function handleSevereAlerts(alerts) {
       const severe = alerts.filter(a => (a.properties && a.properties.severity) === 'Warning');
       severeListEl.innerHTML = '';
-      if (severe.length > 0) {
+      if (severe.length) {
         severe.forEach(a => {
           const li = document.createElement('li');
           const headline = a.properties && (a.properties.headline || a.properties.event || 'Severe Alert');
@@ -258,13 +299,14 @@
           li.appendChild(link); severeListEl.appendChild(li);
         });
         severeBannerEl.classList.add('show');
-      } else { severeBannerEl.classList.remove('show'); }
+      } else {
+        severeBannerEl.classList.remove('show');
+      }
 
-      // Silent notification for new severe alerts
       try {
         if ('Notification' in window && Notification.permission === 'granted') {
           severe.forEach(a => {
-            const id = a.id || (a.properties && a.properties.id) || JSON.stringify(a.properties || {});
+            const id = a.id || JSON.stringify(a.properties || {});
             if (!previousSevereIds.has(id)) {
               const title = (a.properties && (a.properties.headline || a.properties.event)) || 'Severe Alert';
               const body = (a.properties && (a.properties.description || a.properties.instruction)) || '';
@@ -273,12 +315,11 @@
           });
         }
       } catch (e) { console.warn('Notification error', e); }
-      previousSevereIds = new Set(severe.map(a => a.id || (a.properties && a.properties.id) || JSON.stringify(a.properties || {})));
+      previousSevereIds = new Set(severe.map(a => a.id || JSON.stringify(a.properties || {})));
     }
 
     function renderAlerts() {
       let filtered = allAlerts;
-      // Search
       const searchVal = document.getElementById('searchBox').value.trim().toLowerCase();
       if (searchVal) {
         filtered = filtered.filter(alert =>
@@ -286,183 +327,165 @@
           (alert.properties.description || '').toLowerCase().includes(searchVal)
         );
       }
-      // Severity filter
       const sev = document.getElementById('severityFilter').value;
-      if (sev) filtered = filtered.filter(alert => alert.properties.severity === sev);
-      // User location filter
-      if (userLocation) {
-        filtered = filtered.filter(alert => {
-          const geos = alert.geometry;
-          if (!geos) return false;
-          if (geos.type === 'Polygon') {
-            const poly = L.polygon(geos.coordinates[0].map(([lon, lat]) => [lat, lon]));
-            return poly.getBounds().contains(userLocation);
-          }
-          if (geos.type === 'Point') {
-            const [lon, lat] = geos.coordinates;
-            return Math.abs(lat - userLocation.lat) < 1 && Math.abs(lon - userLocation.lng) < 1;
-          }
-          return false;
-        });
-      }
-      // Render cards
+      if (sev) filtered = filtered.filter(a => a.properties.severity === sev);
+
       const alertsDiv = document.getElementById('alerts');
       alertsDiv.innerHTML = '';
       if (!filtered.length) {
         alertsDiv.innerHTML = '<div class="col-12"><div class="alert alert-secondary">No alerts found.</div></div>';
       }
-      filtered.forEach((alert) => {
+      filtered.forEach(alert => {
         const p = alert.properties || {};
-        let hailSize = null;
-        if (p.parameters && p.parameters.hailSize) {
-          hailSize = Array.isArray(p.parameters.hailSize) ? p.parameters.hailSize[0] : p.parameters.hailSize;
-        }
         const sevLabel = p.severity || 'Advisory';
-        const col = severityColor[sevLabel] || 'secondary';
+        const bootClass = (sevLabel === 'Warning') ? 'danger' : (sevLabel === 'Watch' ? 'warning' : 'info');
+        const color = ALERT_PLAIN[sevLabel] || '#777';
         alertsDiv.innerHTML += `
           <div class="col-md-6 col-lg-4">
-            <div class="card border-${col} h-100">
-              <div class="card-header bg-${col} text-white fw-bold" tabindex="0" aria-label="${sevLabel}">${p.headline || 'Weather Alert'}</div>
+            <div class="card border-${bootClass} h-100">
+              <div class="card-header text-white fw-bold" style="background:${color};" tabindex="0">${p.headline || 'Weather Alert'}</div>
               <div class="card-body">
-                <p class="card-text"><strong>Area:</strong> ${p.areaDesc || 'N/A'}</p>
-                <p class="card-text"><strong>Severity:</strong> <span class="badge bg-${col}">${sevLabel}</span></p>
-                <p class="card-text"><strong>Start:</strong> ${p.onset ? new Date(p.onset).toLocaleString() : "N/A"}</p>
-                <p class="card-text"><strong>End:</strong> ${p.expires ? new Date(p.expires).toLocaleString() : "N/A"}</p>
-                <p class="card-text"><strong>Hail Size:</strong> ${hailSize ? hailSize : 'N/A'}</p>
-                <details>
-                  <summary>Details</summary>
-                  <div class="small">${p.description || ""}</div>
-                  <div class="mt-2"><strong>Actions:</strong> ${p.instruction || "N/A"}</div>
-                  <div class="mt-2"><a href="${p.web || '#'}" target="_blank" rel="noopener">More info</a></div>
-                </details>
+                <p class="card-text"><strong>Area:</strong> ${p.areaDesc||'N/A'}</p>
+                <p class="card-text"><strong>Severity:</strong> <span class="badge" style="background:${color}; color:#fff">${sevLabel}</span></p>
+                <p class="card-text"><strong>Start:</strong> ${p.onset ? new Date(p.onset).toLocaleString() : 'N/A'}</p>
+                <p class="card-text"><strong>End:</strong> ${p.expires ? new Date(p.expires).toLocaleString() : 'N/A'}</p>
+                <details><summary>Details</summary><div class="small">${p.description||''}</div></details>
               </div>
             </div>
-          </div>
-        `;
+          </div>`;
       });
 
-      // Remove old markers
+      // map markers/polygons
       markers.forEach(m => map.removeLayer(m));
       markers = [];
-      // Add alert polygons/points
-      filtered.forEach((alert) => {
-        const geo = alert.geometry;
-        if (!geo) return;
-        const sevLabel = alert.properties && alert.properties.severity || 'Advisory';
-        const color = markerColor[sevLabel] || 'gray';
+
+      filtered.forEach(alert => {
+        const geo = alert.geometry; if (!geo) return;
+        const sevLabel = (alert.properties && alert.properties.severity) || 'Advisory';
+        const color = ALERT_PLAIN[sevLabel] || '#777';
         if (geo.type === 'Point') {
           const [lon, lat] = geo.coordinates;
-          const marker = L.circleMarker([lat, lon], {
-            radius: 8, color: color, fillColor: color, fillOpacity: 0.7
-          }).addTo(map)
-            .bindPopup(`<b>${alert.properties.headline || 'Alert'}</b><br>${alert.properties.areaDesc || ''}`);
+          const marker = L.circleMarker([lat, lon], { radius:8, color: color, fillColor: color, fillOpacity: 0.8 }).addTo(map)
+            .bindPopup(`<b>${alert.properties.headline||'Alert'}</b><br>${alert.properties.areaDesc||''}`);
           markers.push(marker);
         }
         if (geo.type === 'Polygon') {
           const latlngs = geo.coordinates.map(ring => ring.map(([lon, lat]) => [lat, lon]));
-          const poly = L.polygon(latlngs, { color: color, fillColor: color, fillOpacity: 0.3 })
-            .addTo(map).bindPopup(`<b>${alert.properties.headline || 'Alert'}</b><br>${alert.properties.areaDesc || ''}`);
+          const poly = L.polygon(latlngs, { color: color, fillColor: color, fillOpacity: 0.18 }).addTo(map);
           markers.push(poly);
         }
         if (geo.type === 'MultiPolygon') {
           geo.coordinates.forEach(polygon => {
             const latlngs = polygon.map(ring => ring.map(([lon, lat]) => [lat, lon]));
-            const poly = L.polygon(latlngs, { color: color, fillColor: color, fillOpacity: 0.3 })
-              .addTo(map).bindPopup(`<b>${alert.properties.headline || 'Alert'}</b><br>${alert.properties.areaDesc || ''}`);
+            const poly = L.polygon(latlngs, { color: color, fillColor: color, fillOpacity: 0.18 }).addTo(map);
             markers.push(poly);
           });
         }
       });
 
-      // Hurricane overlays
+      // keep hurricane overlays updated as well
       renderHurricaneTracks();
     }
 
     document.getElementById('searchBox').addEventListener('input', renderAlerts);
     document.getElementById('severityFilter').addEventListener('change', renderAlerts);
+
     document.getElementById('locateMe').onclick = () => {
       if ('geolocation' in navigator) {
         navigator.geolocation.getCurrentPosition(pos => {
-          userLocation = {lat: pos.coords.latitude, lng: pos.coords.longitude};
-          map.setView([userLocation.lat, userLocation.lng], 8);
-          renderAlerts();
+          map.setView([pos.coords.latitude, pos.coords.longitude], 8);
         }, () => alert('Could not get your location.'));
-      }
+      } else alert('Geolocation not supported.');
     };
 
-    // Hurricane tracks (NHC GeoJSON)
+    // --- Hurricane tracks (NHC) ---
     let hurricaneData = null;
     async function fetchHurricaneTracks() {
-      // Atlantic basin, active storms
       try {
-        // NHC GeoJSON (active storms) - always check for updates to endpoints!
         const url = 'https://www.nhc.noaa.gov/CurrentStorms.json';
         const resp = await fetch(url);
         hurricaneData = await resp.json();
         renderHurricaneTracks();
       } catch (e) {
         hurricaneData = null;
+        console.warn('Could not fetch NHC data', e);
       }
     }
+
     function renderHurricaneTracks() {
-      // Remove previous hurricane markers
-      if (window.hurricaneMarkers) {
-        window.hurricaneMarkers.forEach(m => map.removeLayer(m));
-      }
-      window.hurricaneMarkers = [];
-      if (!hurricaneData || !hurricaneData.activeStorms) return;
+      // clear prior overlays
+      hurricaneLayer.clearLayers();
+      if (!hurricaneData || !Array.isArray(hurricaneData.activeStorms)) return;
+
       hurricaneData.activeStorms.forEach(storm => {
-        // Plot forecast cone (polygon)
+        const color = stormColorFromWind(storm.maxWind);
+
+        // Forecast cone polygons (use hurricanePane)
         if (storm.forecastCone && storm.forecastCone.coordinates) {
-          // Each cone polygon is a GeoJSON Polygon
           storm.forecastCone.coordinates.forEach(ring => {
             const latlngs = ring.map(([lon, lat]) => [lat, lon]);
-            const conePoly = L.polygon(latlngs, {
-              color: 'green',
-              fillColor: 'lime',
-              fillOpacity: 0.15,
-              dashArray: '8'
-            }).addTo(map);
-            window.hurricaneMarkers.push(conePoly);
+            const cone = L.polygon(latlngs, {
+              pane: 'hurricanePane',
+              color: color,
+              fillColor: color,
+              fillOpacity: 0.12,
+              weight: 2,
+              dashArray: '6'
+            });
+            cone.bindPopup(`<b>${storm.stormName || 'Storm'} Forecast Cone</b><br>Max Wind: ${storm.maxWind || 'N/A'} mph`);
+            hurricaneLayer.addLayer(cone);
           });
         }
-        // Plot track points (as circles)
-        if (storm.forecastTrack && storm.forecastTrack.coordinates) {
+
+        // Forecast track polyline
+        if (storm.forecastTrack && Array.isArray(storm.forecastTrack.coordinates) && storm.forecastTrack.coordinates.length) {
+          const trackLatLngs = storm.forecastTrack.coordinates.map(([lon, lat]) => [lat, lon]);
+          const trackLine = L.polyline(trackLatLngs, {
+            pane: 'hurricanePane',
+            color: color,
+            weight: 3,
+            opacity: 0.95
+          });
+          trackLine.bindPopup(`<b>${storm.stormName || 'Track'}</b><br>Max Wind: ${storm.maxWind || 'N/A'} mph`);
+          hurricaneLayer.addLayer(trackLine);
+        }
+
+        // Track points
+        if (storm.forecastTrack && Array.isArray(storm.forecastTrack.coordinates)) {
           storm.forecastTrack.coordinates.forEach(([lon, lat], i) => {
-            const marker = L.circleMarker([lat, lon], {
-              radius: 7,
-              color: 'darkgreen',
-              fillColor: 'green',
-              fillOpacity: 0.7
-            }).addTo(map);
+            const point = L.circleMarker([lat, lon], {
+              pane: 'hurricanePane',
+              radius: 6,
+              color: '#ffffff',
+              weight: 1,
+              fillColor: color,
+              fillOpacity: 0.95
+            });
             let popup = `<b>${storm.stormName || 'Tropical Cyclone'}</b>`;
             if (storm.stormType) popup += `<br>Type: ${storm.stormType}`;
-            if (storm.stormNumber) popup += `<br>ID: ${storm.stormNumber}`;
-            if (storm.advisoryNumber) popup += `<br>Advisory #${storm.advisoryNumber}`;
-            if (storm.currentLocation) popup += `<br>Location: ${storm.currentLocation}`;
             if (storm.maxWind) popup += `<br>Max Wind: ${storm.maxWind} mph`;
-            if (storm.forecastTrackTimes && storm.forecastTrackTimes[i]) {
-              popup += `<br>Time: ${storm.forecastTrackTimes[i]}`;
-            }
+            if (storm.forecastTrackTimes && storm.forecastTrackTimes[i]) popup += `<br>Time: ${storm.forecastTrackTimes[i]}`;
             if (storm.publicAdvisory) popup += `<br><a href="${storm.publicAdvisory}" target="_blank">Full Advisory</a>`;
-            marker.bindPopup(popup);
-            window.hurricaneMarkers.push(marker);
+            point.bindPopup(popup);
+            hurricaneLayer.addLayer(point);
           });
         }
       });
+
+      // ensure hurricane pane stays above radar layer
+      map.getPane('hurricanePane').style.zIndex = 650;
     }
 
-    // Initial load
+    // initial loads
     fetchAlerts();
     fetchHurricaneTracks();
 
-    // Refresh every 60s for alerts & hurricanes
+    // refresh intervals
     setInterval(fetchAlerts, 60000);
     setInterval(fetchHurricaneTracks, 60000);
 
-    // --- Funny Self-Destruct Button ---
+    // --- Self-destruct button (client-only) ---
     document.getElementById('boomBtn').onclick = function() {
-      // Remove main content, show boom animation
       document.body.classList.add('boom-bg');
       const overlay = document.createElement('div');
       overlay.className = 'boom-overlay';
@@ -477,7 +500,6 @@
       `;
       document.body.innerHTML = '';
       document.body.appendChild(overlay);
-      // Optional: destroy content in localStorage/sessionStorage if you want
     };
   </script>
   <!--
